@@ -1,0 +1,28 @@
+AddDefaultCharset UTF-8
+php_flag short_open_tag On
+
+<Files "comments.txt">
+    Deny from all
+</Files>
+
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+RewriteRule ^moscow/guides/([a-zA-Z0-9_-]+)$ index.php?id=guides&guides=$1 [L]
+RewriteRule ^moscow/guides/([a-zA-Z0-9_-]+)/$ index.php?id=guides&guides=$1 [L]
+
+RewriteRule ^moscow/tours/([a-zA-Z0-9_-]+)$ index.php?id=tours&tours=$1 [L]
+RewriteRule ^moscow/tours/([a-zA-Z0-9_-]+)/$ index.php?id=tours&tours=$1 [L]
+
+RewriteRule ^moscow/tours/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?id=tours&tours=$1&thanks=tours [L]
+RewriteRule ^moscow/tours/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/$ index.php?id=tours&tours=$1&thanks=tours [L]
+
+RewriteRule ^moscow/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?id=$1&thanks=contact [L]
+RewriteRule ^moscow/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/$ index.php?id=$1&thanks=contact [L]
+
+RewriteRule ^moscow/([a-zA-Z0-9_-]+)$ index.php?city=moscow&&id=$1 [L]
+RewriteRule ^moscow/([a-zA-Z0-9_-]+)/$ index.php?city=moscow&&id=$1 [L]

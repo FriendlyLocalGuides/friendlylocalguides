@@ -1,0 +1,14 @@
+{
+    "guides" : {
+        "alina" : {
+            "title": "Alina"
+        },
+        "monika" : {
+            "title": "Monika"
+        },
+        "sasha" : {
+            "title": "Sasha"
+        }
+    }
+
+}

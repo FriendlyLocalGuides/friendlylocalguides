@@ -1,0 +1,46 @@
+{
+    "tours" : {
+        "free-tour" : {
+            "title": "Moscow Free Walking Tour"
+        },
+        "red-square-and-kremlin" : {
+            "title": "Red Square and Kremlin"
+        },
+        "red-square-and-the-city" : {
+            "title": "Red Square and the City"
+        },
+        "going-out-in-moscow" : {
+            "title": "Going Out in Moscow"
+        },
+        "izmailovo" : {
+            "title": "Izmailovo Flea Market and Kremlin in Izmailovo"
+        },
+        "10-hours-in-moscow" : {
+            "title": "10 Hours in Moscow with a Friendly"
+        },
+        "2-days-in-moscow" : {
+            "title": "2 days in Moscow with a Friendly Guide"
+        },
+        "3-days-in-moscow" : {
+            "title": "3 days in Moscow with a Friendly Guide"
+        },
+        "moscow-at-night" : {
+            "title": "Moscow at Night"
+        },
+        "airport-pickup-in-moscow" : {
+            "title": "Airport Pickup + Orientation Tour"
+        },
+        "russia-in-cold-war" : {
+            "title": "Russia in WWII and Cold War"
+        },
+        "communist-russia" : {
+            "title": "Communist Russia. Cold War period."
+        },
+        "photo-tour-of-moscow" : {
+            "title": "Photo Tour of Moscow’s Greatest Spots"
+        },
+        "bike-tour-in-moscow" : {
+            "title": "Bike Tour through the Best of Moscow"
+        }
+    }
+}

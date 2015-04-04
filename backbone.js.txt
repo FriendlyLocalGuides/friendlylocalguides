@@ -1,0 +1,5 @@
+.HTACCESS
+1. http://stackoverflow.com/questions/11152331/backbone-and-pushstate-with-regards-to-server-confuguration
+2. http://habrahabr.ru/post/141424/
+3. http://habrahabr.ru/post/127049/
+4. http://habrahabr.ru/post/144071/

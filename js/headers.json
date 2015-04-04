@@ -1,0 +1,19 @@
+{
+    "headers" : {
+        "tours" : {
+            "title": "Tours"
+        },
+        "guides" : {
+            "title": "Guides"
+        },
+        "reviews" : {
+            "title": "Reviews"
+        },
+        "about" : {
+            "title": "About"
+        },
+        "contacts" : {
+            "title": "Contacts"
+        }
+    }
+}
