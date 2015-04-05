@@ -64,12 +64,12 @@
     <figure class="tour-item">
         <img src="/i/tours-list/10-hours-in-moscow.jpg" alt="10 hours in Moscow"/>
         <figcaption>
-            <h2>10 hours in Moscow</h2>
-            <div class="price">$227 — 10 hours</div>
+            <h2>Top 20 Must See in Moscow</h2>
+            <div class="price">$197 — 8 hours</div>
             <h3>A cultural plunge into Russian life</h3>
             <div class="buttons-container">
-                <a class="view-button" href="/moscow/tours/10-hours-in-moscow">View tour</a>
-                <a class="book_button" href="/moscow/tours/10-hours-in-moscow/#book">Book tour</a>
+                <a class="view-button" href="/moscow/tours/top-20-must-see-in-moscow">View tour</a>
+                <a class="book_button" href="/moscow/tours/top-20-must-see-in-moscow/#book">Book tour</a>
             </div>
         </figcaption>
     </figure>
