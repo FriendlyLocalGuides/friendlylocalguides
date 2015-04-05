@@ -12,17 +12,27 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
 
-RewriteRule ^moscow/guides/([a-zA-Z0-9_-]+)$ index.php?id=guides&guides=$1 [L]
-RewriteRule ^moscow/guides/([a-zA-Z0-9_-]+)/$ index.php?id=guides&guides=$1 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/guides/([a-zA-Z0-9_-]+)$ index.php?city=$1&id=guides&guides=$2 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/guides/([a-zA-Z0-9_-]+)/$ index.php?city=$1&id=guides&guides=$2 [L]
 
-RewriteRule ^moscow/tours/([a-zA-Z0-9_-]+)$ index.php?id=tours&tours=$1 [L]
-RewriteRule ^moscow/tours/([a-zA-Z0-9_-]+)/$ index.php?id=tours&tours=$1 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/tours/([a-zA-Z0-9_-]+)$ index.php?city=$1&&id=tours&tours=$2 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/tours/([a-zA-Z0-9_-]+)/$ index.php?city=$1&&id=tours&tours=$2 [L]
 
-RewriteRule ^moscow/tours/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?id=tours&tours=$1&thanks=tours [L]
-RewriteRule ^moscow/tours/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/$ index.php?id=tours&tours=$1&thanks=tours [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/tours/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?city=$1&&id=tours&tours=$2&thanks=tours [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/tours/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/$ index.php?city=$1&&id=tours&tours=$2&thanks=tours [L]
 
-RewriteRule ^moscow/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?id=$1&thanks=contact [L]
-RewriteRule ^moscow/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/$ index.php?id=$1&thanks=contact [L]
+#RewriteRule ^moscow/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?id=$1&thanks=contact [L]
+#RewriteRule ^moscow/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/$ index.php?id=$1&thanks=contact [L]
 
-RewriteRule ^moscow/([a-zA-Z0-9_-]+)$ index.php?city=moscow&&id=$1 [L]
-RewriteRule ^moscow/([a-zA-Z0-9_-]+)/$ index.php?city=moscow&&id=$1 [L]
+#RewriteRule ^moscow/([a-zA-Z0-9_-]+)$ index.php?city=moscow&&id=$1 [L]
+#RewriteRule ^moscow/([a-zA-Z0-9_-]+)/$ index.php?city=moscow&&id=$1 [L]
+
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?city=$1&&id=$2 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/$ index.php?city=$1&&id=$2 [L]
+
+
+#RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?id=$1 [L]
+#RewriteRule ^([a-zA-Z0-9_-]+)/$ index.php?id=$1 [L]
+
+RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?city=$1 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/$ index.php?city=$1 [L]

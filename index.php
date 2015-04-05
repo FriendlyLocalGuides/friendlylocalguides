@@ -19,7 +19,6 @@
     <script src="/js/plugins/jquery.cycle2.min.js"></script>
     <script src="/js/plugins/jquery.tools.min.js"></script>
     <script src="/js/plugins/placeholders.min.js"></script>
-    <script src="/js/plugins/fotorama.js"></script>
     <script src="/js/plugins/jquery.cover.js"></script>
     <script src="/js/plugins/jquery.swipebox.js"></script>
     <script src="/js/navigate.js"></script>
@@ -36,11 +35,10 @@
     <link rel="stylesheet" href="/css/navigation.css"/>
     <link rel="stylesheet" href="/css/content.css"/>
     <link rel="stylesheet" href="/css/tours.css"/>
-    <link rel="stylesheet" href="/css/fotorama.css"/>
     <link rel="stylesheet" href="/css/jquery.cover.css"/>
     <link rel="stylesheet" href="/css/swipebox.css"/>
     <link rel="stylesheet" href="/css/css3-styles.css"/>
-    <? include_once 'analyticstracking.php'?>
+<!--    --><?// include_once 'analyticstracking.php'?>
 </head>
 <body>
     <header class="clearfix">
@@ -52,7 +50,7 @@
                 </div>
                 <div class="nav-list_content">
                     <nav class="nav-drop_down">
-                        <a href="/moscow/tours" data-link="tours" class="<? if($id == 'tours') echo 'current'?> tours_item list_item nav-list_item">Tours</a><a data-link="/moscow/guides" class="<? if($id == 'guides') echo 'current'?> guides_item list_item nav-list_item" href="/moscow/guides">Guides</a><a class="<? if($id == 'about') echo 'current'?> list_item nav-list_item"  data-link="about" href="/moscow/about">About</a><a class="list_item blog_link" data-link="blog" href="/blog">Blog</a><a class="<? if($id == 'contact') echo 'current'?> list_item nav-list_item" data-link="contact" href="/moscow/contact">Contact</a>
+                        <a href="/<?=$city?>/tours" data-link="tours" class="<? if($id == 'tours') echo 'current'?> tours_item list_item nav-list_item">Tours</a><a data-link="/<?=$city?>/guides" class="<? if($id == 'guides') echo 'current'?> guides_item list_item nav-list_item" href="/<?=$city?>/guides">Guides</a><a class="<? if($id == 'about') echo 'current'?> list_item nav-list_item"  data-link="about" href="/<?=$city?>/about">About</a><a class="list_item blog_link" data-link="blog" href="/blog">Blog</a><a class="<? if($id == 'contact') echo 'current'?> list_item nav-list_item" data-link="contact" href="/<?=$city?>/contact">Contact</a>
                     </nav>
                 </div>
             </div>

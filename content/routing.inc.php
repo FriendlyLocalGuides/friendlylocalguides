@@ -1,16 +1,28 @@
 <?
 include_once 'get_url.php';
 
-if(!$id){
+if(!$city && !$id){
     include 'mane-page.php';
 }
+/*
+if(!$city && $id){
+    switch($id) {
+        case 'about': include 'about.inc.php'; break;
+        case 'contact': include 'contact.inc.php'; break;
+    }
+}*/
 
+if($city && !$id){
+    switch($city) {
+        case 'moscow': include 'moscow-page.php'; break;
+        case 'saintpetersburg': include 'saintpetersburg-page.php'; break;
+    }
+}
 
 if($city && !$tours && !$guides && !$thanks){
     switch($id){
         case 'guides': include 'guides.inc.php'; break;
         case 'tours': include 'tours.inc.php'; break;
-        case 'reviews': include 'reviews.inc.php'; break;
         case 'about': include 'about.inc.php'; break;
         case 'contact': include 'contact.inc.php'; break;
     }
@@ -47,7 +59,6 @@ if($id == 'guides' && $guides){
         case 'sasha': include 'guides/sasha.inc.php'; break;
         case 'stas': include 'guides/stas.inc.php'; break;
         case 'ksusha': include 'guides/ksusha.inc.php'; break;
-        //case 'masha': include 'guides/masha.inc.php'; break;
     }
 }
 
