@@ -47,6 +47,8 @@ if($id == 'guides' && $guides){
         case 'sasha': include 'guides/sasha.inc.php'; break;
         case 'stas': include 'guides/stas.inc.php'; break;
         case 'ksusha': include 'guides/ksusha.inc.php'; break;
+        case 'katia': include 'guides/katia.inc.php'; break;
+        case 'dasha': include 'guides/dasha.inc.php'; break;
         //case 'masha': include 'guides/masha.inc.php'; break;
     }
 }
