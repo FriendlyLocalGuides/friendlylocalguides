@@ -281,7 +281,7 @@ $(window).load(function(){
     $('.container').on('click touch','.scroll_down_container', function(){
 
         $('html, body').animate({
-            scrollTop: $('.content_box').offset().top
+            scrollTop: $('.content_box, .features').offset().top
         }, 500);
 
     });
