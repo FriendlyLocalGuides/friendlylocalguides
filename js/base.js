@@ -285,7 +285,7 @@ $(window).load(function(){
         }, 500);
 
     })
-    $('.container').on('click touch','.book-tour .scroll_down_container', function(){
+    $('.container').on('click touch','.main-page .scroll_down_container', function(){
 
         $('html, body').animate({
             scrollTop: $('.features').offset().top
