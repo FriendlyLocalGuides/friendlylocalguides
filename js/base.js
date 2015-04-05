@@ -278,13 +278,21 @@ $(window).load(function(){
     //Reviews
     $('.tabs').tabs('.pane');
 
-    $('.container').on('click touch','.scroll_down_container', function(){
+    $('.container').on('click touch','.view_tour .scroll_down_container, .guide_page .scroll_down_container', function(){
 
         $('html, body').animate({
-            scrollTop: $('.content_box, .features').offset().top
+            scrollTop: $('.description_tour, .description ').offset().top
+        }, 500);
+
+    })
+    $('.container').on('click touch','.book-tour .scroll_down_container', function(){
+
+        $('html, body').animate({
+            scrollTop: $('.features').offset().top
         }, 500);
 
     });
+
 
     $('body').on('click touch', 'header .book_button, .header_title .book_button', function(e){
         e.preventDefault();
