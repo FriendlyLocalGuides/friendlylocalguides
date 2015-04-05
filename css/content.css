@@ -385,7 +385,23 @@
     font-weight: bold;
     text-align: center;
 }
+.contact .contact-items{
+    margin-top: 5px;
+}
 
+.contact .contact-items li{
+    margin-bottom: 5px;
+}
+
+.contact .contact-items li strong{
+    font-size: 1.1em;
+}
+
+.contact .contact-items li img{
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+}
 
 .contact.form-container form{
     padding-top: 0;
@@ -608,7 +624,7 @@
 .contact.form-container{
     box-sizing: border-box;
     margin: auto;
-    padding-top: 230px;
+    padding-top: 200px;
     max-width: 595px;
 }
 
@@ -942,7 +958,7 @@
     }
 
     .contact.form-container{
-        padding-top: 230px;
+        padding-top: 200px;
     }
 
     .contact.form-container h5{
