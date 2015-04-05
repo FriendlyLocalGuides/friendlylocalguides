@@ -351,10 +351,12 @@ $(window).load(function(){
                 $country = $(this).siblings('.country-field'),
                 $hotel = $(this).siblings('.hotel-field'),
                 $date = $(this).siblings('.date-field'),
+                $startTime = $(this).siblings('.time-field'),
                 $message = $(this).siblings('.comments-field'),
                 $videoReview = $(this).siblings('.video-field'),
                 nameVal = $name.val(),
                 emailVal = $email.val(),
+                timeVal = $startTime.val(),
                 peopleVal = $num_of_people.val(),
                 countryVal = $country.val(),
                 dateVal = $date.val(),
@@ -374,6 +376,12 @@ $(window).load(function(){
                 $email.addClass("error_field");
             }else{
                 $email.removeClass("error_field");
+            }
+            if(timeVal.length == 0){
+                error = true;
+                $startTime.addClass("error_field");
+            }else{
+                $startTime.removeClass("error_field");
             }
             if(isTourPage && $(this).hasClass('send-review')){
                 e.preventDefault();

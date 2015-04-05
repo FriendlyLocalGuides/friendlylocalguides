@@ -6,10 +6,12 @@
         $price        =   html_entity_decode(trim(strip_tags($_POST['price'])));
         $name         =   "Name: ".trim(strip_tags($_POST['name']));
         $email        =   trim(strip_tags($_POST['email']));
+        $phone        =   "Phone number: ".trim(strip_tags($_POST['phone']));
         $numOfPeople  =   "Number of people: ".trim(strip_tags($_POST['num_of_people']));
         $country      =   "Tourist(s) from: ".trim(strip_tags($_POST['country']));
         $hotel        =   "Hotel pickup: ".trim(strip_tags($_POST['hotel']));
         $date         =   "Date of tour: ".trim(strip_tags($_POST['date']));
+        $startTime    =   "Start time: ".trim(strip_tags($_POST['time']));
         $message      =   "Comment: ".trim(strip_tags($_POST['message']));
 		$result       =   "";
 
@@ -21,7 +23,7 @@
 	        $result = 'contact';
         }else{
             $subject = 'Friendly Local Guides booking';
-            $form_message  = "Tour: $title\nPrice and duration: $price\n$name\nE-mail: $email\n$numOfPeople\n$country\n$hotel\n$date\n$message";
+            $form_message  = "Tour: $title\nPrice and duration: $price\n$name\nE-mail: $email\n$phone\n$numOfPeople\n$country\n$hotel\n$date\n$startTime\n$message";
 	        $result = 'tour';
         }
 
