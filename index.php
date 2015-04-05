@@ -82,7 +82,7 @@
     </article>
     <footer>
         <div class="e-mail">info@friendlylocalguides.com</div>
-        <div class="rights">&copy; Copyright 2015 Friendly Local Guides, LLC. Moscow Private & City Tours. All Rights Reserved</div>
+        <div class="rights">&copy; Copyright 2015 Friendly Local Guides, LLC. Moscow Private Tours. All Rights Reserved</div>
     </footer>
 
 
