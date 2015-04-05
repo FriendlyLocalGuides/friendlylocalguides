@@ -35,29 +35,29 @@ $(window).on('scroll resize orientationchange touchmove', $.debounce(750, functi
 
     $('section').each(function () {
 
+        if(!$(this).hasClass('contact')){
+            slide_top = $(this).offset().top;
 
-        slide_top = $(this).offset().top;
-
-        snap_from = Math.round(slide_top - (snap_range / 2), 2);
-        snap_to = Math.round(slide_top + (snap_range / 2), 2);
+            snap_from = Math.round(slide_top - (snap_range / 2), 2);
+            snap_to = Math.round(slide_top + (snap_range / 2), 2);
 
 
-        if (scroll_position >= snap_from && scroll_position <= snap_to) {
+            if (scroll_position >= snap_from && scroll_position <= snap_to) {
 
-            snap_offset = 0; //e.g. menu bar height
+                snap_offset = 0; //e.g. menu bar height
 
-            scroll_to = $(this).offset().top - snap_offset;
+                scroll_to = $(this).offset().top - snap_offset;
 
-            scroll_diff = scroll_position - scroll_to;
+                scroll_diff = scroll_position - scroll_to;
 
-            if (scroll_diff != "-1") {
+                if (scroll_diff != "-1") {
 
-                $("html, body").animate({scrollTop: scroll_to}, 300, 'linear');
+                    $("html, body").animate({scrollTop: scroll_to}, 300, 'linear');
+
+                }
 
             }
-
         }
-
 
     });
 }));
