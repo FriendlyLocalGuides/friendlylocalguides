@@ -281,14 +281,14 @@ $(window).load(function(){
     $('.container').on('click touch','.view_tour .scroll_down_container, .guide_page .scroll_down_container', function(){
 
         $('html, body').animate({
-            scrollTop: $('.description_tour, .description ').offset().top
+            scrollTop: $('.description_tour, .description, .features ').offset().top
         }, 500);
 
     })
-    $('.container').on('click touch','.main-page .scroll_down_container', function(){
-
+    $('.container').on('click touch','.features .scroll_down_container', function(){
+        console.log('Pis');
         $('html, body').animate({
-            scrollTop: $('.features').offset().top
+            scrollTop: $('.tours-list_new').offset().top //TODO
         }, 500);
 
     });

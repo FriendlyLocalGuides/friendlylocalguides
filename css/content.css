@@ -598,6 +598,16 @@
     overflow: hidden;
     height: calc(100% - 66px);
 }
+/*TODO*/
+.single-title{
+    margin-bottom: 15px;
+    font-family: "Kaushan Script",cursive;
+}
+
+.row{
+    margin-bottom: 50px;
+    overflow: hidden;
+}
 
 .thumb-list{
     text-align: center;
@@ -764,6 +774,7 @@
 /*FEATURES*/
 
 .features{
+    position: relative;
     color: #76869e;
     padding: 160px 10% 50px;
     -webkit-box-sizing: border-box;
@@ -907,6 +918,14 @@
 
 
 @media screen and (max-width:799px){
+    .features .scroll_down{
+        bottom: 10px;
+    }
+
+    .features .scroll_down_text{
+        display: none;
+    }
+
     .sales{
         left: 50%;
         margin-left: -84px;
