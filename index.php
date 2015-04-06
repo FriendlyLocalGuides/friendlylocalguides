@@ -19,7 +19,6 @@
     <script src="/js/plugins/jquery.cycle2.min.js"></script>
     <script src="/js/plugins/jquery.tools.min.js"></script>
     <script src="/js/plugins/placeholders.min.js"></script>
-    <script src="/js/plugins/fotorama.js"></script>
     <script src="/js/plugins/jquery.cover.js"></script>
     <script src="/js/plugins/jquery.swipebox.js"></script>
     <script src="/js/navigate.js"></script>
@@ -36,7 +35,6 @@
     <link rel="stylesheet" href="/css/navigation.css"/>
     <link rel="stylesheet" href="/css/content.css"/>
     <link rel="stylesheet" href="/css/tours.css"/>
-    <link rel="stylesheet" href="/css/fotorama.css"/>
     <link rel="stylesheet" href="/css/jquery.cover.css"/>
     <link rel="stylesheet" href="/css/swipebox.css"/>
     <link rel="stylesheet" href="/css/css3-styles.css"/>
