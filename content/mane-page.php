@@ -54,8 +54,8 @@
                     <div class="price">$157 — 5 hours</div>
                     <h3>The Former Residence of Dukes, Tsars, Emperors, Communist Rulers & Presidents</h3>
                     <div class="buttons-container">
-                        <a class="view-button" href="/moscow/tours/red-square-and-kremlin">View tour</a>
-                        <a class="book_button" href="/moscow/tours/red-square-and-kremlin/#book">Book tour</a>
+                        <a class="view-button" href="/moscow/tours/kremlin-tour-moscow">View tour</a>
+                        <a class="book_button" href="/moscow/tours/kremlin-tour-moscow/#book">Book tour</a>
                     </div>
                 </figcaption>
             </figure>
