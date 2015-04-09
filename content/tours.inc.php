@@ -141,7 +141,7 @@
 	<figure class="tour-item">
 		<img src="/i/tours-list/communist-russia.jpg" alt="Communist Russia"/>
 		<figcaption>
-			<h2>Communist Russia</h2>
+			<h2>Soviet Russia</h2>
             <div class="price">$117 — 3 hours</div>
 			<h3>Who were the Soviet people?</h3>
 			<div class="buttons-container">
