@@ -35,29 +35,29 @@ $(window).on('scroll resize orientationchange touchmove', $.debounce(750, functi
 
     $('section').each(function () {
 
+        if(!$(this).hasClass('contact')){
+            slide_top = $(this).offset().top;
 
-        slide_top = $(this).offset().top;
-
-        snap_from = Math.round(slide_top - (snap_range / 2), 2);
-        snap_to = Math.round(slide_top + (snap_range / 2), 2);
+            snap_from = Math.round(slide_top - (snap_range / 2), 2);
+            snap_to = Math.round(slide_top + (snap_range / 2), 2);
 
 
-        if (scroll_position >= snap_from && scroll_position <= snap_to) {
+            if (scroll_position >= snap_from && scroll_position <= snap_to) {
 
-            snap_offset = 0; //e.g. menu bar height
+                snap_offset = 0; //e.g. menu bar height
 
-            scroll_to = $(this).offset().top - snap_offset;
+                scroll_to = $(this).offset().top - snap_offset;
 
-            scroll_diff = scroll_position - scroll_to;
+                scroll_diff = scroll_position - scroll_to;
 
-            if (scroll_diff != "-1") {
+                if (scroll_diff != "-1") {
 
-                $("html, body").animate({scrollTop: scroll_to}, 300, 'linear');
+                    $("html, body").animate({scrollTop: scroll_to}, 300, 'linear');
+
+                }
 
             }
-
         }
-
 
     });
 }));
@@ -278,13 +278,21 @@ $(window).load(function(){
     //Reviews
     $('.tabs').tabs('.pane');
 
-    $('.container').on('click touch','.scroll_down_container', function(){
+    $('.container').on('click touch','.view_tour .scroll_down_container, .guide_page .scroll_down_container', function(){
 
         $('html, body').animate({
-            scrollTop: $('.content_box').offset().top
+            scrollTop: $('.description_tour, .description, .features ').offset().top
+        }, 500);
+
+    })
+    $('.container').on('click touch','.features .scroll_down_container', function(){
+        console.log('Pis');
+        $('html, body').animate({
+            scrollTop: $('.tours-list_new').offset().top //TODO
         }, 500);
 
     });
+
 
     $('body').on('click touch', 'header .book_button, .header_title .book_button', function(e){
         e.preventDefault();
@@ -351,10 +359,12 @@ $(window).load(function(){
                 $country = $(this).siblings('.country-field'),
                 $hotel = $(this).siblings('.hotel-field'),
                 $date = $(this).siblings('.date-field'),
+                $startTime = $(this).siblings('.time-field'),
                 $message = $(this).siblings('.comments-field'),
                 $videoReview = $(this).siblings('.video-field'),
                 nameVal = $name.val(),
                 emailVal = $email.val(),
+                timeVal = $startTime.val(),
                 peopleVal = $num_of_people.val(),
                 countryVal = $country.val(),
                 dateVal = $date.val(),
@@ -374,6 +384,12 @@ $(window).load(function(){
                 $email.addClass("error_field");
             }else{
                 $email.removeClass("error_field");
+            }
+            if(timeVal.length == 0){
+                error = true;
+                $startTime.addClass("error_field");
+            }else{
+                $startTime.removeClass("error_field");
             }
             if(isTourPage && $(this).hasClass('send-review')){
                 e.preventDefault();

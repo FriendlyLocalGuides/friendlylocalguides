@@ -16,6 +16,20 @@
     </figcaption>
 </figure>
 <figure class="guide-item">
+    <img src="/i/guides-list/dasha.jpg" alt="Dasha"/>
+    <figcaption>
+        <h2>Dasha</h2>
+        <a class="view-button" href="/moscow/guides/dasha">About me</a>
+    </figcaption>
+</figure>
+<figure class="guide-item">
+    <img src="/i/guides-list/katia.jpg" alt="Katia"/>
+    <figcaption>
+        <h2>Katia</h2>
+        <a class="view-button" href="/moscow/guides/katia">About me</a>
+    </figcaption>
+</figure>
+<figure class="guide-item">
     <img src="/i/guides-list/sasha.jpg" alt="Sasha"/>
     <figcaption>
         <h2>Sasha</h2>

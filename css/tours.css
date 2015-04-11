@@ -59,6 +59,8 @@
 
 .tour-item h3,
 .guide-item h3{
+    max-width: none; /*TODO*/
+
     margin-top: 10px;
     font-size: .8em;
     -webkit-transition: all .3s;
