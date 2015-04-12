@@ -5,11 +5,11 @@
             <h3>Private tours of Moscow</h3>
             <div class="slogan">
                 Friendly, Fun & Flexible Local Guides
-                <ul>
-                    <li><a href="/moscow/tours">Moscow</a></li>
-                    <li><a href="/saintpetersburg/tours">Saint Petersburg</a></li>
-                </ul>
             </div>
+            <ul class="buttons-container main-page_btns">
+                <li class="book_button"><a href="/moscow/tours">Moscow</a></li>
+                <li class="book_button"><a href="/saintpetersburg/tours">Saint Petersburg</a></li>
+            </ul>
         </div>
     </div>
     <div class="overlay_view_tour"></div>

@@ -116,8 +116,6 @@ $(function(){
     $header.on('click', '.nav_title', (function() {
         $('.sales').toggleClass('sales-zInd');
         $header.toggleClass("show_nav-list");
-
-        $('.inner-dropdown-submenu').slideUp('fast');
     }));
 
     $header.on('click', '.nav-list_item', (function(){

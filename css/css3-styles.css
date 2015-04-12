@@ -156,7 +156,7 @@ header, footer, .sub_header{
         transition: height .3s;
     }
 
-    .expand_item .nav-drop_down{
+    .expand_item .inner-dropdown-submenu{
         padding-bottom: 0 !important;
         box-shadow: none !important;
         overflow-y: auto;
@@ -180,7 +180,7 @@ header, footer, .sub_header{
         /*visibility: hidden;*/
     }
 
-    .expand_item:hover .nav-drop_down{
+    .expand_item:hover .inner-dropdown-submenu{
         -webkit-transform: translateY(0);
         -moz-transform: translateY(0);
         -ms-transform: translateY(0);
