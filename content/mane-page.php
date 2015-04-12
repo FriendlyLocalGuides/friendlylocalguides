@@ -6,8 +6,8 @@
             <div class="slogan">
                 Friendly, Fun & Flexible Local Guides
                 <ul>
-                    <li><a href="/moscow">Moscow</a></li>
-                    <li><a href="/saintpetersburg">Saint Petersburg</a></li>
+                    <li><a href="/moscow/tours">Moscow</a></li>
+                    <li><a href="/saintpetersburg/tours">Saint Petersburg</a></li>
                 </ul>
             </div>
         </div>

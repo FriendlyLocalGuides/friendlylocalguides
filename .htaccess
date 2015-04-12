@@ -31,8 +31,8 @@ RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?city=$1&&id=$2 [L]
 RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/$ index.php?city=$1&&id=$2 [L]
 
 
-#RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?id=$1 [L]
-#RewriteRule ^([a-zA-Z0-9_-]+)/$ index.php?id=$1 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?id=$1 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/$ index.php?id=$1 [L]
 
 RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?city=$1 [L]
 RewriteRule ^([a-zA-Z0-9_-]+)/$ index.php?city=$1 [L]

@@ -29,6 +29,7 @@
     <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/base.css"/>
+    <link rel="stylesheet" href="/css/font-awesome.css"/>
     <link rel="stylesheet" href="/css/sidebar.css"/>
     <link rel="stylesheet" href="/css/header.css"/>
     <link rel="stylesheet" href="/css/rateit.css"/>
@@ -38,7 +39,7 @@
     <link rel="stylesheet" href="/css/jquery.cover.css"/>
     <link rel="stylesheet" href="/css/swipebox.css"/>
     <link rel="stylesheet" href="/css/css3-styles.css"/>
-<!--    --><?// include_once 'analyticstracking.php'?>
+    <!--    --><?// include_once 'analyticstracking.php'?>
 </head>
 <body>
     <header class="clearfix">
@@ -48,9 +49,34 @@
                 <div class="nav_title">
                     <span class="menu_icon"></span>
                 </div>
-                <div class="nav-list_content">
+                <div class="nav-list_content ">
                     <nav class="nav-drop_down">
-                        <a href="/<?=$city?>/tours" data-link="tours" class="<? if($id == 'tours') echo 'current'?> tours_item list_item nav-list_item">Tours</a><a data-link="/<?=$city?>/guides" class="<? if($id == 'guides') echo 'current'?> guides_item list_item nav-list_item" href="/<?=$city?>/guides">Guides</a><a class="<? if($id == 'about') echo 'current'?> list_item nav-list_item"  data-link="about" href="/<?=$city?>/about">About</a><a class="list_item blog_link" data-link="blog" href="/blog">Blog</a><a class="<? if($id == 'contact') echo 'current'?> list_item nav-list_item" data-link="contact" href="/<?=$city?>/contact">Contact</a>
+                        <div class="dropdown-submenu">
+                            <div data-link="tours" class="expand_item" >
+                                <div class="<? if($id == 'tours') echo 'current'?> tours_item  list_item nav-list_item" >Tours<i class="fa fa-plus"></i></div>
+                                <div class="wrap-dropdown-submenu">
+                                    <div class="inner-dropdown-submenu nav-drop_down">
+                                        <a class="list_item nav-list_item" href="/moscow/tours">Moscow</a>
+                                        <a class="list_item nav-list_item last_item" href="/saintpetersburg/tours">Saint Petersburg</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-submenu">
+                            <div data-link="/<?=$city?>/guides" class="expand_item" >
+                                <div class="<? if($id == 'guides') echo 'current'?> tours_item  list_item nav-list_item" >Guides<i class="fa fa-plus"></i></div>
+                                <div class="wrap-dropdown-submenu">
+                                    <div class="inner-dropdown-submenu nav-drop_down">
+                                        <a class="list_item nav-list_item" href="/moscow/guides">Moscow</a>
+                                        <a class="list_item nav-list_item last_item" href="/saintpetersburg/guides">Saint Petersburg</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<!--                        <a data-link="/--><?//=$city?><!--/guides" class="--><?// if($id == 'guides') echo 'current'?><!-- guides_item list_item nav-list_item" href="/--><?//=$city?><!--/guides">Guides</a>-->
+                        <a class="<? if($id == 'about') echo 'current'?> list_item nav-list_item"  data-link="about" href="/about">About</a>
+                        <a class="list_item blog_link" data-link="blog" href="/blog">Blog</a>
+                        <a class="<? if($id == 'contact') echo 'current'?> list_item nav-list_item" data-link="contact" href="/contact">Contact</a>
                     </nav>
                 </div>
             </div>

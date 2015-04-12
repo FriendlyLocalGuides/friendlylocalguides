@@ -116,6 +116,8 @@ $(function(){
     $header.on('click', '.nav_title', (function() {
         $('.sales').toggleClass('sales-zInd');
         $header.toggleClass("show_nav-list");
+
+        $('.inner-dropdown-submenu').slideUp('fast');
     }));
 
     $header.on('click', '.nav-list_item', (function(){
@@ -126,8 +128,12 @@ $(function(){
         $(this).addClass("current");
 
     }));
-
-
+    if($(window).width() <= 799){
+        $header.find('.expand_item').on('click', function(e){
+            $(this).find('.inner-dropdown-submenu').slideToggle('fast');
+            e.stopPropagation();
+        });
+    }
     /*Sidebar*/
 
     $(".tours_item, .guides_item").click(function(){
@@ -136,11 +142,11 @@ $(function(){
 
     $sidebar.on('click', '.nav_title', function(){
         $sidebar.removeClass("show_section_title").addClass("show_nav-list");
+
     });
 
     $sidebar.find(".nav-list_item").click(function(){
         $sidebar.removeClass("show_nav-list").addClass("show_section_title");
-
     });
 
     setParentOfAppendedList();

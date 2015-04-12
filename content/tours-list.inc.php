@@ -1,10 +1,10 @@
 <section class="content_box tours-list_new  whiten">
 <h1 class="title-of-tours">Choose your unique experience</h1>
-	<div class="sub_title-of-tours">Friendly Local Guides offers Moscow private customized tours starting from 87$. We keep things simple and love meeting new people, so we charge only 20$ for every additional traveller.</div>
+	<div class="sub_title-of-tours">Friendly Local Guides offers Saint Petersburg private customized tours starting from 87$. We keep things simple and love meeting new people, so we charge only 20$ for every additional traveller.</div>
     <figure class="tour-item">
         <img src="/i/tours-list/free-tour.jpg" alt="Moscow Free Walking Tour"/>
         <figcaption>
-            <h2>Moscow Free Tour</h2>
+            <h2>Saint Petersburg Free Tour</h2>
 	        <div class="price">$0 — 2 hours</div>
             <h3>A bit of History, a bit of Culture, and lots of Fun</h3>
             <div class="buttons-container">
@@ -16,7 +16,7 @@
     <figure class="tour-item">
         <img src="/i/tours-list/red-square-and-kremlin.jpg" alt="Red Square & Kremlin"/>
         <figcaption>
-            <h2>Red Square & Kremlin</h2>
+            <h2>Nevskiy Prospekt</h2>
             <div class="price">$157 — 5 hours</div>
             <h3>The Former Residence of Dukes, Tsars, Emperors, Communist Rulers & Presidents</h3>
             <div class="buttons-container">
