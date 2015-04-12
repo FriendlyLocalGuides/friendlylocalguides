@@ -130,6 +130,8 @@ $(function(){
     }));
     if($(window).width() <= 799){
         $header.find('.expand_item').on('click', function(e){
+            //e.preventDefault();
+            $(this).toggleClass('extended').toggleClass('current');
             $(this).find('.inner-dropdown-submenu').slideToggle('fast');
             e.stopPropagation();
         });
