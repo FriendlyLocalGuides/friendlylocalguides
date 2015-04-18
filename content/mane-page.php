@@ -1,5 +1,5 @@
 <div class="main-page">
-    <!--<a class="sales winter-sales sales-zInd" href="/moscow/tours"></a>-->
+    <a class="sales winter-sales sales-zInd" href="/moscow/tours"></a>
     <div class="header_title">
         <div class="header_tour_content">
             <h3>Private tours of Moscow</h3>
