@@ -8,6 +8,9 @@ php_flag short_open_tag On
 RewriteEngine On
 RewriteBase /
 
+RewriteCond %{HTTP_HOST}  ^www.friendlylocalguides.com [nocase]
+RewriteRule ^(.*)         http://friendlylocalguides.com/$1 [last,redirect=301]
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
@@ -21,15 +24,11 @@ RewriteRule ^([a-zA-Z0-9_-]+)/tours/([a-zA-Z0-9_-]+)/$ index.php?city=$1&&id=tou
 RewriteRule ^([a-zA-Z0-9_-]+)/tours/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?city=$1&&id=tours&tours=$2&thanks=tours [L]
 RewriteRule ^([a-zA-Z0-9_-]+)/tours/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/$ index.php?city=$1&&id=tours&tours=$2&thanks=tours [L]
 
-#RewriteRule ^moscow/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?id=$1&thanks=contact [L]
-#RewriteRule ^moscow/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/$ index.php?id=$1&thanks=contact [L]
-
-#RewriteRule ^moscow/([a-zA-Z0-9_-]+)$ index.php?city=moscow&&id=$1 [L]
-#RewriteRule ^moscow/([a-zA-Z0-9_-]+)/$ index.php?city=moscow&&id=$1 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/thanks$ index.php?id=$1&thanks=contact [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/thanks/$ index.php?id=$1&thanks=contact [L]
 
 RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?city=$1&&id=$2 [L]
 RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/$ index.php?city=$1&&id=$2 [L]
-
 
 RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?id=$1 [L]
 RewriteRule ^([a-zA-Z0-9_-]+)/$ index.php?id=$1 [L]

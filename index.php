@@ -39,7 +39,7 @@
     <link rel="stylesheet" href="/css/jquery.cover.css"/>
     <link rel="stylesheet" href="/css/swipebox.css"/>
     <link rel="stylesheet" href="/css/css3-styles.css"/>
-    <!--    --><?// include_once 'analyticstracking.php'?>
+    <? include_once 'analyticstracking.php'?>
 </head>
 <body>
     <header class="clearfix">
@@ -57,7 +57,7 @@
                                 <div class="wrap-dropdown-submenu">
                                     <div class="inner-dropdown-submenu nav-drop_down">
                                         <a class="list_item nav-list_item" href="/moscow/tours">Moscow</a>
-                                        <a class="list_item nav-list_item last_item" href="/saintpetersburg/tours">Saint Petersburg</a>
+                                        <a class="list_item nav-list_item last_item" href="/saint-petersburg/tours">Saint Petersburg</a>
                                     </div>
                                 </div>
                             </div>
@@ -68,7 +68,7 @@
                                 <div class="wrap-dropdown-submenu">
                                     <div class="inner-dropdown-submenu nav-drop_down">
                                         <a class="list_item nav-list_item" href="/moscow/guides">Moscow</a>
-                                        <a class="list_item nav-list_item last_item" href="/saintpetersburg/guides">Saint Petersburg</a>
+                                        <a class="list_item nav-list_item last_item" href="/saint-petersburg/guides">Saint Petersburg</a>
                                     </div>
                                 </div>
                             </div>

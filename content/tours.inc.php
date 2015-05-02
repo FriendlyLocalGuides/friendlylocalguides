@@ -20,8 +20,8 @@
             <div class="price">$157 — 5 hours</div>
             <h3>The Former Residence of Dukes, Tsars, Emperors, Communist Rulers & Presidents</h3>
             <div class="buttons-container">
-                <a class="view-button" href="/<?=$city?>/tours/red-square-and-kremlin">View tour</a>
-                <a class="book_button" href="/<?=$city?>/tours/red-square-and-kremlin/#book">Book tour</a>
+                <a class="view-button" href="/<?=$city?>/tours/kremlin-tour-moscow">View tour</a>
+                <a class="book_button" href="/<?=$city?>/tours/kremlin-tour-moscow/#book">Book tour</a>
             </div>
         </figcaption>
     </figure>
@@ -32,8 +32,8 @@
             <div class="price">$177 — 6 hours</div>
             <h3>A Glimpse of 860 Years of History</h3>
             <div class="buttons-container">
-                <a class="view-button" href="/<?=$city?>/tours/red-square-and-the-city">View tour</a>
-                <a class="book_button" href="/<?=$city?>/tours/red-square-and-the-city/#book">Book tour</a>
+                <a class="view-button" href="/<?=$city?>/tours/red-square-and-city-tour-moscow">View tour</a>
+                <a class="book_button" href="/<?=$city?>/tours/red-square-and-city-tour-moscow/#book">Book tour</a>
             </div>
         </figcaption>
     </figure>
@@ -56,8 +56,8 @@
             <div class="price">$87 — 2 hours</div>
             <h3>Traditional Russian Crafts, Antiques and Souvenirs</h3>
             <div class="buttons-container">
-                <a class="view-button" href="/<?=$city?>/tours/izmailovo">View tour</a>
-                <a class="book_button" href="/<?=$city?>/tours/izmailovo/#book">Book tour</a>
+                <a class="view-button" href="/<?=$city?>/tours/izmailovo-kremlin-tour">View tour</a>
+                <a class="book_button" href="/<?=$city?>/tours/izmailovo-kremlin-tour/#book">Book tour</a>
             </div>
         </figcaption>
     </figure>
@@ -68,8 +68,8 @@
             <div class="price">$197 — 8 hours</div>
             <h3>A cultural plunge into Russian life</h3>
             <div class="buttons-container">
-                <a class="view-button" href="/<?=$city?>/tours/10-hours-in-moscow">View tour</a>
-                <a class="book_button" href="/<?=$city?>/tours/10-hours-in-moscow/#book">Book tour</a>
+                <a class="view-button" href="/<?=$city?>/tours/top-20-must-see-in-moscow">View tour</a>
+                <a class="book_button" href="/<?=$city?>/tours/top-20-must-see-in-moscow/#book">Book tour</a>
             </div>
         </figcaption>
     </figure>
@@ -121,8 +121,8 @@
             <div class="price">$157 — 5 hours</div>
 			<h3>What, Where, How much, How to…</h3>
 			<div class="buttons-container">
-				<a class="view-button" href="/<?=$city?>/tours/airport-pickup-in-moscow">View tour</a>
-				<a class="book_button" href="/<?=$city?>/tours/airport-pickup-in-moscow/#book">Book tour</a>
+				<a class="view-button" href="/<?=$city?>/tours/layover-tour-moscow">View tour</a>
+				<a class="book_button" href="/<?=$city?>/tours/layover-tour-moscow/#book">Book tour</a>
 			</div>
 		</figcaption>
 	</figure>
@@ -145,8 +145,8 @@
             <div class="price">$117 — 3 hours</div>
 			<h3>Who were the Soviet people?</h3>
 			<div class="buttons-container">
-				<a class="view-button" href="/<?=$city?>/tours/communist-russia">View tour</a>
-				<a class="book_button" href="/<?=$city?>/tours/communist-russia/#book">Book tour</a>
+				<a class="view-button" href="/<?=$city?>/tours/soviet-russia-tour">View tour</a>
+				<a class="book_button" href="/<?=$city?>/tours/soviet-russia-tour/#book">Book tour</a>
 			</div>
 		</figcaption>
 	</figure>
