@@ -8,7 +8,7 @@
             </div>
             <ul class="buttons-container main-page_btns">
                 <li class="book_button"><a href="/moscow/tours">Moscow</a></li>
-                <li class="book_button"><a href="/saintpetersburg/tours">Saint Petersburg</a></li>
+                <li class="book_button"><a href="/saint-petersburg/tours">Saint Petersburg</a></li>
             </ul>
         </div>
     </div>
