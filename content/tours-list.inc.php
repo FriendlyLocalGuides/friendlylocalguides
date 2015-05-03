@@ -1,10 +1,10 @@
-<section class="content_box tours-list_new  whiten">
+<section class="content_box tours-list_new whiten">
 <h1 class="title-of-tours">Choose your unique experience</h1>
-	<div class="sub_title-of-tours">Friendly Local Guides offers Saint Petersburg private customized tours starting from 87$. We keep things simple and love meeting new people, so we charge only 20$ for every additional traveller.</div>
+	<div class="sub_title-of-tours">We keep things simple and love meeting new people, so we charge only $20 for every additional traveller.</div>
     <figure class="tour-item">
         <img src="/i/tours-list/free-tour.jpg" alt="Moscow Free Walking Tour"/>
         <figcaption>
-            <h2>Top 20 must see in Saint Petersburg with a friendly guide</h2>
+            <h2>Top 20 must see in SPb</h2>
 	        <div class="price">$197 — 8 hours</div>
             <h3>20 legendary places of Russia’s most alluring city</h3>
             <div class="buttons-container">

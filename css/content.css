@@ -9,6 +9,9 @@
 }
 
 /*TODO*/
+.show-desktop{
+    display: none;
+}
 .sales-zInd{
     transition: z-index 2s;
     z-index: 1000;
@@ -518,6 +521,11 @@
 
 .description_tour ul{
     margin-bottom: 15px;
+}
+
+.list-square-lis{
+    list-style: square;
+    padding-left: 20px;
 }
 
 .description_tour ol{
@@ -1116,6 +1124,12 @@
 }
 
 @media screen and (min-width:800px){
+    .show-mobile{
+        display: none;
+    }
+    .show-desktop{
+        display: inline-block;
+    }
     .features {
         padding-top: 180px;
     }
