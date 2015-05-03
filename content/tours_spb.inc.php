@@ -2,7 +2,7 @@
 <h1 class="title-of-tours">Choose your unique experience</h1>
 	<div class="sub_title-of-tours">We keep things simple and love meeting new people, so we charge only $20 for every additional traveller.</div>
     <figure class="tour-item">
-        <img src="/i/tours-list/free-tour.jpg" alt="Moscow Free Walking Tour"/>
+        <img src="/i/tours-list/top-20-spb.jpg" alt="Moscow Free Walking Tour"/>
         <figcaption>
             <h2>Top 20 must see in SPb</h2>
 	        <div class="price">$197 — 8 hours</div>

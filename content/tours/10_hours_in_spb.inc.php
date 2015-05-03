@@ -22,7 +22,7 @@
 </div>
 <div class="overlay_view_tour"></div>
 <section class="view_tour">
-    <img class="cover-img" src="/i/gallery/tours/10-hours/Kolomenskoe_summer.jpg" alt="Moscow Tours. Kolomenskoe park Moscow" />
+    <img class="cover-img" src="/i/gallery/tours/top-20-spb/Sunset-in-St-Petersburg.jpg" alt="St. Petersburg. Sunset in Saint Petersburg." />
     <div class="scroll_down">
         <div class="scroll_down_container">
             <div class="scroll_down_text">Details</div>
@@ -346,21 +346,21 @@
 </section>
 <section class="blacken gallery">
     <div class="wrap_gallery">
-        <a rel="gallery-1" class="main-image swipebox" href="/i/gallery/tours/10-hours/RedSquare_O2.jpg" title="State Historical Museum on Red Square.">
-            <img src="/i/gallery/tours/10-hours/RedSquare_O2.jpg" alt="Moscow Tours. Kremlin Moscow"/>
+        <a rel="gallery-1" class="main-image swipebox" href="/i/gallery/tours/top-20-spb/Must-see-st-pete.jpg" title="Must see in Saint Petersburg">
+            <img src="/i/gallery/tours/top-20-spb/Must-see-st-pete.jpg" alt="St. Petersburg Tours."/>
         </a>
         <div class="thumb-list">
-            <a rel="gallery-1" class="thumb swipebox" href="/i/gallery/tours/10-hours/Coffee.jpg" title="Coffee on the Tour in a cozy anticafe">
-                <img src="/i/gallery/tours/10-hours/small/Coffee.jpg" alt="Tours of Moscow. Coffee shop in moscow"/>
+            <a rel="gallery-1" class="thumb swipebox" href="/i/gallery/tours/top-20-spb/winter-st-petersburg.jpg" title="Winter in Saint Petersburg">
+                <img src="/i/gallery/tours/top-20-spb/small/winter-st-petersburg.jpg" alt="Something about St. Peteresburg"/>
             </a>
-            <a rel="gallery-1" class="thumb swipebox" href="/i/gallery/tours/10-hours/Catherine_palace.jpg" title="Catherine's Palace in Tsaritsino Park">
-                <img src="/i/gallery/tours/10-hours/small/Catherine_palace.jpg" alt="Private Day Tours Moscow. Tsaritsino"/>
+            <a rel="gallery-1" class="thumb swipebox" href="/i/gallery/tours/top-20-spb/Monument-st-petersburg.jpg" title="Monument in Saint Petersburg">
+                <img src="/i/gallery/tours/top-20-spb/small/Monument-st-petersburg.jpg" alt="Something about St. Peteresburg"/>
             </a>
-            <a rel="gallery-1" class="thumb swipebox" href="/i/gallery/tours/10-hours/Dolgorukiy.jpg" title="Yury Dolroguky, the Founder of Moscow on Tverskaya street">
-                <img src="/i/gallery/tours/10-hours/small/Dolgorukiy.jpg" alt="Moscow Tours. Yury Dolroguky founder of Moscow"/>
+            <a rel="gallery-1" class="thumb swipebox" href="/i/gallery/tours/top-20-spb/Cathedral-in-St-Petersburg.jpg" title="Cathedral in Saint Petersburg">
+                <img src="/i/gallery/tours/top-20-spb/small/Cathedral-in-St-Peteresburg.jpg" alt="Something about St. Peteresburg"/>
             </a>
-            <a rel="gallery-1" class="thumb swipebox" href="/i/gallery/tours/10-hours/Ksusha.jpg" title="Coffee Break in a Local Café ?Brusnika? (Bilberry)">
-                <img src="/i/gallery/tours/10-hours/small/Ksusha.jpg" alt="Moscow Tour. Private Guide in Moscow"/>
+            <a rel="gallery-1" class="thumb swipebox" href="/i/gallery/tours/top-20-spb/Autumn-in-st-petersburg.jpg" title="Autumn in Saint Petersburg">
+                <img src="/i/gallery/tours/top-20-spb/small/Autumn-in-st-petersburg.jpg" alt="Something about St. Peteresburg"/>
             </a>
         </div>
     </div>

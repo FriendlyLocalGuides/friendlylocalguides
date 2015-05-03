@@ -1,10 +1,10 @@
 <div class="main-page">
-    <a class="sales winter-sales sales-zInd" href="/moscow/tours"></a>
+    <a class="sales winter-sales sales-zInd" href="/blog/moscow-tours-ultimate-russian-art-and-culture-experience"></a>
     <div class="header_title">
         <div class="header_tour_content">
-            <h3>Private tours of Moscow</h3>
+            <h3>Fun Private tours</h3>
             <div class="slogan">
-                Friendly, Fun & Flexible Local Guides
+                Make a local friend
             </div>
             <ul class="buttons-container main-page_btns">
                 <li class="book_button"><a href="/moscow/tours">Moscow</a></li>
@@ -24,7 +24,7 @@
     </section>
     <section class="features">
         <div class="heading-features">
-            <h4>Our Advantages</h4>
+            <h4>What you get</h4>
             <div class="decor">
                 <div class="decor-circle"></div>
             </div>
