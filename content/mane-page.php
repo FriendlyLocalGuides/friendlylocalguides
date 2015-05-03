@@ -1,11 +1,15 @@
 <div class="main-page">
-    <!--<a class="sales winter-sales sales-zInd" href="/moscow/tours"></a>-->
+    <a class="sales winter-sales sales-zInd" href="/blog/moscow-tours-ultimate-russian-art-and-culture-experience"></a>
     <div class="header_title">
         <div class="header_tour_content">
-            <h3>Private tours of Moscow</h3>
+            <h3>Fun Private tours</h3>
             <div class="slogan">
-                Friendly, Fun & Flexible Local Guides
+                Make a local friend
             </div>
+            <ul class="buttons-container main-page_btns">
+                <li class="book_button"><a href="/moscow/tours">Moscow</a></li>
+                <li class="book_button"><a href="/saint-petersburg/tours">Saint Petersburg</a></li>
+            </ul>
         </div>
     </div>
     <div class="overlay_view_tour"></div>
@@ -13,29 +17,29 @@
         <img class="cover-img" src="/i/gallery/tours/rsk/Christ-winter.jpg" alt="Kremlin Tours. Kremlin Tour. Kremlin."/>
         <div class="scroll_down">
             <div class="scroll_down_container">
-                <div class="scroll_down_text">Top 10 features</div>
+                <div class="scroll_down_text">Top 10 Advantages</div>
                 <div class="scroll_down_icon"></div>
             </div>
         </div>
     </section>
     <section class="features">
         <div class="heading-features">
-            <h4>Top 10 Features</h4>
+            <h4>What you get</h4>
             <div class="decor">
                 <div class="decor-circle"></div>
             </div>
         </div>
         <ul class="list-of-features">
-            <li class="feature-1"><span>Your local friend in the city</span></li>
-            <li class="feature-2"><span>Unique local experience</span></li>
-            <li class="feature-3"><span>Only $20 for an additional traveler</span></li>
-            <li class="feature-4"><span>Scenic spots that can be treasured for a lifetime</span></li>
-            <li class="feature-5"><span>Flexibility during the tour:  changes can be made at any time to suit your individual preferences</span></li>
-            <li class="feature-6"><span>Customized & private tours</span></li>
-            <li class="feature-7"><span>Bonuses on some tours</span></li>
-            <li class="feature-8"><span>Good value for taxi and hotels (on demand)</span></li>
-            <li class="feature-9"><span>Amazing deals for breakfast & lunch in the very best cafes & restaurants</span></li>
-            <li class="feature-10"><span>Expert local advice on things to do and how to make the most of your stay in the city</span></li>
+            <li class="feature-1"><span>Your local friend in the city.</span></li>
+            <li class="feature-2"><span>Unique local experience.</span></li>
+            <li class="feature-3"><span>Only $20 for an additional traveler.</span></li>
+            <li class="feature-4"><span>Scenic spots that can be treasured for a lifetime.</span></li>
+            <li class="feature-5"><span>Flexibility during the tour:  changes can be made at any time to suit your individual preferences.</span></li>
+            <li class="feature-6"><span>Customized & private Moscow tours</span></li>
+            <li class="feature-7"><span>Great bonuses with some tours.</span></li>
+            <li class="feature-8"><span>Good value for taxi and hotels (on demand).</span></li>
+            <li class="feature-9"><span>Amazing breakfast & lunch deals in the very best cafes & restaurants in Moscow.</span></li>
+            <li class="feature-10"><span>Expert local advice on things to do and how to make the most of your stay in the city.</span></li>
         </ul>
         <div class="scroll_down">
             <div class="scroll_down_container">
@@ -52,7 +56,7 @@
                 <figcaption>
                     <h2>Red Square & Kremlin</h2>
                     <div class="price">$157 — 5 hours</div>
-                    <h3>The Former Residence of Dukes, Tsars, Emperors, Communist Rulers & Presidents</h3>
+                    <h3>The former residence of Dukes, Tsars, Emperors, Communist Rulers & Presidents</h3>
                     <div class="buttons-container">
                         <a class="view-button" href="/moscow/tours/kremlin-tour-moscow">View tour</a>
                         <a class="book_button" href="/moscow/tours/kremlin-tour-moscow/#book">Book tour</a>
@@ -75,7 +79,7 @@
                 <img src="/i/tours-list/3-days-in-moscow.jpg" alt="3-days-in-moscow"/>
                 <!--<div class="sale-small"></div>-->
                 <figcaption>
-                    <h2>3 days in Moscow </h2>
+                    <h2>Moscow in 3 Days</h2>
                     <div class="price"><!--<span class="discount">-->$357<!--</span>--> — (5 hours each day)</div>
                     <h3>You’re almost a local! </h3>
                     <div class="buttons-container">
@@ -113,7 +117,7 @@
                 <img src="/i/top-list/article-3.jpg" alt="3-days-in-moscow"/>
                 <!--<div class="sale-small"></div>-->
                 <figcaption>
-                    <h2>Moscow Tours: Kremlin Tour </h2>
+                    <h2>Kremlin Tour</h2>
                     <h3>Let’s peep into our Kremlin Tour and find out what makes the Kremlin #1 building in Russia. </h3>
                     <div class="buttons-container">
                         <a class="view-button" href="/blog/red-square-the-kremlin/">Read more</a>

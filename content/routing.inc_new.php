@@ -21,9 +21,9 @@ if($id == 'tours' && $tours && $thanks || $id == 'contact' && $thanks){
 }
 
 if($id == 'tours' && $tours && !$thanks){
-//    switch($tours){
-        include 'tour_page_template.php';
-        /*case 'free-tour': include 'tours/free_tour.inc.php'; break;
+    switch($tours){
+//        include 'tour_page_template.php';
+        case 'free-tour': include 'tours/free_tour.inc.php'; break;
         case 'red-square-and-kremlin': include 'tours/rsk.inc.php'; break;
         case 'red-square-and-the-city': include 'tours/red_square_and_the_city.inc.php'; break;
         case 'going-out-in-moscow': include 'tours/going_out_in_moscow.inc.php'; break;
@@ -36,8 +36,8 @@ if($id == 'tours' && $tours && !$thanks){
         case 'russia-in-cold-war': include 'tours/russia_in_cold_war.inc.php'; break;
         case 'communist-russia': include 'tours/communist_russia.inc.php'; break;
         case 'photo-tour-of-moscow': include 'tours/photo_tour.inc.php'; break;
-        case 'bike-tour-in-moscow': include 'tours/bike_tour.inc.php'; break;*/
-//    }
+        case 'bike-tour-in-moscow': include 'tours/10_hours_in_spb.inc.php'; break;
+    }
 }
 
 if($id == 'guides' && $guides){

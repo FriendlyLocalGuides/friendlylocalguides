@@ -13,7 +13,12 @@
     zoom: 1;
 }
 /*---END OF CLEARFIX---*/
-
+.xdebug-error, .xe-fatal-error{
+    position: relative;
+    top: 150px;
+    font-size: 16px;
+    color: #000;
+}
 html{
     height: 100%;
     font-size: 100%;

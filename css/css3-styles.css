@@ -27,6 +27,8 @@ header, footer, .sub_header{
 
 /*---END OF BUG FIX---*/
 
+
+
 @media screen and (max-width:799px){
     
     /*SIDEBAR*/
@@ -54,7 +56,8 @@ header, footer, .sub_header{
         transition: opacity .2s, visibility .2s;
     }
 
-    .nav-list .nav-drop_down{
+    .nav-list .nav-drop_down,
+    .expand_item .nav-drop_down{
         -webkit-transform: translateY(-100%);
         -moz-transform: translateY(-100%);
         -ms-transform: translateY(-100%);
@@ -78,7 +81,8 @@ header, footer, .sub_header{
             transform 200ms linear;
     }
 
-    .show_nav-list .nav-drop_down{
+    .show_nav-list .nav-drop_down,
+    .expand_item:hover .nav-drop_down{
         -webkit-transform: translateY(0);
         -moz-transform: translateY(0);
         -ms-transform: translateY(0);
@@ -141,4 +145,60 @@ header, footer, .sub_header{
         transition: opacity .5s;
     }
 
+
+    .wrap-dropdown-submenu{
+        width: 182px;
+        height: 0;
+        -webkit-transition: height .3s;
+        -moz-transition: height .3s;
+        -ms-transition: height .3s;
+        -o-transition: height .3s;
+        transition: height .3s;
+    }
+
+    .expand_item .inner-dropdown-submenu{
+        padding-bottom: 0 !important;
+        box-shadow: none !important;
+        overflow-y: auto;
+        /*height: 0;*/
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
+        transform: translateY(-100%);
+
+        -webkit-transition:  visibility 0s linear 200ms,   -webkit-transform 200ms linear, opacity .3s;
+        -moz-transition: visibility 0s linear 200ms, -moz-transform 200ms linear;
+        -ms-transition: visibility 0s linear 200ms,
+        -ms-transform 200ms linear;
+        -o-transition: visibility 0s linear 200ms,
+        -o-transform 200ms linear;
+        transition:
+        visibility 0s linear 200ms,
+        transform 200ms linear, opacity .2s;
+        /*visibility: hidden;*/
+    }
+
+    .expand_item:hover .inner-dropdown-submenu{
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+
+        /*-webkit-transition-delay: 0s;
+        -moz-transition-delay: 0s;
+        -ms-transition-delay: 0s;
+        -o-transition-delay: 0s;
+        transition-delay: 0s;*/
+        visibility: visible;
+        /*height: 100%;*/
+        opacity: 1;
+    }
+
+
+    .expand_item:hover .wrap-dropdown-submenu{
+        height: 100%;
+    }
 }

@@ -163,7 +163,49 @@ nav a{
 }
 
 @media screen and (max-width:799px){
+    .expand_item{
+        position: relative;
+    }
+    .dropdown-submenu .tours_item{
+        position: relative;
+    }
 
+    .expand_item .fa{
+        display: block;
+        opacity: .8;
+        font-size: 20px;
+        /*font-weight: bold;*/
+        position: absolute;
+        top:50%;
+        margin-top: -8px;
+        left:30px;
+        -webkit-transition: transform .5s;
+        -moz-transition: transform .5s;
+        -ms-transition: transform .5s;
+        -o-transition: transform .5s;
+        transition: transform .5s;
+    }
+    .expand_item.extended .fa{
+        transform: rotate(45deg);
+    }
+    .inner-dropdown-submenu{
+        /*box-shadow: 0 0 20px rgba(0,0, 0, .5);*/
+        display: none;
+        padding-bottom: 0 !important;
+        box-shadow: none !important;
+    }
+    .inner-dropdown-submenu .list_item:last-child{
+        box-shadow: none !important;
+    }
+    .inner-dropdown-submenu .nav-list_item{
+        font-size: 14px;
+        line-height: 42px !important;
+        height: 44px !important;
+        font-weight: bold;
+    }
+    .inner-dropdown-submenu .nav-list_item:last-child{
+        border-bottom: 1px solid rgba(255, 255, 255, .4) !important;
+    }
     .navigation{
         z-index: 1;
     }
@@ -340,6 +382,8 @@ nav a{
     /*---end of sidebar header---*/
 
     .nav-list .list_item{
+        cursor: pointer;
+        text-transform: uppercase;
         background: rgba(0, 0, 0, 0.8);
         border-bottom: 1px solid rgba(255, 255, 255, .4);
     }
@@ -380,7 +424,7 @@ nav a{
 
     .nav-list .nav-list_item, .blog_link{
         height: 50px;
-        line-height: 48px;
+        line-height: 51px;
         display: block;
     }
 }

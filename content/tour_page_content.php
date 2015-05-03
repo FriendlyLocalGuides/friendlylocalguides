@@ -5,7 +5,7 @@ try {
 catch(PDOException $e) {
     echo $e->getMessage();
 }
-$sql_tour = "select * from tours where url = '$currentPage'";
+$sql_tour = "select * from tours where url = '$currentPage' AND city = '$city'";
 foreach ($dbh->query($sql_tour) as $row){
     $titleTour = $row['title'];
     $subtitleTour = $row['subtitle'];

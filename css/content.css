@@ -3,11 +3,15 @@
     position: absolute;
     width: 149px;
     height: 169px;
-    background: url("../i/special/sale.png") no-repeat;
+    /*background: url("../i/special/sale.png") no-repeat;*/
+    background: url("../i/special/free-coffee.png") no-repeat;
     z-index: 100;
 }
 
 /*TODO*/
+.show-desktop{
+    display: none;
+}
 .sales-zInd{
     transition: z-index 2s;
     z-index: 1000;
@@ -519,6 +523,11 @@
     margin-bottom: 15px;
 }
 
+.list-square-lis{
+    list-style: square;
+    padding-left: 20px;
+}
+
 .description_tour ol{
     padding-left: 35px;
 }
@@ -911,7 +920,6 @@
 @media screen and (max-width:325px){
     .main-page h3{
         margin-top: 50px;
-        max-width: 190px;
     }
 
 }
@@ -927,9 +935,12 @@
     }
 
     .sales{
+        width: 95px;
+        height: 95px;
         left: 50%;
-        margin-left: -84px;
-        top: 118px;
+        margin-left: -50px;
+        top: 140px;
+        background: url("../i/special/free-coffe-small.png") no-repeat;
     }
 
     .scroll-navigate{
@@ -1112,9 +1123,16 @@
 }
 
 @media screen and (min-width:800px){
+    .show-mobile{
+        display: none;
+    }
+    .show-desktop{
+        display: inline-block;
+    }
     .features {
         padding-top: 180px;
     }
+
     .heading-features .decor:before{
         right: 52%;
     }
@@ -1129,8 +1147,8 @@
     }
 
     .sales{
-        right: 90px;
-        top: 90px;
+        right: 35px;
+        top: 120px;
     }
 
     .scroll-navigate{
@@ -1189,10 +1207,6 @@
 }
 
 @media screen and (min-width:960px){
-    .sales{
-        right: 115px;
-        top: 105px;
-    }
     .header_tour_content{
         margin: 0 auto 20px;
         max-width: 700px;

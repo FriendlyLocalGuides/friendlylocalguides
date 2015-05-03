@@ -295,12 +295,13 @@ $(window).load(function(){
 
 
     $('body').on('click touch', 'header .book_button, .header_title .book_button', function(e){
-        e.preventDefault();
+        if(!$(this).parent().hasClass('main-page_btns')){
+            e.preventDefault();
 
-        $('html, body').animate({
-            scrollTop: $('.book-tour').offset().top
-        }, 500);
-
+            $('html, body').animate({
+                scrollTop: $('.book-tour').offset().top
+            }, 500);
+        }
     });
 
 

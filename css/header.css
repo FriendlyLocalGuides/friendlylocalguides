@@ -292,7 +292,6 @@ header .price{
         height: 100px;
     }
 
-
     .duration{
         position: absolute;
         font-size: 13px;
@@ -317,6 +316,8 @@ header .price{
     }
 
     .navigation .list_item{
+        cursor: pointer;
+        text-transform: uppercase;
         font-size: 1.1em;
         margin-right: 15px;
         display: inline-block;
@@ -376,6 +377,84 @@ header .price{
         color: #fff;
     }
 
+
+    /*Drop-down sub menu*/ /*TODO*/
+
+    .dropdown-submenu{
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-submenu .tours_item{
+        position: relative;
+    }
+
+    .expand_item{
+        margin-right: 20px;
+    }
+
+    .expand_item .list_item{
+        margin-right: 0 !important;
+    }
+
+    .navigation .dropdown-submenu .list_item:last-child{
+        margin-right: 20px;
+    }
+
+    .dropdown-submenu .fa{
+        display: none;
+    }
+
+    .inner-dropdown-submenu{
+        left:0;
+        /*top:100%;*/
+        position: absolute;
+        /*display: none;*/
+    }
+
+    .show_sub-header .inner-dropdown-submenu{
+        /*display: none;*/
+    }
+
+
+
+    .inner-dropdown-submenu .list_item{
+        font-size: 15px;
+        box-sizing: border-box;
+        width: 100%;
+        padding:  5px 15px;
+        text-align: left;
+        display: block;
+        line-height: 2.5;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, .5);
+    }
+
+    .white_theme .inner-dropdown-submenu .list_item{
+        border-bottom: 1px solid rgba(0, 0, 0, .5);
+    }
+
+    .inner-dropdown-submenu .nav-list_item:last-child{
+        border-bottom: none;
+    }
+    .wrap-dropdown-submenu{
+        position: absolute;
+        overflow: hidden;
+        top: 100%;
+        left: -20px;
+        padding: 0 20px;
+    }
+    .inner-dropdown-submenu{
+        background-color: rgba(0, 0, 0, .7);
+        left:20px;
+    }
+
+    .white_theme .wrap-dropdown-submenu .inner-dropdown-submenu{
+        background-color: rgba(255, 255, 255, .9);
+        /*box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1) !important;*/
+        box-shadow: 0 3px 3px rgba(0, 0, 0, .2) !important;
+    }
+
 }
 
 
@@ -412,11 +491,9 @@ header .price{
         margin: 16px 43px 10px 15px;
     }
 
-
     .social_links{
         top: 40px;
     }
-
 
     .cart{
         top: 65px;
@@ -431,6 +508,20 @@ header .price{
         font-size: 15px;
         line-height: 18px;
     }
+
+    /*Drop-down sub menu*/ /*TODO*/
+    .inner-dropdown-submenu .list_item{
+        font-size: 15px;
+        box-sizing: border-box;
+        width: 100%;
+        padding:  5px 15px;
+        text-align: left;
+        display: block;
+        line-height: 2.5;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, .5);
+    }
+
 }
 
 

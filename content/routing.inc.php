@@ -1,16 +1,19 @@
 <?
 include_once 'get_url.php';
 
-if(!$id){
+if(!$city && !$id){
     include 'mane-page.php';
 }
 
+if($city && $id == 'tours' && !$tours){
+    switch($city) {
+        case 'moscow': include 'tours_moscow.inc.php'; break;
+        case 'saint-petersburg': include 'tours_spb.inc.php'; break;
+    }
+}
 
-if($city && !$tours && !$guides && !$thanks){
+if($id && !$tours && !$guides && !$thanks){
     switch($id){
-        case 'guides': include 'guides.inc.php'; break;
-        case 'tours': include 'tours.inc.php'; break;
-        case 'reviews': include 'reviews.inc.php'; break;
         case 'about': include 'about.inc.php'; break;
         case 'contact': include 'contact.inc.php'; break;
     }
@@ -20,24 +23,16 @@ if($id == 'tours' && $tours && $thanks || $id == 'contact' && $thanks){
     include 'thanks.php';
 }
 
-if($id == 'tours' && $tours && !$thanks){
-//    switch($tours){
+if($city && $id == 'tours' && $tours && !$thanks){
         include 'tour_page_template.php';
-        /*case 'free-tour': include 'tours/free_tour.inc.php'; break;
-        case 'red-square-and-kremlin': include 'tours/rsk.inc.php'; break;
-        case 'red-square-and-the-city': include 'tours/red_square_and_the_city.inc.php'; break;
-        case 'going-out-in-moscow': include 'tours/going_out_in_moscow.inc.php'; break;
-        case 'izmailovo': include 'tours/izmailovo.inc.php'; break;
-        case '10-hours-in-moscow': include 'tours/10_hours_in_moscow.inc.php'; break;
-        case '2-days-in-moscow': include 'tours/2_days_in_moscow.inc.php'; break;
-        case '3-days-in-moscow': include 'tours/3_days_in_moscow.inc.php'; break;
-        case 'moscow-at-night': include 'tours/moscow_at_night.inc.php'; break;
-        case 'airport-pickup-in-moscow': include 'tours/airport_pickup_in_moscow.inc.php'; break;
-        case 'russia-in-cold-war': include 'tours/russia_in_cold_war.inc.php'; break;
-        case 'communist-russia': include 'tours/communist_russia.inc.php'; break;
-        case 'photo-tour-of-moscow': include 'tours/photo_tour.inc.php'; break;
-        case 'bike-tour-in-moscow': include 'tours/bike_tour.inc.php'; break;*/
-//    }
+}
+
+if($city && $id == 'guides' && !$guides){
+    switch($city) {
+        case 'moscow': include 'guides_moscow.inc.php'; break;
+        case 'saint-petersburg': include 'guides_spb.inc.php'; break;
+    }
+
 }
 
 if($id == 'guides' && $guides){
@@ -49,6 +44,7 @@ if($id == 'guides' && $guides){
         case 'ksusha': include 'guides/ksusha.inc.php'; break;
         case 'katia': include 'guides/katia.inc.php'; break;
         case 'dasha': include 'guides/dasha.inc.php'; break;
+        case 'alexandra': include 'guides/alexandra_pl.inc.php'; break;
         //case 'masha': include 'guides/masha.inc.php'; break;
     }
 }
