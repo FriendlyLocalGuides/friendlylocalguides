@@ -5,7 +5,7 @@
     include_once 'content/header.inc.php';
 ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<html>
 <head>
     <title><?=$title?></title>
     <meta content="width=device-width" name="viewport">
