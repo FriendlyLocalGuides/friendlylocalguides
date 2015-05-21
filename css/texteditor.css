@@ -1,0 +1,9 @@
+.text-editor{
+    max-width: 650px;
+    margin: auto;
+    padding: 25px 0;
+}
+
+.Editor-container{
+    margin-bottom: 10px;
+}
