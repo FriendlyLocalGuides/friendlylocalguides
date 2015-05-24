@@ -25,13 +25,14 @@
         <link rel="stylesheet" href="/css/tours.css"/>
         <script type="text/javascript">
             $(document).ready( function() {
-
-                $("#txtEditor").Editor();
-                var description;
+                var texteditor = $("#txtEditor").Editor(),
+                    $textarea = $("#txtEditorContent"),
+                    description;
                 $('#add-tour').on('click', function(e){
                     e.preventDefault();
                     description =  $("#txtEditor").Editor('getText');
-                    $("#txtEditor").val(description);
+                    $textarea.val(description);
+                    console.log($textarea.val());
                     $.post(
                         "/content/tour-creator.php",
                         $("#tour-form").serialize(),function(result){
@@ -55,7 +56,8 @@
                     <input class="form-control" type="text" name="subtitle" placeholder="subtitle"/>
                     <input class="form-control" type="text" name="price" placeholder="price"/>
                     <input type="file" name="price" placeholder="Splash Screen"/>
-                    <textarea id="txtEditor" name="description"></textarea>
+                    <textarea id="txtEditor"></textarea>
+                    <textarea id="txtEditorContent" name="description" hidden="hidden"></textarea>
                     <ul id="tour-gallery" class="list-unstyled">
                         <li>
                             <input type="file" name="picture" placeholder="Picture"/>
