@@ -17,10 +17,8 @@
         <script src="//code.jquery.com/jquery-2.1.0.min.js"></script>
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
         <script src="/ckeditor/ckeditor.js"></script>
-
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
-        <link href="/line-control/editor.css" type="text/css" rel="stylesheet"/>
         <link rel="stylesheet" href="/css/texteditor.css"/>
         <link rel="stylesheet" href="/css/tours.css"/>
         <script type="text/javascript">
@@ -31,10 +29,7 @@
                     $title_long_txt = $title_long_container.find('.too_long_title'),
                     $title = $('.title'),
                     $title_long = $('.title-long'),
-                    $title_for_sending = $('.title-for-sending'),
-                    PATH_FILE_UPLOAD = '/i/tours/',
-                    $splash_screen_value = $('input[name=splashscreen]').val(),
-                    $splash_screen_el = $('.splash-screen');
+                    $title_for_sending = $('.title-for-sending');
 
 
                 function title(){
@@ -46,15 +41,11 @@
                     }
                 }
 
-                function uploadPhoto(){
-                    $splash_screen_el.attr('src', $splash_screen_value);
-                    console.log($splash_screen_el);
-                }
 
                 $('#add-tour').on('click', function(e){
                     e.preventDefault();
                     title();
-                    uploadPhoto();
+//                    uploadPhoto();
                     CKEDITOR.instances.txtEditor.updateElement();
                     $.post(
                         "/content/tour-creator.php",
@@ -64,6 +55,42 @@
                     );
                 });
             });
+
+            function sendFile(file) {
+                var uri = "../image_uploader.php";
+                var xhr = new XMLHttpRequest();
+                var fd = new FormData();
+
+                xhr.open("POST", uri, true);
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        // Handle response.
+                        alert(xhr.responseText); // handle response.
+                    }
+                };
+
+                fd.append('myFile', file);
+                // Initiate a multipart/form-data upload
+                xhr.send(fd);
+            }
+
+            window.onload = function() {
+                var dropzone = document.getElementById("cover_image");
+                dropzone.ondragover = dropzone.ondragenter = function(event) {
+                    event.stopPropagation();
+                    event.preventDefault();
+                }
+
+                dropzone.ondrop = function(event) {
+                    event.stopPropagation();
+                    event.preventDefault();
+
+                    var filesArray = event.dataTransfer.files;
+                    for (var i=0; i<filesArray.length; i++) {
+                        sendFile(filesArray[i]);
+                    }
+                }
+            }
         </script>
     </head>
     <body>
@@ -75,7 +102,7 @@
                 <div class="input-groups">
                     <input class="form-control" type="text" name="city" placeholder="City"/>
                     <input class="form-control" type="text" name="link" placeholder="Link to the tour"/>
-                    <input type="file" name="coverimg" />
+                    <input id="cover_image" type="file" name="cover_image" />
                     <input class="form-control title" type="text" placeholder="Title of the tour"/>
                     <input class="form-control title-long" type="text" placeholder="Second part of the title if it's too long"/>
                     <input class="title-for-sending" type="text" name="title" hidden="hidden"/>
