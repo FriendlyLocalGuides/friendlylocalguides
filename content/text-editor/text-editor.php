@@ -42,6 +42,85 @@
                 }
 
 
+
+                var imgDir,
+                    coverImgName,
+                    galleryImgsNames = [];
+
+                var cover_img = document.getElementById('cover_image');
+
+                cover_img.addEventListener('change', function(){
+                    coverImgName = this.files[0].name;
+                    for(var i = 0, numFiles = this.files.length; i < numFiles; i++){
+                        imgDir.push(this.files[i].name);
+                    }
+                }, false);
+
+                /*cover_img.addEventListener('change', function(){
+                    for(var i = 0, numFiles = this.files.length; i < numFiles; i++){
+                        imgDir.push(this.files[i].name);
+                    }
+                }, false);*/
+
+
+                function picsCreator(){
+                    /*var img = document.createElement('img');
+                    img.className = 'splash-screen';
+                    img.src = imgDir + '/' + coverImgName;*/
+
+                    var $gallery = $('.wrap_gallery'),
+                        $mainImage = $gallery.find('.main-image'),
+                        $mainImageLink = $mainImage.find('img'),
+                        $tumbList = $gallery.find('.thumb-list'),
+                        tumb = '<a rel="gallery-1" class="thumb swipebox" href="" title="">' +
+                                    '<img src="" alt=""/>' +
+                                '</a>',
+                        $tumbImg = $gallery.find('img'),
+//                        $addTumb = $('.add-tumb').last(),
+                        $tour_gallery_list = $('#tour-gallery'),
+                        tour_gallery_item ='<li data-img="">'+
+                                                '<input type="file" name="picture" placeholder="Picture"/>'+
+                                                '<input class="form-control title" type="text" placeholder="Title"/>'+
+                                                '<input class="form-control alt" type="text" placeholder="Alt"/>'+
+                                                '<div class="add-tumb">Add picture</div>'+
+                                            '</li>',
+                        $tour_gallery_file = $tour_gallery_list.find('input:file'),
+                        altText = $tour_gallery_list.find('.alt'),
+                        titleText = $tour_gallery_list.find('.title'),
+
+
+                        src = $tour_gallery_file[0].name;
+
+
+                    $mainImage.attr({
+                        src: src,
+                        alt: altText
+                    });
+                    $mainImageLink.attr({
+                        href: src,
+                        title: titleText
+                    });
+
+
+                    var count = 0;
+                    $tour_gallery_list.each(function(){
+
+                        var $addTumb = $(this).find('.add-tumb').last();
+
+                        $tour_gallery_list.on('click',$addTumb, function(){
+
+                            $tumbList.last().append(tumb);
+                            $tour_gallery_list.last().append(tour_gallery_item);
+                            $(tour_gallery_item).last().attr('data-img', 3);
+                            $addTumb = $(this).find('.add-tumb').last();
+                            console.log($addTumb[0]);
+                        });
+                    });
+
+
+                }
+                picsCreator();
+
                 $('#add-tour').on('click', function(e){
                     e.preventDefault();
                     title();
@@ -54,6 +133,10 @@
                         }
                     );
                 });
+                $(document).on('change', '#cover_image:file', function(){
+                    console.log($(this)[0].files[0].name);
+                });
+
             });
 
             function sendFile(file) {
@@ -68,7 +151,6 @@
                         alert(xhr.responseText); // handle response.
                     }
                 };
-
                 fd.append('myFile', file);
                 // Initiate a multipart/form-data upload
                 xhr.send(fd);
@@ -95,8 +177,18 @@
     </head>
     <body>
         <section>
+            <div class="wrap_gallery" hidden="hidden">
+                <a rel="gallery-1" class="main-image swipebox" href="/i/gallery/tours/free/Nikolskaya.jpg" title="Probably most Iconic View in Moscow from Nikolskaya street">
+                    <img src="/i/gallery/tours/free/Nikolskaya.jpg" alt="Moscow Free Walking Tour. Kazan Cathedral. Red Square"/>
+                </a>
+                <div class="thumb-list">
+                    <a rel="gallery-1" class="thumb swipebox" href="/i/gallery/tours/free/Masha_Tverskaya.jpg" title="Friendly Local Guide and the Founder of Moscow – Yury Dolgorukiy">
+                        <img src="/i/gallery/tours/free/small/Masha_Tverskaya.jpg" alt="Moscow Free Walking Tour. Tverskaya street. Private guide in Moscow"/>
+                    </a>
+                </div>
+            </div>
             <img class="cover-img" src="" alt="" hidden="hidden" />
-            <img class="splash-screen" src="" alt="" hidden="hidden" />
+            <img class="cover-img" src="" alt="" hidden="hidden" />
             <div class="title-long-container" hidden="hidden"><br/><span class='too_long_title'></span></div>
             <form id="tour-form" class="text-editor" enctype="multipart/form-data">
                 <div class="input-groups">
@@ -113,8 +205,9 @@
                     <ul id="tour-gallery" class="list-unstyled">
                         <li>
                             <input type="file" name="picture" placeholder="Picture"/>
-                            <input class="form-control" type="text" placeholder="Title"/>
-                            <input class="form-control" type="text" placeholder="Alt"/>
+                            <input class="form-control title" type="text" placeholder="Title"/>
+                            <input class="form-control alt" type="text" placeholder="Alt"/>
+                            <div class="add-tumb">Add picture</div>
                         </li>
                     </ul>
                 </div>
