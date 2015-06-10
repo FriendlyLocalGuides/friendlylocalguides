@@ -12,15 +12,16 @@ error_reporting(0);
         $title        = $_POST['title'];
         $subtitle     = $_POST['subtitle'];
         $price        = $_POST['price'];
-//        $splashscreen = $_POST['splashscreen'];
+        $splashscreen = $_POST['splashscreen'];
         $description  = $_POST['description'];
+        $gallery  = $_POST['gallery'];
 
 
         /*** превратить все ошибки в исключения ***/
         $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        $sql = "INSERT INTO tours (city, url, title, subtitle, price, url_splash_image, description)
-                VALUES (:city, :link, :title, :subtitle, :price, '$path_to_cover_image', :description)";
+        $sql = "INSERT INTO tours (city, url, title, subtitle, price, url_splash_image, description, urls_gallery)
+                VALUES (:city, :link, :title, :subtitle, :price, :splashscreen, :description, :gallery)";
         /*** готовим выражение ***/
         $stmt = $dbh->prepare($sql);
 
@@ -30,7 +31,9 @@ error_reporting(0);
         $stmt->bindParam(':title', $title, PDO::PARAM_STR);
         $stmt->bindParam(':subtitle', $subtitle, PDO::PARAM_STR);
         $stmt->bindParam(':price', $price, PDO::PARAM_STR);
+        $stmt->bindParam(':splashscreen', $splashscreen, PDO::PARAM_STR);
         $stmt->bindParam(':description', $description, PDO::PARAM_STR);
+        $stmt->bindParam(':gallery', $gallery, PDO::PARAM_STR);
 
         /*** запускаем sql выражение ***/
         if($stmt->execute()){
