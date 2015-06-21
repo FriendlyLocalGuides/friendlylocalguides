@@ -3,21 +3,28 @@ var isTourPage,
     isThanks;
 
 function getTourTitles(){
-    var $tourHeader     = $('.header_title'),
-        tourTitle       = $tourHeader.find('h3').html(),
-        tourPrice       = $tourHeader.find('.price').html(),
-        $subHeader      = $('.sub_header'),
-        $mailSuccess    = $('.mail_success'),
-        headerTitle     = $subHeader.find('h4'),
-        headerPrice     = $subHeader.find('.price'),
-        titleBookedTour = $mailSuccess.find('.title-tour'),
-        priceBookedTour = $mailSuccess.find('.price-tour');
+    var $tourHeader         = $('.header_title'),
+        tourTitle           = $tourHeader.find('h3').html(),
+        tourPrice           = $tourHeader.find('.price').html(),
+        $subHeader          = $('.sub_header'),
+        $wrapPreorderImg    = $('.wrap-preorder-img'),
+        $mailSuccess        = $('.mail_success'),
+        headerTitle         = $subHeader.find('h4'),
+        headerPrice         = $subHeader.find('.price'),
+        wrapPreorderTitle   = $wrapPreorderImg.find('h4'),
+        wrapPreorderPrice   = $wrapPreorderImg.find('.price'),
+        titleBookedTour     = $mailSuccess.find('.title-tour'),
+        priceBookedTour     = $mailSuccess.find('.price-tour'),
+        viewTourImg         = $('.cover-img').attr('src');
 
 
     headerTitle.html(tourTitle);
+    wrapPreorderTitle.html(tourTitle);
     titleBookedTour.html(tourTitle);
     headerPrice.html(tourPrice);
+    wrapPreorderPrice.html(tourPrice);
     priceBookedTour.html(tourPrice);
+    $('.preorder-img').attr('src', viewTourImg);
     $('.title-field').val(tourTitle);
     $('.price-field').val(tourPrice);
 }
@@ -211,9 +218,12 @@ function toggleTheme(){
     });
 
     if(no_bookButton){
+        $('header').removeClass('show_sub-header');
+        $('.scroll-navigate').addClass('hide');
         $('header').find(".book_button").hide();
         $('.sub_header').find(".too_long_duration").removeClass('show');
     }else{
+        $('.scroll-navigate').removeClass('hide');
         $('header').find(".book_button").show();
         $('.sub_header').find(".too_long_duration").addClass('show');
     }

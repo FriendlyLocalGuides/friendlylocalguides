@@ -13,6 +13,7 @@
     <meta charset="UTF-8"/>
     <meta content="<?=$meta?>" name="description">
     <script src="/js/lib/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="/js/lib/Stripe.js"></script>
     <script src="/js/lib/modernizr.min.js"></script>
     <script src="/js/plugins/jquery.rateit.min.js"></script>
     <script src="/js/plugins/jquery.ba-throttle-debounce.min.js"></script>
