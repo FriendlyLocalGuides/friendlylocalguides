@@ -15,14 +15,13 @@
         $message      =   "Comment: ".trim(strip_tags($_POST['message']));
 		$result       =   "";
 
-
-
         if(stristr($_SERVER['HTTP_REFERER'], 'contact')){
             $subject = 'Contact';
             $form_message  = "$name\nE-mail: $email\n$message";
 	        $result = 'contact';
         }else{
             $subject = 'Friendly Local Guides booking';
+            $form_message  = "Tour: $title\nPrice and duration: $price\n$name\nE-mail: $email\n$phone\n$numOfPeople\n$country\n$hotel\n$date\n$startTime\n$message";
             $form_message  = "Tour: $title\nPrice and duration: $price\n$name\nE-mail: $email\n$phone\n$numOfPeople\n$country\n$hotel\n$date\n$startTime\n$message";
 	        $result = 'tour';
         }
