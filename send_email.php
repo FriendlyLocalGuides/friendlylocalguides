@@ -3,7 +3,7 @@
         $email_to     =   "Friendly Local Guides<info@friendlylocalguides.com>";
         $subject      =   trim(strip_tags($_POST['subject']));
         $subject_user      =   trim(strip_tags($_POST['subject-user']));
-        $order_number =   trim(strip_tags($_POST['order-number']));
+        $order_number =   trim(strip_tags($_POST['order']));
         $title        =   html_entity_decode(trim(strip_tags($_POST['title'])));
         $price        =   html_entity_decode(trim(strip_tags($_POST['price'])));
         $name         =   "Name: ".trim(strip_tags($_POST['name']));
