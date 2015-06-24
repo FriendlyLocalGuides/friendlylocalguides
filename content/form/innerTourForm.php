@@ -2,6 +2,7 @@
 	<form id="booking_form" method="post" action="/send_email.php" class="clearfix">
 		<input class="input-item title-field" type="hidden" name="title" value="<?=$titleTour?>"/>
 		<input class="input-item price-field" type="hidden" name="price" value="<?=$price?>"/>
+		<input class="input-item order-number-field" type="hidden" name="order-number" value="<?=$order_number?>"/>
         <h3>You are booking</h3>
 
         <figure class="wrap-preorder-img">

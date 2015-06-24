@@ -2,6 +2,8 @@
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $email_to     =   "Friendly Local Guides<info@friendlylocalguides.com>";
         $subject      =   trim(strip_tags($_POST['subject']));
+        $subject_user      =   trim(strip_tags($_POST['subject-user']));
+        $order_number =   trim(strip_tags($_POST['order']));
         $title        =   html_entity_decode(trim(strip_tags($_POST['title'])));
         $price        =   html_entity_decode(trim(strip_tags($_POST['price'])));
         $name         =   "Name: ".trim(strip_tags($_POST['name']));
@@ -22,7 +24,7 @@
         }else{
             $subject = 'Friendly Local Guides booking';
             $form_message  = "Tour: $title\nPrice and duration: $price\n$name\nE-mail: $email\n$phone\n$numOfPeople\n$country\n$hotel\n$date\n$startTime\n$message";
-            $form_message  = "Tour: $title\nPrice and duration: $price\n$name\nE-mail: $email\n$phone\n$numOfPeople\n$country\n$hotel\n$date\n$startTime\n$message";
+            $form_message_user  = "Your order number is: $order_number\n.$form_message";
 	        $result = 'tour';
         }
 
@@ -32,8 +34,9 @@
         $_SESSION['price'] = html_entity_decode(trim($_POST['price']));
 
         $headers  = "From: $email\r\nReply-To: $email\r\nContent-type: text/plain; charset=UTF-8";
+        $headers_user = "From: $email_to\r\nReply-To: $email\r\nContent-type: text/plain; charset=UTF-8";
 
-        if(mail($email_to, $subject, $form_message, $headers)){
+        if(mail($email_to, $subject, $form_message, $headers) || mail($email, $subject, $form_message_user, $headers_user) ){
 	        header("Location: " . $_SERVER['HTTP_REFERER'] ."/thanks");
         }else{
             echo 'failed';
