@@ -1,3 +1,6 @@
+<?
+$order_number = substr(number_format(time(), '0', '', '-'), 2);
+?>
 <div class="form_box" >
 	<form id="booking_form" method="post" action="/send_email.php" class="clearfix">
 		<input class="input-item title-field" type="hidden" name="title" value="<?=$titleTour?>"/>
