@@ -17,7 +17,7 @@ $order_number = substr(number_format(time(), '0', '', '-'), 2);
         </figure>
         <div class="form-row">
             <label>
-                <input class="input-item num_of_people-field" type="text" name="num_of_people" placeholder="Number of people"/>
+                <input class="input-item num_of_people-field" type="text" name="people_num" placeholder="Number of people"/>
             </label>
             <label>
                 <input class="input-item country-field" type="text" name="country" placeholder="Where are you from?"/>
