@@ -13,7 +13,6 @@
     <meta charset="UTF-8"/>
     <meta content="<?=$meta?>" name="description">
     <script src="/js/lib/jquery-1.11.0.min.js"></script>
-<!--    <script type="text/javascript" src="/js/lib/Stripe.js"></script>-->
     <script src="/js/lib/modernizr.min.js"></script>
     <script src="/js/plugins/jquery.rateit.min.js"></script>
     <script src="/js/plugins/jquery.ba-throttle-debounce.min.js"></script>
@@ -22,6 +21,7 @@
     <script src="/js/plugins/placeholders.min.js"></script>
     <script src="/js/plugins/jquery.cover.js"></script>
     <script src="/js/plugins/jquery.swipebox.js"></script>
+    <script type="text/javascript" src="/js/lib/Stripe.js"></script>
     <script src="/js/navigate.js"></script>
     <script src="/js/base.js"></script>
     <link rel="shortcut icon" href="/i/fav.ico" type="image/x-icon">

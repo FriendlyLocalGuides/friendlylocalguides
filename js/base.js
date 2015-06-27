@@ -1,3 +1,4 @@
+
 var isTourPage,
     isGuidePage,
     isThanks;
@@ -477,6 +478,12 @@ $(window).load(function(){
                 }else{
                     $date.removeClass("error_field");
                 }
+                // This identifies your website in the createToken call below
+                var $form = $("#booking_form");
+
+                Stripe.setPublishableKey('pk_test_6pRNASCoBOKtIshFeQd4XMUh');
+                Stripe.card.createToken($form, stripeResponseHandler);
+
             }
             if(error){
                 e.preventDefault();
