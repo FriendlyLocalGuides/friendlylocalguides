@@ -1,5 +1,7 @@
 <?
 $order_number = substr(number_format(time(), '0', '', '-'), 2);
+
+include "/Stripe/stripe_handler.php";
 ?>
 <div class="form_box" >
 	<form id="booking_form" method="post" action="/send_email.php" class="clearfix">
@@ -49,6 +51,7 @@ $order_number = substr(number_format(time(), '0', '', '-'), 2);
         </div>
         <div class="form-row">
             <h3>Payment method</h3>
+            <span class="payment-errors"></span>
             <label class="label card_number-field">
                 <input class="input-item" placeholder="Card Number"  type="text" size="20" data-stripe="number"/>
             </label>
@@ -56,7 +59,8 @@ $order_number = substr(number_format(time(), '0', '', '-'), 2);
                 <input class="input-item" placeholder="CVC" type="text" size="4" data-stripe="cvc"/>
             </label>
             <label class="label full-width">
-                <input class="input-item" placeholder="Expiration (MM/YYYY)" type="text" size="2" data-stripe="exp-month"/>
+                <input class="input-item" placeholder="Expiration (MM)" size="2" type="text" data-stripe="exp-month"/>
+                <input class="input-item" placeholder="Expiration (YYYY)" size="4" type="text" data-stripe="exp-year"/>
             </label>
         </div>
 		<input class="input-item book_button booking-tour" value="Book now" type="submit">

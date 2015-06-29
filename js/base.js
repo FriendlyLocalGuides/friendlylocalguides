@@ -1,4 +1,5 @@
 
+Stripe.setPublishableKey('pk_test_kFlQJaqOYrER1q0ktuQRjXK8');
 var isTourPage,
     isGuidePage,
     isThanks;
@@ -481,38 +482,30 @@ $(window).load(function(){
                 // This identifies your website in the createToken call below
                 var $form = $("#booking_form");
 
-                Stripe.setPublishableKey('pk_test_6pRNASCoBOKtIshFeQd4XMUh');
                 Stripe.card.createToken($form, stripeResponseHandler);
-
             }
             if(error){
                 e.preventDefault();
             }
-
-
-            /* if(error == false){
-                $(".form-container").find('.book_button').attr({'disabled' : 'true', 'value' : 'Sending...' });
-
-                $.post("/send_email.php", $("#booking_form").serialize(),function(result){
-                    location.href += '/thanks';
-                   if(result == 'tour'){
-                        $('.form_box').remove();
-                        $('.mail_success').fadeIn(1000);
-                        $('.form-container').removeClass('whiten').addClass('tour-booked');
-                        $('header').removeClass('show_sub-header');
-
-                    }else{
-                        $('#mail_fail').fadeIn(1000);
-                        $('#send_message').removeAttr('disabled').attr('value', 'Send The Message');
-                    }
-                });
-            }*/
-
         });
     }
-/*$('.fotorama').on('click', function(e){
-    console.log(e);
-}).fotorama();*/
+    function stripeResponseHandler(status, response) {
+        var $form = $("#booking_form");
+
+        if (response.error) {
+            // Show the errors on the form
+            $form.find('.payment-errors').text(response.error.message);
+            $form.find('button').prop('disabled', false);
+        } else {
+            // response contains id and card, which contains additional card details
+            var token = response.id;
+            // Insert the token into the form so it gets submitted to the server
+            $form.append($('<input type="hidden" name="stripeToken" />').val(token));
+            // and submit
+            $form.get(0).submit();
+        }
+    }
+
     var $swipeboxImg = $('.swipebox img');
 
     $('.cover-img').cover();

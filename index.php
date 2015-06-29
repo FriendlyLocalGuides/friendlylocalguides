@@ -21,7 +21,7 @@
     <script src="/js/plugins/placeholders.min.js"></script>
     <script src="/js/plugins/jquery.cover.js"></script>
     <script src="/js/plugins/jquery.swipebox.js"></script>
-    <script type="text/javascript" src="/js/lib/Stripe.js"></script>
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
     <script src="/js/navigate.js"></script>
     <script src="/js/base.js"></script>
     <link rel="shortcut icon" href="/i/fav.ico" type="image/x-icon">
