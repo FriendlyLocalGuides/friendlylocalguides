@@ -1,7 +1,6 @@
 <?
 $order_number = substr(number_format(time(), '0', '', '-'), 2);
 
-include "/Stripe/stripe_handler.php";
 ?>
 <div class="form_box" >
 	<form id="booking_form" method="post" action="/send_email.php" class="clearfix">

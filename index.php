@@ -27,8 +27,8 @@
     <link rel="shortcut icon" href="/i/fav.ico" type="image/x-icon">
     <link rel="icon" href="/i/fav.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/reset.css"/>
-    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/base.css"/>
     <link rel="stylesheet" href="/css/font-awesome.css"/>
     <link rel="stylesheet" href="/css/sidebar.css"/>
