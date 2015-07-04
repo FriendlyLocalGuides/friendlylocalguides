@@ -360,11 +360,27 @@ $(window).load(function(){
     });*/
 
 
+    function stripeResponseHandler(status, response) {
+        var $form = $('#booking_form');
+        if (response.error) {
+            // Show the errors on the form
+            $form.find('.payment-errors').text(response.error.message);
+            $form.find('button').prop('disabled', false);
+        } else {
+            // response contains id and card, which contains additional card details
+            var token = response.id;
+            // Insert the token into the form so it gets submitted to the server
+            $form.append($('<input type="hidden" name="stripeToken" />').val(token));
+            // and submit
+            $form.get(0).submit();
+        }
+    }
+
     function sendMessage(){
 
         $('.container').on('click', '.form-container .book_button', function(e){
-            //e.preventDefault();
-            //console.log();
+            var $form = $(this).parent('form');
+            // This identifies your website in the createToken call below
             var error = false,
                 $name = $(this).siblings('.form-row').find('.name-field'),
                 $email = $(this).siblings('.form-row').find('.email-field'),
@@ -436,8 +452,6 @@ $(window).load(function(){
                 if(!error){
                     $.post("/content/comments.php", $("#review-form").serialize(),function(result){
                         console.log($("#review-form").serialize());
-                        console.log(result);
-                        //$('.written-reviews').append(result);
                         if(result) {
                             $('<div class="overlay"><div class="thank-you"><span>Thank you for review!<br /> We hope to see you again soon!</span><div class="close-btn">×</div></div></div>').fadeIn().appendTo('body');
                             $('body').on('click','.close-btn',  function(){
@@ -455,6 +469,7 @@ $(window).load(function(){
             }
 
             if(isTourPage && $(this).hasClass('booking-tour')){
+                e.preventDefault();
                 if(peopleVal.length == 0){
                     error = true;
                     $num_of_people.addClass("error_field");
@@ -479,31 +494,14 @@ $(window).load(function(){
                 }else{
                     $date.removeClass("error_field");
                 }
-                // This identifies your website in the createToken call below
-                var $form = $("#booking_form");
-
-                Stripe.card.createToken($form, stripeResponseHandler);
+                if(!error){
+                    Stripe.card.createToken($form, stripeResponseHandler);
+                }
             }
             if(error){
                 e.preventDefault();
             }
         });
-    }
-    function stripeResponseHandler(status, response) {
-        var $form = $("#booking_form");
-
-        if (response.error) {
-            // Show the errors on the form
-            $form.find('.payment-errors').text(response.error.message);
-            $form.find('button').prop('disabled', false);
-        } else {
-            // response contains id and card, which contains additional card details
-            var token = response.id;
-            // Insert the token into the form so it gets submitted to the server
-            $form.append($('<input type="hidden" name="stripeToken" />').val(token));
-            // and submit
-            $form.get(0).submit();
-        }
     }
 
     var $swipeboxImg = $('.swipebox img');

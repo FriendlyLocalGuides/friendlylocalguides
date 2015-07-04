@@ -1,4 +1,5 @@
 <?
+
 $order_number = substr(number_format(time(), '0', '', '-'), 2);
 
 ?>

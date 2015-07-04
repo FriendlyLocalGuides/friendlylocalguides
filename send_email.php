@@ -26,8 +26,8 @@
             $form_message  = "Order number: #$order_number\nTour: $title\nPrice and duration: $price\n$name\nE-mail: $email\n$phone\n$numOfPeople\n$country\n$hotel\n$date\n$startTime\n$message";
             $form_message_user  = "Your order number is: #$order_number\nTour: $title\nPrice and duration: $price\n$name\nE-mail: $email\n$phone\n$numOfPeople\n$country\n$hotel\n$date\n$startTime\n$message";
 	        $result = 'tour';
-            include "content/order-info.php";
             include $_SERVER["DOCUMENT_ROOT"]."/Stripe/stripe_handler.php";
+            include "content/order-info.php";
         }
 
         session_start();
