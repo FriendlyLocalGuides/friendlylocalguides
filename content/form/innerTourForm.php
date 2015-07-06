@@ -8,6 +8,7 @@ $order_number = substr(number_format(time(), '0', '', '-'), 2);
 		<input class="input-item title-field" type="hidden" name="title" value="<?=$titleTour?>"/>
 		<input class="input-item price-field" type="hidden" name="price" value="<?=$price?>"/>
 		<input class="input-item order-number-field" type="hidden" name="order" value="<?=$order_number?>"/>
+		<input class="input-item tour-photo-field" type="hidden" name="tour-pic" value=""/>
         <h3>You are booking</h3>
 
         <figure class="wrap-preorder-img">

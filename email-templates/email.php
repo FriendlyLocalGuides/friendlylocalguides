@@ -1,3 +1,8 @@
+<?
+$amount = $_POST['price'];
+$amount = substr($amount, 0);
+$amount = substr($amount, 0, strpos($amount, " "));
+?>
 <!DOCTYPE html>
 <html>
 <head lang="en">
@@ -18,13 +23,13 @@
                     Dear Alina,
                 </h1>
                 <h2 style="padding: 0 20px;text-align:center;color:#777;display:block;line-height:1.7;margin:0px 0;font-size:22px;font-weight:normal;font-family:'Helvetica Neue',Helvetica,Arial;">
-                    We've just got your payment  <strong style="color: #555;">$157</strong> for tour <br/>  <strong style="color: #555;">Red Square & Kremlin</strong>.
+                    We've just got your payment  <strong style="color: #555;"><?=$amount?></strong> for tour <br/>  <strong style="color: #555;"><?=$title?></strong>.
                 </h2>
             </td>
         </tr>
         <tr>
             <td style="padding-top: 20px; background-color: #fff;">
-                <img style="width: 100%; display: block;" alt="" src="../i/gallery/tours/rsk/Christ.jpg">
+                <img style="width: 100%; display: block;" alt="" src="<?=$tourPicture?>">
             </td>
         </tr>
         <tr>
@@ -50,7 +55,7 @@
                             <td width="45%" style="text-align: left;padding-left: 20px;">
                                 <p style="margin:5px 0;color:#777;font-size:14px;line-height:18px; font-family: 'Helvetica Neue',Helvetica,Arial;">
                                     <strong>
-                                        #333-333-333
+                                        <?=$order_number?>
                                     </strong>
                                 </p>
                             </td>
@@ -68,7 +73,7 @@
                             <td width="45%" style="padding-left: 20px;">
                                 <p style="margin:5px 0;color:#777;font-size:14px;line-height:18px;text-align:left; font-family: 'Helvetica Neue',Helvetica,Arial;">
                                     <strong>
-                                        $197 — 8 hours
+                                        <?=$price?>
                                     </strong>
                                 </p>
                             </td>
@@ -84,7 +89,7 @@
                             <td width="45%" style="padding-left: 20px;">
                                 <p style="margin:5px 0;color:#777;font-size:14px;line-height:18px;text-align:left; font-family: 'Helvetica Neue',Helvetica,Arial;">
                                     <strong>
-                                        Red Square & Kremlin
+                                        <?=$title?>
                                     </strong>
                                 </p>
                             </td>
@@ -100,7 +105,7 @@
                             <td width="45%" style="padding-left: 20px;">
                                 <p style="margin:5px 0;color:#777;font-size:14px;line-height:18px;text-align:left; font-family: 'Helvetica Neue',Helvetica,Arial;">
                                     <strong>
-                                        Sergey
+                                        <?=$name?>
                                     </strong>
                                 </p>
                             </td>
@@ -116,7 +121,7 @@
                             <td width="45%" style="padding-left: 20px;">
                                 <p style="margin:5px 0;color:#777;font-size:14px;line-height:18px;text-align:left; font-family: 'Helvetica Neue',Helvetica,Arial;">
                                     <strong>
-                                        sergiorichie@gmail.com
+                                        <?=$email?>
                                     </strong>
                                 </p>
                             </td>
@@ -132,7 +137,7 @@
                             <td width="45%" style="padding-left: 20px;">
                                 <p style="margin:5px 0;color:#777;font-size:14px;line-height:18px;text-align:left; font-family: 'Helvetica Neue',Helvetica,Arial;">
                                     <strong>
-                                        3474196219
+                                        <?=$phone?>
                                     </strong>
                                 </p>
                             </td>
@@ -148,7 +153,7 @@
                             <td width="45%" style="padding-left: 20px;">
                                 <p style="margin:5px 0;color:#777;font-size:14px;line-height:18px;text-align:left; font-family: 'Helvetica Neue',Helvetica,Arial;">
                                     <strong>
-                                        7
+                                        <?=$numOfPeople?>
                                     </strong>
                                 </p>
                             </td>
@@ -164,7 +169,7 @@
                             <td width="45%" style="padding-left: 20px;">
                                 <p style="margin:5px 0;color:#777;font-size:14px;line-height:18px;text-align:left; font-family: 'Helvetica Neue',Helvetica,Arial;">
                                     <strong>
-                                       Russia
+                                       <?=$country?>
                                     </strong>
                                 </p>
                             </td>
@@ -180,7 +185,7 @@
                             <td width="45%" style="padding-left: 20px;">
                                 <p style="margin:5px 0;color:#777;font-size:14px;line-height:18px;text-align:left; font-family: 'Helvetica Neue',Helvetica,Arial;">
                                     <strong>
-                                        Karlson
+                                        <?=$hotel?>
                                     </strong>
                                 </p>
                             </td>
@@ -196,7 +201,7 @@
                             <td width="45%" style="padding-left: 20px;">
                                 <p style="margin:5px 0;color:#777;font-size:14px;line-height:18px;text-align:left; font-family: 'Helvetica Neue',Helvetica,Arial;">
                                     <strong>
-                                        2014-11-12
+                                        <?=$date?>
                                     </strong>
                                 </p>
                             </td>
@@ -212,7 +217,7 @@
                             <td width="45%" style="padding-left: 20px;">
                                 <p style="margin:5px 0;color:#777;font-size:14px;line-height:18px;text-align:left; font-family: 'Helvetica Neue',Helvetica,Arial;">
                                     <strong>
-                                        7am
+                                        <?=$startTime?>
                                     </strong>
                                 </p>
                             </td>
@@ -229,7 +234,7 @@
                                 <p style="margin:5px 0;color:#777;font-size:14px;line-height:18px;text-align:left; font-family: 'Helvetica Neue',Helvetica,Arial;">
                                     <strong>
                                         <em>
-                                            Happy!
+                                            <?=$message?>
                                         </em>
                                     </strong>
                                 </p>
