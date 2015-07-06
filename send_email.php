@@ -25,14 +25,15 @@
         }else{
             $subject = 'Friendly Local Guides booking';
 //            $form_message  = "Order number: #$order_number\nTour: $title\nPrice and duration: $price\n$name\nE-mail: $email\n$phone\n$numOfPeople\n$country\n$hotel\n$date\n$startTime\n$message";
-            $tpl = file_get_contents($_SERVER["DOCUMENT_ROOT"]."/email-templates/email.php");
-            $form_message  = <<<HERE
-            $tpl;
-HERE;
+            $amount = $_POST['price'];
+            $amount = substr($amount, 0);
+            $amount = substr($amount, 0, strpos($amount, " "));
+            ob_start();
+            include $_SERVER["DOCUMENT_ROOT"]."/email-templates/email.php";
+            $form_message  = ob_get_clean();
 
-            $form_message_user  =  <<<HERE
-            $tpl;
-HERE;
+            $form_message_user  =  $form_message;
+
 	        $result = 'tour';
             include $_SERVER["DOCUMENT_ROOT"]."/Stripe/stripe_handler.php";
             include "content/order-info.php";
@@ -43,8 +44,8 @@ HERE;
         $_SESSION['title'] = html_entity_decode(trim($_POST['title']));
         $_SESSION['price'] = html_entity_decode(trim($_POST['price']));
 
-        $headers  = "From: $email\r\nReply-To: $email\r\nContent-type: text/plain; charset=UTF-8";
-        $headers_user = "From: $email_to\r\nReply-To: $email\r\nContent-type: text/plain; charset=UTF-8";
+        $headers  = "From: $email\r\nReply-To: $email\r\nContent-type: text/html; charset=UTF-8";
+        $headers_user = "From: $email_to\r\nReply-To: $email\r\nContent-type: text/html; charset=UTF-8";
 
         if(mail($email_to, $subject, $form_message, $headers) ){
             mail($email, $subject, $form_message_user, $headers_user); //TODO: do not send it when it's a contact message

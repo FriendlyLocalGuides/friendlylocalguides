@@ -1,8 +1,3 @@
-<?
-$amount = $_POST['price'];
-$amount = substr($amount, 0);
-$amount = substr($amount, 0, strpos($amount, " "));
-?>
 <!DOCTYPE html>
 <html>
 <head lang="en">
@@ -10,17 +5,17 @@ $amount = substr($amount, 0, strpos($amount, " "));
     <title></title>
 </head>
 <body style=" padding: 0; margin: 0;">
-<div style=" min-width: 700px; background-color: #f7f7f7; background: url('../i/blotter-tile-bg.jpg') repeat center top; padding: 0; margin: 0;">
+<div style=" min-width: 700px; background-color: #f7f7f7; background: url('http://heylocals.com/i/blotter-tile-bg.jpg') repeat center top; padding: 0; margin: 0;">
     <table cellspacing="0" cellpadding="0" style="margin: 0 auto; width: 602px;  padding-bottom: 25px;">
         <tr>
             <td style="text-align: center; padding: 20px;">
-                <a href="/"><img src="../i/logo_l_w.png" width="100"  alt="friendlylocalguides"/></a>
+                <a href="http://friendlylocalguides.com"><img src="http://heylocals.com/i/logo_l_w.png" width="100"  alt="friendlylocalguides"/></a>
             </td>
         </tr>
         <tr>
             <td style="background-color: #fff; border-top: 1px solid #ccc; border-left: 1px solid #ccc;border-right: 1px solid #ccc;">
                 <h1 style="text-align:center;color:#202020;display:block;margin:30px 0 15px 0;font-size:26px;font-weight:normal;line-height:32px;font-family:'Helvetica Neue',Helvetica,Arial;">
-                    Dear Alina,
+                    Dear <?=$name?>,
                 </h1>
                 <h2 style="padding: 0 20px;text-align:center;color:#777;display:block;line-height:1.7;margin:0px 0;font-size:22px;font-weight:normal;font-family:'Helvetica Neue',Helvetica,Arial;">
                     We've just got your payment  <strong style="color: #555;"><?=$amount?></strong> for tour <br/>  <strong style="color: #555;"><?=$title?></strong>.
@@ -29,7 +24,7 @@ $amount = substr($amount, 0, strpos($amount, " "));
         </tr>
         <tr>
             <td style="padding-top: 20px; background-color: #fff;">
-                <img style="width: 100%; display: block;" alt="" src="<?=$tourPicture?>">
+                <img style="width: 100%; display: block;" alt="" src="http://heylocals.com<?=$tourPicture?>">
             </td>
         </tr>
         <tr>
@@ -40,7 +35,7 @@ $amount = substr($amount, 0, strpos($amount, " "));
             </td>
         </tr>
         <tr>
-            <td style="background-color: #fff;vertical-align:top;text-align:center;width:100%;  border-left: 1px solid #ccc;border-right: 1px solid #ccc; padding-bottom: 30px;">
+            <td style="background-color: #fff;vertical-align:top;text-align:center;width:100%;  border-left: 1px solid #ccc;border-right: 1px solid #ccc; padding-left: 30px; padding-right: 30px;padding-bottom: 30px;">
                 <table cellspacing="0" cellpadding="0" style="margin:0 auto;padding:10px 0;  border-width: 1px; border-style: solid; border-color: #cccccc; border-radius: 5px; background-color: #f7f7f7;">
                     <tbody>
                         <tr>
@@ -265,16 +260,16 @@ $amount = substr($amount, 0, strpos($amount, " "));
             <td style="font-family: Helvetica,Arial, sans-serif; padding: 20px 0; text-align: center; background-color: #f2f2f2;">
                 <span style="display: inline-block; padding-top: 7px; vertical-align: top; color: #000;">Follow us:</span>
                 <a style="text-decoration: none;" target="_blank" href="https://www.facebook.com/friendlylocalguides" style="text-decoration: none;">
-                    <img width="32" height="32" src="../i/social_buttons/fb_w.png" alt=""/>
+                    <img width="32" height="32" src="http://heylocals.com/i/social_buttons/fb_w.png" alt=""/>
                 </a>
                 <a style="text-decoration: none;" target="_blank" href="https://twitter.com/FriendlyGuides">
-                    <img width="32" height="32" src="../i/social_buttons/tw_w.png" alt=""/>
+                    <img width="32" height="32" src="http://heylocals.com/i/social_buttons/tw_w.png" alt=""/>
                 </a>
                 <a style="text-decoration: none;" target="_blank" href="https://plus.google.com/b/113546718017692385903/113546718017692385903/posts/p/pub">
-                    <img width="32" height="32" src="../i/social_buttons/g+_w.png" alt=""/>
+                    <img width="32" height="32" src="http://heylocals.com/i/social_buttons/g+_w.png" alt=""/>
                 </a>
                 <a style="text-decoration: none;" target="_blank" href="http://instagram.com/friendly.local.guides">
-                    <img width="32" height="32" src="../i/social_buttons/instagram_w.png" alt=""/>
+                    <img width="32" height="32" src="http://heylocals.com/i/social_buttons/instagram_w.png" alt=""/>
                 </a>
             </td>
         </tr>
