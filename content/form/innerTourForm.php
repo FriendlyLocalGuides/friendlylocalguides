@@ -54,14 +54,14 @@ $order_number = substr(number_format(time(), '0', '', '-'), 2);
             <h3>Payment method</h3>
             <span class="payment-errors"></span>
             <label class="label card_number-field">
-                <input class="input-item" placeholder="Card Number"  type="text" size="20" data-stripe="number"/>
+                <input class="input-item cc-num" placeholder="Card Number" type="tel" autocompletetype="cc-num" data-stripe="number" required="required"/>
             </label>
             <label class="label cvc-field">
-                <input class="input-item" placeholder="CVC" type="text" size="4" data-stripe="cvc"/>
+                <input class="input-item cc-cvc" placeholder="CVC" type="tel" data-stripe="cvc"/>
             </label>
             <label class="label full-width">
-                <input class="input-item" placeholder="Expiration (MM)" size="2" type="text" data-stripe="exp-month"/>
-                <input class="input-item" placeholder="Expiration (YYYY)" size="4" type="text" data-stripe="exp-year"/>
+                <input class="input-item cc-exp" placeholder="Expiration (MM/YY)" type="tel" data-stripe="exp-month"/>
+<!--                <input class="input-item" placeholder="Expiration (YYYY)" size="4" type="text" data-stripe="exp-year"/>-->
             </label>
         </div>
 		<input class="input-item book_button booking-tour" value="Book now" type="submit">

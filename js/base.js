@@ -361,6 +361,7 @@ $(window).load(function(){
     });*/
 
 
+
     function stripeResponseHandler(status, response) {
         var $form = $('#booking_form');
         if (response.error) {
@@ -496,7 +497,13 @@ $(window).load(function(){
                     $date.removeClass("error_field");
                 }
                 if(!error){
-                    Stripe.card.createToken($form, stripeResponseHandler);
+                    var expiration = $('.cc-exp').payment('cardExpiryVal');
+                    Stripe.card.createToken({
+                        number: $('.cc-num').val(),
+                        cvc: $('.cc-cvc').val(),
+                        exp_month:  (expiration.month || 0),
+                        exp_year:  (expiration.year || 0)
+                    }, stripeResponseHandler);
                 }
             }
             if(error){
@@ -504,6 +511,12 @@ $(window).load(function(){
             }
         });
     }
+
+
+//jQuery.payment
+    $('input.cc-num').payment('formatCardNumber');
+    $('input.cc-exp').payment('formatCardExpiry');
+    $('input.cc-cvc').payment('formatCardCVC');
 
     var $swipeboxImg = $('.swipebox img');
 
