@@ -1227,6 +1227,7 @@
 
     .form-container .input-item{
         height: 55px;
+        font-size: 21px;
     }
 
     .form-container textarea{
