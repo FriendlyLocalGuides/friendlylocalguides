@@ -55,6 +55,7 @@ $order_number = substr(number_format(time(), '0', '', '-'), 2);
             <span class="payment-errors"></span>
             <label class="label card_number-field">
                 <input class="input-item cc-num" placeholder="Card Number" type="tel" autocompletetype="cc-num" data-stripe="number" required="required"/>
+                <span class="card-icon"></span>
             </label>
             <label class="label cvc-field">
                 <input class="input-item cc-cvc" placeholder="CVC" type="tel" data-stripe="cvc"/>

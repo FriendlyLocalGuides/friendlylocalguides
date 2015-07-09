@@ -411,6 +411,33 @@
     padding-top: 0;
 }
 
+.form-container.book-tour label.card_number-field {
+    position: relative;
+    display: block;
+}
+
+.form-container.book-tour input.cc-num + .card-icon {
+    display: none;
+    width: 45px;
+    height: 30px;
+    background: url("../i/cards/cards.png") 45px 0 no-repeat;
+    position: absolute;
+}
+.form-container.book-tour input.cc-num.identified + .card-icon {
+    display: block;
+}
+.form-container.book-tour input.cc-num.visa + .card-icon{
+    background-position: 0 0;
+}
+.form-container.book-tour input.cc-num.mastercard + .card-icon{
+    background-position: -45px 0;
+}
+.form-container.book-tour input.cc-num.amex + .card-icon{
+    background-position: -135px 0;
+}
+.form-container.book-tour input.cc-num.discover + .card-icon{
+    background-position: -180px 0;
+}
 .contact.form-container input,
 .contact.form-container textarea{
     box-shadow: none;
@@ -972,6 +999,10 @@
 
 
 @media screen and (max-width:799px){
+    .form-container.book-tour input.cc-num + .card-icon {
+        right: 5px;
+        top: 5px;
+    }
     .features .scroll_down{
         bottom: 10px;
     }
@@ -1127,7 +1158,10 @@
 }
 
 @media screen and (min-width:600px){
-
+    .form-container.book-tour input.cc-num + .card-icon {
+        right: 16px;
+        top: 13px;
+    }
     .form-container.book-tour h3{
         font-size: 30px;
     }
