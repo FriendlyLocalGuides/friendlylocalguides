@@ -438,10 +438,43 @@
 .form-container.book-tour input.cc-num.discover + .card-icon{
     background-position: -180px 0;
 }
-.contact.form-container input,
-.contact.form-container textarea{
+.form-container .input-item{
     box-shadow: none;
-    border-top: 0;
+    transition: all 0.3s ease 0s;
+}
+
+.form-container .input-item::-moz-placeholder{
+    opacity: .4;
+}
+
+.form-container .input-item:-moz-placeholder{
+    opacity: .4;
+}
+
+.form-container .input-item::-webkit-input-placeholder{
+    opacity: .8;
+}
+
+.form-container .input-item:-ms-input-placeholder{
+    opacity: .4;
+}
+
+.form-container .input-item:focus{
+    border-color: #fff;
+    box-shadow: 0 0 0.1875em #3498db;
+    outline: medium none;
+}
+
+.form-container .error_field{
+    border: 1px solid #ff4634;
+    box-shadow: 0 0 0.170em #ff5749;
+}
+
+.form-container .input-item.identified{
+    border-color: #2ecc71;
+}
+.form-container .input-item.identified:focus{
+    box-shadow: 0 0 .1875em #2ecc71;
 }
 
 .contact.form-container h5{
@@ -713,14 +746,13 @@
     display: block;
     width: 100%;
     border: 1px solid #DDDDDD;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) inset;
+    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) inset;*/
     outline: medium none;
     padding-left: 7px;
     padding-right: 7px;
 }
 
 .form-container.book-tour .form-row{
-    overflow: hidden;
     margin-right: -5px;
     margin-bottom: 10px;
 }
@@ -1198,9 +1230,6 @@
     }
     .form-container .card_number-field{
         width: 80%;
-    }
-    .form-container .error_field{
-        border: 1px solid red;
     }
 
     .gallery  .main-image{

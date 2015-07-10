@@ -18,7 +18,7 @@ $order_number = substr(number_format(time(), '0', '', '-'), 2);
                 <div class="price">$157 — 5 hours</div>
             </figcaption>
         </figure>
-        <div class="form-row">
+        <div class="form-row clearfix">
             <label>
                 <input class="input-item num_of_people-field" type="text" name="people_num" placeholder="Number of people"/>
             </label>
@@ -32,7 +32,7 @@ $order_number = substr(number_format(time(), '0', '', '-'), 2);
                 <input class="input-item time-field" type="text" name="time" placeholder="Start time"/>
             </label>
         </div>
-        <div class="form-row">
+        <div class="form-row clearfix">
             <h3>Personal details</h3>
             <label>
                 <input class="input-item name-field" type="text" name="name" placeholder="Full name"/>
@@ -41,7 +41,7 @@ $order_number = substr(number_format(time(), '0', '', '-'), 2);
                 <input class="input-item email-field" type="email" name="email"  placeholder="E-mail"/>
             </label>
             <label>
-                <input class="input-item phone-field" type="phone" name="phone"  placeholder="Phone number (optional)"/>
+                <input class="input-item phone-field" type="tel" name="phone"  placeholder="Phone number (optional)"/>
             </label>
             <label>
                 <input class="input-item hotel-field" type="text" name="hotel" placeholder="Hotel pickup"/>
@@ -50,7 +50,7 @@ $order_number = substr(number_format(time(), '0', '', '-'), 2);
                 <textarea class="input-item comments-field" name="message" placeholder="Comments"></textarea>
             </div>
         </div>
-        <div class="form-row">
+        <div class="form-row clearfix">
             <h3>Payment method</h3>
             <span class="payment-errors"></span>
             <label class="label card_number-field">
