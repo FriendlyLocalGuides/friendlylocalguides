@@ -21,4 +21,6 @@ try {
     );
 } catch(\Stripe\Error\Card $e) {
     // The card has been declined
+
+        echo "something is wrong!";
 }

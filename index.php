@@ -14,6 +14,7 @@
     <meta content="<?=$meta?>" name="description">
     <script src="/js/lib/jquery-1.11.0.min.js"></script>
     <script src="/js/lib/modernizr.min.js"></script>
+    <script src="/js/lib/jquery-ui.min.js"></script>
     <script src="/js/plugins/jquery.rateit.min.js"></script>
     <script src="/js/plugins/jquery.ba-throttle-debounce.min.js"></script>
     <script src="/js/plugins/jquery.cycle2.min.js"></script>
@@ -21,6 +22,7 @@
     <script src="/js/plugins/placeholders.min.js"></script>
     <script src="/js/plugins/jquery.cover.js"></script>
     <script src="/js/plugins/jquery.swipebox.js"></script>
+    <script src="/js/plugins/clockpicker.js"></script>
     <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
     <script type="text/javascript" src="/js/lib/jquery.payment.js"></script>
     <script src="/js/navigate.js"></script>
@@ -30,11 +32,14 @@
     <link rel="stylesheet" href="/css/reset.css"/>
     <link href='//fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/jquery-ui.min.css"/>
     <link rel="stylesheet" href="/css/base.css"/>
     <link rel="stylesheet" href="/css/font-awesome.css"/>
     <link rel="stylesheet" href="/css/sidebar.css"/>
     <link rel="stylesheet" href="/css/header.css"/>
     <link rel="stylesheet" href="/css/rateit.css"/>
+    <link rel="stylesheet" href="/css/clockpicker.css"/>
+<!--    <link rel="stylesheet" href="/css/bootstrap.min.css"/>-->
     <link rel="stylesheet" href="/css/navigation.css"/>
     <link rel="stylesheet" href="/css/content.css"/>
     <link rel="stylesheet" href="/css/tours.css"/>
