@@ -605,13 +605,21 @@
     border-right: 0;
 }
 
+.clockpicker-popover .text-primary {
+    color: #428bca;
+}
+
+.clockpicker-popover .clockpicker-button{
+    border-radius: 2px;
+    color: #777;
+}
 .clockpicker-popover{
     text-align: center;
     position: absolute;
     width: 100%;
     max-width: 280px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
 .clockpicker-plate{
