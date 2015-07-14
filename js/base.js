@@ -481,6 +481,7 @@ $(window).load(function(){
         }
     }
     $('.date-field').datepicker({
+        minDate: 0,
         beforeShow: function(input, instance){
             $(input).removeClass('required');
             //insertMsgToDatePicker()
@@ -504,8 +505,6 @@ $(window).load(function(){
         $('#ui-datepicker-div .ui-datepicker-next').html('<i class="fa fa-angle-right"/>');
     });
 
-
-    $('#ui-datepicker-div').delegate('.ui-datepicker-prev, .ui-datepicker-next','click', insertMsgToDatePicker);
 
     $('.time-field').clockpicker({
 
