@@ -4,7 +4,10 @@
 	    <div class="success_txt">Thank you for booking the tour:</div>
 	    <div class="title-tour"><?=$titleTour?></div>
 	    <div class="price-tour"><?=$price?></div>
-	    <div class="thank-you">We will contact you within 24 hours</div>
+		<div class="thank-you">
+			<p>You will soon get payment confirmation email.</p>
+			<p>We will contact you to discuss the details of the tour within 24 hours.</p>
+		</div>
 	</div>
 </section>
 <?}else{?>

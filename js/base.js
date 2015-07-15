@@ -43,9 +43,9 @@ $(window).on('scroll resize orientationchange touchmove', $.debounce(750, functi
         scroll_to,
         scroll_diff;
 
-    $('section').each(function () {
+    /*$('.gallery').each(function () {
 
-        if(!$(this).hasClass('contact')){
+
             slide_top = $(this).offset().top;
 
             snap_from = Math.round(slide_top - (snap_range / 2), 2);
@@ -67,9 +67,8 @@ $(window).on('scroll resize orientationchange touchmove', $.debounce(750, functi
                 }
 
             }
-        }
 
-    });
+    });*/
 }));
 
 function toggleTheme(){
@@ -468,18 +467,6 @@ $(window).load(function(){
     }
 
 
-    function insertMsgToDatePicker(){
-        var timer;
-        console.log('asd');
-        clearTimeout(timer);
-        if ($('#ui-datepicker-div .ui-datepicker-calendar').is(':visible')){
-            $('#ui-datepicker-div .ui-datepicker-prev').html('<i class="fa fa-angle-left"/>');
-            $('#ui-datepicker-div .ui-datepicker-next').html('<i class="fa fa-angle-right"/>');
-            $('#ui-datepicker-div').width($('.date-field').outerWidth())
-        }else{
-            timer = setTimeout(insertMsgToDatePicker, 10);
-        }
-    }
     $('.date-field').datepicker({
         minDate: 0,
         beforeShow: function(input, instance){
@@ -510,6 +497,11 @@ $(window).load(function(){
 
         beforeShow: function(){
             $('.time-field').removeClass('required');
+
+        },
+        init: function(){
+            console.log( $(".clockpicker-popover"));
+            $(".clockpicker-popover").outerWidth($('.time-field').outerWidth());
         },
         afterHide: function(){
             if($('.time-field').val().length == 0){
@@ -521,6 +513,9 @@ $(window).load(function(){
         vibrate: true,
         twelvehour: true,
         autoclose: true
+    });
+    $('.time-field').focus(function(){
+        $(".clockpicker-popover").outerWidth($('.time-field').outerWidth());
     });
 
     $(document).on('click', '.ui-datepicker td', function(){
