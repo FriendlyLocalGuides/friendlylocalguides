@@ -24,7 +24,6 @@
 	        $result = 'contact';
         }else{
             $subject = 'Friendly Local Guides booking';
-//            $form_message  = "Order number: #$order_number\nTour: $title\nPrice and duration: $price\n$name\nE-mail: $email\n$phone\n$numOfPeople\n$country\n$hotel\n$date\n$startTime\n$message";
             $amount = $_POST['price'];
             $amount = substr($amount, 0);
             $amount = substr($amount, 0, strpos($amount, " "));
@@ -48,7 +47,6 @@
         $headers_user = "From: $email_to\r\nReply-To: $email\r\nContent-type: text/html; charset=UTF-8";
 
         if(mail($email_to, $subject, $form_message, $headers) ){
-            mail($email, $subject, $form_message_user, $headers_user); //TODO: do not send it when it's a contact message
 	        header("Location: " . $_SERVER['HTTP_REFERER'] ."/thanks");
         }else{
             echo 'failed';

@@ -29,7 +29,7 @@ $order_number = substr(number_format(time(), '0', '', '-'), 2);
                 <input class="input-item date-field required" type="text" name="date" placeholder="Pick the tour date" autocomplete="off"/>
             </label>
             <label>
-                <input class="input-item time-field required" type="text" name="time" placeholder="Start time"/>
+                <input class="input-item time-field required" type="text" name="time" placeholder="Start time" autocomplete="off"/>
             </label>
         </div>
         <div class="form-row clearfix">
