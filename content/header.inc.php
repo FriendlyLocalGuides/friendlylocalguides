@@ -40,12 +40,12 @@
                 $meta = "Book a 5-hour Kremlin tour with us and admire lovely St. Basil's Cathedral at Red Square, explore Tsar Bell & Cannon, visit the Armory.";
                 break;
             case 'red-square-and-city-tour-moscow':
-                $title = "Red Square and the City | Friendly Local Guides";
-                $meta = "Explore Red Square, grand Christ the Savior Cathedral, marvel at the stunning views of the Kremlin, learn about Russian culture.";
+                $title = "Red Square and Moscow City Tour - Friendly Local Guides";
+                $meta = "Explore Red Square, Grand Christ the Savior Cathedral, marvel at the stunning views of the Kremlin during this Moscow city tour.";
                 break;
             case 'going-out-in-moscow':
-                $title = "Going Out in Moscow | Friendly Local Guides";
-                $meta = "Indulge in an authentic Russian experience, meet locals in their most fun environment, + excellent range of cafes, restaurants, bars, clubs.";
+                $title = "Moscow Private Day Tour: Going Out in Moscow - Friendly Local Guides";
+                $meta = "Indulge in an authentic Russian experience, meet locals in their most fun environment during this fascinating one day tour in Moscow. An excellent range of cafes, restaurants, bars and clubs revealed.";
                 break;
             case 'izmailovo-kremlin-tour':
                 $title = "Izmailovo Flea Market and Kremlin in Izmailovo | Friendly Local Guides";
@@ -56,27 +56,27 @@
                 $meta = "Discover 15 Must-Dos Of Moscow In 1 Day, including Red Square, the Kremlin, Tsaritsino, Victory Park and other top things to do in Moscow.";
                 break;
             case '2-days-in-moscow':
-                $title = "2 days in Moscow with a Friendly Guide | Friendly Local Guides";
-                $meta = "Get to know the giant Moscow, Russian history and culture, old and modern, touristy and off the beaten path, including Cold War museum.";
+                $title = "Moscow in 2 Days: Moscow Sights and Russian Life - Friendly Local Guides";
+                $meta = "Enjoy amazing Moscow sights, the metro, the people, the streets, and the local Russian life. Discover and experience historical landmarks as well as places that are popular among locals.";
                 break;
             case '3-days-in-moscow':
-                $title = "3 Days in Moscow with a Friendly Guide | Friendly Local Guides";
-                $meta = "Book this massive tour and take pride in covering all of Moscow: ancient Russian art galleries, deepest metro station, highest point, oldest building, shortest street and more!";
+                $title = "Moscow in 3 Days: History, Modern Times, Entertainment - Friendly Local Guides";
+                $meta = "Book this exclusive Moscow tour and take pride in covering all of Moscow: from ancient Russian art galleries, deepest metro station, highest point, oldest building to shortest street and more!";
                 break;
             case 'moscow-at-night':
-                $title = "Moscow at Night | Friendly Local Guides";
-                $meta = "Immerse yourself in Moscow’s nightlife, stroll on historical old town, enjoy stunning views, finish it all with a cold drink in a bar or a club.";
+                $title = "Moscow by Night Tour - Friendly Local Guides";
+                $meta = "Immerse yourself into Moscow nightlife, stroll on historical old town, enjoy stunning views and finish it all with a cold drink in a bar or club.";
                 break;
             case 'layover-tour-moscow':
                 $title = "Airport Pickup + Orientation Tour | Friendly Local Guides";
                 $meta = "Find out all you need to know in Moscow about getting around, where to go and what to do in Moscow on this tour. Save time, money and energy with your guide.";
                 break;
             case 'russia-in-cold-war':
-                $title = "Russia in WWII and Cold War | Friendly Local Guides";
-                $meta = "Explore powerful, very Russian park and memorial, join a guided Bunker-42, Cold War Museum tour and get this special feeling of the war times.";
+                $title = "Cold War and WW2 Tour in Moscow - Friendly Local Guides";
+                $meta = "Explore amazing, very Russian park and memorial. Join a guided Bunker-42, Cold War Museum tour and get this special feeling of war times.";
                 break;
             case 'soviet-russia-tour':
-                $title = "Communist Russia. Cold War period. | Friendly Local Guides";
+                $title = "Soviet Russia Tour: Communist Time & Cold War - Friendly Local Guides";
                 $meta = "Get this special feeling of the Soviet times, learn about political leaders of Russia, climb down Bunker-42, Cold War Museum.";
                 break;
             case 'photo-tour-of-moscow':
@@ -86,6 +86,10 @@
             case 'bike-tour-in-moscow':
                 $title = "Bike Tour through the Best of Moscow | Friendly Local Guides";
                 $meta = "Enjoy the icons of Moscow in style, test your nerve, driving on crazy Russian roads, expert commentary as you travel around the city.";
+                break;
+ 	        case 'top-20-must-see-in-saint-petersburg':
+                $title = "Top 20 Must See in Saint Petersburg Tour - Friendly Local Guides";
+                $meta = "We've carefully selected the best places and attractions to visit and see during this 8-hour St Petersburg tour.";
                 break;
         }
     }

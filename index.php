@@ -39,7 +39,6 @@
     <link rel="stylesheet" href="/css/header.css"/>
     <link rel="stylesheet" href="/css/rateit.css"/>
     <link rel="stylesheet" href="/css/clockpicker.css"/>
-<!--    <link rel="stylesheet" href="/css/bootstrap.min.css"/>-->
     <link rel="stylesheet" href="/css/navigation.css"/>
     <link rel="stylesheet" href="/css/content.css"/>
     <link rel="stylesheet" href="/css/tours.css"/>
@@ -113,7 +112,7 @@
     </article>
     <footer>
         <div class="e-mail">info@friendlylocalguides.com</div>
-        <div class="rights">&copy; Copyright 2015 Friendly Local Guides, LLC. Moscow Private Tours. All Rights Reserved</div>
+        <div class="rights">&copy; Copyright 2015 Friendly Local Guides, LLC. All Rights Reserved</div>
     </footer>
 
 

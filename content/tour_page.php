@@ -1,12 +1,12 @@
 <?
 // занести в массив значение полей
-/*** mysql хост ***/
+/*** mysql host ***/
 $hostname = 'localhost';
 
-/*** mysql пользователь ***/
+/*** mysql user ***/
 $username = 'root';
 
-/*** mysql пароль ***/
+/*** mysql password ***/
 $password = '';
 
 $dbname = 'friendlylocalguides';
@@ -15,31 +15,6 @@ $dbname = 'friendlylocalguides';
 
 try {
     $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
-
-    /*if($_POST['name']) {
-        $rating         = $_POST['rating'];
-        $name         = $_POST['name'];
-        $email         = $_POST['email'];
-        $message    = $_POST['message'];
-//        превратить все ошибки в исключения
-        $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-        $sql = "INSERT INTO reviews (date_time, name, message, email, rating)
-            VALUES (NOW(), :name, :message, :email, :rating)";
-//        готовим выражение
-        $stmt = $dbh->prepare($sql);
-
-//        вставляем параметры
-        $stmt->bindParam(':rating', $rating, PDO::PARAM_STR);
-        $stmt->bindParam(':name', $name, PDO::PARAM_STR);
-        $stmt->bindParam(':email', $email, PDO::PARAM_STR);
-        $stmt->bindParam(':message', $message, PDO::PARAM_STR);
-
-//        запускаем sql выражение
-        if ($stmt->execute()) {
-            populate_shoutbox();
-        }
-    }*/
 }
 catch(PDOException $e) {
     echo $e->getMessage();
