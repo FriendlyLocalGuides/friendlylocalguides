@@ -6,327 +6,327 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>http://friendlylocalguides.com/</loc>
+  <loc>https://friendlylocalguides.com/</loc>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/tours</loc>
+  <loc>https://friendlylocalguides.com/moscow/tours</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/guides</loc>
+  <loc>https://friendlylocalguides.com/moscow/guides</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/about</loc>
+  <loc>https://friendlylocalguides.com/moscow/about</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/</loc>
+  <loc>https://friendlylocalguides.com/blog/</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/contact</loc>
+  <loc>https://friendlylocalguides.com/moscow/contact</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/tours/kremlin-tour-moscow</loc>
+  <loc>https://friendlylocalguides.com/moscow/tours/kremlin-tour-moscow</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/tours/kremlin-tour-moscow/</loc>
+  <loc>https://friendlylocalguides.com/moscow/tours/kremlin-tour-moscow/</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/tours/going-out-in-moscow</loc>
+  <loc>https://friendlylocalguides.com/moscow/tours/going-out-in-moscow</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/tours/going-out-in-moscow/</loc>
+  <loc>https://friendlylocalguides.com/moscow/tours/going-out-in-moscow/</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/tours/3-days-in-moscow</loc>
+  <loc>https://friendlylocalguides.com/moscow/tours/3-days-in-moscow</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/tours/3-days-in-moscow/</loc>
+  <loc>https://friendlylocalguides.com/moscow/tours/3-days-in-moscow/</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/fun-facts-50-facts-about-moscow/</loc>
+  <loc>https://friendlylocalguides.com/blog/fun-facts-50-facts-about-moscow/</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/local-events-times-and-epochs/</loc>
+  <loc>https://friendlylocalguides.com/blog/local-events-times-and-epochs/</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/red-square-the-kremlin/</loc>
+  <loc>https://friendlylocalguides.com/blog/red-square-the-kremlin/</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/tours/free-tour</loc>
+  <loc>https://friendlylocalguides.com/moscow/tours/free-tour</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/tours/free-tour/</loc>
+  <loc>https://friendlylocalguides.com/moscow/tours/free-tour/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/tours/red-square-and-city-tour-moscow</loc>
+  <loc>https://friendlylocalguides.com/moscow/tours/red-square-and-city-tour-moscow</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/tours/red-square-and-city-tour-moscow/</loc>
+  <loc>https://friendlylocalguides.com/moscow/tours/red-square-and-city-tour-moscow/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/tours/izmailovo-kremlin-tour</loc>
+  <loc>https://friendlylocalguides.com/moscow/tours/izmailovo-kremlin-tour</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/tours/izmailovo-kremlin-tour/</loc>
+  <loc>https://friendlylocalguides.com/moscow/tours/izmailovo-kremlin-tour/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/tours/top-20-must-see-in-moscow</loc>
+  <loc>https://friendlylocalguides.com/moscow/tours/top-20-must-see-in-moscow</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/tours/top-20-must-see-in-moscow/</loc>
+  <loc>https://friendlylocalguides.com/moscow/tours/top-20-must-see-in-moscow/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/tours/2-days-in-moscow</loc>
+  <loc>https://friendlylocalguides.com/moscow/tours/2-days-in-moscow</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/tours/2-days-in-moscow/</loc>
+  <loc>https://friendlylocalguides.com/moscow/tours/2-days-in-moscow/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/tours/moscow-at-night</loc>
+  <loc>https://friendlylocalguides.com/moscow/tours/moscow-at-night</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/tours/moscow-at-night/</loc>
+  <loc>https://friendlylocalguides.com/moscow/tours/moscow-at-night/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/tours/layover-tour-moscow</loc>
+  <loc>https://friendlylocalguides.com/moscow/tours/layover-tour-moscow</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/tours/layover-tour-moscow/</loc>
+  <loc>https://friendlylocalguides.com/moscow/tours/layover-tour-moscow/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/tours/russia-in-cold-war</loc>
+  <loc>https://friendlylocalguides.com/moscow/tours/russia-in-cold-war</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/tours/russia-in-cold-war/</loc>
+  <loc>https://friendlylocalguides.com/moscow/tours/russia-in-cold-war/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/tours/soviet-russia-tour</loc>
+  <loc>https://friendlylocalguides.com/moscow/tours/soviet-russia-tour</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/tours/soviet-russia-tour/</loc>
+  <loc>https://friendlylocalguides.com/moscow/tours/soviet-russia-tour/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/tours/photo-tour-of-moscow</loc>
+  <loc>https://friendlylocalguides.com/moscow/tours/photo-tour-of-moscow</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/tours/photo-tour-of-moscow/</loc>
+  <loc>https://friendlylocalguides.com/moscow/tours/photo-tour-of-moscow/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/tours/bike-tour-in-moscow</loc>
+  <loc>https://friendlylocalguides.com/moscow/tours/bike-tour-in-moscow</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/tours/bike-tour-in-moscow/</loc>
+  <loc>https://friendlylocalguides.com/moscow/tours/bike-tour-in-moscow/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/guides/alina</loc>
+  <loc>https://friendlylocalguides.com/moscow/guides/alina</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/guides/monika</loc>
+  <loc>https://friendlylocalguides.com/moscow/guides/monika</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/guides/dasha</loc>
+  <loc>https://friendlylocalguides.com/moscow/guides/dasha</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/guides/katia</loc>
+  <loc>https://friendlylocalguides.com/moscow/guides/katia</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/guides/sasha</loc>
+  <loc>https://friendlylocalguides.com/moscow/guides/sasha</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/guides/stas</loc>
+  <loc>https://friendlylocalguides.com/moscow/guides/stas</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/guides/ksusha</loc>
+  <loc>https://friendlylocalguides.com/moscow/guides/ksusha</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/10-must-see-places-in-saint-petersburg/</loc>
+  <loc>https://friendlylocalguides.com/blog/10-must-see-places-in-saint-petersburg/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/things-to-do-moscow-memorial-museum-of-cosmonautics/</loc>
+  <loc>https://friendlylocalguides.com/blog/things-to-do-moscow-memorial-museum-of-cosmonautics/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/moscow-tours-photo-tour-in-moscow/</loc>
+  <loc>https://friendlylocalguides.com/blog/moscow-tours-photo-tour-in-moscow/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/travel-friendly-15-reasons-to-visit-russia-in-2015/</loc>
+  <loc>https://friendlylocalguides.com/blog/travel-friendly-15-reasons-to-visit-russia-in-2015/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/russia-first-russian-cosmonaut-yury-gagarin/</loc>
+  <loc>https://friendlylocalguides.com/blog/russia-first-russian-cosmonaut-yury-gagarin/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/russian-holidays-golden-ring/</loc>
+  <loc>https://friendlylocalguides.com/blog/russian-holidays-golden-ring/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/facts-about-russia-russian-cities-top-20-facts/</loc>
+  <loc>https://friendlylocalguides.com/blog/facts-about-russia-russian-cities-top-20-facts/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/moscow-tours-red-square-kremlin-tour/</loc>
+  <loc>https://friendlylocalguides.com/blog/moscow-tours-red-square-kremlin-tour/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/tours/red-square-and-kremlin</loc>
+  <loc>https://friendlylocalguides.com/moscow/tours/red-square-and-kremlin</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/local-events-march-in-moscow/</loc>
+  <loc>https://friendlylocalguides.com/blog/local-events-march-in-moscow/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/local-fun-maslenitsa-week/</loc>
+  <loc>https://friendlylocalguides.com/blog/local-fun-maslenitsa-week/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/russia-where-to-go-on-vacation/</loc>
+  <loc>https://friendlylocalguides.com/blog/russia-where-to-go-on-vacation/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/top-10-moscow-attractions/</loc>
+  <loc>https://friendlylocalguides.com/blog/top-10-moscow-attractions/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/page/2/</loc>
+  <loc>https://friendlylocalguides.com/blog/page/2/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/page/3/</loc>
+  <loc>https://friendlylocalguides.com/blog/page/3/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/page/4/</loc>
+  <loc>https://friendlylocalguides.com/blog/page/4/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/travel-friendly-gorky-park/</loc>
+  <loc>https://friendlylocalguides.com/blog/travel-friendly-gorky-park/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/7-myths-about-moscow-metro/</loc>
+  <loc>https://friendlylocalguides.com/blog/7-myths-about-moscow-metro/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/things-to-do-ivanovskaya-gorka-in-moscow/</loc>
+  <loc>https://friendlylocalguides.com/blog/things-to-do-ivanovskaya-gorka-in-moscow/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/things-to-do-moscow-streets/</loc>
+  <loc>https://friendlylocalguides.com/blog/things-to-do-moscow-streets/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/travel-friendly-best-moscow-restaurants/</loc>
+  <loc>https://friendlylocalguides.com/blog/travel-friendly-best-moscow-restaurants/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/travel-friendly-top-5-russian-souvenirs/</loc>
+  <loc>https://friendlylocalguides.com/blog/travel-friendly-top-5-russian-souvenirs/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/interesting-facts-about-russian-geography/</loc>
+  <loc>https://friendlylocalguides.com/blog/interesting-facts-about-russian-geography/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/travel-friendly-best-coffee-shops-moscow/</loc>
+  <loc>https://friendlylocalguides.com/blog/travel-friendly-best-coffee-shops-moscow/</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/russia-top-10-places-places-to-visit/</loc>
+  <loc>https://friendlylocalguides.com/blog/russia-top-10-places-places-to-visit/</loc>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/fun-facts-kremlin-towers/</loc>
+  <loc>https://friendlylocalguides.com/blog/fun-facts-kremlin-towers/</loc>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/russia-3-national-dishes/</loc>
+  <loc>https://friendlylocalguides.com/blog/russia-3-national-dishes/</loc>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/moscow-tours-10-hour-tour-in-moscow/</loc>
+  <loc>https://friendlylocalguides.com/blog/moscow-tours-10-hour-tour-in-moscow/</loc>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/moscow-tours-ultimate-russian-art-and-culture-experience/</loc>
+  <loc>https://friendlylocalguides.com/blog/moscow-tours-ultimate-russian-art-and-culture-experience/</loc>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/moscow-in-2-days-with-private-guide/</loc>
+  <loc>https://friendlylocalguides.com/blog/moscow-in-2-days-with-private-guide/</loc>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/local-fun-skating-with-friendly-local-guides/</loc>
+  <loc>https://friendlylocalguides.com/blog/local-fun-skating-with-friendly-local-guides/</loc>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/tours/10-hours-in-moscow</loc>
+  <loc>https://friendlylocalguides.com/moscow/tours/10-hours-in-moscow</loc>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/things-to-do-tverskaya-street/</loc>
+  <loc>https://friendlylocalguides.com/blog/things-to-do-tverskaya-street/</loc>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/fun-facts-ghosts-of-moscow/</loc>
+  <loc>https://friendlylocalguides.com/blog/fun-facts-ghosts-of-moscow/</loc>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/fun-facts-moscow-mayors/</loc>
+  <loc>https://friendlylocalguides.com/blog/fun-facts-moscow-mayors/</loc>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/blog/things-to-do-ekaterininsky-park/</loc>
+  <loc>https://friendlylocalguides.com/blog/things-to-do-ekaterininsky-park/</loc>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>http://friendlylocalguides.com/moscow/private-guide-moscow</loc>
+  <loc>https://friendlylocalguides.com/moscow/private-guide-moscow</loc>
   <priority>0.41</priority>
 </url>
 </urlset>
