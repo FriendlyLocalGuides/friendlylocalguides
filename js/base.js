@@ -1,5 +1,5 @@
 
-Stripe.setPublishableKey('pk_test_kFlQJaqOYrER1q0ktuQRjXK8');
+Stripe.setPublishableKey('pk_live_tD2JJyEeD449SHD7DX6WGwrj');
 var isTourPage,
     isGuidePage,
     isThanks;
@@ -455,7 +455,6 @@ $(window).load(function(){
             }
         });
 
-        console.log(error);
         if(isTourPage && $input.hasClass('booking-tour') && !error){
             createStripeToken();
         }
@@ -465,8 +464,6 @@ $(window).load(function(){
         }
 
     }
-
-
     $('.date-field').datepicker({
         minDate: 0,
         beforeShow: function(input, instance){
@@ -484,7 +481,6 @@ $(window).load(function(){
             }
         }
     });
-
     $('.date-field').focus(function(){
         $("#ui-datepicker-div").outerWidth($('.date-field').outerWidth());
 
@@ -500,7 +496,6 @@ $(window).load(function(){
 
         },
         init: function(){
-            console.log( $(".clockpicker-popover"));
             $(".clockpicker-popover").outerWidth($('.time-field').outerWidth());
         },
         afterHide: function(){

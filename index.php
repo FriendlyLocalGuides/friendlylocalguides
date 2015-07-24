@@ -9,6 +9,7 @@
 <head>
     <title><?=$title?></title>
     <meta content="width=device-width" name="viewport">
+    <meta name="viewport" content="initial-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <meta charset="UTF-8"/>
     <meta content="<?=$meta?>" name="description">
@@ -25,8 +26,8 @@
     <script src="/js/plugins/clockpicker.js"></script>
     <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
     <script type="text/javascript" src="/js/lib/jquery.payment.js"></script>
-    <script src="/js/navigate.js"></script>
-    <script src="/js/base.js"></script>
+    <script src="/js/navigate.js?<?=time();?>"></script>
+    <script src="/js/base.js?<?=time();?>"></script>
     <link rel="shortcut icon" href="/i/fav.ico" type="image/x-icon">
     <link rel="icon" href="/i/fav.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/reset.css"/>
@@ -40,14 +41,25 @@
     <link rel="stylesheet" href="/css/rateit.css"/>
     <link rel="stylesheet" href="/css/clockpicker.css"/>
     <link rel="stylesheet" href="/css/navigation.css"/>
-    <link rel="stylesheet" href="/css/content.css"/>
+    <link rel="stylesheet" href="/css/content.css?v<?=time();?>"/>
     <link rel="stylesheet" href="/css/tours.css"/>
     <link rel="stylesheet" href="/css/jquery.cover.css"/>
     <link rel="stylesheet" href="/css/swipebox.css"/>
     <link rel="stylesheet" href="/css/css3-styles.css"/>
     <? include_once 'analyticstracking.php'?>
+    <style>
+        .form-mode .gallery .wrap_gallery,
+        .form-mode .greenishCover{
+            position: static;
+        }
+        .form-mode .view_tour{
+            height: 100vh;
+            min-height: 0 !important;
+            overflow: hidden;
+        }
+    </style>
 </head>
-<body>
+<body class="form-mode">
     <header class="clearfix">
         <div class="main_header">
             <a class="logo" href="/" title="Friendly Local Guides" ></a>
@@ -79,7 +91,6 @@
                                 </div>
                             </div>
                         </div>
-<!--                        <a data-link="/--><?//=$city?><!--/guides" class="--><?// if($id == 'guides') echo 'current'?><!-- guides_item list_item nav-list_item" href="/--><?//=$city?><!--/guides">Guides</a>-->
                         <a class="<? if($id == 'about') echo 'current'?> list_item nav-list_item"  data-link="about" href="/about">About</a>
                         <a class="list_item blog_link" data-link="blog" href="/blog">Blog</a>
                         <a class="<? if($id == 'contact') echo 'current'?> list_item nav-list_item" data-link="contact" href="/contact">Contact</a>
