@@ -26,8 +26,8 @@
     <script src="/js/plugins/clockpicker.js"></script>
     <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
     <script type="text/javascript" src="/js/lib/jquery.payment.js"></script>
-    <script src="/js/navigate.js?<?=time();?>"></script>
-    <script src="/js/base.js?<?=time();?>"></script>
+    <script src="/js/navigate.js"></script>
+    <script src="/js/base.js"></script>
     <link rel="shortcut icon" href="/i/fav.ico" type="image/x-icon">
     <link rel="icon" href="/i/fav.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/reset.css"/>
@@ -41,7 +41,7 @@
     <link rel="stylesheet" href="/css/rateit.css"/>
     <link rel="stylesheet" href="/css/clockpicker.css"/>
     <link rel="stylesheet" href="/css/navigation.css"/>
-    <link rel="stylesheet" href="/css/content.css?v<?=time();?>"/>
+    <link rel="stylesheet" href="/css/content.css"/>
     <link rel="stylesheet" href="/css/tours.css"/>
     <link rel="stylesheet" href="/css/jquery.cover.css"/>
     <link rel="stylesheet" href="/css/swipebox.css"/>
@@ -59,7 +59,7 @@
         }
     </style>
 </head>
-<body class="form-mode">
+<body>
     <header class="clearfix">
         <div class="main_header">
             <a class="logo" href="/" title="Friendly Local Guides" ></a>
