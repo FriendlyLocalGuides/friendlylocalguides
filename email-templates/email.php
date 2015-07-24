@@ -5,11 +5,11 @@
     <title></title>
 </head>
 <body style=" padding: 0; margin: 0;">
-<div style=" min-width: 700px; background-color: #f7f7f7; background: url('http://heylocals.com/i/blotter-tile-bg.jpg') repeat center top; padding: 0; margin: 0;">
+<div style=" min-width: 700px; background-color: #f7f7f7; background: url('https://friendlylocalguides.com/i/blotter-tile-bg.jpg') repeat center top; padding: 0; margin: 0;">
     <table cellspacing="0" cellpadding="0" style="margin: 0 auto; width: 602px;  padding-bottom: 25px;">
         <tr>
             <td style="text-align: center; padding: 20px;">
-                <a href="http://friendlylocalguides.com"><img src="http://heylocals.com/i/logo_l_w.png" width="100"  alt="friendlylocalguides"/></a>
+                <a href="http:https://friendlylocalguides.com"><img src="https://friendlylocalguides.com/i/logo_l_w.png" width="100"  alt="friendlylocalguides"/></a>
             </td>
         </tr>
         <tr>
@@ -24,7 +24,7 @@
         </tr>
         <tr>
             <td style="padding-top: 20px; background-color: #fff;">
-                <img style="width: 100%; display: block;" alt="" src="http://heylocals.com<?=$tourPicture?>">
+                <img style="width: 100%; display: block;" alt="" src="https://friendlylocalguides.com<?=$tourPicture?>">
             </td>
         </tr>
         <tr>
@@ -114,7 +114,7 @@
                                 </p>
                             </td>
                             <td width="45%" style="padding-left: 20px;">
-                                <p style="margin:5px 0;color:#777;font-size:14px;line-height:18px;text-align:left; font-family: 'Helvetica Neue',Helvetica,Arial;">
+                                <p style="margin:5px 0;color:#777 !important;font-size:14px;line-height:18px;text-align:left; font-family: 'Helvetica Neue',Helvetica,Arial;">
                                     <strong>
                                         <?=$email?>
                                     </strong>
@@ -125,7 +125,7 @@
                         <tr>
                             <td width="5%"></td>
                             <td width="40%" style="text-align: left;">
-                                <p style="text-transform:uppercase;margin:5px 0;text-indent:10px;color:#777;font-size:14px;line-height:18px;font-family: 'Helvetica Neue',Helvetica,Arial;">
+                                <p style="text-transform:uppercase;margin:5px 0;text-indent:10px;color:#777 !important;font-size:14px;line-height:18px;font-family: 'Helvetica Neue',Helvetica,Arial;">
                                     Phone number
                                 </p>
                             </td>
@@ -259,17 +259,17 @@
         <tr>
             <td style="font-family: Helvetica,Arial, sans-serif; padding: 20px 0; text-align: center; background-color: #f2f2f2;">
                 <span style="display: inline-block; padding-top: 7px; vertical-align: top; color: #000;">Follow us:</span>
-                <a style="text-decoration: none;" target="_blank" href="https://www.facebook.com/friendlylocalguides" style="text-decoration: none;">
-                    <img width="32" height="32" src="http://heylocals.com/i/social_buttons/fb_w.png" alt=""/>
+                <a style="text-decoration: none;" target="_blank" href="//www.facebook.com/friendlylocalguides" style="text-decoration: none;">
+                    <img width="32" height="32" src="https://friendlylocalguides.com/i/social_buttons/fb_w.png" alt=""/>
                 </a>
-                <a style="text-decoration: none;" target="_blank" href="https://twitter.com/FriendlyGuides">
-                    <img width="32" height="32" src="http://heylocals.com/i/social_buttons/tw_w.png" alt=""/>
+                <a style="text-decoration: none;" target="_blank" href="//twitter.com/FriendlyGuides">
+                    <img width="32" height="32" src="https://friendlylocalguides.com/i/social_buttons/tw_w.png" alt=""/>
                 </a>
-                <a style="text-decoration: none;" target="_blank" href="https://plus.google.com/b/113546718017692385903/113546718017692385903/posts/p/pub">
-                    <img width="32" height="32" src="http://heylocals.com/i/social_buttons/g+_w.png" alt=""/>
+                <a style="text-decoration: none;" target="_blank" href="//plus.google.com/b/113546718017692385903/113546718017692385903/posts/p/pub">
+                    <img width="32" height="32" src="https://friendlylocalguides.com/i/social_buttons/g+_w.png" alt=""/>
                 </a>
-                <a style="text-decoration: none;" target="_blank" href="http://instagram.com/friendly.local.guides">
-                    <img width="32" height="32" src="http://heylocals.com/i/social_buttons/instagram_w.png" alt=""/>
+                <a style="text-decoration: none;" target="_blank" href="//instagram.com/friendly.local.guides">
+                    <img width="32" height="32" src="https://friendlylocalguides.com/i/social_buttons/instagram_w.png" alt=""/>
                 </a>
             </td>
         </tr>

@@ -20,7 +20,7 @@
 
         if(stristr($_SERVER['HTTP_REFERER'], 'contact')){
             $subject = 'Contact';
-            $form_message  = "$name\nE-mail: $email\n$message";
+            $form_message  = "Name: $name\nE-mail: $email\n$message";
 	        $result = 'contact';
         }else{
             $subject = 'Friendly Local Guides booking';
