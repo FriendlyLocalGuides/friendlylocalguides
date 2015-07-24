@@ -5,55 +5,39 @@
     <img src="/i/guides-list/alina.jpg" alt="Alina"/>
     <figcaption>
         <h2>Alina</h2>
+        <h4>CEO</h4>
         <a class="view-button" href="/moscow/guides/alina">About me</a>
     </figcaption>
 </figure>
+    <figure class="guide-item">
+        <img src="/i/guides-list/dasha.jpg" alt="Dasha"/>
+        <figcaption>
+            <h2>Dasha</h2>
+            <h4>Wine Lover</h4>
+            <a class="view-button" href="/moscow/guides/dasha">About me</a>
+        </figcaption>
+    </figure>
 <figure class="guide-item">
-    <img src="/i/guides-list/monika.jpg" alt="Monika"/>
+    <img src="/i/guides-list/inna.jpg" alt="Inna"/>
     <figcaption>
-        <h2>Monika</h2>
-        <a class="view-button" href="/moscow/guides/monika">About me</a>
+        <h2>Inna</h2>
+        <h4>Art Aficionado</h4>
+        <a class="view-button" href="/moscow/guides/inna">About me</a>
     </figcaption>
 </figure>
 <figure class="guide-item">
-    <img src="/i/guides-list/dasha.jpg" alt="Dasha"/>
+    <img src="/i/guides-list/anya.jpg" alt="Anya"/>
     <figcaption>
-        <h2>Dasha</h2>
-        <a class="view-button" href="/moscow/guides/dasha">About me</a>
+        <h2>Anya</h2>
+        <h4>Local Vibe Ninja</h4>
+        <a class="view-button" href="/moscow/guides/anya">About me</a>
     </figcaption>
 </figure>
 <figure class="guide-item">
-    <img src="/i/guides-list/katia.jpg" alt="Katia"/>
+    <img src="/i/guides-list/katya.jpg" alt="Katya"/>
     <figcaption>
-        <h2>Katia</h2>
-        <a class="view-button" href="/moscow/guides/katia">About me</a>
+        <h2>Katya</h2>
+        <h4>Russian Culture Lover</h4>
+        <a class="view-button" href="/moscow/guides/katya">About me</a>
     </figcaption>
 </figure>
-<figure class="guide-item">
-    <img src="/i/guides-list/sasha.jpg" alt="Sasha"/>
-    <figcaption>
-        <h2>Sasha</h2>
-        <a class="view-button" href="/moscow/guides/sasha">About me</a>
-    </figcaption>
-</figure>
-<figure class="guide-item">
-    <img src="/i/guides-list/stas.jpg" alt="Stas"/>
-    <figcaption>
-        <h2>Stas</h2>
-        <a class="view-button" href="/moscow/guides/stas">About me</a>
-    </figcaption>
-</figure>
-<figure class="guide-item">
-    <img src="/i/guides-list/ksusha.jpg" alt="Ksusha"/>
-    <figcaption>
-        <h2>Ksusha</h2>
-        <a class="view-button" href="/moscow/guides/ksusha">About me</a>
-    </figcaption>
-</figure>
-<!--<figure class="guide-item">
-    <img src="/i/guides-list/masha.jpg" alt="Masha"/>
-    <figcaption>
-        <h2>Masha</h2>
-        <a class="view-button" href="/moscow/guides/masha">About me</a>
-    </figcaption>
-</figure>-->

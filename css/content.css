@@ -658,6 +658,10 @@
     margin-bottom: 15px;
 }
 
+.guide_page .description{
+    padding-top: 150px;
+}
+
 .guide_page .header_title,
 .guide_page .scroll_down{
     z-index: 101;
@@ -668,7 +672,7 @@
 }
 
 .guide_page ol{
-    padding: 50px 0 0 30px;
+    padding: 10px 0 0 30px;
 }
 
 .reviews .content_box li{
