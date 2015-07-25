@@ -14,7 +14,6 @@
         </ul>
         <div class="cycle-pager"></div>
     </section>
-    <!--<section class="view_tour" style="background-image: url('/i/gallery/photo-tour/01.jpg');"></section>-->
     <div class="scroll_down">
         <div class="scroll_down_container">
             <div class="scroll_down_text">About me</div>
@@ -30,7 +29,7 @@
             <li>When I am traveling people think I'm from Spain, France or Italy - anywhere but not Russia.</li>
             <li>My favorite public transport is tramway! When I’m taking a ride, I feel like I’m in Moscow of the 1960s.</li>
             <li>I adore, ADORE children!</li>
-            <li>I am a child of flowers.. I like eating petals. Yes, I'm serious.</li>
+            <li>I am a child of flowers. I like eating petals. Yes, I'm serious.</li>
             <li>I strongly believe that if you want something, the whole Universe will help you get it.</li>
             <li>I had a phone talk with Pierce Brosnan :)</li>
             <li>Exchanging local authentic experience with my tourists is the best thing I could wish for.</li>
@@ -40,7 +39,7 @@
         <div class="ivebeen">
             <h5>I've been to:</h5>
             <p>
-                Great Britain, France, Italy, Spain, Germany, Poland, Armenia, Montenegro +San Marino, Vatican 
+                Great Britain, France, Italy, Spain, Germany, Poland, Armenia, Montenegro +San Marino, Vatican.
             </p>
         </div>
     </section>

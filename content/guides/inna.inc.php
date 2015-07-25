@@ -25,21 +25,21 @@
     <section class="description content_box whiten">
         <h5>Art Aficionado</h5>
         <ol>
-            <li>"Sometimes I've believe as many as six impossible things before breakfast." It's not me who said this but this is something that characterises me in a single phrase.</li>
+            <li>"Sometimes I've believed as many as six impossible things before breakfast." It's not me who said this but this is something that characterizes me in a single phrase.</li>
             <li>I believe that happiness is a choice as you are as happy as you choose to be. So I choose happiness.</li>
             <li>Oh yes, I am a dreamer.</li>
             <li>I love antiquities and flee markets with old stuff from everywhere.</li>
-            <li>I love the present and love to enjoy this very moment.</li>
+            <li>I love the present and love to enjoy every single moment of mu life. Well, at least I try to.</li>
             <li>I know that life could be so sweet on a sunny side of the street.</li>
             <li>That doesn't stop me from loving the rain though.</li>
             <li>I do regret that there's no sea in Moscow but I'm so happy there are lots of other cool things to see and to show here.</li>
             <li>Do you love theatre as much as I do? </li>
-            <li>There's plenty of both extremely useful and completely useless information about Moscow in my head but what my heart say is: Moscow is a place to be!</li>
+            <li>There's plenty of both extremely useful and completely useless information about Moscow in my head but what my heart says is: Moscow is a place to be!</li>
         </ol>
         <div class="ivebeen">
             <h5>I've been to:</h5>
             <p>
-                UK, US, France, Germany, Switzerland, Greece, Hungary, Montenegro, Spain, Latvia, Turkey
+                UK, US, France, Germany, Switzerland, Greece, Hungary, Montenegro, Spain, Latvia, Turkey.
             </p>
         </div>
     </section>
