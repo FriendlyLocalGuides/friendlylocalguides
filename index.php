@@ -47,7 +47,7 @@
     <link rel="stylesheet" href="/css/swipebox.css"/>
     <link rel="stylesheet" href="/css/css3-styles.css"/>
     <? include_once 'analyticstracking.php'?>
-    <style>
+    <!--<style>
         .form-mode .gallery .wrap_gallery,
         .form-mode .greenishCover{
             position: static;
@@ -57,7 +57,7 @@
             min-height: 0 !important;
             overflow: hidden;
         }
-    </style>
+    </style>-->
 </head>
 <body>
     <header class="clearfix">
