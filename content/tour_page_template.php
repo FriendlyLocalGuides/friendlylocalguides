@@ -27,7 +27,7 @@
 </div>
 
 <div class="overlay_view_tour"></div>
-<section class="view_tour">
+<section class="view_tour height-viewport">
     <?=$splashScreen?>
     <div class="scroll_down">
         <div class="scroll_down_container">
@@ -39,7 +39,7 @@
 <section class="description_tour content_box whiten">
     <?=$descriptionTour?>
 </section>
-<section class="blacken gallery">
+<section class="blacken gallery height-viewport">
     <?=$tourGallery?>
 </section>
 <section class="whiten form-container book-tour">

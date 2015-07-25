@@ -177,12 +177,21 @@ $(function(){
     /*Set section height*/
 
     function setHeight(){
-        var $sectionSlide = $(".container").find("section");
+        var androidDevice = $('html').hasClass('android');
+        var $sectionSlide = $(".container").find(".height-viewport");
         var windowHeight = $(window).outerHeight();
         $sectionSlide.css({
             minHeight: windowHeight + "px"
         });
         $(window).on('resize',(function(){
+            if(!androidDevice){
+                windowHeight = $(window).outerHeight();
+                $sectionSlide.css({
+                    minHeight: windowHeight + "px"
+                });
+            }
+        }));
+        $(window).on('orientation',(function(){
             windowHeight = $(window).outerHeight();
             $sectionSlide.css({
                 minHeight: windowHeight + "px"

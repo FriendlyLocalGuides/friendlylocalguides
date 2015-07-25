@@ -6,7 +6,7 @@
     </div>
     <div class="overlay_view_tour"></div>
 
-    <section class="gallery cycle-slideshow" data-cycle-slides="li.cycle-slide" data-cycle-pager=".cycle-pager">
+    <section class="gallery cycle-slideshow height-viewport" data-cycle-slides="li.cycle-slide" data-cycle-pager=".cycle-pager">
         <ul>
             <li class="cycle-slide" style="background-image: url('/i/gallery/guides/dasha/01.jpg')"></li>
             <li class="cycle-slide" style="background-image: url('/i/gallery/guides/dasha/02.jpg')"></li>
@@ -23,7 +23,7 @@
     </div>
 
 
-    <section class="description content_box whiten">
+    <section class="description content_box whiten height-viewport">
         <h5>Wine Lover</h5>
         <ol>
             <li>I can't live without traveling! My most recent journey was India.</li>

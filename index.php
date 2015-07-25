@@ -16,8 +16,8 @@
     <script src="/js/lib/jquery-1.11.0.min.js"></script>
     <script src="/js/lib/modernizr.min.js"></script>
     <script src="/js/lib/jquery-ui.min.js"></script>
+    <script src="/js/lib/device.min.js?v<?=time();?>"></script>
     <script src="/js/plugins/jquery.rateit.min.js"></script>
-    <script src="/js/plugins/jquery.ba-throttle-debounce.min.js"></script>
     <script src="/js/plugins/jquery.cycle2.min.js"></script>
     <script src="/js/plugins/jquery.tools.min.js"></script>
     <script src="/js/plugins/placeholders.min.js"></script>
@@ -26,8 +26,8 @@
     <script src="/js/plugins/clockpicker.js"></script>
     <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
     <script type="text/javascript" src="/js/lib/jquery.payment.js"></script>
-    <script src="/js/navigate.js"></script>
-    <script src="/js/base.js"></script>
+    <script src="/js/navigate.js?v<?=time();?>"></script>
+    <script src="/js/base.js?v<?=time();?>"></script>
     <link rel="shortcut icon" href="/i/fav.ico" type="image/x-icon">
     <link rel="icon" href="/i/fav.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/reset.css"/>
@@ -41,23 +41,12 @@
     <link rel="stylesheet" href="/css/rateit.css"/>
     <link rel="stylesheet" href="/css/clockpicker.css"/>
     <link rel="stylesheet" href="/css/navigation.css"/>
-    <link rel="stylesheet" href="/css/content.css"/>
-    <link rel="stylesheet" href="/css/tours.css"/>
+    <link rel="stylesheet" href="/css/content.css?v<?=time();?>"/>
+    <link rel="stylesheet" href="/css/tours.css?v<?=time();?>"/>
     <link rel="stylesheet" href="/css/jquery.cover.css"/>
     <link rel="stylesheet" href="/css/swipebox.css"/>
     <link rel="stylesheet" href="/css/css3-styles.css"/>
     <? include_once 'analyticstracking.php'?>
-    <!--<style>
-        .form-mode .gallery .wrap_gallery,
-        .form-mode .greenishCover{
-            position: static;
-        }
-        .form-mode .view_tour{
-            height: 100vh;
-            min-height: 0 !important;
-            overflow: hidden;
-        }
-    </style>-->
 </head>
 <body>
     <header class="clearfix">

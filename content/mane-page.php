@@ -13,7 +13,7 @@
         </div>
     </div>
     <div class="overlay_view_tour"></div>
-    <section class="view_tour" >
+    <section class="view_tour height-viewport" >
         <img class="cover-img" src="/i/gallery/tours/rsk/Christ-winter.jpg" alt="Kremlin Tours. Kremlin Tour. Kremlin."/>
         <div class="scroll_down">
             <div class="scroll_down_container">
@@ -22,7 +22,7 @@
             </div>
         </div>
     </section>
-    <section class="features">
+    <section class="features height-viewport">
         <div class="heading-features">
             <h4>What you get</h4>
             <div class="decor">
@@ -48,7 +48,7 @@
             </div>
         </div>
     </section>
-    <section class="content_box tours-list_new  whiten">
+    <section class="content_box tours-list_new  whiten height-viewport">
         <h1 class="title-of-tours single-title">Top 3 tours</h1>
         <div class="row">
             <figure class="tour-item">

@@ -32,45 +32,6 @@ function getTourTitles(){
     $('.price-field').val(tourPrice);
 }
 
-$(window).on('scroll resize orientationchange touchmove', $.debounce(750, function() {
-
-    var scroll_position = $(window).scrollTop(),
-        snap_range = 256,
-        slide_top,
-        snap_from,
-        snap_to,
-        snap_offset,
-        scroll_to,
-        scroll_diff;
-
-    /*$('.gallery').each(function () {
-
-
-            slide_top = $(this).offset().top;
-
-            snap_from = Math.round(slide_top - (snap_range / 2), 2);
-            snap_to = Math.round(slide_top + (snap_range / 2), 2);
-
-
-            if (scroll_position >= snap_from && scroll_position <= snap_to) {
-
-                snap_offset = 0; //e.g. menu bar height
-
-                scroll_to = $(this).offset().top - snap_offset;
-
-                scroll_diff = scroll_position - scroll_to;
-
-                if (scroll_diff != "-1") {
-
-                    $("html, body").animate({scrollTop: scroll_to}, 300, 'linear');
-
-                }
-
-            }
-
-    });*/
-}));
-
 function toggleTheme(){
     var scroll_position, offset, element_top, element_bottom;
     scroll_position = $(window).scrollTop();
@@ -290,7 +251,7 @@ $(window).load(function(){
     //Reviews
     $('.tabs').tabs('.pane');
 
-    $('.container').on('click touch','.view_tour .scroll_down_container, .guide_page .scroll_down_container', function(){
+    $('.container').on('click touch','.view_tour .scroll_down_container, .guide_page .scroll_down_container, .about_page .scroll_down_container', function(){
 
         $('html, body').animate({
             scrollTop: $('.description_tour, .description, .features ').offset().top
@@ -319,7 +280,7 @@ $(window).load(function(){
 
 
 
-    $(window).on('ready resize orientation scroll', $.debounce(100, function(){
+    $(window).on('ready resize orientation scroll', (function(){
         toggleTheme();
     }));
 

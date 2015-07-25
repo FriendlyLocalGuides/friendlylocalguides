@@ -6,7 +6,7 @@
     </div>
     <div class="overlay_view_tour"></div>
 
-    <section class="gallery cycle-slideshow" data-cycle-slides="li.cycle-slide" data-cycle-pager=".cycle-pager">
+    <section class="gallery cycle-slideshow height-viewport" data-cycle-slides="li.cycle-slide" data-cycle-pager=".cycle-pager">
         <ul>
             <li class="cycle-slide" style="background-image: url('/i/gallery/guides/anya/01.jpg')"></li>
             <li class="cycle-slide" style="background-image: url('/i/gallery/guides/anya/02.jpg')"></li>
@@ -21,7 +21,7 @@
         </div>
     </div>
 
-    <section class="description content_box whiten">
+    <section class="description content_box whiten height-viewport">
         <h5>Local Vibe Ninja</h5>
         <ol>
             <li>I'm really into baking! One day I will open a coffee shop and will bake pastry myself.</li>

@@ -6,7 +6,7 @@
     </div>
     <div class="overlay_view_tour"></div>
 
-    <section class="gallery cycle-slideshow" data-cycle-slides="li.cycle-slide" data-cycle-pager=".cycle-pager">
+    <section class="gallery cycle-slideshow height-viewport" data-cycle-slides="li.cycle-slide" data-cycle-pager=".cycle-pager">
         <ul>
             <li class="cycle-slide" style="background-image: url('/i/gallery/guides/valery/01.jpg')"></li>
             <li class="cycle-slide" style="background-image: url('/i/gallery/guides/valery/02.jpg')"></li>
@@ -21,7 +21,7 @@
         </div>
     </div>
 
-    <section class="description content_box whiten">
+    <section class="description content_box whiten height-viewport">
         <ol>
             <li>My native hair color is really ginger. :-)</li>
             <li>I love animals very much. I'm an absolute dog lover. When I was a small child I even wanted to be a veterinarian. </li>

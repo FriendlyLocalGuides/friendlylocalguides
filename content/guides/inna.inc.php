@@ -6,7 +6,7 @@
     </div>
     <div class="overlay_view_tour"></div>
 
-    <section class="gallery cycle-slideshow" data-cycle-slides="li.cycle-slide" data-cycle-pager=".cycle-pager">
+    <section class="gallery cycle-slideshow height-viewport" data-cycle-slides="li.cycle-slide" data-cycle-pager=".cycle-pager">
         <ul>
             <li class="cycle-slide" style="background-image: url('/i/gallery/guides/inna/01.jpg')"></li>
             <li class="cycle-slide" style="background-image: url('/i/gallery/guides/inna/02.jpg')"></li>
@@ -22,7 +22,7 @@
         </div>
     </div>
 
-    <section class="description content_box whiten">
+    <section class="description content_box whiten height-viewport">
         <h5>Art Aficionado</h5>
         <ol>
             <li>"Sometimes I've believed as many as six impossible things before breakfast." It's not me who said this but this is something that characterizes me in a single phrase.</li>
