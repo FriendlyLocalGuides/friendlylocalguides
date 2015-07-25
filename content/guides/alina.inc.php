@@ -6,7 +6,7 @@
     </div>
     <div class="overlay_view_tour"></div>
 
-    <section class="gallery cycle-slideshow" data-cycle-slides="li.cycle-slide" data-cycle-pager=".cycle-pager">
+    <section class="gallery cycle-slideshow height-viewport" data-cycle-slides="li.cycle-slide" data-cycle-pager=".cycle-pager">
         <ul>
             <li class="cycle-slide" style="background-image: url('/i/gallery/guides/alina/01.jpg')"></li>
             <li class="cycle-slide" style="background-image: url('/i/gallery/guides/alina/02.jpg')"></li>
@@ -22,10 +22,10 @@
         </div>
     </div>
 
-    <section class="description content_box whiten">
+    <section class="description content_box whiten height-viewport">
         <h5>Dear friend,</h5>
         <p>
-            Four years ago, I had my first tour around Red Square and the city center, with an Australian tourist
+            Five years ago, I had my first tour around Red Square and the city center, with an Australian tourist
             whose mother was Russian.
         </p>
         <p>
@@ -34,9 +34,9 @@
             for my guests!
         </p>
         <p>
-            And today, three years later, my passion still remains the same. Of course, my itineraries are changing,
+            And today, five years later, my passion still remains the same. Of course, my itineraries are changing,
             ideas are evolving, and I’ve found more friendly and talented people to join the team, which is why I’m
-            so excited to welcome you to Alina Moscow tours.
+            so excited to welcome you to Friendly Local Guides.
         </p>
         <p>
             Our team of dedicated guides and route creators are working to deliver you exciting tours, authentic

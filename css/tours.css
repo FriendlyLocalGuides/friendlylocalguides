@@ -52,6 +52,9 @@
     text-transform: uppercase;
     margin-bottom: 5px;
 }
+.guide-item h2{
+    margin-bottom: 10px;
+}
 
 .guide-item h2{
     font-size: 1.2em;
@@ -109,7 +112,7 @@
 }
 
 .guide-item figcaption{
-    bottom: 59px;
+    bottom: 56px;
 }
 
 
@@ -124,11 +127,11 @@
 
 .guide-item:hover figcaption,
 .guide-item.hover figcaption{
-    -webkit-transform: translate(0, 59px);
-    -moz-transform: translate(0, 59px);
-    -ms-transform: translate(0, 59px);
-    -o-transform: translate(0, 59px);
-    transform: translate(0, 59px);
+    -webkit-transform: translate(0, 56px);
+    -moz-transform: translate(0, 56px);
+    -ms-transform: translate(0, 56px);
+    -o-transform: translate(0, 56px);
+    transform: translate(0, 56px);
 }
 
 .tour-item:hover h3,
@@ -166,6 +169,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    margin-top: 25px;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);

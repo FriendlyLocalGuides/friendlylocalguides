@@ -8,7 +8,7 @@
         </div>
     </div>
     <div class="overlay_view_tour"></div>
-    <section class="view_tour">
+    <section class="view_tour height-viewport">
         <img class="cover-img" src="/i/gallery/tours/rsk/Christ.jpg" alt="Kremlin Tours. Kremlin Tour. Kremlin."/>
     </section>
     <div class="scroll_down">

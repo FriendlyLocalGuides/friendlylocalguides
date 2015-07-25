@@ -38,14 +38,11 @@ if($city && $id == 'guides' && !$guides){
 if($id == 'guides' && $guides){
     switch($guides){
         case 'alina': include 'guides/alina.inc.php'; break;
-        case 'monika': include 'guides/monika.inc.php'; break;
-        case 'sasha': include 'guides/sasha.inc.php'; break;
-        case 'stas': include 'guides/stas.inc.php'; break;
-        case 'ksusha': include 'guides/ksusha.inc.php'; break;
-        case 'katia': include 'guides/katia.inc.php'; break;
         case 'dasha': include 'guides/dasha.inc.php'; break;
-        case 'alexandra': include 'guides/alexandra_pl.inc.php'; break;
-        //case 'masha': include 'guides/masha.inc.php'; break;
+        case 'inna': include 'guides/inna.inc.php'; break;
+        case 'anya': include 'guides/anya.inc.php'; break;
+        case 'katya': include 'guides/katya.inc.php'; break;
+        case 'valery': include 'guides/valery.inc.php'; break;
     }
 }
 

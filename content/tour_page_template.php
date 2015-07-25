@@ -24,7 +24,7 @@
 </div>
 
 <div class="overlay_view_tour"></div>
-<section class="view_tour">
+<section class="view_tour height-viewport">
     <?=$splashScreen?>
     <div class="scroll_down">
         <div class="scroll_down_container">
@@ -36,7 +36,7 @@
 <section class="description_tour content_box whiten">
     <?=$descriptionTour?>
 </section>
-<section class="blacken gallery">
+<section class="blacken gallery height-viewport">
     <?=$tourGallery?>
 </section>
 <section class="whiten form-container book-tour">
@@ -64,14 +64,14 @@
                         <div class="rate_us">
                             <span class="rate-us_word">Rate us</span>
                             <input type="range" value="0" step="1" id="backing" name="range" placeholder="">
-                            <input class="rating" type="hidden" value="" name="rating" placeholder="">
+                            <input class="rating required" type="hidden" value="" name="rating" placeholder="">
                             <div class="rateit bigstars" data-rateit-backingfld="#backing" data-rateit-resetable="false"  data-rateit-ispreset="true"
                                  data-rateit-min="0" data-rateit-max="5" data-rateit-starwidth="32" data-rateit-starheight="32">
                             </div>
                         </div>
-                        <input class="input-item name-field" type="text" name="name" placeholder="Name"/>
-                        <input class="input-item country-field" type="text" name="country" placeholder="City, Country"/>
-                        <input class="input-item email-field" type="email" name="email"  placeholder="E-mail"/>
+                        <input class="input-item name-field required" type="text" name="name" placeholder="Name"/>
+                        <input class="input-item country-field required" type="text" name="country" placeholder="City, Country"/>
+                        <input class="input-item email-field required" type="email" name="email"  placeholder="E-mail"/>
                         <textarea class="input-item comments-field" name="message" placeholder="Message"></textarea>
                         <label class="checkbox-review">Video<input type="checkbox"/></label>
                          <input class="input-item video-field" type="email" name="video"  placeholder="Link to your video review of the tour"/>

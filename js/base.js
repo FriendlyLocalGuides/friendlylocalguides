@@ -1,66 +1,36 @@
+
+Stripe.setPublishableKey('pk_live_tD2JJyEeD449SHD7DX6WGwrj');
 var isTourPage,
     isGuidePage,
     isThanks;
 
 function getTourTitles(){
-    var $tourHeader     = $('.header_title'),
-        tourTitle       = $tourHeader.find('h3').html(),
-        tourPrice       = $tourHeader.find('.price').html(),
-        $subHeader      = $('.sub_header'),
-        $mailSuccess    = $('.mail_success'),
-        headerTitle     = $subHeader.find('h4'),
-        headerPrice     = $subHeader.find('.price'),
-        titleBookedTour = $mailSuccess.find('.title-tour'),
-        priceBookedTour = $mailSuccess.find('.price-tour');
+    var $tourHeader         = $('.header_title'),
+        tourTitle           = $tourHeader.find('h3').html(),
+        tourPrice           = $tourHeader.find('.price').html(),
+        $subHeader          = $('.sub_header'),
+        $wrapPreorderImg    = $('.wrap-preorder-img'),
+        $mailSuccess        = $('.mail_success'),
+        headerTitle         = $subHeader.find('h4'),
+        headerPrice         = $subHeader.find('.price'),
+        wrapPreorderTitle   = $wrapPreorderImg.find('h4'),
+        wrapPreorderPrice   = $wrapPreorderImg.find('.price'),
+        titleBookedTour     = $mailSuccess.find('.title-tour'),
+        priceBookedTour     = $mailSuccess.find('.price-tour'),
+        viewTourImg         = $('.cover-img').attr('src');
 
 
     headerTitle.html(tourTitle);
+    wrapPreorderTitle.html(tourTitle);
     titleBookedTour.html(tourTitle);
     headerPrice.html(tourPrice);
+    wrapPreorderPrice.html(tourPrice);
     priceBookedTour.html(tourPrice);
+    $('.preorder-img').attr('src', viewTourImg);
+    $('.tour-photo-field').attr('value', viewTourImg);
     $('.title-field').val(tourTitle);
     $('.price-field').val(tourPrice);
 }
-
-$(window).on('scroll resize orientationchange touchmove', $.debounce(750, function() {
-
-    var scroll_position = $(window).scrollTop(),
-        snap_range = 256,
-        slide_top,
-        snap_from,
-        snap_to,
-        snap_offset,
-        scroll_to,
-        scroll_diff;
-
-    $('section').each(function () {
-
-        if(!$(this).hasClass('contact')){
-            slide_top = $(this).offset().top;
-
-            snap_from = Math.round(slide_top - (snap_range / 2), 2);
-            snap_to = Math.round(slide_top + (snap_range / 2), 2);
-
-
-            if (scroll_position >= snap_from && scroll_position <= snap_to) {
-
-                snap_offset = 0; //e.g. menu bar height
-
-                scroll_to = $(this).offset().top - snap_offset;
-
-                scroll_diff = scroll_position - scroll_to;
-
-                if (scroll_diff != "-1") {
-
-                    $("html, body").animate({scrollTop: scroll_to}, 300, 'linear');
-
-                }
-
-            }
-        }
-
-    });
-}));
 
 function toggleTheme(){
     var scroll_position, offset, element_top, element_bottom;
@@ -211,9 +181,12 @@ function toggleTheme(){
     });
 
     if(no_bookButton){
+        $('header').removeClass('show_sub-header');
+        $('.scroll-navigate').addClass('hide');
         $('header').find(".book_button").hide();
         $('.sub_header').find(".too_long_duration").removeClass('show');
     }else{
+        $('.scroll-navigate').removeClass('hide');
         $('header').find(".book_button").show();
         $('.sub_header').find(".too_long_duration").addClass('show');
     }
@@ -278,7 +251,7 @@ $(window).load(function(){
     //Reviews
     $('.tabs').tabs('.pane');
 
-    $('.container').on('click touch','.view_tour .scroll_down_container, .guide_page .scroll_down_container', function(){
+    $('.container').on('click touch','.view_tour .scroll_down_container, .guide_page .scroll_down_container, .about_page .scroll_down_container', function(){
 
         $('html, body').animate({
             scrollTop: $('.description_tour, .description, .features ').offset().top
@@ -307,19 +280,19 @@ $(window).load(function(){
 
 
 
-    $(window).on('ready resize orientation scroll', $.debounce(100, function(){
+    $(window).on('ready resize orientation scroll', (function(){
         toggleTheme();
     }));
 
-    sendMessage();
-    checkCheckbox();
+
+
     function checkCheckbox(){
         if ($('.checkbox-review input').prop( "checked")) {
-            $('.video-field').fadeIn('fast');
+            $('.video-field').fadeIn('fast').addClass('required');
         } else {
             $('.video-field').fadeOut('fast', function(){
                 $('.video-field').val("");
-            });
+            }).removeClass('required error_field');
         }
     }
 
@@ -329,173 +302,203 @@ $(window).load(function(){
 
     $('.rateit').on('click', function(){
         var ratVal = $('.rateit').rateit('value');
-        $('.rating').val(ratVal)
+        $('.rating').val(ratVal);
+        if($('.rating').val().length > 0){
+            $('.rating').removeClass('error_field');
+        }
     });
 
-/*    $('.container').on('click', '.reviews input[type="submit"]', function(e){
-        e.preventDefault();
+
+    function stripeResponseHandler(status, response) {
+        var $form = $('#booking_form');
+        if (response.error) {
+            // Show the errors on the form
+            if(response.error.message){
+                $form.find('.payment-errors').text(response.error.message);
+                $('.payment-errors-wrapper').fadeIn();
+            }
+        } else {
+            // response contains id and card, which contains additional card details
+            var token = response.id;
+            // Insert the token into the form so it gets submitted to the server
+            $form.append($('<input type="hidden" name="stripeToken" />').val(token));
+            // and submit
+            $form.get(0).submit();
+        }
+    }
+
+    function createStripeToken(){
+        var expiration = $('.cc-exp').payment('cardExpiryVal');
+        Stripe.card.createToken({
+            number: $('.cc-num').val(),
+            cvc: $('.cc-cvc').val(),
+            exp_month:  (expiration.month || 0),
+            exp_year:  (expiration.year || 0)
+        }, stripeResponseHandler);
+    }
+
+    //jQuery.payment
+    $('input.cc-num').payment('formatCardNumber');
+    $('input.cc-exp').payment('formatCardExpiry');
+    $('input.cc-cvc').payment('formatCardCVC');
+
+    function validateCardDetails(){
+        var $ccNum = $('.cc-num'),
+            $ccExp = $('.cc-exp'),
+            $ccCVC = $('.cc-cvc'),
+            expiry = $ccExp.payment('cardExpiryVal'),
+            validateCardNumber = $.payment.validateCardNumber($ccNum.val()),
+            validateExpiry = $.payment.validateCardExpiry(expiry["month"], expiry["year"]),
+            validateCVC = $.payment.validateCardCVC($ccCVC.val());
+
+        if(!validateCardNumber && $ccNum.is(':focus')){
+            $ccNum.addClass('error_field');
+        }
+        if(validateExpiry){
+            $ccExp.addClass('identified');
+        }else{
+            if($ccExp.is(':focus')){
+                $ccExp.addClass('error_field');
+                $ccExp.removeClass('identified');
+            }
+        }
+        if(validateCVC){
+            $ccCVC.addClass('identified');
+        }else{
+            if($ccCVC.is(':focus')){
+                $ccCVC.addClass('error_field');
+                $ccCVC.removeClass('identified');
+            }
+        }
+    }
+
+    function sendReview(){
         $.post("/content/comments.php", $("#review-form").serialize(),function(result){
             console.log($("#review-form").serialize());
-            console.log(result);
-            //$('.written-reviews').append(result);
             if(result) {
-                $('.review').fadeToggle(500, function () {
-                    $(this).html(result).fadeToggle(500);
-                    $(".name-field, .email-field, .comments-field").val("");
-                });
-            }
-        });
-    });*/
-
-
-    function sendMessage(){
-
-        $('.container').on('click', '.form-container .book_button', function(e){
-            //e.preventDefault();
-            //console.log();
-            var error = false,
-                $name = $(this).siblings('.name-field'),
-                $email = $(this).siblings('.email-field'),
-                $num_of_people = $(this).siblings('.num_of_people-field'),
-                $country = $(this).siblings('.country-field'),
-                $hotel = $(this).siblings('.hotel-field'),
-                $date = $(this).siblings('.date-field'),
-                $startTime = $(this).siblings('.time-field'),
-                $message = $(this).siblings('.comments-field'),
-                $videoReview = $(this).siblings('.video-field'),
-                nameVal = $name.val(),
-                emailVal = $email.val(),
-                timeVal = $startTime.val(),
-                peopleVal = $num_of_people.val(),
-                countryVal = $country.val(),
-                dateVal = $date.val(),
-                hotelVal = $hotel.val(),
-                messageVal = $message.val(),
-                ratingVal = $('.rateit-range').attr("aria-valuenow"),
-                videoReviewsVal = $videoReview.val();
-
-            if(nameVal.length == 0){
-                error = true;
-                $name.addClass("error_field");
-            }else{
-                $name.removeClass("error_field");
-            }
-            if(emailVal.length == 0 || emailVal.indexOf('@') == '-1'){
-                error = true;
-                $email.addClass("error_field");
-            }else{
-                $email.removeClass("error_field");
-            }
-            if(timeVal.length == 0){
-                error = true;
-                $startTime.addClass("error_field");
-            }else{
-                $startTime.removeClass("error_field");
-            }
-            if(isTourPage && $(this).hasClass('send-review')){
-                e.preventDefault();
-                if(countryVal.length == 0){
-                    error = true;
-                    $country.addClass("error_field");
-                }else{
-                    $country.removeClass("error_field");
-                }
-                if(messageVal.length == 0){
-                    error = true;
-                    $message.addClass("error_field");
-                }else{
-                    $message.removeClass("error_field");
-                }
-                if(ratingVal == "0"){
-                    console.log(ratingVal);
-                    error = true;
-                    $('.rateit').addClass("error_field");
-                }else{
-                    $('.rateit').removeClass("error_field");
-                }
-                if ($('.checkbox-review input').prop( "checked")){
-                    if(videoReviewsVal.length == 0){
-                        error = true;
-                        $videoReview.addClass("error_field");
-                    }else{
-                        $videoReview.removeClass("error_field");
-                    }
-                }
-                if(!error){
-                    $.post("/content/comments.php", $("#review-form").serialize(),function(result){
-                        console.log($("#review-form").serialize());
-                        console.log(result);
-                        //$('.written-reviews').append(result);
-                        if(result) {
-                            $('<div class="overlay"><div class="thank-you"><span>Thank you for review!<br /> We hope to see you again soon!</span><div class="close-btn">×</div></div></div>').fadeIn().appendTo('body');
-                            $('body').on('click','.close-btn',  function(){
-                                $('.overlay').fadeOut(function(){
-                                    $(this).remove();
-                                });
-                            });
-                            $('.written-reviews li:first-child').after(result);
-                            $('.review').fadeIn();
-                            $(".name-field, .email-field, .comments-field, .country-field, .video-field").val("");
-                            $('.rateit-selected').width(0);
-                        }
+                $('<div class="overlay"><div class="thank-you"><span>Thank you for review!<br /> We hope to see you again soon!</span><div class="close-btn">×</div></div></div>').fadeIn().appendTo('body');
+                $('body').on('click','.close-btn',  function(e){
+                    e.stopPropagation();
+                    $('.overlay').fadeOut(function(){
+                        $(this).remove();
                     });
-                }
-            }
-
-            if(isTourPage && $(this).hasClass('booking-tour')){
-                if(peopleVal.length == 0){
-                    error = true;
-                    $num_of_people.addClass("error_field");
-                }else{
-                    $num_of_people.removeClass("error_field");
-                }
-                if(countryVal.length == 0){
-                    error = true;
-                    $country.addClass("error_field");
-                }else{
-                    $country.removeClass("error_field");
-                }
-                if(hotelVal.length == 0){
-                    error = true;
-                    $hotel.addClass("error_field");
-                }else{
-                    $hotel.removeClass("error_field");
-                }
-                if(dateVal.length == 0){
-                    error = true;
-                    $date.addClass("error_field");
-                }else{
-                    $date.removeClass("error_field");
-                }
-            }
-            if(error){
-                e.preventDefault();
-            }
-
-
-            /* if(error == false){
-                $(".form-container").find('.book_button').attr({'disabled' : 'true', 'value' : 'Sending...' });
-
-                $.post("/send_email.php", $("#booking_form").serialize(),function(result){
-                    location.href += '/thanks';
-                   if(result == 'tour'){
-                        $('.form_box').remove();
-                        $('.mail_success').fadeIn(1000);
-                        $('.form-container').removeClass('whiten').addClass('tour-booked');
-                        $('header').removeClass('show_sub-header');
-
-                    }else{
-                        $('#mail_fail').fadeIn(1000);
-                        $('#send_message').removeAttr('disabled').attr('value', 'Send The Message');
-                    }
                 });
-            }*/
+                $('.written-reviews li:first-child').after(result);
+                $('.review').fadeIn();
 
+                $(".name-field, .email-field, .comments-field, .country-field, .video-field, .rating").val("");
+                $('#review-form').removeClass('error_field');
+                $('.rateit-selected').width(0);
+            }
         });
     }
-/*$('.fotorama').on('click', function(e){
-    console.log(e);
-}).fotorama();*/
+
+    function checkForm($input, event){
+
+        $input = $($input);
+
+        var error = false,
+            $originInput = $input,
+            isEmailField = $input.hasClass('email-field');
+
+        if($input.hasClass('booking-tour') || $input.hasClass('send-review') || $input.hasClass('send-email')){
+            $input =  $input.parent('form').find('.required');
+        }
+
+        $input.each(function(){
+            if($(this).val().length == 0 || isEmailField && ($(this).val().indexOf('@') == '-1')){
+                event.preventDefault()
+                error = true;
+                $(this).addClass("error_field");
+            }else{
+                $input = $originInput;
+                $(this).removeClass("error_field");
+            }
+        });
+
+        if(isTourPage && $input.hasClass('booking-tour') && !error){
+            createStripeToken();
+        }
+
+        if(isTourPage && $input.hasClass('send-review') && !error){
+            sendReview();
+        }
+
+    }
+    $('.date-field').datepicker({
+        minDate: 0,
+        beforeShow: function(input, instance){
+            $(input).removeClass('required');
+            //insertMsgToDatePicker()
+        },
+        onSelect: function(){
+            $('.time-field').focus()
+        },
+        onClose: function(){
+            if($(this).val().length == 0){
+                $(this).addClass('error_field required');
+            }else{
+                $(this).removeClass('error_field');
+            }
+        }
+    });
+    $('.date-field').focus(function(){
+        $("#ui-datepicker-div").outerWidth($('.date-field').outerWidth());
+
+        $('#ui-datepicker-div .ui-datepicker-prev').html('<i class="fa fa-angle-left"/>');
+        $('#ui-datepicker-div .ui-datepicker-next').html('<i class="fa fa-angle-right"/>');
+    });
+
+
+    $('.time-field').clockpicker({
+
+        beforeShow: function(){
+            $('.time-field').removeClass('required');
+
+        },
+        init: function(){
+            $(".clockpicker-popover").outerWidth($('.time-field').outerWidth());
+        },
+        afterHide: function(){
+            if($('.time-field').val().length == 0){
+                $('.time-field').addClass('error_field required');
+            }else{
+                $('.time-field').removeClass('error_field');
+            }
+        },
+        vibrate: true,
+        twelvehour: true,
+        autoclose: true
+    });
+    $('.time-field').focus(function(){
+        $(".clockpicker-popover").outerWidth($('.time-field').outerWidth());
+    });
+
+    $(document).on('click', '.ui-datepicker td', function(){
+        $('.date-field').removeClass('required');
+    });
+
+    $(document).on('click', '.clockpicker-button', function(){
+        $('.time-field').removeClass('required');
+    });
+
+    $('.container').on('change paste keyup submit click', '.required, .send-email', function(e){
+        checkForm($(this), e);
+    });
+
+    $('.container').on('change paste blur keyup submit click', '.book-tour .required, .booking-tour', function(e){
+        e.preventDefault();
+        validateCardDetails();
+        checkForm($(this), e);
+    });
+
+    $('.container').on('change paste keyup submit click', '.required, .send-review', function(e){
+        e.preventDefault();
+        checkForm($(this), e);
+    });
+
+
+
     var $swipeboxImg = $('.swipebox img');
 
     $('.cover-img').cover();
@@ -503,7 +506,6 @@ $(window).load(function(){
     $swipeboxImg.each(function(){
         $(this).cover()
     });
-    //$('.gallery .thumb').height($('.gallery .thumb').outerWidth());
 
     $('.swipebox').swipebox();
     toggleTheme();
