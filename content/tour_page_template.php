@@ -1,5 +1,6 @@
 <?
     include_once "tour_page_content.php";
+    include_once "tour_images.php";
     include_once "comments.php";
 ?>
 
@@ -14,7 +15,7 @@
 
 <div class="header_title">
     <div class="header_tour_content">
-        <h3><?=$titleTour?></h3>
+        <h3><span><?=$titleTour?></span> <span class='too_long_title'><br><?=$title2Tour?></span></h3>
         <h4>
             <?=$subtitleTour?>
         </h4>
@@ -25,7 +26,8 @@
 
 <div class="overlay_view_tour"></div>
 <section class="view_tour height-viewport">
-    <?=$splashScreen?>
+    <img class="cover-img" src="<?=$splashScreenLink?>" alt="<?=$splashScreenAlt?>" />
+
     <div class="scroll_down">
         <div class="scroll_down_container">
             <div class="scroll_down_text">Details</div>
@@ -37,7 +39,25 @@
     <?=$descriptionTour?>
 </section>
 <section class="blacken gallery height-viewport">
-    <?=$tourGallery?>
+    <div class="wrap_gallery">
+        <a rel="gallery-1" class="main-image swipebox" href="<?=$imagesLinks[1];?>" title="<?=$imgTitle[1];?>">
+            <img src="<?=$imagesLinks[1];?>" alt="<?=$imgAlt[1];?>"/>
+        </a>
+
+        <div class="thumb-list">
+            <?
+                for($i = 2; $i < count($imagesLinks); $i++){
+                    ?>
+                        <a rel="gallery-1" class="thumb swipebox" href="<?=$imagesLinks[$i]?>" title="<?=$imgTitle[$i];?>">
+                            <img src="<?=$thumbsLinks[$i];?>" alt="<?=$imgAlt[$i];?>"/>
+                        </a>
+                    <?
+                }
+            ?>
+        </div>
+
+    </div>
+
 </section>
 <section class="whiten form-container book-tour">
     <a name="book"></a>
