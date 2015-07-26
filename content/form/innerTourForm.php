@@ -16,7 +16,7 @@ $order_number = substr(number_format(time(), '0', '', '-'), 2);
             <img class="preorder-img" src="" alt=""/>
             <figcaption>
                 <h4>Red Square & Kremlin</h4>
-                <div class="price">$157 — 5 hours</div>
+                <div class="price"><?=$price?> &mdash; <?=$duration?></div>
             </figcaption>
         </figure>
         <div class="form-row clearfix">
