@@ -68,7 +68,7 @@
                             <td width="45%" style="padding-left: 20px;">
                                 <p style="margin:5px 0;color:#777;font-size:14px;line-height:18px;text-align:left; font-family: 'Helvetica Neue',Helvetica,Arial;">
                                     <strong>
-                                        <?=$price?>
+                                        <?=$price?> — <?=$duration?>
                                     </strong>
                                 </p>
                             </td>

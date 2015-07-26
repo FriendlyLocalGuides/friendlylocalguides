@@ -10,7 +10,7 @@ switch($city){
     case 'moscow': $tourTable = 'tours_moscow'; break;
     case 'saint-petersburg': $tourTable = 'tours_spb'; break;
 }
-$sql_tour = "select * from tours_moscow where url = '$currentPage'";
+$sql_tour = "select * from $tourTable where url = '$currentPage'";
 foreach ($dbh->query($sql_tour) as $row){
     $titleTour = $row['title'];
     if($row['title_2']){

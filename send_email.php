@@ -7,6 +7,7 @@
         $title        =   html_entity_decode(trim(strip_tags($_POST['title'])));
         $tourPicture  =   html_entity_decode(trim(strip_tags($_POST['tour-pic'])));
         $price        =   html_entity_decode(trim(strip_tags($_POST['price'])));
+        $duration     =   html_entity_decode(trim(strip_tags($_POST['duration'])));
         $name         =   trim(strip_tags($_POST['name']));
         $email        =   trim(strip_tags($_POST['email']));
         $phone        =   trim(strip_tags($_POST['phone']));
@@ -24,7 +25,6 @@
 	        $result = 'contact';
         }else{
             $subject = 'Friendly Local Guides booking';
-//            $form_message  = "Order number: #$order_number\nTour: $title\nPrice and duration: $price\n$name\nE-mail: $email\n$phone\n$numOfPeople\n$country\n$hotel\n$date\n$startTime\n$message";
             $amount = $_POST['price'];
             $amount = substr($amount, 0);
             $amount = substr($amount, 0, strpos($amount, " "));
@@ -49,7 +49,7 @@
 
         if(mail($email_to, $subject, $form_message, $headers) ){
             if(!stristr($_SERVER['HTTP_REFERER'], 'contact')) {
-                mail($email, $subject, $form_message_user, $headers_user); //TODO: do not send it when it's a contact message
+                mail($email, $subject, $form_message_user, $headers_user);
             }
 	        header("Location: " . $_SERVER['HTTP_REFERER'] ."/thanks");
         }else{

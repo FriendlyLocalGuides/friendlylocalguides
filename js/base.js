@@ -28,8 +28,6 @@ function getTourTitles(){
     priceBookedTour.html(tourPrice);
     $('.preorder-img').attr('src', viewTourImg);
     $('.tour-photo-field').attr('value', viewTourImg);
-    $('.title-field').val(tourTitle);
-    $('.price-field').val(tourPrice);
 }
 
 function toggleTheme(){

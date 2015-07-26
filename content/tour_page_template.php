@@ -20,7 +20,7 @@
             <?=$subtitleTour?>
         </h4>
     </div>
-    <div class="price"><?=$price?></div>
+    <div class="price"><?=$price?> &mdash; <?=$duration?></div>
     <a class="book_button" href="#">Book now</a>
 </div>
 
