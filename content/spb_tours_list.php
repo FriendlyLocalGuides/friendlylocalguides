@@ -6,15 +6,11 @@
         echo $e->getMessage();
     }
 
-    switch($city){
-        case 'moscow': $toursListTable = 'tours_moscow'; break;
-        case 'saint-petersburg': $toursListTable = 'tours_spb'; break;
-    }
-    $sql_tours_list = "select * from moscow_tours_list";
+    $sql_tours_list = "select * from spb_tours_list";
 ?>
 <section class="content_box tours-list_new  whiten">
     <h1 class="title-of-tours">Choose your unique experience</h1>
-    <div class="sub_title-of-tours">Friendly Local Guides offers Moscow private customized tours starting from $87. We keep things simple and love meeting new people, so we charge only $20 for every additional traveller.</div>
+    <div class="sub_title-of-tours">We keep things simple and love meeting new people, so we charge only $20 for every additional traveller.</div>
     <?
         foreach ($dbh->query($sql_tours_list) as $row){
     ?>
