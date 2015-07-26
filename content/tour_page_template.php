@@ -72,7 +72,7 @@
     </div>
 </section>
 <section class="whiten reviews">
-    <section class="content_box whiten">
+    <section class="content_box whiten height-viewport">
         <div class="tabs clearfix">
             <h3>Reviews</h3>
             <h3>Video reviews</h3>
