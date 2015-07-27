@@ -6,11 +6,6 @@ catch(PDOException $e) {
     echo $e->getMessage();
 }
 
-switch($city){
-    case 'moscow': $tourTable = 'tours_moscow'; break;
-    case 'saint-petersburg': $tourTable = 'tours_spb'; break;
-}
-
 $imagesLinks = [];
 $thumbsLinks = [];
 $imgAlt = [];

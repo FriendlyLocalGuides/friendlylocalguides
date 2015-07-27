@@ -1,5 +1,9 @@
 <?
 
+switch($city){
+    case 'moscow': $tourTable = 'tours_moscow'; break;
+    case 'saint-petersburg': $tourTable = 'tours_spb'; break;
+}
 try {
     require_once "config.php";
     require_once "image_uploader.php";
@@ -20,7 +24,7 @@ error_reporting(0);
         /*** превратить все ошибки в исключения ***/
         $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        $sql = "INSERT INTO tours (city, url, title, subtitle, price, url_splash_image, description, urls_gallery)
+        $sql = "INSERT INTO $tourTable (city, url, title, subtitle, price, url_splash_image, description, urls_gallery)
                 VALUES (:city, :link, :title, :subtitle, :price, :splashscreen, :description, :gallery)";
         /*** готовим выражение ***/
         $stmt = $dbh->prepare($sql);

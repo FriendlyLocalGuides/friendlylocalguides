@@ -1,3 +1,6 @@
+.text-editor-container{
+    padding-top: 100px;
+}
 .text-editor{
     max-width: 650px;
     margin: auto;
@@ -6,4 +9,24 @@
 
 .Editor-container{
     margin-bottom: 10px;
+}
+
+.tour-item, .guide-item{
+    margin: auto;
+    float: none !important;
+}
+
+.tour-item h2 {
+    font-size: 1.2em !important;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.view_tour_wrapper{
+    position: relative;
+}
+
+.view_tour{
+    position: relative;
+    height: 100vh;
 }

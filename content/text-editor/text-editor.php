@@ -1,20 +1,51 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Sergey
- * Date: 5/17/2015
- * Time: 5:41 PM
- */
+$tour = strtolower(strip_tags(trim($_GET['tour'])));
+try {
+    require_once "/content/config.php";
+}
+catch(PDOException $e) {
+    echo $e->getMessage();
+}
 
-//3 DAYS IN MOSCOW
+switch($city){
+    case 'moscow': $tourTable = 'tours_moscow'; break;
+    case 'saint-petersburg': $tourTable = 'tours_spb'; break;
+}
+$sql_tour = "SELECT title, title_2, subtitle, price, duration, description, img_link_item FROM $tourTable WHERE url = '$tour'";
 
-    $titleTour = "3 days in Moscow <br/> <span class='too_long_title'>with a Friendly Guide</span>";
-    $price = "397$ <span class='too_long_duration'>&mdash; (7 hours each day)</span>";
+foreach ($dbh->query($sql_tour) as $row){
+    $titleTour = $row['title'];
+    if($row['title_2']){
+        $title2Tour = $row['title_2'];
+    }
+    $subtitleTour = $row['subtitle'];
+    $price = $row['price'];
+    $duration = $row['duration'];
+    $descriptionTour = $row['description'];
+    $imgTourItem = $row['img_link_item'];
+}
+
+$imagesLinks = [];
+$thumbsLinks = [];
+$imgAlt = [];
+$imgTitle = [];
+$sql_images = "select * from tours_images where tour = '$tour' AND city='$city'";
+foreach ($dbh->query($sql_images) as $row){
+    array_push($imagesLinks, $row['img_link']);
+    array_push($thumbsLinks, $row['thumb_link']);
+    array_push($imgAlt, $row['alt']);
+    array_push($imgTitle, $row['title']);
+}
+
+$splashScreenLink = $imagesLinks[0];
+$splashScreenAlt = $imgAlt[0];
+$splashScreenTitle = $imgTitle[0];
+
 ?>
-<html>
+<!--<html>
     <head>
 
-        <script src="//code.jquery.com/jquery-2.1.0.min.js"></script>
+        <script src="//code.jquery.com/jquery-2.1.0.min.js"></script>-->
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
         <script src="/ckeditor/ckeditor.js"></script>
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
@@ -37,14 +68,12 @@
                     imgFile = document.getElementById("tour-gallery"),
                     imgFiles = document.querySelectorAll(".file-upload"),
                     imagesArray;
-
-
                 function title(){
                     if($title_long.val() != ""){
                         $title_long_txt.text($title_long.val());
                         $title_for_sending.val($title.val() + " " + $title_long_container.html());
                     }else{
-                        $title_for_sending.val($title.val())
+                        $title_for_sending.val($title.val());
                     }
                 }
 
@@ -207,43 +236,113 @@
                     xhr.send(fd);
                 }
             });
-
+            $(document).on('click', '.tour-item', function(){
+                $(this).toggleClass('hover')
+            })
+            $(document).on('click', '.tour-item input', function(e){
+                e.stopPropagation();
+            })
         </script>
-    </head>
-    <body>
-        <section>
-            <div class="wrapper-gallery" hidden="hidden">
-                <div class="wrap_gallery">
-                    <a rel="gallery-1" class="main-image swipebox" href="/i/gallery/tours/free/Nikolskaya.jpg" title="Probably most Iconic View in Moscow from Nikolskaya street">
-                        <img src="/i/gallery/tours/free/Nikolskaya.jpg" alt="Moscow Free Walking Tour. Kazan Cathedral. Red Square"/>
-                    </a>
-                    <div class="thumb-list">
-                        <a rel="gallery-1" class="thumb swipebox" href="/i/gallery/tours/free/Masha_Tverskaya.jpg" title="Friendly Local Guide and the Founder of Moscow – Yury Dolgorukiy">
-                            <img src="/i/gallery/tours/free/small/Masha_Tverskaya.jpg" alt="Moscow Free Walking Tour. Tverskaya street. Private guide in Moscow"/>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="wrapper-cover-img" hidden="hidden">
-                <img class="cover-img" src="" alt="" />
-            </div>
+   <!-- </head>
+    <body>-->
+    <ul>
+        <li>
+            <a href="http://friendlylocalguides/index.php?id=editor&city=moscow&tour=free-tour">Moscow Free Tour</a>
+        </li>
+    </ul>
+        <section class="text-editor-container">
             <div class="title-long-container" hidden="hidden"><br/><span class='too_long_title'></span></div>
             <form id="tour-form" class="text-editor" enctype="multipart/form-data">
                 <div class="input-groups">
-                    <input class="form-control" type="text" name="city" placeholder="City"/>
-                    <input class="form-control" type="text" name="link" placeholder="Link to the tour"/>
+                    <input class="form-control" type="text" name="city" placeholder="City" value="<?=$city?>"/>
+                    <input class="form-control" type="text" name="link" placeholder="Link to the tour" value="<?=$tour?>"/>
                     <input class="form-control" type="text" name="images-dir" placeholder="Name folder with all images of this tour"/>
+                        <figure class="tour-item content_box tours-list_new">
+                            <img src="<?=$imgTourItem;?>" alt=""/>
+                            <figcaption>
+                                <h2>
+                                    <input class="form-control title_item" type="text" placeholder="Title of the tour" value="<?=$titleTour?>"/>
+                                    <?=$titleTour;?>
+                                </h2>
+                                <div class="price">
+                                    <input class="form-control" type="text" name="price" placeholder="price" value="<?=$price?>"/>
+                                    <input class="form-control" type="text" name="duration" placeholder="duration" value="<?=$duration?>"/>
+                                    $<?=$price;?> — <?=$duration;?>
+                                </div>
+                                <h3>
+                                    <input class="form-control" type="text" name="subtitle" placeholder="subtitle" value="<?=$subtitleTour?>"/>
+                                    <?=$subtitleTour;?>
+                                </h3>
+                                <div class="buttons-container">
+                                    <a class="view-button" href="/<?=$city?>/tours/<?=$tour;?>">View tour</a>
+                                    <a class="book_button" href="/<?=$city?>/tours/<?=$tour;?>/#book">Book tour</a>
+                                </div>
+                            </figcaption>
+                        </figure>
                     <input id="cover_image" type="file" name="cover_image" />
-                    <input class="form-control title" type="text" placeholder="Title of the tour"/>
-                    <input class="form-control title-long" type="text" placeholder="Second part of the title if it's too long"/>
-                    <input class="title-for-sending" type="text" name="title" hidden="hidden"/>
-                    <input class="form-control" type="text" name="subtitle" placeholder="subtitle"/>
-                    <input class="form-control" type="text" name="price" placeholder="price"/>
+
+                    <section class="view_tour_wrapper">
+                        <div class="header_title">
+                            <div class="header_tour_content">
+                                <h3>
+                                    <input class="form-control title" type="text" name="title" placeholder="Title of the tour" value="<?=$titleTour?>"/>
+                                    <input class="form-control title-long" type="text" placeholder="Second part of the title if it's too long" value="<?=$title2Tour?>"/>
+                                    <span><?=$titleTour?></span> <span class='too_long_title'><br><?=$title2Tour?></span>
+                                </h3>
+                                <h4>
+                                    <input class="form-control" type="text" name="subtitle" placeholder="subtitle" value="<?=$subtitleTour?>"/>
+                                    <?=$subtitleTour?>
+                                </h4>
+                            </div>
+                            <div class="price">
+                                <input class="form-control" type="text" name="price" placeholder="price" value="<?=$price?>"/>
+                                <input class="form-control" type="text" name="duration" placeholder="duration" value="<?=$duration?>"/>
+                                <?=$price?> &mdash; <?=$duration?>
+                            </div>
+                            <a class="book_button" href="#">Book now</a>
+                        </div>
+
+                        <div class="overlay_view_tour"></div>
+                        <section class="view_tour height-viewport">
+                            <img class="cover-img" src="<?=$splashScreenLink?>" alt="<?=$splashScreenAlt?>" />
+
+                            <div class="scroll_down">
+                                <div class="scroll_down_container">
+                                    <div class="scroll_down_text">Details</div>
+                                    <div class="scroll_down_icon"></div>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
                     <input class="splash-screen file-upload" type="file" placeholder="Splash Screen"/>
                     <input class="form-control alt" type="text" placeholder="Alt for splash screen"/>
                     <input class="cover-img-data" type="text" name="splashscreen" hidden="hidden"/>
-                    <textarea id="txtEditor" name="description"></textarea>
+                    <textarea id="txtEditor" name="description">
+                        <?=$descriptionTour?>
+                    </textarea>
                     <input class="gallery-data" name="gallery" type="text" hidden="hidden"/>
+
+                    <section class="blacken gallery height-viewport">
+                        <div class="wrap_gallery">
+                            <a rel="gallery-1" class="main-image swipebox" href="<?=$imagesLinks[1];?>" title="<?=$imgTitle[1];?>">
+                                <img src="<?=$imagesLinks[1];?>" alt="<?=$imgAlt[1];?>"/>
+                            </a>
+
+                            <div class="thumb-list">
+                                <?
+                                for($i = 2; $i < count($imagesLinks); $i++){
+                                    ?>
+                                    <a rel="gallery-1" class="thumb swipebox" href="<?=$imagesLinks[$i]?>" title="<?=$imgTitle[$i];?>">
+                                        <img src="<?=$thumbsLinks[$i];?>" alt="<?=$imgAlt[$i];?>"/>
+                                    </a>
+                                    <?
+                                }
+                                ?>
+                            </div>
+
+                        </div>
+
+                    </section>
                     <div id="tour-gallery">
                         <div class="main-image-fields">
                             <input class="file-upload" type="file" name="picture" placeholder="Main Picture"/>
@@ -264,5 +363,10 @@
                 <input id="add-tour" class="btn btn-lg btn-success" value="Publish tour" type="submit"/>
             </form>
         </section>
-    </body>
-</html>
+<script>
+    $(function(){
+        $('.cover-img').cover();
+    })
+</script>
+    <!--</body>
+</html>-->

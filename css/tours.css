@@ -369,7 +369,8 @@
         bottom: 59px;
     }
 
-    .tour-item:hover figcaption{
+    .tour-item:hover figcaption,
+    .tour-item.hover figcaption{
         -webkit-transform: translate(0, 78px);
         -moz-transform: translate(0, 78px);
         -ms-transform: translate(0, 78px);
@@ -377,7 +378,8 @@
         transform: translate(0, 78px);
     }
 
-    .guide-item:hover figcaption{
+    .guide-item:hover figcaption,
+    .guide-item.hover figcaption{
         -webkit-transform: translate(0, 59px);
         -moz-transform: translate(0, 59px);
         -ms-transform: translate(0, 59px);
