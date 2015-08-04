@@ -10,7 +10,7 @@
         case 'moscow': $toursListTable = 'tours_moscow'; break;
         case 'saint-petersburg': $toursListTable = 'tours_spb'; break;
     }
-    $sql_tours_list = "select * from moscow_tours_list";
+    $sql_tours_list = "select * from $toursListTable";
 ?>
 <section class="content_box tours-list_new  whiten">
     <h1 class="title-of-tours">Choose your unique experience</h1>
@@ -19,11 +19,11 @@
         foreach ($dbh->query($sql_tours_list) as $row){
     ?>
             <figure class="tour-item">
-                <img src="<?=$row['img_link'];?>" alt=""/>
+                <img src="<?=$row['img_link_item'];?>" alt=""/>
                 <figcaption>
                     <h2><?=$row['title'];?></h2>
                     <div class="price">$<?=$row['price'];?> — <?=$row['duration'];?></div>
-                    <h3><?=$row['description'];?></h3>
+                    <h3><?=$row['subtitle'];?></h3>
                     <div class="buttons-container">
                         <a class="view-button" href="/<?=$city?>/tours/<?=$row['url'];?>">View tour</a>
                         <a class="book_button" href="/<?=$city?>/tours/<?=$row['url'];?>/#book">Book tour</a>

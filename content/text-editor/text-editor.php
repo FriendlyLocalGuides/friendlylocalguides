@@ -46,14 +46,25 @@ $splashScreenTitle = $imgTitle[0];
     <head>
 
         <script src="//code.jquery.com/jquery-2.1.0.min.js"></script>-->
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="/js/lib/bootstrap.min.js"></script>
         <script src="/ckeditor/ckeditor.js"></script>
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/bootstrap.min.css"/>
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="/css/texteditor.css"/>
         <link rel="stylesheet" href="/css/tours.css"/>
         <script type="text/javascript">
             $(window).load( function() {
+
+                $(document).on('click', '.popover-alt', function(e){
+                    $('.wrap-img-info').fadeOut();
+                    $(this).siblings('.wrap-img-info').fadeIn();
+                });
+
+                $(document).click( function(e){
+                    if (!$(e.target).closest('.popover-alt').length && !$(e.target).closest('.wrap-img-info').length) {
+                        $('.wrap-img-info').fadeOut();
+                    }
+                });
 
                 var editor = CKEDITOR.replace('txtEditor'),
                     city,
@@ -191,11 +202,113 @@ $splashScreenTitle = $imgTitle[0];
                         });
                     });
                 }
-                picsCreator();
+//                picsCreator();
 
+                var reader;
+                var progress = document.querySelector('.percent');
+                function errorHandler(evt) {
+                    switch(evt.target.error.code) {
+                        case evt.target.error.NOT_FOUND_ERR:
+                            alert('File Not Found!');
+                            break;
+                        case evt.target.error.NOT_READABLE_ERR:
+                            alert('File is not readable');
+                            break;
+                        case evt.target.error.ABORT_ERR:
+                            break; // noop
+                        default:
+                            alert('An error occurred reading this file.');
+                    }
+                }
 
+                function updateProgress(evt) {
+                    // evt is an ProgressEvent.
+                    if (evt.lengthComputable) {
+                        var percentLoaded = Math.round((evt.loaded / evt.total) * 100);
+                        // Increase the progress bar length.
+                        if (percentLoaded < 100) {
+                            progress.style.width = percentLoaded + '%';
+                            progress.textContent = percentLoaded + '%';
+                        }
+                    }
+                }
+
+                function handleFileSelect(evt, output) {
+                    // Reset progress indicator on new file selection.
+                    progress.style.width = '0%';
+                    progress.textContent = '0%';
+
+                    reader = new FileReader();
+                    reader.onerror = errorHandler;
+                    reader.onprogress = updateProgress;
+                    reader.onloadstart = function(e) {
+                        $('.progress_bar').addClass('loading');
+                    };
+                    reader.onload = function(e) {
+                        // Ensure that the progress bar displays 100% at the end.
+                        progress.style.width = '100%';
+                        progress.textContent = '100%';
+                        $(output).attr('src', e.target.result);
+                        setTimeout(function(){
+                            $('.progress_bar').removeClass('loading')
+                        }, 2000);
+                    };
+                    $(evt.currentTarget).siblings('.img_link').val(evt.currentTarget.files[0].name);
+                    reader.readAsDataURL(evt.currentTarget.files[0]);
+                }
+
+                $(document).on('change', '.btn-img-item', function(e){
+                    handleFileSelect(e,'.tour-item-img');
+                });
+                $(document).on('change', '.splash-screen', function(e){
+                    e.preventDefault();
+                    handleFileSelect(e,'.cover-img');
+                });
+
+               /* $(document).on('click', '.wrap_gallery .parent-upload', function(e){
+                    $(this).removeClass('swipebox');
+                });
+*/
+                $(document).on('change', '.main-image-wrapper .file-upload', function(e){
+                    handleFileSelect(e,'.main-image img');
+                });
+                $(document).on('change', '.thumb-list .file-upload', function(e){
+                    handleFileSelect(e, $(this).siblings('a').find('img'));
+                });
+
+                //synchronize changing of value
+
+                $("input[name=title]").on('keyup', function(){
+                    $("input[name=title]").val($(this).val())
+                });
+
+                $("input[name=subtitle]").on('keyup', function(){
+                    $("input[name=subtitle]").val($(this).val())
+                });
+
+                $("input[name=price]").on('keyup', function(){
+                    $("input[name=price]").val($(this).val())
+                });
+
+                $("input[name=duration]").on('keyup', function(){
+                    $("input[name=duration]").val($(this).val())
+                });
+
+                $('#update-tour').on('click', function(e){
+                    e.preventDefault();
+                    $("input[name=action]").val('update');
+                    city = $("input[name=city]").val().toLowerCase();
+                    CKEDITOR.instances.txtEditor.updateElement();
+                    $.post(
+                        "/content/tour-creator.php",
+                        $("#tour-form").serialize(),function(result){
+                            console.log(result);
+                        }
+                    );
+                });
                 $('#add-tour').on('click', function(e){
                     e.preventDefault();
+                    $("input[name=action]").val('add');
                     title();
                     $('.gallery-data').val($('.wrapper-gallery').html());
                     $('.cover-img-data').val($('.wrapper-cover-img').html());
@@ -209,12 +322,12 @@ $splashScreenTitle = $imgTitle[0];
                             console.log(result);
                         }
                     );
-                    if(imgFiles[0].files.length){
+                    /*if(imgFiles[0].files.length){
                         for(var i = 0; i < imgFiles.length; i++){
                             imagesArray = imgFiles[i].files;
                             sendFile(imagesArray[0]);
                         }
-                    }
+                    }*/
                 });
 
 
@@ -238,10 +351,11 @@ $splashScreenTitle = $imgTitle[0];
             });
             $(document).on('click', '.tour-item', function(){
                 $(this).toggleClass('hover')
-            })
+            });
             $(document).on('click', '.tour-item input', function(e){
                 e.stopPropagation();
-            })
+            });
+
         </script>
    <!-- </head>
     <body>-->
@@ -251,17 +365,19 @@ $splashScreenTitle = $imgTitle[0];
         </li>
     </ul>
         <section class="text-editor-container">
-            <div class="title-long-container" hidden="hidden"><br/><span class='too_long_title'></span></div>
             <form id="tour-form" class="text-editor" enctype="multipart/form-data">
                 <div class="input-groups">
                     <input class="form-control" type="text" name="city" placeholder="City" value="<?=$city?>"/>
-                    <input class="form-control" type="text" name="link" placeholder="Link to the tour" value="<?=$tour?>"/>
                     <input class="form-control" type="text" name="images-dir" placeholder="Name folder with all images of this tour"/>
                         <figure class="tour-item content_box tours-list_new">
-                            <img src="<?=$imgTourItem;?>" alt=""/>
+                            <img class="tour-item-img" src="<?=$imgTourItem;?>" alt=""/>
                             <figcaption>
+                                <div class="img-item-upload">
+                                    <input class="btn-img-item" type="file" name="img_link_item">
+                                    <div class="progress_bar"><div class="percent">0%</div></div>
+                                </div>
                                 <h2>
-                                    <input class="form-control title_item" type="text" placeholder="Title of the tour" value="<?=$titleTour?>"/>
+                                    <input class="form-control title_item" type="text" placeholder="Title of the tour" name="title" value="<?=$titleTour?>"/>
                                     <?=$titleTour;?>
                                 </h2>
                                 <div class="price">
@@ -274,19 +390,20 @@ $splashScreenTitle = $imgTitle[0];
                                     <?=$subtitleTour;?>
                                 </h3>
                                 <div class="buttons-container">
+                                    <input class="form-control" type="text" name="url" placeholder="Link to the tour" value="<?=$tour?>"/>
                                     <a class="view-button" href="/<?=$city?>/tours/<?=$tour;?>">View tour</a>
                                     <a class="book_button" href="/<?=$city?>/tours/<?=$tour;?>/#book">Book tour</a>
                                 </div>
                             </figcaption>
                         </figure>
-                    <input id="cover_image" type="file" name="cover_image" />
+                    <input id="cover_image" type="file" name="img_link[]" />
 
                     <section class="view_tour_wrapper">
                         <div class="header_title">
                             <div class="header_tour_content">
                                 <h3>
                                     <input class="form-control title" type="text" name="title" placeholder="Title of the tour" value="<?=$titleTour?>"/>
-                                    <input class="form-control title-long" type="text" placeholder="Second part of the title if it's too long" value="<?=$title2Tour?>"/>
+                                    <input class="form-control title-long" type="text" name="title_2" placeholder="Second part of the title if it's too long" value="<?=$title2Tour?>"/>
                                     <span><?=$titleTour?></span> <span class='too_long_title'><br><?=$title2Tour?></span>
                                 </h3>
                                 <h4>
@@ -314,31 +431,45 @@ $splashScreenTitle = $imgTitle[0];
                             </div>
                         </section>
                     </section>
-                    <input class="splash-screen file-upload" type="file" placeholder="Splash Screen"/>
+                    <input class="splash-screen file-upload" type="file" name="img_link[]" placeholder="Splash Screen" />
                     <input class="form-control alt" type="text" placeholder="Alt for splash screen"/>
                     <input class="cover-img-data" type="text" name="splashscreen" hidden="hidden"/>
                     <textarea id="txtEditor" name="description">
                         <?=$descriptionTour?>
                     </textarea>
-                    <input class="gallery-data" name="gallery" type="text" hidden="hidden"/>
 
                     <section class="blacken gallery height-viewport">
                         <div class="wrap_gallery">
-                            <a rel="gallery-1" class="main-image swipebox" href="<?=$imagesLinks[1];?>" title="<?=$imgTitle[1];?>">
-                                <img src="<?=$imagesLinks[1];?>" alt="<?=$imgAlt[1];?>"/>
-                            </a>
+                            <div class="main-image-wrapper">
+                                <input class="main-image-upload file-upload" name="img_link[]" type="file" placeholder="Splash Screen"/>
+                                <a rel="gallery-1" class="main-image swipebox parent-upload" href="<?=$imagesLinks[1];?>" title="<?=$imgTitle[1];?>">
+                                    <img src="<?=$imagesLinks[1];?>" alt="<?=$imgAlt[1];?>"/>
+                                </a>
+                            </div>
 
-                            <div class="thumb-list">
+                            <ul class="thumb-list">
+
                                 <?
+                                $counter = 0;
                                 for($i = 2; $i < count($imagesLinks); $i++){
                                     ?>
-                                    <a rel="gallery-1" class="thumb swipebox" href="<?=$imagesLinks[$i]?>" title="<?=$imgTitle[$i];?>">
-                                        <img src="<?=$thumbsLinks[$i];?>" alt="<?=$imgAlt[$i];?>"/>
-                                    </a>
+                                    <li>
+                                        <input class="thumb-input file-upload" type="file"/>
+                                        <input class="img_link" type="hidden" name="img_link[]"/>
+                                        <input class="thumb_link" type="hidden" name="thumb_link[]"/>
+                                        <a rel="gallery-1" class="thumb swipebox parent-upload" href="<?=$imagesLinks[$i]?>" title="<?=$imgTitle[$i];?>">
+                                            <img src="<?=$thumbsLinks[$i];?>" alt="<?=$imgAlt[$i];?>"/>
+                                        </a>
+                                        <button type="button" class="btn btn-xs btn-primary popover-alt" >Alt/Title</button>
+                                        <div class="wrap-img-info">
+                                            <input type="text" class="form-control" name="gallery-item-alt[]" placeholder="Alt">
+                                            <input type="text" class="form-control" name="gallery-item-title[]" placeholder="Title">
+                                        </div>
+                                    </li>
                                     <?
                                 }
                                 ?>
-                            </div>
+                            </ul>
 
                         </div>
 
@@ -360,7 +491,9 @@ $splashScreenTitle = $imgTitle[0];
                         </ul>
                     </div>
                 </div>
+                <input type="text" hidden name="action">
                 <input id="add-tour" class="btn btn-lg btn-success" value="Publish tour" type="submit"/>
+                <input id="update-tour" class="btn btn-lg btn-success" value="Update tour" type="submit"/>
             </form>
         </section>
 <script>
