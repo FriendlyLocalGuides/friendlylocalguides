@@ -1,6 +1,35 @@
 <?php
 
+function insert_into ($dbh, $table, $assoc) {
+    $fields_arr = array ();
 
+    foreach ($assoc as $key => $val) {
+        array_push ($fields_arr, "`" . $key . "`");
+    }
+
+    $fields = implode (",", $fields_arr);
+    $namedPlaceholders = array ();
+
+    foreach ($assoc as $key => $val) {
+        array_push ($namedPlaceholders, ":" . $key);
+    }
+
+    $values = implode (",", $namedPlaceholders);
+
+    $sql = "INSERT INTO $table ($fields) VALUES ($values)";
+    var_dump($values);
+    try {
+        $sth = $dbh->prepare ($sql);
+        reset ($namedPlaceholders);
+        foreach ($assoc as $key => &$val) {
+            $sth->bindParam (current ($namedPlaceholders), $val);
+            next ($namedPlaceholders);
+        }
+        $sth->execute ();
+    } catch (PDOException $e) {
+        echo $e->getMessage ();
+    }
+}
 try {
     require_once "config.php";
     require_once "image_uploader.php";
@@ -38,35 +67,32 @@ try {
         $img_alt      = $_POST['gallery-item-alt'];
         $img_title    = $_POST['gallery-item-title'];
         $url          = $_POST['url'];
-
-        /*** ?????????? ??? ?????? ? ?????????? ***/
-        $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        if($action == 'add'){
-            $sql = "INSERT INTO tours_images (city, img_link, thumb_link, alt, title, tour)
-                    VALUES (:city, :img_link, :thumb_link, :gallery-item-alt, :gallery-item-title, :description, :url)";
-        }else if ($action == 'update'){
-            $sql = "UPDATE tours_images
-                    SET img_link = :img_link, thumb_link = :thumb_link, alt = :gallery-item-alt, title = :gallery-item-title
-                    WHERE tour = :url";
+        $a = array('img_link', 'thumb_link', 'gallery-item-alt', 'gallery-item-title');
+        $b = array($img_link, $thumb_link, $img_alt, $img_title);
+        $counter = 0;
+        foreach($b as $c){
+            $counter++;
+            foreach($c as $d){
+            $data[] = array(
+                    'img_link' => $d,
+                    'thumb_link' => $d,
+                    'gallery-item-alt' => $d,
+                    'gallery-item-title' => $d
+                );
+            }
         }
-        /*** ??????? ????????? ***/
-        $stmt = $dbh->prepare($sql);
-
-        /*** ????????? ????????? ***/
-        $stmt->bindParam(':city', $city, PDO::PARAM_STR);
-        $stmt->bindParam(':img_link', $img_link, PDO::PARAM_STR);
-        $stmt->bindParam(':thumb_link', $thumb_link, PDO::PARAM_STR);
-        $stmt->bindParam(':gallery-item-alt', $img_alt, PDO::PARAM_STR);
-        $stmt->bindParam(':gallery-item-title', $img_title, PDO::PARAM_STR);
-        $stmt->bindParam(':url', $url, PDO::PARAM_STR);
-
-        /*** ????????? sql ????????? ***/
-        if($stmt->execute()){
-            echo "sucess!\n";
-            print_r($img_link);
-            print_r($img_alt);
-            print_r($img_title);
-        }
+        echo $counter;
+        print_r($data);
+       /* for($i = 0; $i < count($b); $i++){
+            $data = array(
+                'img_link' => $b[$j],
+                'thumb_link' => $b[$j],
+                'gallery-item-alt' => $b[$j],
+                'gallery-item-title' => $b[$j],
+            );
+        }*/
+        $data = array_combine($a, $b);
+        insert_into($dbh, 'tours_images', $data);
     }
 }catch(PDOException $e) {
     echo $e->getMessage();
