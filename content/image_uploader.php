@@ -17,7 +17,6 @@ function insert_into ($dbh, $table, $assoc) {
     $values = implode (",", $namedPlaceholders);
 
     $sql = "INSERT INTO $table ($fields) VALUES ($values)";
-    var_dump($values);
     try {
         $sth = $dbh->prepare ($sql);
         reset ($namedPlaceholders);
@@ -67,31 +66,58 @@ try {
         $img_alt      = $_POST['gallery-item-alt'];
         $img_title    = $_POST['gallery-item-title'];
         $url          = $_POST['url'];
-        $a = array('img_link', 'thumb_link', 'gallery-item-alt', 'gallery-item-title');
-        $b = array($img_link, $thumb_link, $img_alt, $img_title);
-        $counter = 0;
-        foreach($b as $c){
-            $counter++;
-            foreach($c as $d){
+
+        $b = array(
+            $img_link,
+            $thumb_link,
+            $img_alt,
+            $img_title
+        );
+
+
+        /*foreach($img_link as $val){
+            echo "$val\n";
             $data[] = array(
-                    'img_link' => $d,
-                    'thumb_link' => $d,
-                    'gallery-item-alt' => $d,
-                    'gallery-item-title' => $d
-                );
-            }
+                'img_link' => $val
+            );
         }
-        echo $counter;
-        print_r($data);
-       /* for($i = 0; $i < count($b); $i++){
-            $data = array(
-                'img_link' => $b[$j],
-                'thumb_link' => $b[$j],
-                'gallery-item-alt' => $b[$j],
-                'gallery-item-title' => $b[$j],
+
+        foreach($thumb_link as $val){
+            echo "$val\n";
+            $data[] = array(
+                'thumb_link' => $val
             );
         }*/
-        $data = array_combine($a, $b);
+        $counter = 0;
+        for($i = 0; $i < count($b); $i++){
+
+            for($j = 0; $j < count($b[0]); $j++){
+                $counter++;
+            }
+            echo "$counter\n";
+            $data[] = array(
+                'img_link' => $b[$j][$i],
+                'thumb_link' => $b[$j][1],
+                'gallery-item-alt' => $b[$j][2],
+                'gallery-item-title' => $b[$j][3]
+            );
+        }
+//        print_r($data);
+//        print_r($b[3]);
+//        print_r($data);
+        /*foreach($b as $c) {
+            for ($i = 0; $i < count($c); $i++) {
+                for ($j = 0; $j < count($c); $j++) {
+                    $data[$i] = array(
+                        'img_link' => $c[0],
+                        'thumb_link' => $c[1],
+                        'gallery-item-alt' => $c[2],
+                        'gallery-item-title' => $c[3]
+                    );
+                }
+            }
+        }*/
+
         insert_into($dbh, 'tours_images', $data);
     }
 }catch(PDOException $e) {
