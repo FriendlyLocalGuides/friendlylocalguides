@@ -30,6 +30,8 @@ try {
         if($action == 'add'){
             $sql = "INSERT INTO $tourTable (title, title_2, subtitle, price, duration, description, url)
                     VALUES (:title, :title_2, :subtitle, :price, :duration, :description, :url)";
+
+
         }else if ($action == 'update'){
             $sql = "UPDATE $tourTable
                     SET title = :title, title_2 = :title_2, subtitle = :subtitle, price = :price, duration = :duration, description = :description

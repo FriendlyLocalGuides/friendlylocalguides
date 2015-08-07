@@ -1,33 +1,40 @@
 <?php
 
-function insert_into ($dbh, $table, $assoc) {
-    $fields_arr = array ();
+function pdoMultiInsert($tableName, $data, $pdoObject){
 
-    foreach ($assoc as $key => $val) {
-        array_push ($fields_arr, "`" . $key . "`");
-    }
+    //Will contain SQL snippets.
+    $rowsSQL = array();
 
-    $fields = implode (",", $fields_arr);
-    $namedPlaceholders = array ();
+    //Will contain the values that we need to bind.
+    $toBind = array();
 
-    foreach ($assoc as $key => $val) {
-        array_push ($namedPlaceholders, ":" . $key);
-    }
+    //Get a list of column names to use in the SQL statement.
+    $columnNames = array_keys($data[0]);
 
-    $values = implode (",", $namedPlaceholders);
-
-    $sql = "INSERT INTO $table ($fields) VALUES ($values)";
-    try {
-        $sth = $dbh->prepare ($sql);
-        reset ($namedPlaceholders);
-        foreach ($assoc as $key => &$val) {
-            $sth->bindParam (current ($namedPlaceholders), $val);
-            next ($namedPlaceholders);
+    //Loop through our $data array.
+    foreach($data as $arrayIndex => $row){
+        $params = array();
+        foreach($row as $columnName => $columnValue){
+            $param = ":" . $columnName . $arrayIndex;
+            $params[] = $param;
+            $toBind[$param] = $columnValue;
         }
-        $sth->execute ();
-    } catch (PDOException $e) {
-        echo $e->getMessage ();
+        $rowsSQL[] = "(" . implode(", ", $params) . ")";
     }
+
+    //Construct our SQL statement
+    $sql = "INSERT INTO $tableName (" . implode(", ", $columnNames) . ") VALUES " . implode(", ", $rowsSQL);
+
+    //Prepare our PDO statement.
+    $pdoStatement = $pdoObject->prepare($sql);
+
+    //Bind our values.
+    foreach($toBind as $param => $val){
+        $pdoStatement->bindValue($param, $val);
+    }
+
+    //Execute our statement (i.e. insert the data).
+    return $pdoStatement->execute();
 }
 try {
     require_once "config.php";
@@ -63,62 +70,20 @@ try {
         $city         = $_POST['city'];
         $img_link     = $_POST['img_link'];
         $thumb_link   = $_POST['thumb_link'];
-        $img_alt      = $_POST['gallery-item-alt'];
-        $img_title    = $_POST['gallery-item-title'];
+        $img_alt      = $_POST['alt'];
+        $img_title    = $_POST['title_item'];
         $url          = $_POST['url'];
-
-        $b = array(
-            $img_link,
-            $thumb_link,
-            $img_alt,
-            $img_title
-        );
-
-
-        /*foreach($img_link as $val){
-            echo "$val\n";
+        foreach( $img_title as $k => $img ) {
             $data[] = array(
-                'img_link' => $val
+                'city' => $city,
+                'img_link' => $img_link[$k],
+                'thumb_link' => $thumb_link[$k],
+                'alt' => $img_alt[$k],
+                'title_item' => $img_title[$k],
+                'tour' => $url
             );
         }
-
-        foreach($thumb_link as $val){
-            echo "$val\n";
-            $data[] = array(
-                'thumb_link' => $val
-            );
-        }*/
-        $counter = 0;
-        for($i = 0; $i < count($b); $i++){
-
-            for($j = 0; $j < count($b[0]); $j++){
-                $counter++;
-            }
-            echo "$counter\n";
-            $data[] = array(
-                'img_link' => $b[$j][$i],
-                'thumb_link' => $b[$j][1],
-                'gallery-item-alt' => $b[$j][2],
-                'gallery-item-title' => $b[$j][3]
-            );
-        }
-//        print_r($data);
-//        print_r($b[3]);
-//        print_r($data);
-        /*foreach($b as $c) {
-            for ($i = 0; $i < count($c); $i++) {
-                for ($j = 0; $j < count($c); $j++) {
-                    $data[$i] = array(
-                        'img_link' => $c[0],
-                        'thumb_link' => $c[1],
-                        'gallery-item-alt' => $c[2],
-                        'gallery-item-title' => $c[3]
-                    );
-                }
-            }
-        }*/
-
-        insert_into($dbh, 'tours_images', $data);
+        pdoMultiInsert('tours_images', $data, $dbh);
     }
 }catch(PDOException $e) {
     echo $e->getMessage();

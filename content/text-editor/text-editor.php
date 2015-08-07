@@ -1,7 +1,7 @@
 <?php
 $tour = strtolower(strip_tags(trim($_GET['tour'])));
 try {
-    require_once "/content/config.php";
+    require_once $_SERVER["DOCUMENT_ROOT"]."/content/config.php";
 }
 catch(PDOException $e) {
     echo $e->getMessage();
@@ -462,13 +462,26 @@ $splashScreenTitle = $imgTitle[0];
                                         </a>
                                         <button type="button" class="btn btn-xs btn-primary popover-alt" >Alt/Title</button>
                                         <div class="wrap-img-info">
-                                            <input type="text" class="form-control" name="gallery-item-alt[]" placeholder="Alt">
-                                            <input type="text" class="form-control" name="gallery-item-title[]" placeholder="Title">
+                                            <input type="text" class="form-control" name="alt[]" placeholder="Alt">
+                                            <input type="text" class="form-control" name="title_item[]" placeholder="Title">
                                         </div>
                                     </li>
                                     <?
                                 }
                                 ?>
+                                <li>
+                                    <input class="thumb-input file-upload" type="file"/>
+                                    <input class="img_link" type="hidden" name="img_link[]"/>
+                                    <input class="thumb_link" type="hidden" name="thumb_link[]"/>
+                                    <a rel="gallery-1" class="thumb swipebox parent-upload" href="/i/tours/moscow/free-tour/Masha_Tverskaya.jpg" title="Friendly Local Guide and the Founder of Moscow – Yury Dolgorukiy">
+                                        <img src="/i/tours/moscow/free-tour/Alina_Tverskaya.jpg" alt="a"/>
+                                    </a>
+                                    <button type="button" class="btn btn-xs btn-primary popover-alt" >Alt/Title</button>
+                                    <div class="wrap-img-info">
+                                        <input type="text" class="form-control" name="alt[]" placeholder="Alt">
+                                        <input type="text" class="form-control" name="title_item[]" placeholder="Title">
+                                    </div>
+                                </li>
                             </ul>
 
                         </div>
