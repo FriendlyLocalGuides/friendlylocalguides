@@ -1,5 +1,4 @@
 
-Stripe.setPublishableKey('pk_live_tD2JJyEeD449SHD7DX6WGwrj');
 var isTourPage,
     isGuidePage,
     isThanks;
