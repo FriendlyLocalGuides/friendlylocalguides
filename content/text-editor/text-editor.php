@@ -72,6 +72,7 @@ $splashScreenTitle = $imgTitle[0];
                     city,
                     imgRootDir,
                     imgDir,
+                    currentImg,
                     coverImgName,
                     tour_url,
                     $title_long_container = $('.title-long-container'),
@@ -226,7 +227,6 @@ $splashScreenTitle = $imgTitle[0];
                         }
                     }
                 }
-
                 function handleFileSelect(evt, output) {
                     // Reset progress indicator on new file selection.
                     progress.style.width = '0%';
@@ -247,13 +247,43 @@ $splashScreenTitle = $imgTitle[0];
                             $('.progress_bar').removeClass('loading')
                         }, 2000);
                     };
+                    //convert img
+                    //convert img
                     imgRootDir = "/small";
 //                    imgRootDir = "";
                     imgDir = "/i/tours/" + city + "/" + tour_url + imgRootDir;
+                    currentImg = imgDir + "/" + evt.currentTarget.files[0].name;
+                    console.log(evt.currentTarget.files[0]);
+//                    resizeImg();
                     $(evt.currentTarget).siblings('.img_link').val(imgDir + "/" + evt.currentTarget.files[0].name);
                     reader.readAsDataURL(evt.currentTarget.files[0]);
                 }
 
+                //CONVERT IT!
+                function resizeImg(){
+                    var canvas = document.createElement('canvas'),
+                        MAX_WIDTH = 800,
+                        MAX_HEIGHT = 600,
+                        width = img.width,
+                        height = img.height;
+
+                    if (width > height) {
+                        if (width > MAX_WIDTH) {
+                            height *= MAX_WIDTH / width;
+                            width = MAX_WIDTH;
+                        }
+                    } else {
+                        if (height > MAX_HEIGHT) {
+                            width *= MAX_HEIGHT / height;
+                            height = MAX_HEIGHT;
+                        }
+                    }
+                    canvas.width = width;
+                    canvas.height = height;
+                    var ctx = canvas.getContext("2d");
+                    ctx.drawImage(img, 0, 0, width, height);
+                    console.log(ctx);
+                }
                 tour_url = $('#tour-url').val();
                 city = $('#city').val().toLowerCase();
                 $(document).on('change', '.btn-img-item', function(e){
@@ -275,10 +305,10 @@ $splashScreenTitle = $imgTitle[0];
                     handleFileSelect(e, $(this).siblings('a').find('img'));
                     var imgFiles = document.querySelectorAll(".file-upload");
 //                    if(imgFiles[0].files.length){
-                        for(var i = 0; i < imgFiles.length; i++){
+                        /*for(var i = 0; i < imgFiles.length; i++){
                             imagesArray = imgFiles[i].files;
                             sendFile(imagesArray[0]);
-                        }
+                        }*/
 //                    }
                 });
 
