@@ -31,6 +31,7 @@ function pdoMultiInsert($tableName, $data, $pdoObject){
     //Bind our values.
     foreach($toBind as $param => $val){
         $pdoStatement->bindValue($param, $val);
+        echo "$param $val\n";
     }
 
     //Execute our statement (i.e. insert the data).
@@ -41,13 +42,15 @@ try {
     require_once "image_uploader.php";
     error_reporting(0);
     if($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $dir = $_SERVER['DOCUMENT_ROOT']."/i/gallery/tours/";
-        $newDir = $_POST['images-dir'];
-        $newDir = $_POST['myDir'];
+        $dir = $_POST['myDir'];
+        $dir = $_SERVER["DOCUMENT_ROOT"].$dir;
+//        $newDir = $_POST['images-dir'];
+//        $newDir = $_POST['myDir'];
         //    $newDir = $_POST['images-dir'];
         //    $newDir = "here";
-        $dir .= $newDir;
+//        $dir .= $newDir;
         echo "First:".$dir."\n";
+        echo "File:".$_FILES['myFile']['tmp_name']."\n";
         if (is_dir($dir)) // is_dir - tells whether the filename is a directory
         {
 
@@ -67,23 +70,51 @@ try {
 
         $currentPage = basename($_SERVER['HTTP_REFERER']);
         $action       = $_POST['action'];
+        $id           = $_POST['id'];
         $city         = $_POST['city'];
         $img_link     = $_POST['img_link'];
         $thumb_link   = $_POST['thumb_link'];
         $img_alt      = $_POST['alt'];
-        $img_title    = $_POST['title_item'];
+        $title_item   = $_POST['title_item'];
         $url          = $_POST['url'];
-        foreach( $img_title as $k => $img ) {
-            $data[] = array(
-                'city' => $city,
-                'img_link' => $img_link[$k],
-                'thumb_link' => $thumb_link[$k],
-                'alt' => $img_alt[$k],
-                'title_item' => $img_title[$k],
-                'tour' => $url
-            );
+        if($action == 'add') {
+            foreach( $title_item as $k => $img ) {
+                $sql = "INSERT INTO  tours_images
+                        (city, img_link, thumb_link, alt, title_item, url)
+                        VALUES (:city, :img_link, :thumb_link, :alt, :title_item, :url)";
+
+                $stmt = $dbh->prepare($sql);
+
+                $stmt->bindParam(':city', $city, PDO::PARAM_STR);
+                $stmt->bindParam(':img_link', $img_link[$k], PDO::PARAM_STR);
+                $stmt->bindParam(':thumb_link', $thumb_link[$k], PDO::PARAM_STR);
+                $stmt->bindParam(':alt', $img_alt[$k], PDO::PARAM_STR);
+                $stmt->bindParam(':title_item', $title_item[$k], PDO::PARAM_STR);
+                $stmt->bindParam(':url', $url, PDO::PARAM_STR);
+
+                if($stmt->execute()){
+                    echo "sucess!\n";;
+                }
+            }
+        }else if($action == 'update'){
+            foreach( $id as $k => $img ) {
+                $sql = "UPDATE tours_images SET city = :city, img_link = :img_link, thumb_link = :thumb_link, alt = :alt, title_item = :title_item WHERE id = :id";
+
+                $stmt = $dbh->prepare($sql);
+
+                $stmt->bindParam(':id', $id[$k], PDO::PARAM_STR);
+                $stmt->bindParam(':city', $city, PDO::PARAM_STR);
+                $stmt->bindParam(':img_link', $img_link[$k], PDO::PARAM_STR);
+                $stmt->bindParam(':thumb_link', $thumb_link[$k], PDO::PARAM_STR);
+                $stmt->bindParam(':alt', $img_alt[$k], PDO::PARAM_STR);
+                $stmt->bindParam(':title_item', $title_item[$k], PDO::PARAM_STR);
+
+                if($stmt->execute()){
+                    echo "sucess!\n";;
+                }
+            }
+
         }
-        pdoMultiInsert('tours_images', $data, $dbh);
     }
 }catch(PDOException $e) {
     echo $e->getMessage();
