@@ -2,7 +2,7 @@
     <a class="sales winter-sales sales-zInd" href="/moscow/tours"></a>
     <div class="header_title">
         <div class="header_tour_content">
-            <h3>Private tours of Moscow</h3>
+            <h1>Private tours of Moscow</h1>
             <div class="slogan">
                 Friendly Fun & Flexible Guides
             </div>

@@ -322,6 +322,7 @@ $(window).load(function(){
             // Insert the token into the form so it gets submitted to the server
             $form.append($('<input type="hidden" name="stripeToken" />').val(token));
             // and submit
+            $('.booking-tour').css('pointer-events', 'none');
             $form.get(0).submit();
         }
     }
@@ -406,7 +407,7 @@ $(window).load(function(){
 
         $input.each(function(){
             if($(this).val().length == 0 || isEmailField && ($(this).val().indexOf('@') == '-1')){
-                event.preventDefault()
+                event.preventDefault();
                 error = true;
                 $(this).addClass("error_field");
             }else{

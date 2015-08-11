@@ -17,10 +17,10 @@
 
 <div class="header_title">
     <div class="header_tour_content">
-        <h3><?=$titleTour?></h3>
-        <h4>
+        <h1><?=$titleTour?></h1>
+        <h2>
             <?=$subtitleTour?>
-        </h4>
+        </h2>
     </div>
     <div class="price"><?=$price?></div>
     <a class="book_button" href="#">Book now</a>
