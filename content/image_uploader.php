@@ -44,29 +44,32 @@ try {
     if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $dir = $_POST['myDir'];
         $dir = $_SERVER["DOCUMENT_ROOT"].$dir;
-//        $newDir = $_POST['images-dir'];
-//        $newDir = $_POST['myDir'];
-        //    $newDir = $_POST['images-dir'];
-        //    $newDir = "here";
-//        $dir .= $newDir;
-        echo "First:".$dir."\n";
-        echo "File:".$_FILES['myFile']['tmp_name']."\n";
-        if (is_dir($dir)) // is_dir - tells whether the filename is a directory
-        {
+        $dirThumb = $dir . "/small";
+        $tmpThumbFile = $_FILES['myThumbFile']['tmp_name'];
+        $thumbFileName = $_FILES['myThumbFile']['name'];
 
-            //mkdir - tells that need to create a directory
-//            echo "asdasd"."\n";
-            move_uploaded_file($_FILES['myFile']['tmp_name'],  $dir . "/" . $_FILES['myFile']['name']);
+        list($width, $height) = getimagesize($tmpThumbFile);
+        // resize if necessary
+        if ($width >= 100 && $height >= 100) {
+            $image = new Imagick($tmpThumbFile);
+            $image->cropThumbnailImage(100, 100);
+            header("Content-Type: image/jpg");
+            if(!is_dir($dirThumb)) {
+                mkdir($dirThumb, 0777, true);
+            }
+            $image->writeImage( $dirThumb . "/" . $thumbFileName);
         }else{
+            move_uploaded_file($tmpThumbFile,  $dirThumb . "/" . $thumbFileName);
+        }
+
+
+
+        if (is_dir($dir)){
+            move_uploaded_file($_FILES['myFile']['tmp_name'],  $dir . "/" . $_FILES['myFile']['name']);
+        }else if(!is_dir($dir)){
             mkdir($dir, 0777, true);
             move_uploaded_file($_FILES['myFile']['tmp_name'],  $dir . "/" . $_FILES['myFile']['name']);
         }
-        /* echo $dir."\n";
-         if (isset($_FILES['myFile'])) {
-             $file_name = $_FILES['myFile']['name'];
-             move_uploaded_file($_FILES['myFile']['tmp_name'],  "'" . $dir . "'" . "/" . $file_name);
-             exit;
-         }*/
 
         $currentPage = basename($_SERVER['HTTP_REFERER']);
         $action       = $_POST['action'];

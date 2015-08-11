@@ -247,43 +247,12 @@ $splashScreenTitle = $imgTitle[0];
                             $('.progress_bar').removeClass('loading')
                         }, 2000);
                     };
-                    //convert img
-                    //convert img
-                    imgRootDir = "/small";
-//                    imgRootDir = "";
-                    imgDir = "/i/tours/" + city + "/" + tour_url + imgRootDir;
-                    currentImg = imgDir + "/" + evt.currentTarget.files[0].name;
-                    console.log(evt.currentTarget.files[0]);
-//                    resizeImg();
+                    imgDir = "/i/tours/" + city + "/" + tour_url;
                     $(evt.currentTarget).siblings('.img_link').val(imgDir + "/" + evt.currentTarget.files[0].name);
+                    $(evt.currentTarget).siblings('.thumb_link').val(imgDir + "/small/" + evt.currentTarget.files[0].name);
                     reader.readAsDataURL(evt.currentTarget.files[0]);
                 }
 
-                //CONVERT IT!
-                function resizeImg(){
-                    var canvas = document.createElement('canvas'),
-                        MAX_WIDTH = 800,
-                        MAX_HEIGHT = 600,
-                        width = img.width,
-                        height = img.height;
-
-                    if (width > height) {
-                        if (width > MAX_WIDTH) {
-                            height *= MAX_WIDTH / width;
-                            width = MAX_WIDTH;
-                        }
-                    } else {
-                        if (height > MAX_HEIGHT) {
-                            width *= MAX_HEIGHT / height;
-                            height = MAX_HEIGHT;
-                        }
-                    }
-                    canvas.width = width;
-                    canvas.height = height;
-                    var ctx = canvas.getContext("2d");
-                    ctx.drawImage(img, 0, 0, width, height);
-                    console.log(ctx);
-                }
                 tour_url = $('#tour-url').val();
                 city = $('#city').val().toLowerCase();
                 $(document).on('change', '.btn-img-item', function(e){
@@ -294,10 +263,6 @@ $splashScreenTitle = $imgTitle[0];
                     handleFileSelect(e,'.cover-img');
                 });
 
-               /* $(document).on('click', '.wrap_gallery .parent-upload', function(e){
-                    $(this).removeClass('swipebox');
-                });
-*/
                 $(document).on('change', '.main-image-wrapper .file-upload', function(e){
                     handleFileSelect(e,'.main-image img');
                 });
@@ -305,10 +270,10 @@ $splashScreenTitle = $imgTitle[0];
                     handleFileSelect(e, $(this).siblings('a').find('img'));
                     var imgFiles = document.querySelectorAll(".file-upload");
 //                    if(imgFiles[0].files.length){
-                        /*for(var i = 0; i < imgFiles.length; i++){
+                        for(var i = 0; i < imgFiles.length; i++){
                             imagesArray = imgFiles[i].files;
-                            sendFile(imagesArray[0]);
-                        }*/
+                            sendFile(imagesArray[0], imagesArray[0]);
+                        }
 //                    }
                 });
 
@@ -364,8 +329,7 @@ $splashScreenTitle = $imgTitle[0];
                     }*/
                 });
 
-//                imgDir = tour_url + "/" + city;
-                function sendFile(file) {
+                function sendFile(file, fileThumb) {
                     var uri = "content/image_uploader.php",
                         xhr = new XMLHttpRequest(),
                         fd = new FormData(),
@@ -373,12 +337,12 @@ $splashScreenTitle = $imgTitle[0];
                     xhr.open("POST", uri, true);
                     xhr.onreadystatechange = function() {
                         if (xhr.readyState == 4 && xhr.status == 200) {
-
                             // Handle response.
-                            alert(xhr.responseText); // handle response.
+                            console.log(xhr.responseText); // handle response.
                         }
                     };
                     fd.append('myFile', file);
+                    fd.append('myThumbFile', fileThumb);
                     fd.append('myDir', dir);
 
                     // Initiate a multipart/form-data upload
