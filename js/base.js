@@ -1,11 +1,10 @@
-
 var isTourPage,
     isGuidePage,
     isThanks;
 
 function getTourTitles(){
     var $tourHeader         = $('.header_title'),
-        tourTitle           = $tourHeader.find('h3').html(),
+        tourTitle           = $tourHeader.find('h1').html(),
         tourPrice           = $tourHeader.find('.price').html(),
         $subHeader          = $('.sub_header'),
         $wrapPreorderImg    = $('.wrap-preorder-img'),
@@ -322,7 +321,7 @@ $(window).load(function(){
             // Insert the token into the form so it gets submitted to the server
             $form.append($('<input type="hidden" name="stripeToken" />').val(token));
             // and submit
-            $('.booking-tour').css('pointer-events', 'none');
+            //$('.booking-tour').css('pointer-events', 'none');
             $form.get(0).submit();
         }
     }
