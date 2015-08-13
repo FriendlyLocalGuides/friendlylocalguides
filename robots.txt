@@ -1,4 +1,9 @@
 User-agent: *
+
+Disallow: */?attachment
+Host: friendlylocalguides.com
+Sitemap: https://friendlylocalguides.com/sitemap.xml
+
 Disallow: /blog/facts-about-golden*
 Disallow: /blog/1-hotel-in-moscow/
 Disallow: /blog/how-to-explore-moscow/
