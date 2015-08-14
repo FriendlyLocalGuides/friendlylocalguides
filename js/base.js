@@ -1,4 +1,5 @@
 var isTourPage,
+    isFreeTour,
     isGuidePage,
     isThanks;
 
@@ -74,6 +75,7 @@ function toggleTheme(){
             hideSubHeader = true;
         }
     });
+
 
     if(white){
         $('header, footer, aside').addClass('white_theme');
@@ -203,6 +205,7 @@ $(window).load(function(){
         }, 500);
 
     });
+
 
 
     $('body').on('click touch ready resize orientation scroll', '.scroll-navigate .info-icon', function(e){
@@ -409,13 +412,16 @@ $(window).load(function(){
                 event.preventDefault();
                 error = true;
                 $(this).addClass("error_field");
+                $('html, body').animate({
+                    scrollTop: $('.error_field').first().offset().top - 120
+                }, 500);
             }else{
                 $input = $originInput;
                 $(this).removeClass("error_field");
             }
         });
 
-        if(isTourPage && $input.hasClass('booking-tour') && !error){
+        if(isTourPage && $input.hasClass('booking-tour') && !error && !isFreeTour){
             createStripeToken();
         }
 
@@ -487,7 +493,9 @@ $(window).load(function(){
 
     $('.container').on('change paste blur keyup submit click', '.book-tour .required, .booking-tour', function(e){
         e.preventDefault();
-        validateCardDetails();
+        if(!isFreeTour) {
+            validateCardDetails();
+        }
         checkForm($(this), e);
     });
 

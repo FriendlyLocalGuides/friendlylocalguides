@@ -244,6 +244,11 @@ $(function(){
         }else{
             isTourPage = false;
         }
+        if(links[4] == 'free-tour' && !isThanks){
+            isFreeTour = true;
+        }else{
+            isFreeTour = false;
+        }
         isGuidePage = links[3] == 'guides';
     }
     /*Form*/
