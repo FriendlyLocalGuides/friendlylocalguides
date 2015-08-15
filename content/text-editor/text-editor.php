@@ -1,4 +1,6 @@
 <?php
+require($_SERVER['DOCUMENT_ROOT'].'/admin/config.php');
+if(!$user->is_logged_in()){ header('Location:'. '/admin/login.php'); }
 $url = strtolower(strip_tags(trim($_GET['tour'])));
 try {
     require_once $_SERVER["DOCUMENT_ROOT"]."/content/config.php";
@@ -11,7 +13,7 @@ switch($city){
     case 'moscow': $tourTable = 'tours_moscow'; break;
     case 'saint-petersburg': $tourTable = 'tours_spb'; break;
 }
-$sql_tour = "SELECT title, title_2, subtitle, price, duration, description, img_link_item FROM $tourTable WHERE url = '$url'";
+$sql_tour = "SELECT title, title_2, subtitle, price, duration, description, img_link_item FROM tours_moscow WHERE url = '$url'";
 
 foreach ($dbh->query($sql_tour) as $row){
     $titleTour = $row['title'];
@@ -50,12 +52,38 @@ $splashScreenTitle = $imgTitle[0];
     <head>
 
         <script src="//code.jquery.com/jquery-2.1.0.min.js"></script>-->
+        <script src="/js/lib/jquery-1.11.0.min.js"></script>
+        <script src="/js/lib/modernizr.min.js"></script>
+        <script src="/js/lib/jquery-ui.min.js"></script>
+        <script src="/js/plugins/clockpicker.js"></script>
+        <script src="/js/plugins/jquery.tools.min.js"></script>
+        <script src="/js/plugins/jquery.cover.js"></script>
+        <script src="/js/plugins/jquery.swipebox.js"></script>
         <script src="/js/lib/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/js/lib/jquery.payment.js"></script>
+        <script src="/js/navigate.js"></script>
+        <script src="/js/base.js"></script>
         <script src="/ckeditor/ckeditor.js"></script>
+
+        <link rel="shortcut icon" href="/i/fav.ico" type="image/x-icon">
+        <link rel="icon" href="/i/fav.ico" type="image/x-icon">
+        <link rel="stylesheet" href="/css/reset.css"/>
         <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+        <link href='//fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="/css/texteditor.css"/>
+        <link rel="stylesheet" href="/css/jquery-ui.min.css"/>
+        <link rel="stylesheet" href="/css/base.css"/>
+        <link rel="stylesheet" href="/css/font-awesome.css"/>
+        <link rel="stylesheet" href="/css/sidebar.css"/>
+        <link rel="stylesheet" href="/css/header.css"/>
+        <link rel="stylesheet" href="/css/navigation.css"/>
+        <link rel="stylesheet" href="/css/content.css"/>
         <link rel="stylesheet" href="/css/tours.css"/>
+        <link rel="stylesheet" href="/css/jquery.cover.css"/>
+        <link rel="stylesheet" href="/css/swipebox.css"/>
+        <link rel="stylesheet" href="/css/css3-styles.css"/>
+        <link rel="stylesheet" href="/css/texteditor.css"/>
         <script type="text/javascript">
             $(window).load( function() {
                 $(document).on('click', '.popover-alt', function(e){
@@ -364,7 +392,7 @@ $splashScreenTitle = $imgTitle[0];
             <a href="http://friendlylocalguides/index.php?id=editor&city=moscow&tour=free-tour">Moscow Free Tour</a>
         </li>
     </ul>
-        <section class="text-editor-container">
+        <section class="text-editor-container container">
             <form id="tour-form" class="text-editor" enctype="multipart/form-data">
                 <div class="input-groups">
                     <input id="city" class="form-control" type="text" name="city" placeholder="City" value="<?=$city?>"/>

@@ -47,9 +47,9 @@ if($id == 'guides' && $guides){
 }
 
 
-if($id == 'editor' && $city){
+/*if($id == 'editor' && $city){
     include 'text-editor/text-editor.php';
-}
+}*/
 
 if($blog || $id == 'blog'){
     include 'blog/index.php';
