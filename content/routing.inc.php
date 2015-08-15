@@ -46,7 +46,6 @@ if($id == 'guides' && $guides){
     }
 }
 
-
 if($blog || $id == 'blog'){
     include 'blog/index.php';
 }
