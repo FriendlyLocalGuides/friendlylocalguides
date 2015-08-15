@@ -51,7 +51,8 @@ $order_number = substr(number_format(time(), '0', '', '-'), 2);
                 <textarea class="input-item comments-field" name="message" placeholder="Comments"></textarea>
             </div>
         </div>
-        <div class="form-row clearfix">
+        <?if($id == 'tours' && $tours != 'free-tour'){?>
+        <div class="form-row payment-fields clearfix">
             <h3>Payment method</h3>
             <div class="payment-errors-wrapper">
                 <span class="payment-errors"></span>
@@ -67,6 +68,7 @@ $order_number = substr(number_format(time(), '0', '', '-'), 2);
                 <input class="input-item cc-cvc required" placeholder="CVC" type="tel" data-stripe="cvc" autocomplete="off"/>
             </label>
         </div>
+        <?}?>
 		<input class="input-item book_button booking-tour" value="Book now" type="submit">
 	</form>
 </div>

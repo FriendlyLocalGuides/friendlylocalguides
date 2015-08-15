@@ -1,7 +1,7 @@
 <div class="guide_page">
     <div class="header_title">
         <div class="header_tour_content">
-            <h3>Katia</h3>
+            <h1>Katia</h1>
         </div>
     </div>
     <div class="overlay_view_tour"></div>

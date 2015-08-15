@@ -1,7 +1,7 @@
 <div class="about_page">
     <div class="header_title">
         <div class="header_tour_content">
-            <h3>About us</h3>
+            <h1>About us</h1>
             <div class="slogan">
                 experience is everything
             </div>

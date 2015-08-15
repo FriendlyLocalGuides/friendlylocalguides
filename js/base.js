@@ -1,11 +1,11 @@
-
 var isTourPage,
+    isFreeTour,
     isGuidePage,
     isThanks;
 
 function getTourTitles(){
     var $tourHeader         = $('.header_title'),
-        tourTitle           = $tourHeader.find('h3').html(),
+        tourTitle           = $tourHeader.find('h1').html(),
         tourPrice           = $tourHeader.find('.price').html(),
         $subHeader          = $('.sub_header'),
         $wrapPreorderImg    = $('.wrap-preorder-img'),
@@ -71,6 +71,7 @@ function toggleTheme(){
             hideSubHeader = true;
         }
     });
+
 
     if(white){
         $('header, footer, aside').addClass('white_theme');
@@ -202,6 +203,7 @@ $(window).load(function(){
     });
 
 
+
     $('body').on('click touch ready resize orientation scroll', '.scroll-navigate .info-icon', function(e){
         e.preventDefault();
         $('.scroll-navigate li').removeClass('current');
@@ -311,6 +313,7 @@ $(window).load(function(){
             if(response.error.message){
                 $form.find('.payment-errors').text(response.error.message);
                 $('.payment-errors-wrapper').fadeIn();
+                $('#booking_form .book_button').css('pointer-events', 'auto');
             }
         } else {
             // response contains id and card, which contains additional card details
@@ -402,17 +405,24 @@ $(window).load(function(){
 
         $input.each(function(){
             if($(this).val().length == 0 || isEmailField && ($(this).val().indexOf('@') == '-1')){
-                event.preventDefault()
+                event.preventDefault();
                 error = true;
                 $(this).addClass("error_field");
+                /*$('html, body').animate({
+                    scrollTop: $('.error_field').first().offset().top - 120
+                }, 500);*/
             }else{
                 $input = $originInput;
                 $(this).removeClass("error_field");
             }
         });
 
-        if(isTourPage && $input.hasClass('booking-tour') && !error){
+        if(isTourPage && $input.hasClass('booking-tour') && !error && !isFreeTour){
             createStripeToken();
+        }else if(isTourPage && $input.hasClass('booking-tour') && !error && isFreeTour){
+            $('#booking_form').get(0).submit();
+        }else{
+            $('#booking_form .book_button').css('pointer-events', 'auto');
         }
 
         if(isTourPage && $input.hasClass('send-review') && !error){
@@ -483,7 +493,11 @@ $(window).load(function(){
 
     $('.container').on('change paste blur keyup submit click', '.book-tour .required, .booking-tour', function(e){
         e.preventDefault();
-        validateCardDetails();
+        //TODO: prevent repeated sending
+        $('#booking_form .book_button').css('pointer-events', 'none');
+        if(!isFreeTour) {
+            validateCardDetails();
+        }
         checkForm($(this), e);
     });
 

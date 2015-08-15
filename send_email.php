@@ -21,7 +21,7 @@
 
         if(stristr($_SERVER['HTTP_REFERER'], 'contact')){
             $subject = 'Contact';
-            $form_message  = "Name: $name\nE-mail: $email\n$message";
+            $form_message  = "<p>Name: $name</p><p>E-mail: $email</p><p>Message: $message</p>";
 	        $result = 'contact';
         }else{
             $subject = 'Friendly Local Guides booking';
@@ -35,7 +35,9 @@
             $form_message_user  =  $form_message;
 
 	        $result = 'tour';
-            include $_SERVER["DOCUMENT_ROOT"]."/Stripe/stripe_handler.php";
+            if(!stristr($_SERVER['HTTP_REFERER'], 'free-tour')){
+                include $_SERVER["DOCUMENT_ROOT"]."/Stripe/stripe_handler.php";
+            }
             include "content/order-info.php";
         }
 

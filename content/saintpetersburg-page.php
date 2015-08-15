@@ -1,7 +1,7 @@
 <div class="main-page">
     <div class="header_title">
         <div class="header_tour_content">
-            <h3>Private tours of New York</h3>
+            <h1>Private tours of New York</h1>
             <div class="slogan">
                 Friendly Fun & Flexible Guides
             </div>

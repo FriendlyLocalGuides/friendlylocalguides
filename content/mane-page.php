@@ -2,7 +2,7 @@
     <a class="sales winter-sales sales-zInd" href="/blog/moscow-tours-ultimate-russian-art-and-culture-experience"></a>
     <div class="header_title">
         <div class="header_tour_content">
-            <h3>Fun Private tours</h3>
+            <h1>Fun Private tours</h1>
             <div class="slogan">
                 Make a local friend
             </div>
