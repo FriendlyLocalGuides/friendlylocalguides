@@ -317,6 +317,7 @@ $(window).load(function(){
             if(response.error.message){
                 $form.find('.payment-errors').text(response.error.message);
                 $('.payment-errors-wrapper').fadeIn();
+                $('#booking_form .book_button').css('pointer-events', 'auto');
             }
         } else {
             // response contains id and card, which contains additional card details
@@ -324,7 +325,6 @@ $(window).load(function(){
             // Insert the token into the form so it gets submitted to the server
             $form.append($('<input type="hidden" name="stripeToken" />').val(token));
             // and submit
-            //$('.booking-tour').css('pointer-events', 'none');
             $form.get(0).submit();
         }
     }
@@ -412,9 +412,9 @@ $(window).load(function(){
                 event.preventDefault();
                 error = true;
                 $(this).addClass("error_field");
-                $('html, body').animate({
+                /*$('html, body').animate({
                     scrollTop: $('.error_field').first().offset().top - 120
-                }, 500);
+                }, 500);*/
             }else{
                 $input = $originInput;
                 $(this).removeClass("error_field");
@@ -423,6 +423,10 @@ $(window).load(function(){
 
         if(isTourPage && $input.hasClass('booking-tour') && !error && !isFreeTour){
             createStripeToken();
+        }else if(isTourPage && $input.hasClass('booking-tour') && !error && isFreeTour){
+            $('#booking_form').get(0).submit();
+        }else{
+            $('#booking_form .book_button').css('pointer-events', 'auto');
         }
 
         if(isTourPage && $input.hasClass('send-review') && !error){
@@ -493,6 +497,8 @@ $(window).load(function(){
 
     $('.container').on('change paste blur keyup submit click', '.book-tour .required, .booking-tour', function(e){
         e.preventDefault();
+        //TODO: prevent repeated sending
+        $('#booking_form .book_button').css('pointer-events', 'none');
         if(!isFreeTour) {
             validateCardDetails();
         }

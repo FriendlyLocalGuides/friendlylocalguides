@@ -5,7 +5,10 @@
 	    <div class="title-tour"><?=$titleTour?></div>
 	    <div class="price-tour"><?=$price?></div>
 		<div class="thank-you">
-			<p>You will soon get payment confirmation email.</p>
+        <?if(!stristr($_SERVER['HTTP_REFERER'], 'free-tour')) {
+            ?>
+            <p>You will soon get payment confirmation email.</p>
+        <?}?>
 			<p>We will contact you to discuss the details of the tour within 24 hours.</p>
 		</div>
 	</div>
