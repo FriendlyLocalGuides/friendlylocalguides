@@ -15,11 +15,9 @@ try {
         $price        = $_POST['price'];
         $duration     = $_POST['duration'];
         $description  = $_POST['description'];
+        $img_link     = $_POST['img_link_item'];
         $url          = $_POST['url'];
-        $img_link     = $_POST['img_link'];
-        $thumb_link   = $_POST['thumb_link'];
         $img_alt      = $_POST['gallery-item-alt'];
-        $img_title    = $_POST['gallery-item-title'];
         switch($city){
             case 'moscow': $tourTable = 'tours_moscow'; break;
             case 'saint-petersburg': $tourTable = 'tours_spb'; break;
@@ -28,13 +26,13 @@ try {
         /*** превратить все ошибки в исключения ***/
         $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         if($action == 'add'){
-            $sql = "INSERT INTO $tourTable (title, title_2, subtitle, price, duration, description, url)
-                    VALUES (:title, :title_2, :subtitle, :price, :duration, :description, :url)";
+            $sql = "INSERT INTO $tourTable (title, title_2, subtitle, price, duration, description, img_link_item, url)
+                    VALUES (:title, :title_2, :subtitle, :price, :duration, :description, :img_link_item, :url)";
 
 
         }else if ($action == 'update'){
             $sql = "UPDATE $tourTable
-                    SET title = :title, title_2 = :title_2, subtitle = :subtitle, price = :price, duration = :duration, description = :description
+                    SET title = :title, title_2 = :title_2, subtitle = :subtitle, price = :price, duration = :duration, description = :description, img_link_item = :img_link_item
                     WHERE url = :url";
         }
         /*** готовим выражение ***/
@@ -47,6 +45,7 @@ try {
         $stmt->bindParam(':price', $price, PDO::PARAM_STR);
         $stmt->bindParam(':duration', $duration, PDO::PARAM_STR);
         $stmt->bindParam(':description', $description, PDO::PARAM_STR);
+        $stmt->bindParam(':img_link_item', $img_link, PDO::PARAM_STR);
         $stmt->bindParam(':url', $url, PDO::PARAM_STR);
 
         /*** запускаем sql выражение ***/

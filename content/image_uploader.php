@@ -44,11 +44,15 @@ try {
     if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $dir = $_POST['myDir'];
         $dir = $_SERVER["DOCUMENT_ROOT"].$dir;
+        $coverDir = $_SERVER["DOCUMENT_ROOT"].$_POST['myCoverDir'];;
         $dirThumb = $dir . "/small";
         $tmpThumbFile = $_FILES['myThumbFile']['tmp_name'];
         $thumbFileName = $_FILES['myThumbFile']['name'];
+        $tmpCoverFile = $_FILES['myCoverFile']['tmp_name'];
+        $coverFileName = $_FILES['myCoverFile']['name'];
 
         list($width, $height) = getimagesize($tmpThumbFile);
+        list($widthCover, $heightCover) = getimagesize($tmpCoverFile);
         // resize if necessary
         if ($width >= 100 && $height >= 100) {
             $image = new Imagick($tmpThumbFile);
@@ -62,13 +66,26 @@ try {
             move_uploaded_file($tmpThumbFile,  $dirThumb . "/" . $thumbFileName);
         }
 
+        if ($widthCover >= 480 || $heightCover >= 320) {
+            $image = new Imagick($tmpCoverFile);
+            $image->cropThumbnailImage(480, 320);
+            header("Content-Type: image/jpg");
+            if(!is_dir($coverDir)) {
+                mkdir($coverDir, 0777, true);
+            }
+            $image->writeImage( $coverDir . "/" . $coverFileName);
+        }else{
+            move_uploaded_file($tmpCoverFile,  $coverDir . "/" . $coverFileName);
+        }
 
 
         if (is_dir($dir)){
             move_uploaded_file($_FILES['myFile']['tmp_name'],  $dir . "/" . $_FILES['myFile']['name']);
+            move_uploaded_file($_FILES['myCoverFile']['tmp_name'],  $dir . "/" . $_FILES['myCoverFile']['name']);
         }else if(!is_dir($dir)){
             mkdir($dir, 0777, true);
             move_uploaded_file($_FILES['myFile']['tmp_name'],  $dir . "/" . $_FILES['myFile']['name']);
+            move_uploaded_file($_FILES['myCoverFile']['tmp_name'],  $dir . "/" . $_FILES['myCoverFile']['name']);
         }
 
         $currentPage = basename($_SERVER['HTTP_REFERER']);

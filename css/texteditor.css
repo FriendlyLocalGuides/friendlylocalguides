@@ -16,6 +16,12 @@
     float: none !important;
 }
 
+
+.splash-screen, .view_tour .form-control{
+    position: relative;
+    z-index: 100;
+}
+
 /*.btn-img-item{
     position: absolute;
 }*/
@@ -40,10 +46,44 @@
     width: 0;
 }
 
-.tour-item h2 {
+.tour-item h2,
+.tour-item h2 input{
     font-size: 1.2em !important;
     font-weight: bold;
     margin-top: auto;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.tour-item h2 input{
+    border: 0;
+    background: transparent;
+}
+
+.price .form-control{
+    display: inline-block;
+    width: 75px;
+    border: 0;
+    background: transparent;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+.price .form-control[name=price]{
+    width: 50px;
+}
+
+
+.tours-list_new h3{
+    text-align: center;
+}
+
+.tours-list_new h3 input{
+    text-align: center;
+    color: #fff;
+    border: 0;
+    background: transparent;
 }
 
 .view_tour_wrapper{

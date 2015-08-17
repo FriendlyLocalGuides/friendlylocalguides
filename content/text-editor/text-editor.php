@@ -13,7 +13,7 @@ switch($city){
     case 'moscow': $tourTable = 'tours_moscow'; break;
     case 'saint-petersburg': $tourTable = 'tours_spb'; break;
 }
-$sql_tour = "SELECT title, title_2, subtitle, price, duration, description, img_link_item FROM tours_moscow WHERE url = '$url'";
+$sql_tour = "SELECT title, title_2, subtitle, price, duration, description, img_link_item FROM $tourTable WHERE url = '$url'";
 
 foreach ($dbh->query($sql_tour) as $row){
     $titleTour = $row['title'];
@@ -48,10 +48,6 @@ $splashScreenAlt = $imgAlt[0];
 $splashScreenTitle = $imgTitle[0];
 
 ?>
-<!--<html>
-    <head>
-
-        <script src="//code.jquery.com/jquery-2.1.0.min.js"></script>-->
         <script src="/js/lib/jquery-1.11.0.min.js"></script>
         <script src="/js/lib/modernizr.min.js"></script>
         <script src="/js/lib/jquery-ui.min.js"></script>
@@ -100,6 +96,9 @@ $splashScreenTitle = $imgTitle[0];
                     city,
                     imgRootDir,
                     imgDir,
+                    coverDir,
+                    coverImg = false,
+                    thumbImg = false,
                     currentImg,
                     coverImgName,
                     tour_url,
@@ -275,7 +274,6 @@ $splashScreenTitle = $imgTitle[0];
                             $('.progress_bar').removeClass('loading')
                         }, 2000);
                     };
-                    imgDir = "/i/tours/" + city + "/" + tour_url;
                     $(evt.currentTarget).siblings('.img_link').val(imgDir + "/" + evt.currentTarget.files[0].name);
                     $(evt.currentTarget).siblings('.thumb_link').val(imgDir + "/small/" + evt.currentTarget.files[0].name);
                     reader.readAsDataURL(evt.currentTarget.files[0]);
@@ -283,12 +281,22 @@ $splashScreenTitle = $imgTitle[0];
 
                 tour_url = $('#tour-url').val();
                 city = $('#city').val().toLowerCase();
+                imgDir = "/i/tours/" + city + "/" + tour_url;
                 $(document).on('change', '.btn-img-item', function(e){
+                    coverDir = "/i/tours-list/" + city;
+                    $('.img_link_item').val(coverDir + "/" + e.currentTarget.files[0].name);
+                    $('.splash_img_link').val(imgDir + "/" + e.currentTarget.files[0].name);
+
                     handleFileSelect(e,'.tour-item-img');
+                    handleFileSelect(e,'.cover-img');
                 });
                 $(document).on('change', '.splash-screen', function(e){
-                    e.preventDefault();
+                    coverDir = "/i/tours-list/" + city;
+                    $('.splash_img_link').val(imgDir + "/" + e.currentTarget.files[0].name);
+                    $('.img_link_item').val(coverDir + "/" + e.currentTarget.files[0].name);
+
                     handleFileSelect(e,'.cover-img');
+                    handleFileSelect(e,'.tour-item-img');
                 });
 
                 $(document).on('change', '.main-image-wrapper .file-upload', function(e){
@@ -296,13 +304,6 @@ $splashScreenTitle = $imgTitle[0];
                 });
                 $(document).on('change', '.thumb-list .file-upload', function(e){
                     handleFileSelect(e, $(this).siblings('a').find('img'));
-                    var imgFiles = document.querySelectorAll(".file-upload");
-//                    if(imgFiles[0].files.length){
-                        for(var i = 0; i < imgFiles.length; i++){
-                            imagesArray = imgFiles[i].files;
-                            sendFile(imagesArray[0], imagesArray[0]);
-                        }
-//                    }
                 });
 
                 //synchronize changing of value
@@ -328,6 +329,7 @@ $splashScreenTitle = $imgTitle[0];
                     $("input[name=action]").val('update');
                     tour_url = $('#tour-url').val()
                     city = $('#city').val().toLowerCase();
+                    imgDir = "/i/tours/" + city + "/" + tour_url;
                     CKEDITOR.instances.txtEditor.updateElement();
                     $.post(
                         "/content/tour-creator.php",
@@ -335,13 +337,22 @@ $splashScreenTitle = $imgTitle[0];
                             console.log(result);
                         }
                     );
+
+                    var imgFiles = document.querySelectorAll(".file-upload");
+
+                    for(var i = 0; i < imgFiles.length; i++){
+                        var imagesArray = imgFiles[i].files;
+                        thumbImg = !!$(imgFiles[i]).hasClass('thumb-input');
+                        coverImg = !!$(imgFiles[i]).hasClass('cover-input');
+                        sendFile(imagesArray[0], imagesArray[0], imagesArray[0]);
+                    }
                 });
                 $('#add-tour').on('click', function(e){
                     e.preventDefault();
                     $("input[name=action]").val('add');
                     tour_url = $('#tour-url').val();
                     city = $('#city').val().toLowerCase();
-
+                    imgDir = "/i/tours/" + city + "/" + tour_url;
                     CKEDITOR.instances.txtEditor.updateElement();
                     $.post(
                         "/content/tour-creator.php",
@@ -349,19 +360,23 @@ $splashScreenTitle = $imgTitle[0];
                             console.log(result);
                         }
                     );
-                    /*if(imgFiles[0].files.length){
-                        for(var i = 0; i < imgFiles.length; i++){
-                            imagesArray = imgFiles[i].files;
-                            sendFile(imagesArray[0]);
-                        }
-                    }*/
+
+                    var imgFiles = document.querySelectorAll(".file-upload");
+
+                    for(var i = 0; i < imgFiles.length; i++){
+                        var imagesArray = imgFiles[i].files;
+                        thumbImg = !!$(imgFiles[i]).hasClass('thumb-input');
+                        coverImg = !!$(imgFiles[i]).hasClass('cover-input');
+                        sendFile(imagesArray[0], imagesArray[0], imagesArray[0]);
+                    }
                 });
 
-                function sendFile(file, fileThumb) {
+                function sendFile(file, fileThumb, coverFile) {
                     var uri = "content/image_uploader.php",
                         xhr = new XMLHttpRequest(),
                         fd = new FormData(),
-                        dir = imgDir;
+                        dir = imgDir,
+                        coverDirectory = coverDir;
                     xhr.open("POST", uri, true);
                     xhr.onreadystatechange = function() {
                         if (xhr.readyState == 4 && xhr.status == 200) {
@@ -370,12 +385,21 @@ $splashScreenTitle = $imgTitle[0];
                         }
                     };
                     fd.append('myFile', file);
-                    fd.append('myThumbFile', fileThumb);
+                    if(thumbImg){
+                        console.log(thumbImg);
+                        fd.append('myThumbFile', fileThumb);
+                    }
+                    if(coverImg) {
+                        fd.append('myCoverFile', coverFile);
+                    }
                     fd.append('myDir', dir);
+                    fd.append('myCoverDir', coverDirectory);
 
                     // Initiate a multipart/form-data upload
                     xhr.send(fd);
                 }
+
+
             });
             $(document).on('click', '.tour-item', function(){
                 $(this).toggleClass('hover')
@@ -385,8 +409,6 @@ $splashScreenTitle = $imgTitle[0];
             });
 
         </script>
-   <!-- </head>
-    <body>-->
     <ul>
         <li>
             <a href="http://friendlylocalguides/index.php?id=editor&city=moscow&tour=free-tour">Moscow Free Tour</a>
@@ -397,28 +419,26 @@ $splashScreenTitle = $imgTitle[0];
                 <div class="input-groups">
                     <input id="city" class="form-control" type="text" name="city" placeholder="City" value="<?=$city?>"/>
                     <input class="form-control" type="text" name="images-dir" placeholder="Name folder with all images of this tour"/>
+                    <input id="tour-url" class="form-control" type="text" name="url" placeholder="Link to the tour" value="<?=$url?>"/>
                         <figure class="tour-item content_box tours-list_new">
                             <img class="tour-item-img" src="<?=$imgTourItem;?>" alt=""/>
                             <figcaption>
                                 <div class="img-item-upload">
-                                    <input class="btn-img-item" type="file" name="img_link_item">
+                                    <input class="btn-img-item cover-input file-upload" type="file">
+                                    <input class="img_link_item" type="hidden" name="img_link_item" value="<?=$imgTourItem;?>">
                                     <div class="progress_bar"><div class="percent">0%</div></div>
                                 </div>
                                 <h2>
                                     <input class="form-control title_item" type="text" placeholder="Title of the tour" name="title" value="<?=$titleTour?>"/>
-                                    <?=$titleTour;?>
                                 </h2>
                                 <div class="price">
-                                    <input class="form-control" type="text" name="price" placeholder="price" value="<?=$price?>"/>
+                                    $<input class="form-control" type="text" name="price" placeholder="price" value="<?=$price?>"/> &mdash;
                                     <input class="form-control" type="text" name="duration" placeholder="duration" value="<?=$duration?>"/>
-                                    $<?=$price;?> — <?=$duration;?>
                                 </div>
                                 <h3>
                                     <input class="form-control" type="text" name="subtitle" placeholder="subtitle" value="<?=$subtitleTour?>"/>
-                                    <?=$subtitleTour;?>
                                 </h3>
                                 <div class="buttons-container">
-                                    <input id="tour-url" class="form-control" type="text" name="url" placeholder="Link to the tour" value="<?=$url?>"/>
                                     <a class="view-button" href="/<?=$city?>/tours/<?=$url;?>">View tour</a>
                                     <a class="book_button" href="/<?=$city?>/tours/<?=$url;?>/#book">Book tour</a>
                                 </div>
@@ -447,13 +467,14 @@ $splashScreenTitle = $imgTitle[0];
                             <a class="book_button" href="#">Book now</a>
                         </div>
 
-                        <div class="overlay_view_tour"></div>
                         <section class="view_tour height-viewport">
                             <input class="img_id" type="hidden" value="<?=$splashScreenId?>" name="id[]"/>
-                            <input class="img_link" type="hidden" value="<?=$splashScreenLink?>" name="img_link[]"/>
+                            <input class="splash_img_link" type="hidden" value="<?=$splashScreenLink?>" name="img_link[]"/>
                             <input class="thumb_link" type="hidden" value="<?=$splashScreenThumbLink?>" name="thumb_link[]"/>
+                            <input class="splash-screen cover-input file-upload" type="file"  placeholder="Splash Screen" />
                             <input type="text" class="form-control" name="alt[]" placeholder="Alt" value="<?=$splashScreenAlt?>" />
                             <input type="text" class="form-control" name="title_item[]" placeholder="Title" value="<?=$splashScreenTitle?>" />
+                            <div class="overlay_view_tour"></div>
                             <img class="cover-img" src="<?=$splashScreenLink?>" alt="<?=$splashScreenAlt?>" />
 
                             <div class="scroll_down">
@@ -464,9 +485,6 @@ $splashScreenTitle = $imgTitle[0];
                             </div>
                         </section>
                     </section>
-                    <input class="splash-screen file-upload" type="file" name="img_link[]" placeholder="Splash Screen" />
-                    <input class="form-control alt" type="text" placeholder="Alt for splash screen"/>
-                    <input class="cover-img-data" type="text" name="splashscreen" hidden="hidden"/>
                     <textarea id="txtEditor" name="description">
                         <?=$descriptionTour?>
                     </textarea>
@@ -474,10 +492,10 @@ $splashScreenTitle = $imgTitle[0];
                     <section class="blacken gallery height-viewport">
                         <div class="wrap_gallery">
                             <div class="main-image-wrapper">
-                                <input class="main-image-upload file-upload" name="img_link[]" type="file" placeholder="Splash Screen"/>
+                                <input class="main-image-upload file-upload" type="file" placeholder="Splash Screen"/>
                                 <input class="img_id" type="hidden" value="<?=$imgId[1]?>" name="id[]"/>
                                 <input class="img_link" type="hidden" value="<?=$imagesLinks[1]?>" name="img_link[]"/>
-                                <input class="thumb_link" type="hidden" value="<?=$thumbsLinks[1];?>" name="thumb_link[]"/>
+                                <input class="thumb_link_fake" type="hidden" value="<?=$thumbsLinks[1];?>" name="thumb_link[]"/>
                                 <input type="text" class="form-control" name="alt[]" placeholder="Alt" value="<?=$imgAlt[1];?>">
                                 <input type="text" class="form-control" name="title_item[]" placeholder="Title" value="<?=$imgTitle[1];?>">
                                 <a rel="gallery-1" class="main-image swipebox parent-upload" href="<?=$imagesLinks[1];?>" title="<?=$imgTitle[1];?>">
@@ -508,19 +526,6 @@ $splashScreenTitle = $imgTitle[0];
                                     <?
                                 }
                                 ?>
-                                <li>
-                                    <input class="img_id" type="hidden" value="7" name="id[]"/>
-                                    <input class="img_link" type="hidden" value="<?=$imagesLinks[$i]?>" name="img_link[]"/>
-                                    <input class="thumb_link" type="hidden" value="<?=$thumbsLinks[$i];?>" name="thumb_link[]"/>
-                                    <a rel="gallery-1" class="thumb swipebox parent-upload" href="/i/tours/moscow/free-tour/Masha_Tverskaya.jpg" title="Friendly Local Guide and the Founder of Moscow – Yury Dolgorukiy">
-                                        <img src="/i/tours/moscow/free-tour/Alina_Tverskaya.jpg" alt="a"/>
-                                    </a>
-                                    <button type="button" class="btn btn-xs btn-primary popover-alt" >Alt/Title</button>
-                                    <div class="wrap-img-info">
-                                        <input type="text" class="form-control" name="alt[]" placeholder="Alt" value="<?=$imgAlt[$i];?>" />
-                                        <input type="text" class="form-control" name="title_item[]" placeholder="Title" value="<?=$imgTitle[$i];?>" />
-                                    </div>
-                                </li>
                             </ul>
 
                         </div>
