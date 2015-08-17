@@ -397,6 +397,21 @@
     margin-bottom: 5px;
 }
 
+.contact .contact-items li .fa{
+    font-size: 35px;
+    margin-right: 5px;
+    color: rgba(0, 128, 0, 0.7);
+}
+
+.contact .contact-items li.contact-us{
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+.contact .contact-items li .fa,
+.contact .contact-items li strong{
+    vertical-align: middle;
+}
+
 .contact .contact-items li strong{
     font-size: 1.1em;
 }
