@@ -23,7 +23,7 @@
         </div>
     </section>
     <section class="features height-viewport">
-        <div class="heading-features">
+        <div class="heading-decoration">
             <h4>What you get</h4>
             <div class="decor">
                 <div class="decor-circle"></div>

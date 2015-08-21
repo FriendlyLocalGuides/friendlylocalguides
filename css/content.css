@@ -1068,6 +1068,34 @@
     font-size: 2.1em;
 }
 
+/*SITEMAP*/
+.sitemap{
+    width: auto;
+    max-width: none;
+    background-image: url("../i/tile-feature-bg.png");
+    padding: 160px 10% 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #76869e;
+}
+
+.sitemap-list{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sitemap-list li{
+    margin-bottom: 15px;
+}
+
+.sitemap-list a{
+    color: rgba(0, 0, 0, 0.67);
+}
+
+.sitemap-list a:hover{
+    text-decoration: underline;
+}
 /*FEATURES*/
 
 .features{
@@ -1080,19 +1108,20 @@
     background-image: url("../i/tile-feature-bg.png");
 }
 
-.heading-features{
+.heading-decoration{
     text-align: center;
     margin-bottom: 30px;
 }
 
-.heading-features h4{
+.heading-decoration h1,
+.heading-decoration h4{
     text-transform: uppercase;
     font-size: 24px;
     font-weight: normal;
     margin-bottom: 15px;
 }
 
-.heading-features .decor{
+.heading-decoration .decor{
     width: 80%;
     position: relative;
     margin: auto;
@@ -1109,8 +1138,8 @@
     opacity: .7;
 }
 
-.heading-features .decor:before,
-.heading-features .decor:after{
+.heading-decoration .decor:before,
+.heading-decoration .decor:after{
     content: "";
     display: block;
     position: absolute;
@@ -1119,12 +1148,12 @@
     border-top: 1px solid;
 }
 
-.heading-features .decor:before{
+.heading-decoration .decor:before{
     left: 0;
     right: 55%;
 }
 
-.heading-features .decor:after{
+.heading-decoration .decor:after{
     left: 55%;
     right: 0;
 }
@@ -1214,6 +1243,17 @@
         margin-top: 50px;
     }
 
+    .heading-decoration h1{
+        font-size: 21px;
+    }
+
+    .sitemap-list li{
+        margin-bottom: 10px;
+    }
+
+    .sitemap-list a{
+        font-size: 15px;
+    }
 }
 
 
@@ -1483,11 +1523,11 @@
         padding-top: 180px;
     }
 
-    .heading-features .decor:before{
+    .heading-decoration .decor:before{
         right: 52%;
     }
 
-    .heading-features .decor:after{
+    .heading-decoration .decor:after{
         left: 52%;
     }
     .list-of-features li{
