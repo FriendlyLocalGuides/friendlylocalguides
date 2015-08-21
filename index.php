@@ -114,7 +114,8 @@
         </div>
     </article>
     <footer>
-        <div class="e-mail">info@friendlylocalguides.com</div>
+        <div class="e-mail">info@friendlylocalguides.com | </div>
+        <a href="/sitemap"> &nbsp;sitemap</a>
         <div class="rights">&copy; Copyright 2015 Friendly Local Guides, LLC. All Rights Reserved</div>
     </footer>
 

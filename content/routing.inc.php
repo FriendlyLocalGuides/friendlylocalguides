@@ -46,7 +46,9 @@ if($id == 'guides' && $guides){
     }
 }
 
-
+if($id == 'sitemap'){
+    include '/sitemap.php';
+}
 /*if($id == 'editor' && $city){
     include 'text-editor/text-editor.php';
 }*/
