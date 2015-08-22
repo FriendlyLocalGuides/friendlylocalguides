@@ -4,7 +4,7 @@
     <figure class="tour-item">
         <img src="/i/tours-list/top-20-spb.jpg" alt="Moscow Free Walking Tour"/>
         <figcaption>
-            <h2>Top 20 must see in SPb</h2>
+            <h2>Must See Tour in SPb</h2>
 	        <div class="price">$197 — 8 hours</div>
             <h3>20 legendary places of Russia’s most alluring city</h3>
             <div class="buttons-container">

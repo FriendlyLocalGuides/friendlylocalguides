@@ -40,7 +40,7 @@
     <figure class="tour-item">
         <img src="/i/tours-list/going-out-in-moscow.jpg" alt="Going Out in Moscow"/>
         <figcaption>
-            <h2>Going Out in Moscow</h2>
+            <h2>Off the beaten path tour</h2>
             <div class="price">$187 — 7 hours</div>
             <h3>A bit of history, a bit of architecture, and a lot of FUN!</h3>
             <div class="buttons-container">
@@ -52,7 +52,7 @@
     <figure class="tour-item">
         <img src="/i/tours-list/izmailovo.jpg" alt="Izmailovo Flea Market & Kremlin in Izmailovo"/>
         <figcaption>
-            <h2>Izmailovo Flea Market</h2>
+            <h2>Izmailovo flea market</h2>
             <div class="price">$87 — 2 hours</div>
             <h3>Traditional Russian Crafts, Antiques and Souvenirs</h3>
             <div class="buttons-container">
@@ -64,7 +64,7 @@
     <figure class="tour-item">
         <img src="/i/tours-list/10-hours-in-moscow.jpg" alt="10 hours in Moscow"/>
         <figcaption>
-            <h2>Top 20 Must See in Moscow</h2>
+            <h2>Must See Moscow Tour</h2>
             <div class="price">$197 — 8 hours</div>
             <h3>A cultural plunge into Russian life</h3>
             <div class="buttons-container">

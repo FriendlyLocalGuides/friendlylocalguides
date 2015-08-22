@@ -53,6 +53,10 @@ if($id == 'sitemap'){
     include 'text-editor/text-editor.php';
 }*/
 
+if($id == 'sitemap'){
+    include $_SERVER['DOCUMENT_ROOT'].'/sitemap.php';
+}
+
 if($blog || $id == 'blog'){
     include 'blog/index.php';
 }
