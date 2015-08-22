@@ -44,16 +44,16 @@
                 $meta = "See Red Square, St Basil's Cathedral, Christ the Savior Cathedral, Kremlin walls, downtown of Moscow.";
                 break;
             case 'going-out-in-moscow':
-                $title = "Moscow Private Day Tour: Going Out in Moscow - Friendly Local Guides";
-                $meta = "Indulge in an authentic Russian experience, meet locals in their most fun environment during this fascinating one day tour in Moscow. An excellent range of cafes, restaurants, bars and clubs revealed.";
+                $title = "Off the beaten path tours in Moscow: must do and off the beaten path in one day!";
+                $meta = "Enjoy Off the beaten path tour of Moscow with your local guide and friend.";
                 break;
             case 'izmailovo-kremlin-tour':
-                $title = "Izmailovo Flea Market and Kremlin in Izmailovo | Friendly Local Guides";
-                $meta = "Book this tour for only 87$ and immerse yourself in the unique culture of Russia + Great value souvenirs, Tsar’s palace & Russian vodka.";
+                $title = "Izmailovo Flea Market and Kremlin in Izmailovo - Friendly Local Guides";
+                $meta = "Book this tour for only  $87 and immerse yourself in the unique culture of Russia + Great value souvenirs, Tsar’s palace & Russian vodka.";
                 break;
             case 'top-20-must-see-in-moscow':
-                $title = "10 Hours in Moscow with a Friendly | Friendly Local Guides";
-                $meta = "Discover 15 Must-Dos Of Moscow In 1 Day, including Red Square, the Kremlin, Tsaritsino, Victory Park and other top things to do in Moscow.";
+                $title = "Moscow Must-See's Moscow tour: Red Square, Kremlin, Kolomenskoe, Novodevichye and more!  - Friendly Local Guides";
+                $meta = "20 must see of Moscow in 1 day tour. You can add or drop places from the itinerary and we'll customize this private tour for you";
                 break;
             case '2-days-in-moscow':
                 $title = "Moscow in 2 days: Moscow Sights and Russian Life - Friendly Local Guides";
@@ -88,8 +88,8 @@
                 $meta = "Book your private bike tour now and enjoy the icons of Moscow in style, test your nerve, driving on crazy Russian roads, expert commentary and lifetime shots as you travel around the city.";
                 break;
  	        case 'top-20-must-see-in-saint-petersburg':
-                $title = "Top 20 Must See in Saint Petersburg Tour - Friendly Local Guides";
-                $meta = "We've carefully selected the best places and attractions to visit and see during this 8-hour St Petersburg tour.";
+                $title = "Must see places and landmarks of St Petersburg: Nevsky Prospect, Kazan Cathedral, Hermitage and more! - Friendly Local Guides";
+                $meta = "20 legendary places of Saint Petersburg on our private must see tour. You can add or drop places from the itinerary and we'll customize it for you.";
                 break;
         }
     }
