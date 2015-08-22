@@ -47,15 +47,12 @@ if($id == 'guides' && $guides){
 }
 
 if($id == 'sitemap'){
-    include '/sitemap.php';
+    include $_SERVER['DOCUMENT_ROOT'].'/sitemap.php';
 }
 /*if($id == 'editor' && $city){
     include 'text-editor/text-editor.php';
 }*/
 
-if($id == 'sitemap'){
-    include $_SERVER['DOCUMENT_ROOT'].'/sitemap.php';
-}
 
 if($blog || $id == 'blog'){
     include 'blog/index.php';
