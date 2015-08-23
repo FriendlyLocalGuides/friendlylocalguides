@@ -51,7 +51,9 @@
 <body>
     <header class="clearfix">
         <div class="main_header">
-            <a class="logo" href="/" title="Friendly Local Guides" ></a>
+            <a class="logo" href="/" title="Friendly Local Guides">
+                <img src="i/logo.png" alt="Guided tours in Moscow and Saint-Petersburg">
+            </a>
             <div class="navigation nav-list">
                 <div class="nav_title">
                     <span class="menu_icon"></span>

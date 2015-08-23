@@ -7,37 +7,36 @@ php_flag short_open_tag On
 
 RewriteEngine On
 RewriteCond %{HTTP:X-Scheme} !https
-#RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 
 #<IfModule mod_headers.c>
 #    Header set Strict-Transport-Security: max-age=31536000;
 #</IfModule>
-#
+
 #RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
 #RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-RewriteRule ^(.*)/$ /$1 [L,R=301]
 
 RewriteRule ^([a-zA-Z0-9_-]+)/guides/([a-zA-Z0-9_-]+)$ index.php?city=$1&id=guides&guides=$2 [L]
-RewriteRule ^([a-zA-Z0-9_-]+)/guides/([a-zA-Z0-9_-]+)/$ index.php?city=$1&id=guides&guides=$2 [L]
 
 RewriteRule ^([a-zA-Z0-9_-]+)/tours/([a-zA-Z0-9_-]+)$ index.php?city=$1&&id=tours&tours=$2 [L]
-RewriteRule ^([a-zA-Z0-9_-]+)/tours/([a-zA-Z0-9_-]+)/$ index.php?city=$1&&id=tours&tours=$2 [L]
 
 RewriteRule ^([a-zA-Z0-9_-]+)/tours/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?city=$1&&id=tours&tours=$2&thanks=tours [L]
-RewriteRule ^([a-zA-Z0-9_-]+)/tours/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/$ index.php?city=$1&&id=tours&tours=$2&thanks=tours [L]
 
 RewriteRule ^([a-zA-Z0-9_-]+)/thanks$ index.php?id=$1&thanks=contact [L]
-RewriteRule ^([a-zA-Z0-9_-]+)/thanks/$ index.php?id=$1&thanks=contact [L]
 
 RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?city=$1&&id=$2 [L]
-RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/$ index.php?city=$1&&id=$2 [L]
 
 RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?id=$1 [L]
-RewriteRule ^([a-zA-Z0-9_-]+)/$ index.php?id=$1 [L]
 
 RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?city=$1 [L]
-RewriteRule ^([a-zA-Z0-9_-]+)/$ index.php?city=$1 [L]
+
+RewriteCond %{THE_REQUEST} ^.*/index\.php
+RewriteRule ^(.*)index.php$ /$1 [R=301,L]
+
+RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+ErrorDocument 404 /404-error-page.php

@@ -12,7 +12,7 @@ if($city && $id == 'tours' && !$tours){
     }
 }
 
-if($id && !$tours && !$guides && !$thanks){
+if($id && !$tours && !$guides && !$thanks && !$city){
     switch($id){
         case 'about': include 'about.inc.php'; break;
         case 'contact': include 'contact.inc.php'; break;
