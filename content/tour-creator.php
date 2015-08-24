@@ -27,7 +27,8 @@ try {
         $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         if($action == 'add'){
             $sql = "INSERT INTO $tourTable (title, title_2, subtitle, price, duration, description, img_link_item, url)
-                    VALUES (:title, :title_2, :subtitle, :price, :duration, :description, :img_link_item, :url)";
+                    VALUES (:title, :title_2, :subtitle, :price, :duration, :description, :img_link_item, :url)
+                    ON DUPLICATE KEY UPDATE title = :title, title_2 = :title_2, subtitle = :subtitle, price = :price, duration = :duration, description = :description, img_link_item = :img_link_item";
 
 
         }else if ($action == 'update'){

@@ -1,10 +1,18 @@
 .text-editor-container{
-    padding-top: 100px;
+    padding-top: 150px;
 }
 .text-editor{
-    max-width: 650px;
+    /*max-width: 650px;*/
     margin: auto;
     padding: 25px 0;
+}
+
+#cke_1_contents{
+    height: 100% !important;
+}
+
+.text-editor-inner{
+    margin-bottom: 100px;
 }
 
 .Editor-container{
@@ -12,8 +20,9 @@
 }
 
 .tour-item, .guide-item{
-    margin: auto;
+    margin: 0 auto 40px;
     float: none !important;
+    max-width: 550px;
 }
 
 
@@ -56,14 +65,16 @@
     text-transform: uppercase;
 }
 
+.header_tour_content input,
 .tour-item h2 input{
     border: 0;
     background: transparent;
 }
 
 .price .form-control{
+    height: auto;
     display: inline-block;
-    width: 75px;
+    width: 105px;
     border: 0;
     background: transparent;
     font-size: 1.1em;
@@ -117,6 +128,9 @@
     background: #fff;
     display: none;
     position: absolute;
+    left: 50%;
+    width: 550px;
+    margin-left: -280px;
 }
 
 .wrap-img-info input{
@@ -125,6 +139,9 @@
 
 .wrap-img-info input:last-child{
     margin-bottom: 0;
+}
+.gallery{
+    height: 100%;
 }
 
 .gallery .wrap_gallery{
@@ -172,4 +189,58 @@
 
 .thumb-list li input[type=file] {
     bottom: 25px;
+}
+
+.main-image-wrapper .form-control{
+    position: relative;
+    z-index: 1;
+}
+
+.header_tour_content h3 .inline-block{
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    display: inline-block;
+}
+.header_tour_content h3{
+    margin-bottom: 30px;
+}
+.header_tour_content h4 input{
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+.header_tour_content .title,
+.header_tour_content .title-long{
+    display: inline-block;
+    width: auto;
+    font-size: 46px;
+    text-transform: uppercase;
+    height: auto;
+    color: #fff;
+    font-family: "PT Sans",sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+    /*BOOTSTRAPs STUFF*/
+.input-groups{
+    max-width: 650px;
+    margin: 0 auto 40px;
+}
+header .input-groups{
+    padding-top: 35px;
+}
+.absolute{
+    position: absolute;
+}
+.text-center.absolute{
+    margin-top: 30px;
+    width: 100%;
+}
+
+/*EXTRA*/
+.book_button:hover{
+    text-decoration: none;
+    color: #fff;
 }

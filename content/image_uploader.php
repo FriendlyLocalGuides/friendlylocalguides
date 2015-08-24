@@ -104,7 +104,6 @@ try {
                         VALUES (:city, :img_link, :thumb_link, :alt, :title_item, :url)";
 
                 $stmt = $dbh->prepare($sql);
-
                 $stmt->bindParam(':city', $city, PDO::PARAM_STR);
                 $stmt->bindParam(':img_link', $img_link[$k], PDO::PARAM_STR);
                 $stmt->bindParam(':thumb_link', $thumb_link[$k], PDO::PARAM_STR);

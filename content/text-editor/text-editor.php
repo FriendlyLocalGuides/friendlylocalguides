@@ -110,6 +110,9 @@ $splashScreenTitle = $imgTitle[0];
                     imgFile = document.getElementById("tour-gallery"),
 
                     imagesArray;
+
+                //styles for CKEDITOR
+                CKEDITOR.config.contentsCss = '/css/ckeditor-custom.css';
                 function title(){
                     if($title_long.val() != ""){
                         $title_long_txt.text($title_long.val());
@@ -409,17 +412,22 @@ $splashScreenTitle = $imgTitle[0];
             });
 
         </script>
-    <ul>
-        <li>
-            <a href="http://friendlylocalguides/index.php?id=editor&city=moscow&tour=free-tour">Moscow Free Tour</a>
-        </li>
-    </ul>
-        <section class="text-editor-container container">
+<header class="clearfix">
+    <div class="main_header">
+
+        <div class="input-groups">
+            <input id="update-tour" class="btn btn-lg btn-success pull-left" value="Update tour" type="submit"/>
+            <input id="add-tour" class="btn btn-lg  btn-primary pull-right" value="Publish tour" type="submit"/>
+        </div>
+    </div>
+</header>
+        <section class="text-editor-container">
             <form id="tour-form" class="text-editor" enctype="multipart/form-data">
-                <div class="input-groups">
-                    <input id="city" class="form-control" type="text" name="city" placeholder="City" value="<?=$city?>"/>
-                    <input class="form-control" type="text" name="images-dir" placeholder="Name folder with all images of this tour"/>
-                    <input id="tour-url" class="form-control" type="text" name="url" placeholder="Link to the tour" value="<?=$url?>"/>
+                <div class=" text-editor-inner">
+                    <div class="input-groups">
+                        <input id="city" class="form-control" type="text" name="city" placeholder="City" value="<?=$city?>"/>
+                        <input id="tour-url" class="form-control" type="text" name="url" placeholder="Link to the tour" value="<?=$url?>"/>
+                    </div>
                         <figure class="tour-item content_box tours-list_new">
                             <img class="tour-item-img" src="<?=$imgTourItem;?>" alt=""/>
                             <figcaption>
@@ -436,7 +444,7 @@ $splashScreenTitle = $imgTitle[0];
                                     <input class="form-control" type="text" name="duration" placeholder="duration" value="<?=$duration?>"/>
                                 </div>
                                 <h3>
-                                    <input class="form-control" type="text" name="subtitle" placeholder="subtitle" value="<?=$subtitleTour?>"/>
+                                    <input class="form-control" type="text" name="subtitle" placeholder="Subtitle - short description" value="<?=$subtitleTour?>"/>
                                 </h3>
                                 <div class="buttons-container">
                                     <a class="view-button" href="/<?=$city?>/tours/<?=$url;?>">View tour</a>
@@ -450,19 +458,21 @@ $splashScreenTitle = $imgTitle[0];
                         <div class="header_title">
                             <div class="header_tour_content">
                                 <h3>
-                                    <input class="form-control title" type="text" name="title" placeholder="Title of the tour" value="<?=$titleTour?>"/>
-                                    <input class="form-control title-long" type="text" name="title_2" placeholder="Second part of the title if it's too long" value="<?=$title2Tour?>"/>
-                                    <span><?=$titleTour?></span> <span class='too_long_title'><br><?=$title2Tour?></span>
+                                    <div class="inline-block">
+                                        <input class="form-control title" type="text" name="title" placeholder="Title of the tour" value="<?=$titleTour?>"/>
+                                        <input class="form-control title-long" type="text" name="title_2" placeholder="Second part of the title if it's too long" value="<?=$title2Tour?>"/>
+                                    <!--<span><?/*=$titleTour*/?></span> <span class='too_long_title'><br><?/*=$title2Tour*/?></span>-->
+                                    </div>
                                 </h3>
                                 <h4>
-                                    <input class="form-control" type="text" name="subtitle" placeholder="subtitle" value="<?=$subtitleTour?>"/>
-                                    <?=$subtitleTour?>
+                                    <input class="form-control" type="text" name="subtitle" placeholder="Subtitle - short description" value="<?=$subtitleTour?>"/>
+<!--                                    --><?//=$subtitleTour?>
                                 </h4>
                             </div>
                             <div class="price">
-                                <input class="form-control" type="text" name="price" placeholder="price" value="<?=$price?>"/>
+                                $<input class="form-control" type="text" name="price" placeholder="price" value="<?=$price?>"/>
                                 <input class="form-control" type="text" name="duration" placeholder="duration" value="<?=$duration?>"/>
-                                <?=$price?> &mdash; <?=$duration?>
+                                <?/*=$price*/?><!-- &mdash; --><?/*=$duration*/?>
                             </div>
                             <a class="book_button" href="#">Book now</a>
                         </div>
@@ -471,9 +481,13 @@ $splashScreenTitle = $imgTitle[0];
                             <input class="img_id" type="hidden" value="<?=$splashScreenId?>" name="id[]"/>
                             <input class="splash_img_link" type="hidden" value="<?=$splashScreenLink?>" name="img_link[]"/>
                             <input class="thumb_link" type="hidden" value="<?=$splashScreenThumbLink?>" name="thumb_link[]"/>
-                            <input class="splash-screen cover-input file-upload" type="file"  placeholder="Splash Screen" />
-                            <input type="text" class="form-control" name="alt[]" placeholder="Alt" value="<?=$splashScreenAlt?>" />
-                            <input type="text" class="form-control" name="title_item[]" placeholder="Title" value="<?=$splashScreenTitle?>" />
+                            <div class="text-center absolute">
+                                <div class="input-groups">
+                                    <input class="splash-screen cover-input file-upload" type="file"  placeholder="Splash Screen" />
+                                    <input type="text" class="form-control" name="alt[]" placeholder="Alt for cover picture" value="<?=$splashScreenAlt?>" />
+                                    <input type="text" class="form-control" name="title_item[]" placeholder="Title for cover picture" value="<?=$splashScreenTitle?>" />
+                                </div>
+                            </div>
                             <div class="overlay_view_tour"></div>
                             <img class="cover-img" src="<?=$splashScreenLink?>" alt="<?=$splashScreenAlt?>" />
 
@@ -485,19 +499,24 @@ $splashScreenTitle = $imgTitle[0];
                             </div>
                         </section>
                     </section>
-                    <textarea id="txtEditor" name="description">
-                        <?=$descriptionTour?>
-                    </textarea>
-
+                    <div class="textEditorWraper">
+                        <textarea id="txtEditor" name="description">
+                            <?=$descriptionTour?>
+                        </textarea>
+                    </div>
                     <section class="blacken gallery height-viewport">
                         <div class="wrap_gallery">
                             <div class="main-image-wrapper">
                                 <input class="main-image-upload file-upload" type="file" placeholder="Splash Screen"/>
+                            <div class="text-center absolute">
+                                <div class="input-groups">
+                                    <input type="text" class="form-control" name="alt[]" placeholder="Alt for main/first gallery picture" value="<?=$imgAlt[1];?>">
+                                    <input type="text" class="form-control" name="title_item[]" placeholder="Title for main/first gallery picture" value="<?=$imgTitle[1];?>">
+                                </div>
+                            </div>
                                 <input class="img_id" type="hidden" value="<?=$imgId[1]?>" name="id[]"/>
                                 <input class="img_link" type="hidden" value="<?=$imagesLinks[1]?>" name="img_link[]"/>
                                 <input class="thumb_link_fake" type="hidden" value="<?=$thumbsLinks[1];?>" name="thumb_link[]"/>
-                                <input type="text" class="form-control" name="alt[]" placeholder="Alt" value="<?=$imgAlt[1];?>">
-                                <input type="text" class="form-control" name="title_item[]" placeholder="Title" value="<?=$imgTitle[1];?>">
                                 <a rel="gallery-1" class="main-image swipebox parent-upload" href="<?=$imagesLinks[1];?>" title="<?=$imgTitle[1];?>">
                                     <img src="<?=$imagesLinks[1];?>" alt="<?=$imgAlt[1];?>"/>
                                 </a>
@@ -531,7 +550,7 @@ $splashScreenTitle = $imgTitle[0];
                         </div>
 
                     </section>
-                    <div id="tour-gallery">
+                    <!--<div id="tour-gallery">
                         <div class="main-image-fields">
                             <input class="file-upload" type="file" name="picture" placeholder="Main Picture"/>
                             <input class="form-control title" type="text" placeholder="Title"/>
@@ -546,13 +565,17 @@ $splashScreenTitle = $imgTitle[0];
                                 <div class="btn btn-danger remove-tumb">Remove picture</div>
                             </li>
                         </ul>
-                    </div>
+                    </div>-->
                 </div>
+                <!--SET ONE OF ACTIONS: EITHER INSERT OR UPDATE-->
                 <input type="text" hidden name="action">
-                <input id="add-tour" class="btn btn-lg btn-success" value="Publish tour" type="submit"/>
-                <input id="update-tour" class="btn btn-lg btn-success" value="Update tour" type="submit"/>
             </form>
         </section>
+<footer>
+    <div class="e-mail">info@friendlylocalguides.com | </div>
+    <a href="/sitemap"> &nbsp;sitemap</a>
+    <div class="rights">&copy; Copyright 2015 Friendly Local Guides, LLC. All Rights Reserved</div>
+</footer>
 <script>
     $(function(){
         $('.cover-img').cover();
