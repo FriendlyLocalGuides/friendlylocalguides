@@ -85,11 +85,13 @@ $splashScreenTitle = $imgTitle[0];
                 $(document).on('click', '.popover-alt', function(e){
                     $('.wrap-img-info').fadeOut();
                     $(this).siblings('.wrap-img-info').fadeIn();
+                    $('.main-image-wrapper').addClass('pointer-events-none');
                 });
 
                 $(document).click( function(e){
                     if (!$(e.target).closest('.popover-alt').length && !$(e.target).closest('.wrap-img-info').length) {
                         $('.wrap-img-info').fadeOut();
+                        $('.main-image-wrapper').removeClass('pointer-events-none');
                     }
                 });
                 var editor = CKEDITOR.replace('txtEditor'),
@@ -282,7 +284,7 @@ $splashScreenTitle = $imgTitle[0];
                     reader.readAsDataURL(evt.currentTarget.files[0]);
                 }
 
-                tour_url = $('#tour-url').val();
+                tour_url = $('#tour-url-hidden').val();
                 city = $('#city').val().toLowerCase();
                 imgDir = "/i/tours/" + city + "/" + tour_url;
                 $(document).on('change', '.btn-img-item', function(e){
@@ -327,10 +329,15 @@ $splashScreenTitle = $imgTitle[0];
                     $("input[name=duration]").val($(this).val())
                 });
 
+                $("#tour-url-visible").on('keyup', function(){
+                    $("#tour-url-hidden").val( $(this).val());
+                });
+
                 $('#update-tour').on('click', function(e){
                     e.preventDefault();
                     $("input[name=action]").val('update');
-                    tour_url = $('#tour-url').val()
+                    $('#tour-url-hidden').val($('#tour-url-visible').val());
+                    tour_url = $('#tour-url-hidden').val();
                     city = $('#city').val().toLowerCase();
                     imgDir = "/i/tours/" + city + "/" + tour_url;
                     CKEDITOR.instances.txtEditor.updateElement();
@@ -353,7 +360,8 @@ $splashScreenTitle = $imgTitle[0];
                 $('#add-tour').on('click', function(e){
                     e.preventDefault();
                     $("input[name=action]").val('add');
-                    tour_url = $('#tour-url').val();
+                    $('#tour-url-hidden').val($('#tour-url-visible').val());
+                    tour_url = $('#tour-url-hidden').val();
                     city = $('#city').val().toLowerCase();
                     imgDir = "/i/tours/" + city + "/" + tour_url;
                     CKEDITOR.instances.txtEditor.updateElement();
@@ -426,7 +434,8 @@ $splashScreenTitle = $imgTitle[0];
                 <div class=" text-editor-inner">
                     <div class="input-groups">
                         <input id="city" class="form-control" type="text" name="city" placeholder="City" value="<?=$city?>"/>
-                        <input id="tour-url" class="form-control" type="text" name="url" placeholder="Link to the tour" value="<?=$url?>"/>
+                        <input id="tour-url-visible" class="form-control" type="text" placeholder="Link to the tour" value="<?=$url?>"/>
+                        <input id="tour-url-hidden" type="hidden" name="url" placeholder="Link to the tour" value="<?=$url?>"/>
                     </div>
                         <figure class="tour-item content_box tours-list_new">
                             <img class="tour-item-img" src="<?=$imgTourItem;?>" alt=""/>
@@ -499,11 +508,6 @@ $splashScreenTitle = $imgTitle[0];
                             </div>
                         </section>
                     </section>
-                    <div class="textEditorWraper">
-                        <textarea id="txtEditor" name="description">
-                            <?=$descriptionTour?>
-                        </textarea>
-                    </div>
                     <section class="blacken gallery height-viewport">
                         <div class="wrap_gallery">
                             <div class="main-image-wrapper">
@@ -540,6 +544,7 @@ $splashScreenTitle = $imgTitle[0];
                                         <div class="wrap-img-info">
                                             <input type="text" class="form-control" name="alt[]" placeholder="Alt" value="<?=$imgAlt[$i];?>" />
                                             <input type="text" class="form-control" name="title_item[]" placeholder="Title" value="<?=$imgTitle[$i];?>" />
+                                            <div class="arrow"></div>
                                         </div>
                                     </li>
                                     <?
@@ -550,6 +555,11 @@ $splashScreenTitle = $imgTitle[0];
                         </div>
 
                     </section>
+                    <div class="textEditorWraper">
+                        <textarea id="txtEditor" name="description">
+                            <?=$descriptionTour?>
+                        </textarea>
+                    </div>
                     <!--<div id="tour-gallery">
                         <div class="main-image-fields">
                             <input class="file-upload" type="file" name="picture" placeholder="Main Picture"/>
