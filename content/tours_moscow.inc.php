@@ -1,5 +1,5 @@
 <section class="content_box tours-list_new  whiten">
-<h1 class="title-of-tours">Choose your unique experience</h1>
+<h1 class="title-of-tours">Moscow tours</h1>
 	<div class="sub_title-of-tours">Friendly Local Guides offers Moscow private customized tours starting from $87. We keep things simple and love meeting new people, so we charge only $20 for every additional traveller.</div>
     <figure class="tour-item">
         <img src="/i/tours-list/free-tour.jpg" alt="Moscow Free Walking Tour"/>
@@ -16,7 +16,7 @@
     <figure class="tour-item">
         <img src="/i/tours-list/red-square-and-kremlin.jpg" alt="Red Square & Kremlin"/>
         <figcaption>
-            <h2>Red Square & Kremlin</h2>
+            <h2>Moscow Kremlin tour</h2>
             <div class="price">$157 — 5 hours</div>
             <h3>The Former Residence of Dukes, Tsars, Emperors, Communist Rulers & Presidents</h3>
             <div class="buttons-container">
@@ -28,7 +28,7 @@
     <figure class="tour-item">
         <img src="/i/tours-list/red-square-and-the-city.jpg" alt="Red Square and the City"/>
         <figcaption>
-            <h2>Red Square & the City</h2>
+            <h2>Moscow city & Red square</h2>
             <div class="price">$177 — 6 hours</div>
             <h3>A Glimpse of 860 Years of History</h3>
             <div class="buttons-container">
@@ -117,7 +117,7 @@
 	<figure class="tour-item">
 		<img src="/i/tours-list/airport-pickup-in-moscow.jpg" alt="Airport Pickup"/>
 		<figcaption>
-			<h2>Airport Pickup</h2>
+			<h2>Moscow layover tour</h2>
             <div class="price">$157 — 5 hours</div>
 			<h3>What, Where, How much, How to…</h3>
 			<div class="buttons-container">
@@ -129,7 +129,7 @@
 	<figure class="tour-item">
 		<img src="/i/tours-list/russia-in-cold-war.jpg" alt="Russia in WWII & Cold War"/>
 		<figcaption>
-			<h2>Russia in WWII & Cold War</h2>
+			<h2>COLD WAR & WW2</h2>
             <div class="price">$117 — 3 hours</div>
 			<h3>The Fighting Spirit of Russians</h3>
 			<div class="buttons-container">
@@ -141,7 +141,7 @@
 	<figure class="tour-item">
 		<img src="/i/tours-list/communist-russia.jpg" alt="Communist Russia"/>
 		<figcaption>
-			<h2>Soviet Russia Tour</h2>
+			<h2>Soviet Russia tour</h2>
             <div class="price">$117 — 3 hours</div>
 			<h3>Who were the Soviet people?</h3>
 			<div class="buttons-container">

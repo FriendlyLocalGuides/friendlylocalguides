@@ -4,6 +4,7 @@
     $title = "Moscow Tours - Guided City Tours of Moscow with Friendly Local Guides";
     $meta = "Private tours of Moscow with friendly guides: Kremlin, Red Square, Russian history & culture, must visit places and sightseeing routes. Discover Moscow through the eyes of locals.";
 
+
     if(!$tours && !$guides){
         switch($id){
             case 'tours':
@@ -27,6 +28,16 @@
                 $meta = "Get in touch with us. We'd love to hear from you! Feel free to ask us any questions on our Facebook and Google+ pages";
                 break;
         }
+    }
+
+    if($id == 'guides' && $city == 'saint-petersburg' && !$tours){
+        $title = "St Petersburg private guides - Friendly Local Guides";
+        $meta = "Friendly Local Guides in Saint Petersburg are friendly, fun and flexible and will show you St Petersburg through the eyes of locals";
+    }
+
+    if($id == 'tours' && $city == 'saint-petersburg' && !$guides){
+        $title = "St Petersburg private tours, city guided tours in Saint Petersburg (Russia) & Peterhof, walking tours with private guides - Friendly Local Guides";
+        $meta = "Explore St Petersburg and Peterhof with Friendly Local Guides. Memorable city tours with private guides. We charge only $20 for every additional traveller.";
     }
 
     if($id == 'tours' && $tours){
