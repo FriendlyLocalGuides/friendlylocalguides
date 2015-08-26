@@ -17,7 +17,8 @@ footer.white_theme{
     box-shadow: 0 0 30px rgba(0,0,0,.2);
 }
 
-header.white_theme a{
+header.white_theme a,
+footer.white_theme a{
     color: #000;
 }
 

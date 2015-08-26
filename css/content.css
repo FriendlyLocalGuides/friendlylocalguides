@@ -14,7 +14,6 @@
 }
 .sales-zInd{
     transition: z-index 2s;
-    z-index: 1000;
 }
 
 .overlay{
@@ -1069,6 +1068,9 @@
 }
 
 /*SITEMAP*/
+.to-sitemap:hover{
+    text-decoration: underline;
+}
 .sitemap{
     width: auto;
     max-width: none;

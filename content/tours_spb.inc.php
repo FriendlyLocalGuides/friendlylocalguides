@@ -9,7 +9,7 @@
             <h3>20 legendary places of Russia’s most alluring city</h3>
             <div class="buttons-container">
                 <a class="view-button" href="/<?=$city?>/tours/top-20-must-see-in-saint-petersburg">View tour</a>
-                <a class="book_button" href="/<?=$city?>tours/top-20-must-see-in-saint-petersburg/#book">Book tour</a>
+                <a class="book_button" href="/<?=$city?>/tours/top-20-must-see-in-saint-petersburg/#book">Book tour</a>
             </div>
         </figcaption>
     </figure>
