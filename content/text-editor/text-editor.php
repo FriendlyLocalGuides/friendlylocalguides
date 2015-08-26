@@ -279,6 +279,10 @@ $splashScreenTitle = $imgTitle[0];
                             $('.progress_bar').removeClass('loading')
                         }, 2000);
                     };
+
+                    tour_url = $('#tour-url-hidden').val();
+                    city = $('#city').val().toLowerCase();
+                    imgDir = "/i/tours/" + city + "/" + tour_url;
                     $(evt.currentTarget).siblings('.img_link').val(imgDir + "/" + evt.currentTarget.files[0].name);
                     $(evt.currentTarget).siblings('.thumb_link').val(imgDir + "/small/" + evt.currentTarget.files[0].name);
                     reader.readAsDataURL(evt.currentTarget.files[0]);
