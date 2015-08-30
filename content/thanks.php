@@ -3,7 +3,7 @@
 	<div class="mail_success">
 	    <div class="success_txt">Thank you for booking the tour:</div>
 	    <div class="title-tour"><?=$titleTour?></div>
-	    <div class="price-tour"><?=$price?> — <?=$duration?></div>
+	    <div class="price-tour">$<?=$price?> &mdash; <?=$duration?></div>
 		<div class="thank-you">
         <?if(!stristr($_SERVER['HTTP_REFERER'], 'free-tour')) {
             ?>

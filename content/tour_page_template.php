@@ -15,12 +15,12 @@
 
 <div class="header_title">
     <div class="header_tour_content">
-        <h1><span><?=$titleTour?></span> <span class='too_long_title'><br><?=$title2Tour?></span></h1>
+        <h1><span><?=$titleTour?></span> <?if($title2Tour){?><span class='too_long_title'><br><?=$title2Tour?></span><?}?></h1>
         <h2>
             <?=$subtitleTour?>
         </h2>
     </div>
-    <div class="price"><?=$price?> &mdash; <?=$duration?></div>
+    <div class="price">$<?=$price?> &mdash; <?=$duration?></div>
     <a class="book_button" href="#">Book now</a>
 </div>
 

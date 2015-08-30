@@ -323,6 +323,7 @@
     border-top: 2px solid;
     border-bottom: 2px solid;
     margin-bottom: 30px;
+    white-space: nowrap;
 }
 
 

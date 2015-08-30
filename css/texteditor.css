@@ -27,6 +27,24 @@
 }
 
 
+.tour-item .fa-thumb-tack{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: 25px;
+    color: #00a005;
+    z-index: 1;
+}
+
+.tour-item .fa-thumb-tack.active{
+    color: #006505;
+    font-size: 21px;
+}
+
+.tour-item .fa-thumb-tack.active:hover{
+    color: #00a005;
+}
+
 .splash-screen, .view_tour .form-control{
     position: relative;
     z-index: 100;
@@ -270,6 +288,21 @@ header .input-groups{
     pointer-events: none;
 }
 
+.modal{
+    color: #333;
+}
+
+.modal-header{
+    border: 0;
+}
+
+.modal-dialog{
+    margin-top: 300px;
+}
+
+.modal-header .close{
+    margin-top: 3px;
+}
 /*EXTRA*/
 .book_button:hover{
     text-decoration: none;

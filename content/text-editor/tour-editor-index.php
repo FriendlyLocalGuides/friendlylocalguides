@@ -15,12 +15,12 @@ switch($city){
     case 'saint-petersburg': $tourTable = 'tours_spb'; break;
 }
 
-/*** ?????????? ??? ?????? ? ?????????? ***/
+
 $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-$sql_tour = "SELECT title, title_2, subtitle, price, duration, description, img_link_item, url FROM tours_moscow";
+$sql_tour = "SELECT title, title_2, subtitle, price, duration, description, img_link_item, url FROM $tourTable";
 ?>
-<ul>
-<li><a href='//friendlylocalguides/index.php?id=editor&city=moscow&tour=".$url."' target='_blank'>Create a New Tour</a></li>
+<ul class="col-md-3">
+<li><a href='//friendlylocalguides/index.php?id=editor&city=<?=$city?>&tour=".$url."' target='_blank'>Create a New Tour</a></li>
 <?
 foreach ($dbh->query($sql_tour) as $row){
     $titleTour = $row['title'];
@@ -33,9 +33,7 @@ foreach ($dbh->query($sql_tour) as $row){
     $descriptionTour = $row['description'];
     $imgTourItem = $row['img_link_item'];
     $url = $row['url'];
-    echo "<li><a href='//friendlylocalguides/index.php?id=editor&city=moscow&tour=".$url."' target='_blank'>".$titleTour."</a></li>";
+    echo "<li><a href='//friendlylocalguides/index.php?id=editor&city=$city&tour=".$url."' target='_blank'>".$titleTour."</a></li>";
 }
 ?>
 </ul>
-
-<!--<a href="https://friendlylocalguides/index.php?id=editor&city=moscow&tour=free-tour" target="_blank">Moscow Free Tour</a>-->

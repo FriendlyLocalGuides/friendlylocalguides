@@ -8,6 +8,7 @@ try {
         $order_number   = $_POST['order'];
         $payment        = $_POST['price'];
         $tour_name      = $_POST['title'];
+        $tour_duration  = $_POST['duration'];
         $user_name      = $_POST['name'];
         $email          = $_POST['email'];
         $phone          = $_POST['phone'];
@@ -18,7 +19,7 @@ try {
         $tour_date      = $_POST['date'];
         $start_time     = $_POST['time'];
 
-
+        $payment .= ' — '.$tour_duration;
         /*** превратить все ошибки в исключения ***/
         $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 

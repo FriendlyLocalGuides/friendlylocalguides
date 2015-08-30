@@ -14,7 +14,7 @@
     </div>
     <div class="overlay_view_tour"></div>
     <section class="view_tour height-viewport" >
-        <img class="cover-img" src="/i/gallery/tours/rsk/Christ-winter.jpg" alt="Kremlin Tours. Kremlin Tour. Kremlin."/>
+        <img class="cover-img" src="/i/tours/moscow/kremlin-tour-moscow/Christ-winter.jpg" alt="Kremlin Tours. Kremlin Tour. Kremlin."/>
         <div class="scroll_down">
             <div class="scroll_down_container">
                 <div class="scroll_down_text">Top 10 Advantages</div>
@@ -52,7 +52,7 @@
         <h1 class="title-of-tours single-title">Top 3 tours</h1>
         <div class="row">
             <figure class="tour-item">
-                <img src="/i/tours-list/red-square-and-kremlin.jpg" alt="Red Square & Kremlin"/>
+                <img src="/i/tours-list/moscow/View_Kremlin.jpg" alt="Red Square & Kremlin"/>
                 <figcaption>
                     <h2>Red Square & Kremlin</h2>
                     <div class="price">$157 — 5 hours</div>
@@ -64,7 +64,7 @@
                 </figcaption>
             </figure>
             <figure class="tour-item">
-                <img src="/i/tours-list/going-out-in-moscow.jpg" alt="Going Out in Moscow"/>
+                <img src="/i/tours-list/moscow/Happiness.jpg" alt="Going Out in Moscow"/>
                 <figcaption>
                     <h2>Going Out in Moscow</h2>
                     <div class="price">$187 — 7 hours</div>
@@ -76,7 +76,7 @@
                 </figcaption>
             </figure>
             <figure class="tour-item">
-                <img src="/i/tours-list/3-days-in-moscow.jpg" alt="3-days-in-moscow"/>
+                <img src="/i/tours-list/moscow/Tsaritsino.jpg" alt="3-days-in-moscow"/>
                 <!--<div class="sale-small"></div>-->
                 <figcaption>
                     <h2>Moscow in 3 Days</h2>

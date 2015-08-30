@@ -14,7 +14,6 @@ function getTourTitles(){
         headerPrice         = $subHeader.find('.price'),
         wrapPreorderTitle   = $wrapPreorderImg.find('h4'),
         titleBookedTour     = $mailSuccess.find('.title-tour'),
-        priceBookedTour     = $mailSuccess.find('.price-tour'),
         viewTourImg         = $('.cover-img').attr('src');
 
 
@@ -22,7 +21,6 @@ function getTourTitles(){
     wrapPreorderTitle.html(tourTitle);
     titleBookedTour.html(tourTitle);
     headerPrice.html(tourPrice);
-    priceBookedTour.html(tourPrice);
     $('.preorder-img').attr('src', viewTourImg);
     $('.tour-photo-field').attr('value', viewTourImg);
 }

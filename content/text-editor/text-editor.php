@@ -124,19 +124,6 @@ $splashScreenTitle = $imgTitle[0];
                     }
                 }
 
-
-
-                /*var cover_img = document.getElementById('cover_image');
-
-                cover_img.addEventListener('change', function(){
-                    coverImgName = this.files[0].name;
-                    for(var i = 0, numFiles = this.files.length; i < numFiles; i++){
-                        imgDir.push(this.files[i].name);
-                    }
-                }, false);*/
-
-
-
                 function picsCreator(){
 
                     var tumb =  '<a rel="gallery-1" class="thumb swipebox" href="" title="">' +
@@ -349,6 +336,7 @@ $splashScreenTitle = $imgTitle[0];
                         "/content/tour-creator.php",
                         $("#tour-form").serialize(),function(result){
                             console.log(result);
+                            $('#updated').modal('show');
                         }
                     );
 
@@ -373,6 +361,7 @@ $splashScreenTitle = $imgTitle[0];
                         "/content/tour-creator.php",
                         $("#tour-form").serialize(),function(result){
                             console.log(result);
+                            $('#published').modal('show');
                         }
                     );
 
@@ -384,6 +373,13 @@ $splashScreenTitle = $imgTitle[0];
                         coverImg = !!$(imgFiles[i]).hasClass('cover-input');
                         sendFile(imagesArray[0], imagesArray[0], imagesArray[0]);
                     }
+                });
+
+                //Hide modal
+                $('#updated, #published').on('shown.bs.modal', function (e) {
+                    setTimeout(function(){
+                        $('#updated, #published').modal('hide');
+                    }, 2000);
                 });
 
                 function sendFile(file, fileThumb, coverFile) {
@@ -416,14 +412,37 @@ $splashScreenTitle = $imgTitle[0];
 
 
             });
-            $(document).on('click', '.tour-item', function(){
-                $(this).toggleClass('hover')
+            $(document).on('click', '.fa-thumb-tack', function(){
+                $(this).toggleClass('active');
+                $('.tour-item').toggleClass('hover');
             });
             $(document).on('click', '.tour-item input', function(e){
                 e.stopPropagation();
             });
 
         </script>
+<div id="updated" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+
+            <div class="modal-header">
+<!--                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+                <h4 class="modal-title text-center">Tour is updated!</h4>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+<div id="published" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <!--                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+                <h4 class="modal-title text-center">Tour is published!</h4>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
 <header class="clearfix">
     <div class="main_header">
 
@@ -442,6 +461,8 @@ $splashScreenTitle = $imgTitle[0];
                         <input id="tour-url-hidden" type="hidden" name="url" placeholder="Link to the tour" value="<?=$url?>"/>
                     </div>
                         <figure class="tour-item content_box tours-list_new">
+                            <i class="fa fa-thumb-tack"></i>
+
                             <img class="tour-item-img" src="<?=$imgTourItem;?>" alt=""/>
                             <figcaption>
                                 <div class="img-item-upload">
@@ -483,7 +504,7 @@ $splashScreenTitle = $imgTitle[0];
                                 </h4>
                             </div>
                             <div class="price">
-                                $<input class="form-control" type="text" name="price" placeholder="price" value="<?=$price?>"/>
+                                $<input class="form-control" type="text" name="price" placeholder="price" value="<?=$price?>"/> &mdash;
                                 <input class="form-control" type="text" name="duration" placeholder="duration" value="<?=$duration?>"/>
                                 <?/*=$price*/?><!-- &mdash; --><?/*=$duration*/?>
                             </div>

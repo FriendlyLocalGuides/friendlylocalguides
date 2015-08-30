@@ -19,10 +19,13 @@ $title = 'Members Page';
                 <hr>
                 <ul>
                     <li>
-                        <a href="https://friendlylocalguides/index.php?id=editor&city=moscow&tour=free-tour" target="_blank">Text editor</a>
+                        <a href="/index.php?id=editor&city=moscow&tour=free-tour" target="_blank">Text editor</a>
                     </li>
                     <li>
-                        <a href="https://friendlylocalguides/index.php?id=editor" target="_blank">Tours editor</a>
+                        <a href="/index.php?id=editor&&city=moscow" target="_blank">Moscow tours</a>
+                    </li>
+                    <li>
+                        <a href="/index.php?id=editor&&city=saint-petersburg" target="_blank">Saint Petersburg tours</a>
                     </li>
                 </ul>
             </div>

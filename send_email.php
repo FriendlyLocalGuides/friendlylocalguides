@@ -26,8 +26,6 @@
         }else{
             $subject = 'Friendly Local Guides booking';
             $amount = $_POST['price'];
-            $amount = substr($amount, 0);
-            $amount = substr($amount, 0, strpos($amount, " "));
             ob_start();
             include $_SERVER["DOCUMENT_ROOT"]."/email-templates/email.php";
             $form_message  = ob_get_clean();
@@ -45,6 +43,7 @@
         $_SESSION['result'] = $result;
         $_SESSION['title'] = html_entity_decode(trim($_POST['title']));
         $_SESSION['price'] = html_entity_decode(trim($_POST['price']));
+        $_SESSION['duration'] = html_entity_decode(trim($_POST['duration']));
 
         $headers  = "From: $email\r\nReply-To: $email\r\nContent-type: text/html; charset=UTF-8";
         $headers_user = "From: $email_to\r\nReply-To: $email\r\nContent-type: text/html; charset=UTF-8";

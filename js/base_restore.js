@@ -374,7 +374,6 @@ $(window).load(function(){
             headerPrice.html(tourPrice);
             priceBookedTour.html(tourPrice);
             $('.title-field').val(tourTitle);
-            $('.price-field').val(tourPrice);
     }
 
 
