@@ -20,7 +20,7 @@ $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $sql_tour = "SELECT title, title_2, subtitle, price, duration, description, img_link_item, url FROM $tourTable";
 ?>
 <ul class="col-md-3">
-<li><a href='//friendlylocalguides.com/index.php?id=editor&city=<?=$city?>&tour=".$url."' target='_blank'>Create a New Tour</a></li>
+<li><a href='//friendlylocalguides/index.php?id=editor&city=<?=$city?>&tour=".$url."' target='_blank'>Create a New Tour</a></li>
 <?
 foreach ($dbh->query($sql_tour) as $row){
     $titleTour = $row['title'];
@@ -33,7 +33,7 @@ foreach ($dbh->query($sql_tour) as $row){
     $descriptionTour = $row['description'];
     $imgTourItem = $row['img_link_item'];
     $url = $row['url'];
-    echo "<li><a href='//friendlylocalguides.com/index.php?id=editor&city=$city&tour=".$url."' target='_blank'>".$titleTour."</a></li>";
+    echo "<li><a href='//friendlylocalguides/index.php?id=editor&city=$city&tour=".$url."' target='_blank'>".$titleTour."</a></li>";
 }
 ?>
 </ul>
