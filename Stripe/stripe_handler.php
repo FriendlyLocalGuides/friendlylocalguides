@@ -35,8 +35,6 @@ $token = $_POST['stripeToken'];
 $amount = $_POST['price'];
 $description = $_POST['title'];
 
-$amount = substr($amount, 1);
-$amount = substr($amount, 0, strpos($amount, " "));
 $amount .= "00";
 
 // Create the charge on Stripe's servers - this will charge the user's card

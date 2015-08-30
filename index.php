@@ -2,7 +2,10 @@
     $result = $_SESSION['result'];
     $titleTour = $_SESSION['title'];
     $price = $_SESSION['price'];
+    $duration = $_SESSION['duration'];
     include_once 'content/header.inc.php';
+    include_once 'content/routing.php';
+    if($id != 'editor'){
 ?>
 <!DOCTYPE html>
 <html>
@@ -130,3 +133,4 @@
     <!--end of pure chat-->
 </body>
 </html>
+<?}?>

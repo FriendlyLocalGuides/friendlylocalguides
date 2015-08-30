@@ -1,5 +1,6 @@
 <?php
 require('config.php');
+if(!$user->is_logged_in()){ header('Location: login.php'); }
 
 //if logged in redirect to members page
 if( $user->is_logged_in() ){ header('Location: memberpage.php'); }

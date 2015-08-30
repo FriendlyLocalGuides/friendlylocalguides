@@ -19,7 +19,7 @@
                 </h1>
                 <h2 style="padding: 0 20px;text-align:center;color:#777;display:block;line-height:1.7;margin:0px 0;font-size:22px;font-weight:normal;font-family:'Helvetica Neue',Helvetica,Arial;">
                     <?if(!stristr($_SERVER['HTTP_REFERER'], 'free-tour')) {?>
-                        We've just got your payment  <strong style="color: #555;"><?=$amount?></strong> for tour
+                        We've just got your payment  <strong style="color: #555;">$<?=$amount?></strong> for tour
                     <?}else{?>
                         Thank you for booking
                     <?}?>
@@ -73,7 +73,7 @@
                             <td width="45%" style="padding-left: 20px;">
                                 <p style="margin:5px 0;color:#777;font-size:14px;line-height:18px;text-align:left; font-family: 'Helvetica Neue',Helvetica,Arial;">
                                     <strong>
-                                        <?=$price?>
+                                        <?=$price?> — <?=$duration?>
                                     </strong>
                                 </p>
                             </td>

@@ -1,8 +1,6 @@
-<!--//1. Create Template of the tour page
-//2. Output data from BD to this template
-//3. Be able insert new reviews into BD and show it on the page-->
 <?
     include_once "tour_page_content.php";
+    include_once "tour_images.php";
     include_once "comments.php";
 ?>
 
@@ -17,18 +15,19 @@
 
 <div class="header_title">
     <div class="header_tour_content">
-        <h1><?=$titleTour?></h1>
+        <h1><span><?=$titleTour?></span> <?if($title2Tour){?><span class='too_long_title'><br><?=$title2Tour?></span><?}?></h1>
         <h2>
             <?=$subtitleTour?>
         </h2>
     </div>
-    <div class="price"><?=$price?></div>
+    <div class="price">$<?=$price?> &mdash; <?=$duration?></div>
     <a class="book_button" href="#">Book now</a>
 </div>
 
 <div class="overlay_view_tour"></div>
 <section class="view_tour height-viewport">
-    <?=$splashScreen?>
+    <img class="cover-img" src="<?=$splashScreenLink?>" alt="<?=$splashScreenAlt?>" />
+
     <div class="scroll_down">
         <div class="scroll_down_container">
             <div class="scroll_down_text">Details</div>
@@ -40,7 +39,25 @@
     <?=$descriptionTour?>
 </section>
 <section class="blacken gallery height-viewport">
-    <?=$tourGallery?>
+    <div class="wrap_gallery">
+        <a rel="gallery-1" class="main-image swipebox" href="<?=$imagesLinks[1];?>" title="<?=$imgTitle[1];?>">
+            <img src="<?=$imagesLinks[1];?>" alt="<?=$imgAlt[1];?>"/>
+        </a>
+
+        <div class="thumb-list">
+            <?
+                for($i = 2; $i < count($imagesLinks); $i++){
+                    ?>
+                        <a rel="gallery-1" class="thumb swipebox" href="<?=$imagesLinks[$i]?>" title="<?=$imgTitle[$i];?>">
+                            <img src="<?=$thumbsLinks[$i];?>" alt="<?=$imgAlt[$i];?>"/>
+                        </a>
+                    <?
+                }
+            ?>
+        </div>
+
+    </div>
+
 </section>
 <section class="whiten form-container book-tour">
     <a name="book"></a>
@@ -54,31 +71,13 @@
         </div>
     </div>
 </section>
-<section class="whiten reviews">
+<section class="whiten reviews height-viewport">
     <section class="content_box whiten">
         <div class="tabs clearfix">
             <h3>Reviews</h3>
             <h3>Video reviews</h3>
         </div>
         <div class="panes form-container">
-
-            <!-- <form id="review-form" method="post" action="">
-                 <label for="range"></label><input type="range" min="0" max="5" value="0" step="1" id="range">
-                 <div class="rateit"  data-rateit-backingfld="#range"></div>
-                 <label>
-                     Как к Вам обращаться:
-                     <input type='text' name='name' required/>
-                 </label>
-                 <label>Email (не публикуется):</label>
-                 <label>
-                     <input type='email' name='email' required/>
-                 </label>
-                 <label>Oтзыв:</label>
-                 <label>
-                     <textarea name='content' required rows="5"></textarea>
-                 </label>
-                 <input type='submit' value='публикация'/>
-             </form>-->
             <ul class="written-reviews pane">
                 <li>
                     <form id="review-form" method="post" action="" class="clearfix">
@@ -99,16 +98,6 @@
                         <input class="input-item send-review book_button" value="Submit" type="submit">
                     </form>
                 </li>
-               <!-- <li>
-                    <img class="rating" src="/i/stars/stars-5.png" alt=""/>Alina is an excelent companion. She's extremely fun, flexible and versatile and knows Moscow like the back
-                    of her hand. She'll take you to every interesting and fun place you want to know in Moscow from the great
-                    Museums, War Memorials and Cathedrals that represent Russia's splendour, to wonderful restaurants, cafes and
-                    places where you can just chill out and enjoy your surroundings as if you were a muscovite all with a great
-                    schedule flexibility. I spent over 10 days with her as my guide and I got to see so many facets of Moscow
-                    the existence of which I wouldn't have even fathomed hadn't it been for Aina's company.
-                    She'll make you feel like home and will guarantee that your visit is amazing!
-                    <p class="tourist-writer"><em>Bernardo G, Mexico City, Mexico, May 2014</em></p>
-                </li>-->
                 <?
                 foreach ($dbh->query($sql) as $row){
                     echo '<li class="review">';
@@ -120,4 +109,3 @@
         </div>
     </section>
 </section>
-<!--END OF RED SQUARE & KREMLIN-->

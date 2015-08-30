@@ -17,7 +17,17 @@ $title = 'Members Page';
                 <h2>Member only page - Welcome <?php echo $_SESSION['username']; ?></h2>
                 <p><a href='logout.php'>Logout</a></p>
                 <hr>
-
+                <ul>
+                    <li>
+                        <a href="/index.php?id=editor&city=moscow&tour=free-tour" target="_blank">Text editor</a>
+                    </li>
+                    <li>
+                        <a href="/index.php?id=editor&&city=moscow" target="_blank">Moscow tours</a>
+                    </li>
+                    <li>
+                        <a href="/index.php?id=editor&&city=saint-petersburg" target="_blank">Saint Petersburg tours</a>
+                    </li>
+                </ul>
             </div>
         </div>
 

@@ -5,12 +5,20 @@ try {
 catch(PDOException $e) {
     echo $e->getMessage();
 }
-$sql_tour = "select * from tours where url = '$currentPage' AND city = '$city'";
+
+switch($city){
+    case 'moscow': $tourTable = 'tours_moscow'; break;
+    case 'saint-petersburg': $tourTable = 'tours_spb'; break;
+}
+$sql_tour = "select * from $tourTable where url = '$currentPage'";
 foreach ($dbh->query($sql_tour) as $row){
     $titleTour = $row['title'];
+    if($row['title_2']){
+        $title2Tour = $row['title_2'];
+    }
     $subtitleTour = $row['subtitle'];
     $price = $row['price'];
-    $splashScreen = $row['url_splash_image'];
+    $duration = $row['duration'];
     $descriptionTour = $row['description'];
     $tourGallery = $row['urls_gallery'];
 }

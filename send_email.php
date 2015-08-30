@@ -7,6 +7,7 @@
         $title        =   html_entity_decode(trim(strip_tags($_POST['title'])));
         $tourPicture  =   html_entity_decode(trim(strip_tags($_POST['tour-pic'])));
         $price        =   html_entity_decode(trim(strip_tags($_POST['price'])));
+        $duration     =   html_entity_decode(trim(strip_tags($_POST['duration'])));
         $name         =   trim(strip_tags($_POST['name']));
         $email        =   trim(strip_tags($_POST['email']));
         $phone        =   trim(strip_tags($_POST['phone']));
@@ -25,8 +26,6 @@
         }else{
             $subject = 'Friendly Local Guides booking';
             $amount = $_POST['price'];
-            $amount = substr($amount, 0);
-            $amount = substr($amount, 0, strpos($amount, " "));
             ob_start();
             include $_SERVER["DOCUMENT_ROOT"]."/email-templates/email.php";
             $form_message  = ob_get_clean();
@@ -44,13 +43,14 @@
         $_SESSION['result'] = $result;
         $_SESSION['title'] = html_entity_decode(trim($_POST['title']));
         $_SESSION['price'] = html_entity_decode(trim($_POST['price']));
+        $_SESSION['duration'] = html_entity_decode(trim($_POST['duration']));
 
         $headers  = "From: $email\r\nReply-To: $email\r\nContent-type: text/html; charset=UTF-8";
         $headers_user = "From: $email_to\r\nReply-To: $email\r\nContent-type: text/html; charset=UTF-8";
 
         if(mail($email_to, $subject, $form_message, $headers) ){
             if(!stristr($_SERVER['HTTP_REFERER'], 'contact')) {
-                mail($email, $subject, $form_message_user, $headers_user); //TODO: do not send it when it's a contact message
+                mail($email, $subject, $form_message_user, $headers_user);
             }
 	        header("Location: " . $_SERVER['HTTP_REFERER'] ."/thanks");
         }else{

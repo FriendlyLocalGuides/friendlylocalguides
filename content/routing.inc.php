@@ -7,8 +7,8 @@ if(!$city && !$id){
 
 if($city && $id == 'tours' && !$tours){
     switch($city) {
-        case 'moscow': include 'tours_moscow.inc.php'; break;
-        case 'saint-petersburg': include 'tours_spb.inc.php'; break;
+        case 'moscow': include 'moscow_tours_list.php'; break;
+        case 'saint-petersburg': include 'spb_tours_list.php'; break;
     }
 }
 
@@ -49,6 +49,10 @@ if($id == 'guides' && $guides){
 if($id == 'sitemap'){
     include $_SERVER['DOCUMENT_ROOT'].'/sitemap.php';
 }
+/*if($id == 'editor' && $city){
+    include 'text-editor/text-editor.php';
+}*/
+
 
 if($blog || $id == 'blog'){
     include 'blog/index.php';

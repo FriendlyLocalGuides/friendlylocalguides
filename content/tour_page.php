@@ -9,7 +9,7 @@ $username = 'root';
 /*** mysql password ***/
 $password = '';
 
-$dbname = 'friendlylocalguides';
+$dbname = 'alinamosco_friendlylocalguides';
 
 //$url = $_SERVER('');
 
