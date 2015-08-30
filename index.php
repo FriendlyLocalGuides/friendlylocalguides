@@ -50,6 +50,7 @@
     <link rel="stylesheet" href="/css/swipebox.css"/>
     <link rel="stylesheet" href="/css/css3-styles.css"/>
     <? include_once 'analyticstracking.php'?>
+    <? include_once 'yandexmetrika.php'?>
 </head>
 <body>
     <header class="clearfix">
@@ -116,8 +117,8 @@
         </div>
     </article>
     <footer>
-        <div class="e-mail">info@friendlylocalguides.com | </div>
-        <a href="/sitemap"> &nbsp;sitemap</a>
+        <div class="e-mail">info@friendlylocalguides.com |</div>
+        <a class="to-sitemap" href="/sitemap">sitemap</a>
         <div class="rights">&copy; Copyright 2015 Friendly Local Guides, LLC. All Rights Reserved</div>
     </footer>
 
