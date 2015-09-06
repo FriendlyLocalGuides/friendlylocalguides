@@ -16,7 +16,7 @@
 <div class="header_title">
     <div class="header_tour_content">
         <?if($id == 'tours' && $tours == 'free-tour'){?>
-           <p class="text-note">*Valid when booking any other tour</p>
+           <p class="text-note">*Valid when booking any <a href="/moscow/tours">other tour</a></p>
         <?}?>
         <h1><span><?=$titleTour?></span> <?if($title2Tour){?><span class='too_long_title'><br><?=$title2Tour?></span><?}?></h1>
         <h2>

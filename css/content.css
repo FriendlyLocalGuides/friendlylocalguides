@@ -328,6 +328,24 @@
     bottom: 100%;
 }
 
+.text-note a{
+    position: relative;
+}
+
+.text-note a:after{
+    content: "";
+    display: block;
+    border: 1px solid rgba(255, 255, 255, .9);
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    width: 100%;
+}
+
+.text-note a:hover:after{
+    border: none;
+}
+
 .header_tour_content h1{
     display: inline-block;
     font-size: 2.9em;
