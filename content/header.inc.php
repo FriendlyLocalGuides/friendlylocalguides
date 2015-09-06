@@ -1,8 +1,8 @@
 <?
     include_once 'get_url.php';
 
-    $title = "Moscow Tours - Guided City Tours of Moscow with Friendly Local Guides";
-    $meta = "Private tours of Moscow with friendly guides: Kremlin, Red Square, Russian history & culture, must visit places and sightseeing routes. Discover Moscow through the eyes of locals.";
+    $title = "Moscow & Saint Petersburg Tours - Guided City Tours with Friendly Local Guides";
+    $meta = "Private tours of Moscow & Saint Petersburg with friendly guides: Kremlin, Red Square, Hermitage, Russian history & culture, must visit places and sightseeing routes. Discover through the eyes of locals.";
 
 
     if(!$tours && !$guides){

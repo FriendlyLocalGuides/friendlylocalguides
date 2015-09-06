@@ -114,7 +114,7 @@ $splashScreenTitle = $imgTitle[0];
                     imagesArray;
 
                 //styles for CKEDITOR
-                CKEDITOR.config.contentsCss = '/css/ckeditor-custom.css';
+                CKEDITOR.config.contentsCss = '/css/ckeditor-custom.css?v';
                 function title(){
                     if($title_long.val() != ""){
                         $title_long_txt.text($title_long.val());

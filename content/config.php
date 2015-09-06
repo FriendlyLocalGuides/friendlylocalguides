@@ -1,9 +1,9 @@
 <?php
 $hostname = 'localhost';
 
-$username = 'alinamosco_ser';
+$username = 'root';
 
-$password = 'vivaldi21';
+$password = '';
 
 $dbname = 'alinamosco_friendlylocalguides';
 

@@ -333,11 +333,11 @@
     margin-bottom: 30px;
 }
 
-.content_box h5{
+.content_box h3{
     margin: 25px 0 5px;
 }
 
-.content_box h6{
+.content_box h4{
     font-size: 1.1em;
     margin: 15px 0 5px;
 }
@@ -1339,7 +1339,7 @@
         font-size: 16px;
     }
 
-    .content_box h5 {
+    .content_box h3 {
         font-size: 1.1em;
     }
 
@@ -1564,7 +1564,7 @@
         font-size: 1.3em;
     }
 
-    .content_box h5 {
+    .content_box h3 {
         font-size: 1.3em;
     }
 
@@ -1605,7 +1605,7 @@
         font-size: 1.5em;
     }
 
-    .content_box h5 {
+    .content_box h3 {
         font-size: 1.5em;
     }
 
