@@ -315,6 +315,19 @@
     color: #000;
 }
 
+.text-note{
+    font-size: 1.55em;
+    margin-bottom: 15px;
+    line-height: 1;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    display: block;
+    width: 100%;
+    left: 0;
+    bottom: 100%;
+}
+
 .header_tour_content h1{
     display: inline-block;
     font-size: 2.9em;
@@ -1261,6 +1274,9 @@
 
 
 @media screen and (max-width:799px){
+    .text-note{
+        font-size: 17px;
+    }
     .ui-datepicker,
     .clockpicker-popover{
         position: fixed !important;
