@@ -98,9 +98,38 @@
                 $title = "Moscow bike tour through the most scenic places - Friendly Local Guides";
                 $meta = "Book your private bike tour now and enjoy the icons of Moscow in style, test your nerve, driving on crazy Russian roads, expert commentary and lifetime shots as you travel around the city.";
                 break;
- 	        case 'top-20-must-see-in-saint-petersburg':
+            case 'top-20-must-see-in-saint-petersburg':
                 $title = "Must see places and landmarks of St Petersburg: Nevsky Prospect, Kazan Cathedral, Hermitage and more! - Friendly Local Guides";
                 $meta = "20 legendary places of Saint Petersburg on our private must see tour. You can add or drop places from the itinerary and we'll customize it for you.";
+                break;
+            //SPB TOURS
+            case '2-day-tour-of-saint-petersburg':
+                $title = "2 Days in Saint Petersburg & Peterhof - Friendly Local Guides";
+                $meta = "St Petersburg and Peterhof on 2 day tours, enjoy visiting most artistic and stunning cities of Russia.";
+                break;
+            case '3-day-tour-of-saint-petersburg':
+                $title = "3 Days in Saint Petersburg - Friendly Local Guides";
+                $meta = "3 day private tour of Saint Petersburg. Combine must-see and off the beaten path: river cruise, world-known cathedrals and much more!";
+                break;
+            case 'boat-trip-tour':
+                $title = "River Boat Tour - Friendly Local Guides";
+                $meta = "7 best river boat St Petersburg’s tours along the Neva river and the city’s picturesque canalways.";
+                break;
+            case 'peter-and-paul-tour':
+                $title = "Peter & Paul Fortress & Strelka on Basil Island (Petrograd side) - Friendly Local Guides";
+                $meta = "Visit the oldest building Peter and Paul Fortress on the Strelka of Vasilievsky Island on our breathtaking and spectacular tour of Saint Petersburg.";
+                break;
+            case 'peterhof-tour':
+                $title = "Peterhof & Grand Palace Tour - Friendly Local Guides";
+                $meta = "Amazing tour to Peterhof: Palace, fountains, park and garden";
+                break;
+            case 'st-petersburg-private-tour':
+                $title = "Saint Petersburg Private Tour - Friendly Local Guides";
+                $meta = "Great overview and orientation of the city on our 5-hour private tour of Saint Petersburg.";
+                break;
+            case 'st-petersburg-walking-tour':
+                $title = "St Petersburg Walking Tour with a Friendly Guide";
+                $meta = "Walking tour of all main highlights of Saint Petersburg: Nevsky Prospect, St Isaac’s Cathedral, the Hermitage, Kazan Cathedral, Eliseev Emporium, Palace Square and more!";
                 break;
         }
     }
