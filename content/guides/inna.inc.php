@@ -23,7 +23,7 @@
     </div>
 
     <section class="description content_box whiten height-viewport">
-        <h5>Art Aficionado</h5>
+        <h3>Art Aficionado</h3>
         <ol>
             <li>"Sometimes I've believed as many as six impossible things before breakfast." It's not me who said this but this is something that characterizes me in a single phrase.</li>
             <li>I believe that happiness is a choice as you are as happy as you choose to be. So I choose happiness.</li>
@@ -37,7 +37,7 @@
             <li>There's plenty of both extremely useful and completely useless information about Moscow in my head but what my heart says is: Moscow is a place to be!</li>
         </ol>
         <div class="ivebeen">
-            <h5>I've been to:</h5>
+            <h3>I've been to:</h3>
             <p>
                 UK, US, France, Germany, Switzerland, Greece, Hungary, Montenegro, Spain, Latvia, Turkey.
             </p>

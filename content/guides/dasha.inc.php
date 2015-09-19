@@ -24,7 +24,7 @@
 
 
     <section class="description content_box whiten height-viewport">
-        <h5>Wine Lover</h5>
+        <h3>Wine Lover</h3>
         <ol>
             <li>I can't live without traveling! My most recent journey was India.</li>
             <li>I don't like beaches and all-inclusive hotels etc… Only active traveling!</li>
@@ -38,7 +38,7 @@
             <li>I`m really lucky to live in Moscow. I love my city. </li>
         </ol>
         <div class="ivebeen">
-            <h5>I've been to:</h5>
+            <h3>I've been to:</h3>
             <p>
                 Spain, Italy, India, Portugal, France, Austria, the Netherlands, Belgium, Germany, Azerbaijan, Ukraine, Belarus, Turkey.
             </p>

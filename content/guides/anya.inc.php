@@ -22,7 +22,7 @@
     </div>
 
     <section class="description content_box whiten height-viewport">
-        <h5>Local Vibe Ninja</h5>
+        <h3>Local Vibe Ninja</h3>
         <ol>
             <li>I'm really into baking! One day I will open a coffee shop and will bake pastry myself.</li>
             <li>I am embarrassed to start, but once I start singing and dancing nobody can stop me.</li>
@@ -37,7 +37,7 @@
         </ol>
 
         <div class="ivebeen">
-            <h5>I've been to:</h5>
+            <h3>I've been to:</h3>
             <p>
                 Great Britain, France, Italy, Spain, Germany, Poland, Armenia, Montenegro +San Marino, Vatican.
             </p>

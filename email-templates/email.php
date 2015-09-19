@@ -9,7 +9,7 @@
     <table cellspacing="0" cellpadding="0" style="margin: 0 auto; width: 602px;  padding-bottom: 25px;">
         <tr>
             <td style="text-align: center; padding: 20px;">
-                <a href="http:https://friendlylocalguides.com"><img src="https://friendlylocalguides.com/i/logo_l_w.png" width="100"  alt="friendlylocalguides"/></a>
+                <a href="https://friendlylocalguides.com"><img src="https://friendlylocalguides.com/i/logo_l_w.png" width="100"  alt="friendlylocalguides"/></a>
             </td>
         </tr>
         <tr>

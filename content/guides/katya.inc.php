@@ -22,7 +22,7 @@
     </div>
 
     <section class="description content_box whiten height-viewport">
-        <h5>Russian Culture Lover</h5>
+        <h3>Russian Culture Lover</h3>
         <ol>
             <li>I'm interested in everything that is connected with South America and Spanish-speaking countries.</li>
             <li>I can easily do a few things at the same time. Cook, talk on the phone, read an article, book a room in a hotel.</li>
@@ -36,7 +36,7 @@
             <li>I can't meditate, strictly speaking that is sitting with my eyes closed. My best meditation is drawing. It can take me far away for hours.</li>
         </ol>
         <div class="ivebeen">
-            <h5>I've been to:</h5>
+            <h3>I've been to:</h3>
             <p>
                 UK, Spain, Germany, Belgium, France, Luxembourg, India, Vietnam, Indonesia, Thailand, Malaysia.
             </p>

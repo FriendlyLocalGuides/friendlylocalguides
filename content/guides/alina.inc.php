@@ -23,7 +23,7 @@
     </div>
 
     <section class="description content_box whiten height-viewport">
-        <h5>Dear friend,</h5>
+        <h3>Dear friend,</h3>
         <p>
             Five years ago, I had my first tour around Red Square and the city center, with an Australian tourist
             whose mother was Russian.
