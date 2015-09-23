@@ -62,6 +62,48 @@
     </div>
 
 </section>
+
+<!--<section class="content_box tours-list_new  whiten">
+<h1 class="title-of-tours single-title">Related tours</h1>
+<div class="row">
+    <figure class="tour-item">
+        <img src="/i/tours-list/moscow/View_Kremlin.jpg" alt="Red Square & Kremlin"/>
+        <figcaption>
+            <h2>Red Square & Kremlin</h2>
+            <div class="price">$157 — 5 hours</div>
+            <h3>The former residence of Dukes, Tsars, Emperors, Communist Rulers & Presidents</h3>
+            <div class="buttons-container">
+                <a class="view-button" href="/moscow/tours/kremlin-tour-moscow">View tour</a>
+                <a class="book_button" href="/moscow/tours/kremlin-tour-moscow/#book">Book tour</a>
+            </div>
+        </figcaption>
+    </figure>
+    <figure class="tour-item">
+        <img src="/i/tours-list/moscow/Happiness.jpg" alt="Going Out in Moscow"/>
+        <figcaption>
+            <h2>Going Out in Moscow</h2>
+            <div class="price">$187 — 7 hours</div>
+            <h3>A bit of history, a bit of architecture, and a lot of FUN!</h3>
+            <div class="buttons-container">
+                <a class="view-button" href="/moscow/tours/going-out-in-moscow">View tour</a>
+                <a class="book_button" href="/moscow/tours/going-out-in-moscow/#book">Book tour</a>
+            </div>
+        </figcaption>
+    </figure>
+    <figure class="tour-item">
+        <img src="/i/tours-list/moscow/Tsaritsino.jpg" alt="3-days-in-moscow"/>
+        <figcaption>
+            <h2>Moscow in 3 Days</h2>
+            <div class="price">$357 — (5 hours each day)</div>
+            <h3>You’re almost a local! </h3>
+            <div class="buttons-container">
+                <a class="view-button" href="/moscow/tours/3-days-in-moscow">View tour</a>
+                <a class="book_button" href="/moscow/tours/3-days-in-moscow/#book">Book tour</a>
+            </div>
+        </figcaption>
+    </figure>
+</div>
+</section>-->
 <section class="whiten form-container book-tour">
     <a name="book"></a>
     <?
