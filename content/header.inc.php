@@ -82,11 +82,11 @@
                 $title = "Moscow layover tour with flexible timing and friendly guide - Friendly Local Guides";
                 $meta = "Enjoy this exciting layover tour and see both must do and off the beaten path of Moscow, try authentic Russian food";
                 break;
-            case 'russia-in-cold-war':
+            case 'soviet-tour-russia':
                 $title = "Cold War & WW2 museum tour in Moscow - Friendly Local Guides";
                 $meta = "Explore impressive Victory park-memorial. Join a guided Cold War Museum tour of Bunker-42, and get this special feeling of war times in Russia.";
                 break;
-            case 'soviet-russia-tour':
+            case 'bus-tour-in-moscow':
                 $title = "Soviet Russia Tour: Communist Times and Soviet reality - Friendly Local Guides";
                 $meta = "Get this special feeling of the Soviet times, learn about political leaders of Russia, visit Soviet places in Moscow.";
                 break;
@@ -101,6 +101,30 @@
             case 'top-20-must-see-in-saint-petersburg':
                 $title = "Must see places and landmarks of St Petersburg: Nevsky Prospect, Kazan Cathedral, Hermitage and more! - Friendly Local Guides";
                 $meta = "20 legendary places of Saint Petersburg on our private must see tour. You can add or drop places from the itinerary and we'll customize it for you.";
+                break;
+            case 'boat-tour-moscow':
+                $title = "Moscow River Cruise & Boat Trip - Moscow & Saint Petersburg Tours with Friendly Local Guides";
+                $meta = "See all the gems of historical and cultural center of Moscow in short time and without traffic jams or tiresome walking on our river boat tour.";
+                break;
+            case 'food-tour-moscow-st-petersburg':
+                $title = "Food tour in Moscow, Russian Gastronomy & Culinary -  Moscow & Saint Petersburg Tours with Friendly Local Guides";
+                $meta = "Try Russian pelmeni, Ukranian borsch, Traditional Russian pancakes, Georgian Khachapuri and other delicious meals on Moscow Food Tour.";
+                break;
+            case 'golden-ring-tour':
+                $title = "Golden Ring Tour of Sergiev posad - Moscow & Saint Petersburg Tours with Friendly Local Guides";
+                $meta = "Visit the most beautiful town of Russia – Sergiev Posad, one of the “Golden Ring” cities with Friendly Local Guides.";
+                break;
+            case 'jewish-tour-moscow':
+                $title = "Jewish Heritage Tour in Moscow, Russia - Moscow & Saint Petersburg Tours with Friendly Local Guides";
+                $meta = "Jewish Moscow tour will give you an idea about Jewish Heritage and take you into all main sites of Jewish community in Russia.";
+                break;
+            case 'metro-tour-moscow':
+                $title = "Moscow Metro Tour - Moscow & Saint Petersburg Tours with Friendly Local Guides";
+                $meta = "Visit top must-see stations of Moscow subway and explore Museum of Moscow Metro on our fun tour.";
+                break;
+            case 'moscow-private-tour':
+                $title = "Tretyakov Gallery & Zamoskvorechye Tour - Moscow & Saint Petersburg Tours with Friendly Local Guides";
+                $meta = "On Tretyakov Gallery & Zamoskvorechye Tour you will see paintings in Tretyakov Gallery, visit cathedrals in Zamoskvorechye,  see local street art and have the best coffee in  the city.";
                 break;
             //SPB TOURS
             case '2-day-tour-of-saint-petersburg':
