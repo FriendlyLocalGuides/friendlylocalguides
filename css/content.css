@@ -792,6 +792,15 @@
     z-index: 1;
 }
 
+.description_tour a{
+    color: #1F6CB9;
+    text-decoration: underline;
+}
+
+.description_tour a:hover{
+    text-decoration: none;
+}
+
 .description_tour ul{
     margin-bottom: 15px;
 }
