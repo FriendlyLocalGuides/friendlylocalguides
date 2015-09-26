@@ -233,12 +233,21 @@ $(window).load(function(){
         }, 500);
 
     });
-    $('body').on('click touch ready resize orientation scroll', '.book-tour .scroll_down_container', function(e){
+    $('body').on('click touch ready resize orientation scroll', '.tours-list_new .scroll_down_container', function(e){
         e.preventDefault();
         /*$('.scroll-navigate li').removeClass('current');
         $(this).addClass('current');*/
         $('html, body').animate({
             scrollTop: $('.reviews').offset().top
+        }, 500);
+
+    });
+    $('body').on('click touch ready resize orientation scroll', '.book-tour .scroll_down_container', function(e){
+        e.preventDefault();
+        /*$('.scroll-navigate li').removeClass('current');
+         $(this).addClass('current');*/
+        $('html, body').animate({
+            scrollTop: $('.tours-list_new').offset().top
         }, 500);
 
     });

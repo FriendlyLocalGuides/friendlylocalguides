@@ -33,11 +33,11 @@
 }
 
 .content_box.tours-list_new{
+    position: relative;
     box-sizing: border-box;
     width: auto;
     padding-left: 7.5px;
     padding-right: 7.5px;
-    overflow: hidden;
 }
 
 .tours-list_new{
