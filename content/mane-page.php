@@ -49,7 +49,7 @@
         </div>
     </section>
     <section class="content_box tours-list_new  whiten height-viewport">
-        <h1 class="title-of-tours single-title">Top 3 tours</h1>
+        <h1 class="title-of-tours single-title">Top 3 Moscow tours</h1>
         <div class="row">
             <figure class="tour-item">
                 <img src="/i/tours-list/moscow/View_Kremlin.jpg" alt="Red Square & Kremlin"/>
@@ -85,6 +85,45 @@
                     <div class="buttons-container">
                         <a class="view-button" href="/moscow/tours/3-days-in-moscow">View tour</a>
                         <a class="book_button" href="/moscow/tours/3-days-in-moscow/#book">Book tour</a>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+        <h1 class="title-of-tours single-title">Top 3 St Petersburg tours</h1>
+        <div class="row">
+            <figure class="tour-item">
+                <img src="/i/tours-list/saint-petersburg/Night-views-of-Peter-and-Paul-Fortress.jpg"/>
+                <figcaption>
+                    <h2>Must See Tour</h2>
+                    <div class="price">$197 &mdash; 8 hours</div>
+                    <h3>20 legendary places of Russia's most alluring city </h3>
+                    <div class="buttons-container">
+                        <a class="view-button" href="/saint-petersburg/tours/top-20-must-see-in-saint-petersburg">View tour</a>
+                        <a class="book_button" href="/saint-petersburg/tours/top-20-must-see-in-saint-petersburg/#book">Book tour</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="tour-item">
+                <img src="/i/tours-list/saint-petersburg/tour-of-st-petersburg-by-night.jpg"/>
+                <figcaption>
+                    <h2>2 Days in Saint Petersburg</h2>
+                    <div class="price">$277 &mdash; 5 hours each day</div>
+                    <h3>Northern Venice and Versailles of Russia</h3>
+                    <div class="buttons-container">
+                        <a class="view-button" href="/saint-petersburg/tours/2-day-tour-of-saint-petersburg">View tour</a>
+                        <a class="book_button" href="/saint-petersburg/tours/2-day-tour-of-saint-petersburg/#book">Book tour</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="tour-item">
+                <img src="/i/tours-list/saint-petersburg/panoramic-views-of-st-petersburg.jpg"/>
+                <figcaption>
+                    <h2>3 Days in Saint Petersburg</h2>
+                    <div class="price">$357 &mdash; 5 hours each day</div>
+                    <h3>All the highlights of St Petersburg</h3>
+                    <div class="buttons-container">
+                        <a class="view-button" href="/saint-petersburg/tours/3-day-tour-of-saint-petersburg">View tour</a>
+                        <a class="book_button" href="/saint-petersburg/tours/3-day-tour-of-saint-petersburg/#book">Book tour</a>
                     </div>
                 </figcaption>
             </figure>
