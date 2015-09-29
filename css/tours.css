@@ -24,7 +24,8 @@
     text-align: center;
 }
 
-.sub_title-of-tours{
+.sub_title-of-tours,
+.items-features{
     color: #000;
     font-size: .95em;
     /*text-align: center;*/

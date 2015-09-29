@@ -737,13 +737,17 @@
     margin-bottom: 25px;
 }
 
-.reviews h3{
+.tours-list_new .tabs{
+    padding: 8px;
+}
+
+.tabs .title-of-tours, .reviews h3{
     color: #ccc;
     font-weight: normal;
     text-align: center;
     margin: 0 15px 15px 0;
-    float: left;
     padding: 5px 10px;
+    float: left;
     border: 1px darkgray solid;
     border-bottom: none;
     cursor: pointer;
@@ -761,7 +765,7 @@
     color: rgba(0, 0, 0, .7);
 }
 
-.reviews h3.current,
+.title-of-tours.current,
 .reviews h3.current{
     color: #000;
     box-shadow: inset 3px 5px 5px rgba(0, 0, 0, .1),
@@ -769,6 +773,15 @@
     /*box-shadow: none;*/
     /*box-shadow: inset 0 0 10px rgba(0, 0, 0, .3);*/
 
+}
+
+.tabs .title-of-tours{
+    color: #000;
+    font-weight: bold;
+    opacity: .6;
+}
+.tabs .title-of-tours.current{
+    opacity: 1;
 }
 
 .reviews h3:last-child{
@@ -1155,6 +1168,21 @@
     background-image: url("../i/tile-feature-bg.png");
 }
 
+.features.extra-features{
+    background: none;
+    padding: 10px 0 0;
+}
+
+.features.extra-features.guides-features{
+    padding: 8px;
+}
+
+.features.extra-features li{
+    display: block;
+    width: auto;
+
+}
+
 .heading-decoration{
     text-align: center;
     margin-bottom: 30px;
@@ -1239,6 +1267,16 @@
     left: 0;
     top: 50%;
     margin-top: -30px;
+}
+
+.guides-features .list-of-features li{
+    padding-left: 0;
+    min-height: initial;
+    margin-bottom: 25px;
+}
+
+.guides-features .list-of-features li:before{
+    content: normal;
 }
 
 .list-of-features li.feature-2:before{

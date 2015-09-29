@@ -261,15 +261,13 @@ $(window).load(function(){
             scrollTop: $('.description_tour, .description, .features ').offset().top
         }, 500);
 
-    })
+    });
+
     $('.container').on('click touch','.features .scroll_down_container', function(){
-        console.log('Pis');
         $('html, body').animate({
             scrollTop: $('.tours-list_new').offset().top //TODO
         }, 500);
-
     });
-
 
     $('body').on('click touch', 'header .book_button, .header_title .book_button', function(e){
         if(!$(this).parent().hasClass('main-page_btns')){
