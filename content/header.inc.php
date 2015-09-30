@@ -83,12 +83,12 @@
                 $meta = "Enjoy this exciting layover tour and see both must do and off the beaten path of Moscow, try authentic Russian food";
                 break;
             case 'soviet-tour-russia':
-                $title = "Cold War & WW2 museum tour in Moscow - Friendly Local Guides";
-                $meta = "Explore impressive Victory park-memorial. Join a guided Cold War Museum tour of Bunker-42, and get this special feeling of war times in Russia.";
+                $title = "Soviet Russia Tour & Cold War: Communist Times and Soviet reality - Friendly Local Guides";
+                $meta = "Get this special feeling of the Soviet times, learn about political leaders of Russia, visit Soviet places in Moscow.";
                 break;
             case 'bus-tour-in-moscow':
-                $title = "Soviet Russia Tour: Communist Times and Soviet reality - Friendly Local Guides";
-                $meta = "Get this special feeling of the Soviet times, learn about political leaders of Russia, visit Soviet places in Moscow.";
+                $title = "Moscow bus tour - Friendly Local Guides";
+                $meta = "A great number of fascinating and historical places on this Moscow bus tour .";
                 break;
             case 'photo-tour-of-moscow':
                 $title = "Moscow Photo Tour full of stunning views and iconic spots - Friendly Local Guides";
@@ -105,6 +105,10 @@
             case 'boat-tour-moscow':
                 $title = "Moscow River Cruise & Boat Trip - Moscow & Saint Petersburg Tours with Friendly Local Guides";
                 $meta = "See all the gems of historical and cultural center of Moscow in short time and without traffic jams or tiresome walking on our river boat tour.";
+                break;
+            case 'ultimate-tour-of-moscow-with-traditional-cuisines':
+                $title = "Ultimate tour: 3 or 4 day to Moscow - Friendly Local Guides";
+                $meta = "This 7 Realms Ultimate tour of Moscow can be 3-Day tour, with 7 hours each day, or 4-Day tour, with 5 hours each day.";
                 break;
             case 'food-tour-moscow-st-petersburg':
                 $title = "Food tour in Moscow, Russian Gastronomy & Culinary -  Moscow & Saint Petersburg Tours with Friendly Local Guides";
@@ -139,6 +143,10 @@
                 $title = "River Boat Tour - Friendly Local Guides";
                 $meta = "7 best river boat St Petersburg’s tours along the Neva river and the city’s picturesque canalways.";
                 break;
+            case 'st-petersburg-walking-tour':
+                $title = "St Petersburg Walking Tour with a Friendly Guide";
+                $meta = "Walking tour of all main highlights of Saint Petersburg: Nevsky Prospect, St Isaac’s Cathedral, the Hermitage, Kazan Cathedral, Eliseev Emporium, Palace Square and more!";
+                break;
             case 'peter-and-paul-tour':
                 $title = "Peter & Paul Fortress & Strelka on Basil Island (Petrograd side) - Friendly Local Guides";
                 $meta = "Visit the oldest building Peter and Paul Fortress on the Strelka of Vasilievsky Island on our breathtaking and spectacular tour of Saint Petersburg.";
@@ -147,13 +155,17 @@
                 $title = "Peterhof & Grand Palace Tour - Friendly Local Guides";
                 $meta = "Amazing tour to Peterhof: Palace, fountains, park and garden";
                 break;
+            case 'st-petersburg-and-moscow-tours':
+                $title = "Moscow & St Petersburg tour, visit  Russia - Tours to Russia from Friendly Local Guides";
+                $meta = "We designed this private Moscow and Petersburg tour with you in mind offering you different number of days in each city and various itineraries covering all main sights.";
+                break;
             case 'st-petersburg-private-tour':
                 $title = "Saint Petersburg Private Tour - Friendly Local Guides";
                 $meta = "Great overview and orientation of the city on our 5-hour private tour of Saint Petersburg.";
                 break;
-            case 'st-petersburg-walking-tour':
-                $title = "St Petersburg Walking Tour with a Friendly Guide";
-                $meta = "Walking tour of all main highlights of Saint Petersburg: Nevsky Prospect, St Isaac’s Cathedral, the Hermitage, Kazan Cathedral, Eliseev Emporium, Palace Square and more!";
+            case 'food-tour-st-petersburg':
+                $title = "Food tour in St Petersburg - Friendly Local Guides";
+                $meta = "On our Russian Food Tour you’ll try Russian pancakes, Soviet-style lunch, borsch and many other delicious Russian foods as well traditional hospitality, cozy and amazingly beautiful interior. All food is included!";
                 break;
         }
     }
