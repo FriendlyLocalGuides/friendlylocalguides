@@ -21,6 +21,7 @@ try {
         switch($city){
             case 'moscow': $tourTable = 'tours_moscow'; break;
             case 'saint-petersburg': $tourTable = 'tours_spb'; break;
+            case 'san-francisco': $tourTable = 'tours_sanfrancisco'; break;
         }
 
         /*** превратить все ошибки в исключения ***/

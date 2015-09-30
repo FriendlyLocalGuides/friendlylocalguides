@@ -12,6 +12,7 @@ catch(PDOException $e) {
 switch($city){
     case 'moscow': $tourTable = 'tours_moscow'; break;
     case 'saint-petersburg': $tourTable = 'tours_spb'; break;
+    case 'san-francisco': $tourTable = 'tours_sanfrancisco'; break;
 }
 $sql_tour = "SELECT title, title_2, subtitle, price, duration, description, img_link_item FROM $tourTable WHERE url = '$url'";
 

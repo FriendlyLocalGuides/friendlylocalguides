@@ -9,6 +9,7 @@ if($city && $id == 'tours' && !$tours){
     switch($city) {
         case 'moscow': include 'moscow_tours_list.php'; break;
         case 'saint-petersburg': include 'spb_tours_list.php'; break;
+        case 'san-francisco': include 'sf_tours_list.php'; break;
     }
 }
 

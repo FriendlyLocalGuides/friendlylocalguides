@@ -9,6 +9,7 @@ catch(PDOException $e) {
 switch($city){
     case 'moscow': $tourTable = 'tours_moscow'; break;
     case 'saint-petersburg': $tourTable = 'tours_spb'; break;
+    case 'san-francisco': $tourTable = 'tours_sanfrancisco'; break;
 }
 $sql_tour = "select * from $tourTable where url = '$currentPage'";
 foreach ($dbh->query($sql_tour) as $row){
