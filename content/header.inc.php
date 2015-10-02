@@ -40,6 +40,11 @@
         $meta = "Explore St Petersburg and Peterhof with Friendly Local Guides. Memorable city tours with private guides. We charge only $20 for every additional traveller.";
     }
 
+    if($id == 'tours' && $city == 'san-francisco' && !$guides){
+        $title = "San Francisco private tours, city guided tours in San Francisco (US), walking tours with private guides - Friendly Local Guides";
+        $meta = "Explore San Francisco with Friendly Local Guides. Memorable city tours with private guides. We charge only $20 for every additional traveller.";
+    }
+
     if($id == 'tours' && $tours){
         switch($tours){
             case 'free-tour':
@@ -166,6 +171,15 @@
             case 'food-tour-st-petersburg':
                 $title = "Food tour in St Petersburg - Friendly Local Guides";
                 $meta = "On our Russian Food Tour you’ll try Russian pancakes, Soviet-style lunch, borsch and many other delicious Russian foods as well traditional hospitality, cozy and amazingly beautiful interior. All food is included!";
+                break;
+            //SAN FRANCISCO TOURS
+            case 'san-francisco-tour':
+                $title = "3-Hour Driving Tour in San Francisco - Friendly Local Guides";
+                $meta = "San Francisco - Friendly Local Guides";
+                break;
+            case 'san-francisco-city-tour':
+                $title = "5-Hour Tour in San Francisco - Friendly Local Guides";
+                $meta = "San Francisco - Friendly Local Guides";
                 break;
         }
     }

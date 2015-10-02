@@ -71,7 +71,8 @@
                                 <div class="wrap-dropdown-submenu">
                                     <div class="inner-dropdown-submenu nav-drop_down">
                                         <a class="list_item nav-list_item" href="/moscow/tours">Moscow</a>
-                                        <a class="list_item nav-list_item last_item" href="/saint-petersburg/tours">Saint Petersburg</a>
+                                        <a class="list_item nav-list_item" href="/saint-petersburg/tours">Saint Petersburg</a>
+                                        <a class="list_item nav-list_item last_item" href="/san-francisco/tours">San Francisco</a>
                                     </div>
                                 </div>
                             </div>
