@@ -1,14 +1,15 @@
 <div class="main-page">
-    <a class="sales winter-sales sales-zInd" href="/blog/moscow-tours-ultimate-russian-art-and-culture-experience"></a>
+    <!--<a class="sales winter-sales sales-zInd" href="/blog/moscow-tours-ultimate-russian-art-and-culture-experience"></a>-->
     <div class="header_title">
         <div class="header_tour_content">
             <h1>Fun Private tours</h1>
             <div class="slogan">
                 Make a local friend
             </div>
-            <ul class="buttons-container main-page_btns">
-                <li class="book_button"><a href="/moscow/tours">Moscow</a></li>
-                <li class="book_button"><a href="/saint-petersburg/tours">Saint Petersburg</a></li>
+            <ul class="main-page_btns">
+                <li class="link_tag inline-block"><a href="/moscow/tours">Moscow</a> | </li>
+                <li class="link_tag inline-block"><a href="/saint-petersburg/tours">Saint Petersburg</a> | </li>
+                <li class="link_tag inline-block"><a href="/san-francisco/tours">San Francisco</a></li>
             </ul>
         </div>
     </div>

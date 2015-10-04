@@ -42,6 +42,9 @@ body a{
     overflow: hidden;
 }
 
+.inline-block{
+    display: inline-block;
+}
 
 /*FOOTER*/
 

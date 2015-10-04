@@ -1,3 +1,16 @@
+.main-page_btns{
+    margin-top: 25px;
+}
+
+.link_tag a{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.link_tag a:hover{
+    text-decoration: underline;
+}
+
 .sales{
     display: block;
     position: absolute;
@@ -1324,6 +1337,11 @@
     display: none !important;
 }
 @media screen and (max-width:325px){
+    .link_tag{
+        margin-bottom: 10px;
+    }
+
+
     .main-page h3{
         margin-top: 50px;
     }
