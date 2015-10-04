@@ -66,7 +66,7 @@
                     <span>Tour San Francisco in style. All our guides are good photographers and will gladly take photos of you and with you amongst spectacular San Francisco scenery that can be treasured for a lifetime.</span>
                 </li>
                 <li class="feature-9">
-                    <span>Traditional Russian cuisine. You don’t have to go for Food Tour of San Francisco to try the best Russian food in the city. On your tour you will experience Russian hospitality and national dishes in local cozy restaurants with traditional cuisine and interior.</span>
+                    <span>Traditional American cuisine. You don’t have to go for Food Tour of San Francisco to try the best American food in the city. On your tour you will experience American hospitality and national dishes in local cozy restaurants with traditional cuisine and interior.</span>
                 </li>
                 <li class="feature-10">
                     <span>Expert local advice. Apart from super friendly San Francisco sightseeing tours, we are also good at advising how to make the most of your time in San Francisco. Best coffee shops in the city, best hotels, reliable and affordable taxi service etc. Just ask us!</span>                </li>
