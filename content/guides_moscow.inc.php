@@ -13,14 +13,48 @@
                     <a class="view-button" href="/moscow/guides/alina">About me</a>
                 </figcaption>
             </figure>
-                <figure class="guide-item">
-                    <img src="/i/guides-list/dasha.jpg" alt="Dasha"/>
-                    <figcaption>
-                        <h2>Dasha</h2>
-                        <h4>Wine Lover</h4>
-                        <a class="view-button" href="/moscow/guides/dasha">About me</a>
-                    </figcaption>
-                </figure>
+            <figure class="guide-item">
+                <img src="/i/guides-list/dasha.jpg" alt="Dasha"/>
+                <figcaption>
+                    <h2>Dasha</h2>
+                    <h4>Wine Lover</h4>
+                    <a class="view-button" href="/moscow/guides/dasha">About me</a>
+                </figcaption>
+            </figure>
+
+            <figure class="guide-item">
+                <img src="/i/guides-list/vera-guide.jpg" alt="Vera"/>
+                <figcaption>
+                    <h2>Vera</h2>
+<!--                    <h4>Art Aficionado</h4>-->
+                    <a class="view-button" href="/moscow/guides/vera">About me</a>
+                </figcaption>
+            </figure>
+            <figure class="guide-item">
+                <img src="/i/guides-list/karina-guide.jpg" alt="Karina"/>
+                <figcaption>
+                    <h2>Karina</h2>
+<!--                    <h4>Local Vibe Ninja</h4>-->
+                    <a class="view-button" href="/moscow/guides/karina">About me</a>
+                </figcaption>
+            </figure>
+            <figure class="guide-item">
+                <img src="/i/guides-list/angelina-guide.jpg" alt="Angelina"/>
+                <figcaption>
+                    <h2>Angelina</h2>
+<!--                    <h4>Russian Culture Lover</h4>-->
+                    <a class="view-button" href="/moscow/guides/angelina">About me</a>
+                </figcaption>
+            </figure>
+            <figure class="guide-item">
+                <img src="/i/guides-list/anna-guide.jpg" alt="Anna"/>
+                <figcaption>
+                    <h2>Anna</h2>
+                    <!--                    <h4>Russian Culture Lover</h4>-->
+                    <a class="view-button" href="/moscow/guides/anna">About me</a>
+                </figcaption>
+            </figure>
+
             <figure class="guide-item">
                 <img src="/i/guides-list/inna.jpg" alt="Inna"/>
                 <figcaption>
