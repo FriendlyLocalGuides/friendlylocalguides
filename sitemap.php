@@ -17,6 +17,9 @@
                 <a href="https://friendlylocalguides.com/saint-petersburg/tours" title="Saint-Petersburg tours">Saint-Petersburg tours</a>
             </li>
             <li>
+                <a href="https://friendlylocalguides.com/san-francisco/tours" title="Saint-Petersburg tours">San Francisco tours</a>
+            </li>
+            <li>
                 <a href="https://friendlylocalguides.com/moscow/guides" title="Guides">Guides</a>
             </li>
             <li>

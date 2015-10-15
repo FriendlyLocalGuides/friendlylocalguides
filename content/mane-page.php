@@ -50,7 +50,7 @@
         </div>
     </section>
     <section class="content_box tours-list_new  whiten height-viewport">
-        <h1 class="title-of-tours single-title">Top 3 Moscow tours</h1>
+        <h2 class="title-of-tours single-title">Top 3 Moscow tours</h2>
         <div class="row">
             <figure class="tour-item">
                 <img src="/i/tours-list/moscow/View_Kremlin.jpg" alt="Red Square & Kremlin"/>
@@ -90,7 +90,7 @@
                 </figcaption>
             </figure>
         </div>
-        <h1 class="title-of-tours single-title">Top 3 St Petersburg tours</h1>
+        <h2 class="title-of-tours single-title">Top 3 St Petersburg tours</h2>
         <div class="row">
             <figure class="tour-item">
                 <img src="/i/tours-list/saint-petersburg/Night-views-of-Peter-and-Paul-Fortress.jpg"/>
@@ -130,7 +130,7 @@
             </figure>
         </div>
         <div class="row">
-            <h1 class="title-of-tours single-title">Top 3 articles</h1>
+            <h2 class="title-of-tours single-title">Top 3 articles</h2>
             <figure class="tour-item">
                 <img src="/i/top-list/article-1.jpg" alt="Red Square & Kremlin"/>
                 <figcaption>

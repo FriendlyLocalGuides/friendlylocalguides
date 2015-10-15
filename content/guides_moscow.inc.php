@@ -1,6 +1,6 @@
 <section class="content_box tours-list_new whiten">
     <div class="tabs clearfix">
-        <h1 class="title-of-tours">Guides</h1>
+        <h1 class="title-of-tours">Moscow Guides</h1>
         <h2 class="title-of-tours">Features</h2>
     </div>
     <div class="panes">
