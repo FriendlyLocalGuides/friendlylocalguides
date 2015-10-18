@@ -36,10 +36,10 @@
             <li class="feature-3"><span>Only $20 for an additional traveler.</span></li>
             <li class="feature-4"><span>Scenic spots that can be treasured for a lifetime.</span></li>
             <li class="feature-5"><span>Flexibility during the tour:  changes can be made at any time to suit your individual preferences.</span></li>
-            <li class="feature-6"><span>Customized & private Moscow tours</span></li>
+            <li class="feature-6"><span>Customized & private tours.</span></li>
             <li class="feature-7"><span>Great bonuses with some tours.</span></li>
             <li class="feature-8"><span>Good value for taxi and hotels (on demand).</span></li>
-            <li class="feature-9"><span>Amazing breakfast & lunch deals in the very best cafes & restaurants in Moscow.</span></li>
+            <li class="feature-9"><span>Amazing breakfast & lunch deals in the very best cafes & restaurants.</span></li>
             <li class="feature-10"><span>Expert local advice on things to do and how to make the most of your stay in the city.</span></li>
         </ul>
         <div class="scroll_down">
