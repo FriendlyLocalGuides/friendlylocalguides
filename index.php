@@ -29,7 +29,7 @@
     <script src="/js/plugins/clockpicker.js"></script>
     <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
     <script type="text/javascript" src="/js/lib/jquery.payment.js"></script>
-    <? require_once 'Stripe/stripe_set_publishable_key.php'?>
+<!--    --><?// require_once 'Stripe/stripe_set_publishable_key.php'?>
     <script src="/js/navigate.js"></script>
     <script src="/js/base.js"></script>
     <link rel="shortcut icon" href="/i/fav.ico" type="image/x-icon">

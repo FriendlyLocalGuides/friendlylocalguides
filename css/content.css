@@ -1154,12 +1154,25 @@
 }
 
 .sitemap-list{
-    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.sitemap-list > li{
     text-transform: uppercase;
+
 }
 
 .sitemap-list li{
     margin-bottom: 15px;
+}
+
+
+.sitemap-list li > ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    text-transform: none;
+
 }
 
 .sitemap-list a{
