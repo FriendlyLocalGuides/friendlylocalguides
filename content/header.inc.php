@@ -193,9 +193,9 @@
                 $title = "San Francisco walking tours - Friendly Local Guides";
                 $meta = "Private walking tour to San Francisco: 5, 7 or even 10-hour duration with your local guide.";
                 break;
-            case '3-days-in-san-francisco':
-                $title = "3 days in San Francisco: best restaurants and fun things to do - Friendly Local Guides";
-                $meta = "3-day tour in San Francisco. Iconic symbols of San Francisco await you!";
+            case 'san-francisco-bike-tours':
+                $title = "San Francisco bike tours - Friendly Local Guides";
+                $meta = "Best bike tours in San Francisco. See places of SF you might not see on your own with Friendly Local Guides.";
                 break;
         }
     }
