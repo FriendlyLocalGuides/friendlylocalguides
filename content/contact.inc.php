@@ -1,4 +1,5 @@
 <section class="whiten form-container contact">
+    <h1>Our contacts</h1>
     <h5>We'd love to hear from you! If emails are not your thing, get in touch with us on:
         <ul class="contact-items">
             <li><img src="../i/social_buttons/skype.png" alt="Skype"/>Skype: <strong>friendly.local.guides</strong></li>

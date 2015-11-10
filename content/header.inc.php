@@ -27,6 +27,9 @@
                 $title = "Contact | Friendly Local Guides";
                 $meta = "Get in touch with us. We'd love to hear from you! Feel free to ask us any questions on our Facebook and Google+ pages";
                 break;
+            case 'sitemap':
+                $title = "Sitemap - Private City Tours with Friendly Local Guides";
+                break;
         }
     }
 
@@ -104,7 +107,7 @@
                 $meta = "Book your private bike tour now and enjoy the icons of Moscow in style, test your nerve, driving on crazy Russian roads, expert commentary and lifetime shots as you travel around the city.";
                 break;
             case 'top-20-must-see-in-saint-petersburg':
-                $title = "Must see places and landmarks of St Petersburg: Nevsky Prospect, Kazan Cathedral, Hermitage and more! - Friendly Local Guides";
+                $title = "St. Petersburg must see tour - Friendly Local Guides";
                 $meta = "20 legendary places of Saint Petersburg on our private must see tour. You can add or drop places from the itinerary and we'll customize it for you.";
                 break;
             case 'boat-tour-moscow':
@@ -137,11 +140,11 @@
                 break;
             //SPB TOURS
             case '2-day-tour-of-saint-petersburg':
-                $title = "St. Petersburg in 2 days - Friendly Local Guides";
+                $title = "St. Petersburg in 2 days tour - Friendly Local Guides";
                 $meta = "St. Petersburg on 2 day tours, enjoy visiting most artistic and stunning places in Saint Petersburg and Peterhof.";
                 break;
             case '3-day-tour-of-saint-petersburg':
-                $title = "St. Petersburg in 3 days - Friendly Local Guides";
+                $title = "St. Petersburg in 3 days tour - Friendly Local Guides";
                 $meta = "3 day private tour of Saint Petersburg. Combine must-see and off the beaten path: river cruise, world-known cathedrals and much more!";
                 break;
             case 'boat-trip-tour':
@@ -239,8 +242,8 @@
                 $meta = "Katia is your friendly local guide in Moscow.";
                 break;
             case 'valery':
-                $title = "Guide Anya - Moscow Private Tours with Friendly Local Guides";
-                $meta = "Anya is your friendly local guide in St. Petersburg.";
+                $title = "Guide Valery - Moscow Private Tours with Friendly Local Guides";
+                $meta = "Valery is your friendly local guide in St. Petersburg.";
                 break;
         }
     }

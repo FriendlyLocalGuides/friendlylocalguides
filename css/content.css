@@ -704,6 +704,16 @@
    right: 5px;
 }
 
+.contact.form-container{
+    padding-top: 170px;
+}
+
+.contact.form-container h1{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
 .contact.form-container h5{
     font-weight: normal;
     font-size: 21px;
@@ -958,7 +968,6 @@
 .contact.form-container{
     box-sizing: border-box;
     margin: auto;
-    padding-top: 200px;
     max-width: 595px;
 }
 
@@ -1447,10 +1456,6 @@
         font-size: 1em;
     }
 
-    .contact.form-container{
-        padding-top: 200px;
-    }
-
     .contact.form-container h5{
         font-size: 16px;
     }
@@ -1730,7 +1735,12 @@
     }
 
     .contact.form-container{
-        padding-top: 250px;
+        padding-top: 200px;
+    }
+
+    .contact.form-container h1{
+        font-size: 40px;
+        margin-bottom: 35px;
     }
 
     .guide_page p,
