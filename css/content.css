@@ -944,6 +944,25 @@
     overflow: hidden;
 }
 
+/*tripadvisor*/
+.tripadviser > ul{
+    /*text-align: justify;*/
+    text-align: center;
+}
+.tripadviser > ul li{
+    display: inline-block;
+    vertical-align: top;
+}
+.tripadviser > ul:after{
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+.tripadviser{
+    margin-bottom: 20px;
+}
+
 .thumb-list{
     text-align: center;
     font-size: 0;
@@ -1379,6 +1398,7 @@
     .sitemap-list a{
         font-size: 15px;
     }
+
 }
 
 
@@ -1413,7 +1433,6 @@
     }
 
     .scroll-navigate{
-        /*border-top: 1px solid rgba(0, 0, 0, 0.2);*/
         top: 106px;
         z-index: 100;
         width: 100%;
@@ -1434,7 +1453,12 @@
     }
 
 
-
+    .tripadviser > ul {
+        text-align: center;
+    }
+    .tripadviser .widSSP{
+        width: auto !important;
+    }
     .video-reviews iframe{
         width: 250px;
         height: 180px;
@@ -1552,6 +1576,17 @@
 
     .mail_success{
         font-size: 10px;
+    }
+}
+
+@media screen and (min-width:1199px){
+
+    .tripadviser > ul li:first-child{
+        margin-left: 90px;
+    }
+
+    .tripadviser > ul li:last-child{
+        margin-right: 90px;
     }
 }
 
@@ -1717,6 +1752,7 @@
 }
 
 @media screen and (min-width:960px){
+
     .header_tour_content{
         margin: 0 auto 20px;
         max-width: 700px;
