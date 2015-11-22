@@ -179,8 +179,8 @@ if($id == 'tours' && $tours){
                             <div class="price">$117 &mdash; 3 hours</div>
                             <h3>Who were the Soviet people? </h3>
                             <div class="buttons-container">
-                                <a class="view-button" href="/moscow/tours/soviet-russia-tour">View tour</a>
-                                <a class="book_button" href="/moscow/tours/soviet-russia-tour/#book">Book tour</a>
+                                <a class="view-button" href="/moscow/tours/soviet-tour-russia">View tour</a>
+                                <a class="book_button" href="/moscow/tours/soviet-tour-russia/#book">Book tour</a>
                             </div>
                         </figcaption>
                     </figure>
@@ -495,7 +495,7 @@ if($id == 'tours' && $tours){
                         <figcaption>
                             <h2>Photo Tour</h2>
                             <div class="price">$157 &mdash; 3 hours</div>
-                            <h3>Experience Moscow’s most scenic locations </h3>
+                            <h3>Experience Moscowï¿½s most scenic locations </h3>
                             <div class="buttons-container">
                                 <a class="view-button" href="/moscow/tours/photo-tour-of-moscow">View tour</a>
                                 <a class="book_button" href="/moscow/tours/photo-tour-of-moscow/#book">Book tour</a>
@@ -738,7 +738,7 @@ if($id == 'tours' && $tours){
                         <figcaption>
                             <h2>Photo Tour</h2>
                             <div class="price">$157 &mdash; 3 hours</div>
-                            <h3>Experience Moscow’s most scenic locations </h3>
+                            <h3>Experience Moscowï¿½s most scenic locations </h3>
                             <div class="buttons-container">
                                 <a class="view-button" href="/moscow/tours/photo-tour-of-moscow">View tour</a>
                                 <a class="book_button" href="/moscow/tours/photo-tour-of-moscow/#book">Book tour</a>

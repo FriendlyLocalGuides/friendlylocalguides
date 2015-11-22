@@ -63,7 +63,24 @@
                 </ul>
             </li>
             <li>
-                <a href="https://friendlylocalguides.com/moscow/guides" title="Guides">Guides</a>
+                <a href="https://friendlylocalguides.com/moscow/guides" title="Guides">Moscow Guides</a>
+                <ul>
+                    <li><a href="https://friendlylocalguides.com/moscow/guides/vera">Vera</a></li>
+                    <li><a href="https://friendlylocalguides.com/moscow/guides/katya">Katia</a></li>
+                    <li><a href="https://friendlylocalguides.com/moscow/guides/karina">Karina</a></li>
+                    <li><a href="https://friendlylocalguides.com/moscow/guides/inna">Inna</a></li>
+                    <li><a href="https://friendlylocalguides.com/moscow/guides/dasha">Dasha</a></li>
+                    <li><a href="https://friendlylocalguides.com/moscow/guides/anya">Anya</a></li>
+                    <li><a href="https://friendlylocalguides.com/moscow/guides/anna">Anna</a></li>
+                    <li><a href="https://friendlylocalguides.com/moscow/guides/angelina">Angelina</a></li>
+                    <li><a href="https://friendlylocalguides.com/moscow/guides/alina">Alina</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="https://friendlylocalguides.com/saint-petersburg/guides" title="Guides">St. Petersburg Guides</a>
+                <ul>
+                    <li><a href="https://friendlylocalguides.com/saint-petersburg/guides/valery">Valery</a></li>
+                </ul>
             </li>
             <li>
                 <a href="https://friendlylocalguides.com/about" title="About">About</a>
