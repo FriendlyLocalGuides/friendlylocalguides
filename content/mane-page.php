@@ -129,6 +129,45 @@
                 </figcaption>
             </figure>
         </div>
+        <h2 class="title-of-tours single-title">Top 3 San Francisco tours</h2>
+        <div class="row">
+            <figure class="tour-item">
+                <img src="/i/tours-list/san-francisco/tours-in-san-francisco.jpg" alt=""/>
+                <figcaption>
+                    <h2>One Day in San Francisco</h2>
+                    <div class="price">$227 — 5 hours</div>
+                    <h3>Experience over 20 must sees of San Francisco</h3>
+                    <div class="buttons-container">
+                        <a class="view-button" href="/san-francisco/tours/san-francisco-city-tour">View tour</a>
+                        <a class="book_button" href="/san-francisco/tours/san-francisco-city-tour/#book">Book tour</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="tour-item">
+                <img src="/i/tours-list/san-francisco/TransAmerica-Pyramid-on-San-Francisco-tour.jpg" alt=""/>
+                <figcaption>
+                    <h2>2 Days in San Francisco</h2>
+                    <div class="price">$397 — 2 days</div>
+                    <h3>All must sees of San Francisco in 2 days</h3>
+                    <div class="buttons-container">
+                        <a class="view-button" href="/san-francisco/tours/2-days-in-san-francisco">View tour</a>
+                        <a class="book_button" href="/san-francisco/tours/2-days-in-san-francisco/#book">Book tour</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="tour-item">
+                <img src="/i/tours-list/san-francisco/Architecture-of-San-Francisco-on-day-tour.jpg" alt=""/>
+                <figcaption>
+                    <h2>3 Days in San Francisco</h2>
+                    <div class="price">$497 — 3 days</div>
+                    <h3>Feel like a local in San Francisco</h3>
+                    <div class="buttons-container">
+                        <a class="view-button" href="/san-francisco/tours/3-days-in-san-francisco">View tour</a>
+                        <a class="book_button" href="/san-francisco/tours/3-days-in-san-francisco/#book">Book tour</a>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
         <div class="row">
             <h2 class="title-of-tours single-title">Top 3 articles</h2>
             <figure class="tour-item">
@@ -164,6 +203,41 @@
                     </div>
                 </figcaption>
             </figure>
+        </div>
+        <h2 class="title-of-tours single-title">TripAdvisor Reviews</h2>
+        <div class="row tripadviser">
+            <ul>
+                <li>
+                    <div id="TA_selfserveprop711" class="TA_selfserveprop">
+                        <ul id="rAtUGUX0j" class="TA_links sDAYgVGMX">
+                            <li id="DsjadGuAtgzR" class="DGH7b5z">
+                                <a target="_blank" href="http://www.tripadvisor.com/"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/150_logo-11900-2.png" alt="TripAdvisor"/></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <script src="https://www.tripadvisor.com/WidgetEmbed-selfserveprop?amp;locationId=8121633&amp;writereviewlink=true&amp;rating=true&amp;border=true&amp;uniq=711&amp;iswide=true&amp;popIdx=true&amp;lang=en_US&amp;nreviews=0&amp;display_version=2"></script>
+                </li>
+                <!--<li>
+                    <div id="TA_selfserveprop487" class="TA_selfserveprop">
+                        <ul id="kXF9lY8z591" class="TA_links oVSwor0Z">
+                            <li id="HXte1m" class="mxKpylHVE9Js">
+                                <a target="_blank" href="http://www.tripadvisor.com/"><img src="http://www.tripadvisor.com/img/cdsi/img2/branding/150_logo-11900-2.png" alt="TripAdvisor"/></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <script src="http://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=487&amp;locationId=8262634&amp;lang=en_US&amp;rating=true&amp;nreviews=0&amp;writereviewlink=true&amp;popIdx=false&amp;iswide=false&amp;border=true&amp;display_version=2"></script>
+                </li>
+                <li>
+                    <div id="TA_selfserveprop468" class="TA_selfserveprop">
+                        <ul id="FUjcXk" class="TA_links YsPWXyXwGz">
+                            <li id="KXazQviN6MsI" class="yXPa3qkp">
+                                <a target="_blank" href="http://www.tripadvisor.com/"><img src="http://www.tripadvisor.com/img/cdsi/img2/branding/150_logo-11900-2.png" alt="TripAdvisor"/></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <script src="http://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=468&amp;locationId=8098859&amp;lang=en_US&amp;rating=true&amp;nreviews=0&amp;writereviewlink=true&amp;popIdx=false&amp;iswide=false&amp;border=true&amp;display_version=2"></script>
+                </li>-->
+            </ul>
         </div>
     </section>
 </div>

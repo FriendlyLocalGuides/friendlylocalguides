@@ -16,22 +16,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <meta charset="UTF-8"/>
     <meta content="<?=$meta?>" name="description">
-    <script src="/js/lib/jquery-1.11.0.min.js"></script>
-    <script src="/js/lib/modernizr.min.js"></script>
-    <script src="/js/lib/jquery-ui.min.js"></script>
-    <script src="/js/lib/device.min.js"></script>
-    <script src="/js/plugins/jquery.rateit.min.js"></script>
-    <script src="/js/plugins/jquery.cycle2.min.js"></script>
-    <script src="/js/plugins/jquery.tools.min.js"></script>
-    <script src="/js/plugins/placeholders.min.js"></script>
-    <script src="/js/plugins/jquery.cover.js"></script>
-    <script src="/js/plugins/jquery.swipebox.js"></script>
-    <script src="/js/plugins/clockpicker.js"></script>
-    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
-    <script type="text/javascript" src="/js/lib/jquery.payment.js"></script>
-    <? require_once 'Stripe/stripe_set_publishable_key.php'?>
-    <script src="/js/navigate.js"></script>
-    <script src="/js/base.js"></script>
     <link rel="shortcut icon" href="/i/fav.ico" type="image/x-icon">
     <link rel="icon" href="/i/fav.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/reset.css"/>
@@ -50,14 +34,12 @@
     <link rel="stylesheet" href="/css/jquery.cover.css"/>
     <link rel="stylesheet" href="/css/swipebox.css"/>
     <link rel="stylesheet" href="/css/css3-styles.css"/>
-    <? include_once 'analyticstracking.php'?>
-    <? include_once 'yandexmetrika.php'?>
 </head>
 <body>
     <header class="clearfix">
         <div class="main_header">
             <a class="logo" href="/" title="Friendly Local Guides">
-                <img src="/i/logo.png" alt="Guided tours in Moscow and Saint-Petersburg">
+                <img src="/i/logo.png" alt="Guided tours in Moscow Saint-Petersburg and San Francisco">
             </a>
             <div class="navigation nav-list">
                 <div class="nav_title">
@@ -125,11 +107,24 @@
     </footer>
 
 
-    <!-- Google Code for tour guide Conversion Page -->
-    <!-- Google Code for tour guide Conversion Page -->
-
-
-
+    <? include_once 'analyticstracking.php'?>
+    <? include_once 'yandexmetrika.php'?>
+    <script src="/js/lib/jquery-1.11.0.min.js"></script>
+    <script src="/js/lib/modernizr.min.js"></script>
+    <script src="/js/lib/jquery-ui.min.js"></script>
+    <script src="/js/lib/device.min.js"></script>
+    <script src="/js/plugins/jquery.rateit.min.js"></script>
+    <script src="/js/plugins/jquery.cycle2.min.js"></script>
+    <script src="/js/plugins/jquery.tools.min.js"></script>
+    <script src="/js/plugins/placeholders.min.js"></script>
+    <script src="/js/plugins/jquery.cover.js"></script>
+    <script src="/js/plugins/jquery.swipebox.js"></script>
+    <script src="/js/plugins/clockpicker.js"></script>
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+    <script type="text/javascript" src="/js/lib/jquery.payment.js"></script>
+    <? require_once 'Stripe/stripe_set_publishable_key.php'?>
+    <script src="/js/navigate.js"></script>
+    <script src="/js/base.js"></script>
     <!--pure chat-->
 <!--    <script type='text/javascript'>	$(window).load(function(){(function () { var done = false;	var script = document.createElement('script');	script.async = true;	script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) {	if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {	var w = new PCWidget({ c: 'fd48cc66-4e56-4133-bb45-3b5540ea1f4a', f: true });	done = true; }	};	})()});	</script>-->
     <!--end of pure chat-->
