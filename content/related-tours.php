@@ -1380,7 +1380,58 @@ if($id == 'tours' && $tours){
             </section>
             <?
             break;
-        case 'peter-and-paul-tour':
+            case 'food-tour-st-petersburg':
+            ?>
+                <section class="content_box tours-list_new  whiten">
+                    <h2 class="title-of-tours single-title">Related tours</h2>
+                    <div class="row">
+                        <figure class="tour-item">
+                            <img src="/i/tours-list/saint-petersburg/tour-of-st-petersburg-by-night.jpg"/>
+                            <figcaption>
+                                <h2>2 Days in Saint Petersburg</h2>
+                                <div class="price">$277 &mdash; 5 hours each day</div>
+                                <h3>Northern Venice and Versailles of Russia</h3>
+                                <div class="buttons-container">
+                                    <a class="view-button" href="/saint-petersburg/tours/2-day-tour-of-saint-petersburg">View tour</a>
+                                    <a class="book_button" href="/saint-petersburg/tours/2-day-tour-of-saint-petersburg/#book">Book tour</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure class="tour-item">
+                            <img src="/i/tours-list/saint-petersburg/peterhof-cascade-fountains.jpg"/>
+                            <figcaption>
+                                <h2>Peterhof Tour</h2>
+                                <div class="price">$177 &mdash; 7 hours</div>
+                                <h3>One of seven wonders of Russia</h3>
+                                <div class="buttons-container">
+                                    <a class="view-button" href="/saint-petersburg/tours/peterhof-tour">View tour</a>
+                                    <a class="book_button" href="/saint-petersburg/tours/peterhof-tour/#book">Book tour</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure class="tour-item">
+                            <img src="/i/tours-list/saint-petersburg/Tsaritsino-Museum-Reserve.jpg"/>
+                            <figcaption>
+                                <h2>River Boat Trip</h2>
+                                <div class="price">$117 &mdash; 3 hours</div>
+                                <h3>Picturesque canalways</h3>
+                                <div class="buttons-container">
+                                    <a class="view-button" href="/saint-petersburg/tours/boat-trip-tour">View tour</a>
+                                    <a class="book_button" href="/saint-petersburg/tours/boat-trip-tour/#book">Book tour</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="scroll_down black_scroll_down">
+                        <div class="scroll_down_container">
+                            <div class="scroll_down_text">Reviews</div>
+                            <div class="scroll_down_icon"></div>
+                        </div>
+                    </div>
+                </section>
+            <?
+            break;
+            case 'peter-and-paul-tour':
             ?>
             <section class="content_box tours-list_new  whiten">
                 <h2 class="title-of-tours single-title">Related tours</h2>
@@ -1431,8 +1482,8 @@ if($id == 'tours' && $tours){
             </section>
             <?
             break;
-        case 'peterhof-tour':
-?>
+            case 'peterhof-tour':
+            ?>
             <section class="content_box tours-list_new  whiten">
                 <h2 class="title-of-tours single-title">Related tours</h2>
                 <div class="row">
