@@ -79,7 +79,7 @@
                 $meta = "Discover Moscow in 2 days with Friendly Local Guides. Enjoy amazing Moscow sights, Moscow metro, Moscow streets, Russian people and the local Russian life. ";
                 break;
             case '3-days-in-moscow':
-                $title = "3 day tour in Moscow: All Must See of Moscow - Friendly Local Guides Tours";
+                $title = "3 day tour in Moscow - Friendly Local Guides Tours";
                 $meta = "Book this Moscow in 3 days tour and take pride in covering all of Moscow: from ancient Kremlin, Kitay Gorod and Zamoskvorechye to Moscow metro and off the beaten path of Moscow.";
                 break;
             case 'moscow-at-night':
