@@ -1335,14 +1335,14 @@ if($id == 'tours' && $tours){
                 <h2 class="title-of-tours single-title">Related tours</h2>
                 <div class="row">
                     <figure class="tour-item">
-                        <img src="/i/tours-list/saint-petersburg/Tsaritsino-Museum-Reserve.jpg"/>
+                        <img src="/i/tours-list/saint-petersburg/tour-of-st-petersburg-by-night.jpg"/>
                         <figcaption>
-                            <h2>River Boat Trip</h2>
-                            <div class="price">$117 &mdash; 3 hours</div>
-                            <h3>Picturesque canalways</h3>
+                            <h2>2 Days in Saint Petersburg</h2>
+                            <div class="price">$277 &mdash; 5 hours each day</div>
+                            <h3>Northern Venice and Versailles of Russia</h3>
                             <div class="buttons-container">
-                                <a class="view-button" href="/saint-petersburg/tours/boat-trip-tour">View tour</a>
-                                <a class="book_button" href="/saint-petersburg/tours/boat-trip-tour/#book">Book tour</a>
+                                <a class="view-button" href="/saint-petersburg/tours/2-day-tour-of-saint-petersburg">View tour</a>
+                                <a class="book_button" href="/saint-petersburg/tours/2-day-tour-of-saint-petersburg/#book">Book tour</a>
                             </div>
                         </figcaption>
                     </figure>
