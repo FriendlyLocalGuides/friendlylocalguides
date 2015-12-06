@@ -1,0 +1,58 @@
+
+/*CONTENT*/
+body{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 17px;
+    padding: 25px 0 50px;
+    width: 85%;
+    max-width: 1160px;
+    margin: auto;
+}
+ul{
+    margin: 0 0 15px;
+    list-style: none;
+    padding-left: 0;
+}
+h3{
+    font-size: 25.5px;
+    margin: 25px 0 5px;
+    line-height: 35.7px;
+}
+
+h4{
+    font-size: 1.1em;
+    margin: 15px 0 5px;
+}
+
+h4.containing-title{
+    font-size: 18.7px;
+}
+ul li{
+    font-size: 17px;
+    margin-bottom: 5px;
+    line-height: 23.8px;
+}
+
+p{
+    font-size: 17px;
+    margin: 0;
+    line-height: 23.8px;
+}
+
+.what_include table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: none;
+}
+.what_include table td {
+     width: 70%;
+}
+.what_include table th, .what_include table td {
+    vertical-align: middle;
+    border: 1px dashed rgba(0, 0, 0, .4) !important;
+    padding: 15px;
+}
+
+ol.bold li{
+    font-weight: bold;
+}

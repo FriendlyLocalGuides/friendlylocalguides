@@ -1,0 +1,1794 @@
+.main-page_btns{
+    margin-top: 25px;
+}
+
+.link_tag a{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.link_tag a:hover{
+    text-decoration: underline;
+}
+
+.sales{
+    display: block;
+    position: absolute;
+    width: 149px;
+    height: 169px;
+    /*background: url("../i/special/sale.png") no-repeat;*/
+    background: url("../i/special/free-coffee.png") no-repeat;
+    z-index: 100;
+}
+
+/*TODO*/
+.show-desktop{
+    display: none;
+}
+.sales-zInd{
+    transition: z-index 2s;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.overlay .thank-you{
+    font-size: 15px;
+    color: #000;
+    width: 240px;
+    height: 100px;
+    border: 3px solid rgba(0, 0, 0, .2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -123px;
+    text-align: center;
+    background: #fff;
+    overflow: hidden;
+}
+
+.overlay .thank-you .close-btn{
+    position: absolute;
+    right: -6px;
+    top: -4px;
+    font-size: 27px;
+    color: rgba(0, 0, 0, .6);
+    border: 1px solid;
+    line-height: 1;
+    width: 30px;
+    height: 30px;
+    border-radius: 0 0 40px 180px;
+    cursor: pointer;
+}
+
+.overlay .thank-you span{
+    padding-top: 30px;
+    display: inline-block;
+}
+
+.cycle-slideshow ul{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cycle-slideshow li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* pager */
+.cycle-pager {
+    text-align: center;
+    width: 100%;
+    z-index: 120;
+    position: absolute;
+    bottom: 30px;
+    overflow: hidden;
+}
+.cycle-pager span {
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: inset 0 0 3px #000;
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    color: #ddd;
+    cursor: pointer;
+    vertical-align: top;
+    margin-right: 7px;
+    position: relative;
+}
+
+.cycle-pager span:hover:after,
+.cycle-pager span.cycle-pager-active:after {
+    opacity: 1;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    background: #000;
+    color: #000;
+}
+
+.cycle-pager span:hover:after {
+    background: #212121;
+}
+
+.cycle-pager > * {
+    cursor: pointer;
+}
+
+
+.header_title{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -70px;
+    text-align: center;
+    z-index: 10;
+}
+
+.header_tour_content{
+    margin: auto;
+    max-width: 800px;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, .9);
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.scroll_down{
+    text-align: center;
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    width: 100%;
+    font-family: "Kaushan Script",cursive;
+    color: #fff;
+    font-size: 1.3em;
+    z-index: 1;
+}
+
+.tours-list_new .scroll_down{
+    bottom: -50px;
+}
+
+.book-tour .scroll_down{
+    bottom: auto;
+}
+
+@media screen and ( max-height: 900px ){
+    .black_scroll_down.scroll_down {
+        display: none;
+    }
+}
+
+.black_scroll_down.scroll_down {
+    color: #000;
+}
+
+.scroll_down_container{
+    display: inline-block;
+    cursor: pointer;
+    opacity: .6;
+}
+
+.scroll_down_container:hover{
+    opacity: 1;
+}
+
+.scroll_down_text{
+    padding-right: 3px;
+}
+
+/*scroll down icon*/
+
+.scroll_down_icon{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 44px;
+    height: 42px;
+    background: url("../i/scroll_down.png") no-repeat;
+    -webkit-animation-name: bouncing;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: bouncing;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    animation-name:  bouncing;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.black_scroll_down .scroll_down_icon{
+    background-position: right top;
+}
+
+@-webkit-keyframes bouncing {
+    from   {top: 5px; opacity: 1; }
+    50%  {top: 0; opacity: .5;}
+    to  {top: 5px; opacity: 1;}
+}
+
+@-moz-keyframes bouncing {
+    from   {top: 5px; opacity: 1; }
+    50%  {top: 0; opacity: .5;}
+    to  {top: 5px; opacity: 1;}
+}
+
+
+@keyframes bouncing {
+    from   {top: 5px; opacity: 1;}
+    50%  {top: 0; opacity: .5;}
+    to  {top: 5px; opacity: 1;}
+}
+
+/*end of scroll down icon*/
+
+
+.scroll-navigate{
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    display: none;
+    position: fixed;
+    z-index: 100;
+}
+
+.scroll-navigate ul{
+    overflow: hidden;
+}
+
+
+.scroll-navigate li{
+    opacity: .7;
+    border: 1px solid rgba(0,0,0,.3);
+    background: url("../i/scroll-icons.png") no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+    height: 24px;
+    width: 25px;
+}
+
+.scroll-navigate li.current{
+    opacity: 1;
+    border: 1px solid rgba(0,0,0,1);
+    /*border-color: rgba(255, 255, 255, 1);*/
+    /*border-color: transparent;*/
+    /*border: none;*/
+}
+
+.scroll-navigate .description-icon{
+    background-position: 0 0;
+}
+
+.scroll-navigate .description-icon.current{
+    background-position: 0 100%;
+}
+
+.scroll-navigate .info-icon{
+    background-position: -25px 0;
+}
+
+.scroll-navigate .info-icon.current{
+    background-position: -25px 100%;
+}
+
+.scroll-navigate .gallery-icon{
+    background-position: -50px 0;
+}
+
+.scroll-navigate .gallery-icon.current{
+    background-position: -50px 100%;
+}
+
+.scroll-navigate .reviews-icon{
+    background-position: -75px 0;
+}
+
+.scroll-navigate .reviews-icon.current{
+    background-position: -75px 100%;
+}
+
+
+.scroll-navigate li span{
+    display: none;
+}
+
+.white_theme .scroll-navigate{
+    /*background: rgba(255, 255, 255, .95);*/
+    /*box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);*/
+}
+
+.container{
+    /*display: none;*/
+}
+
+.content_box{
+    color: #000;
+}
+
+.text-note{
+    font-size: 1.55em;
+    margin-bottom: 15px;
+    line-height: 1;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    display: block;
+    width: 100%;
+    left: 0;
+    bottom: 100%;
+}
+
+.text-note a{
+    position: relative;
+}
+
+.text-note a:after{
+    content: "";
+    display: block;
+    border: 1px solid rgba(255, 255, 255, .9);
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    width: 100%;
+}
+
+.text-note a:hover:after{
+    border: none;
+}
+
+.header_tour_content h1{
+    display: inline-block;
+    font-size: 2.9em;
+    text-transform: uppercase;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    margin-bottom: 30px;
+    /*white-space: nowrap;*/
+}
+
+
+.header_tour_content h2{
+    font-size: 1.55em;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.content_box h3{
+    margin: 25px 0 5px;
+}
+
+.content_box h4{
+    font-size: 1.1em;
+    margin: 15px 0 5px;
+}
+
+.content_box .containing-title span{
+    font-weight: normal;
+}
+
+.content_container{
+    background: rgba(255, 255, 255, .9);
+}
+
+.content_box{
+    font-size: 17px;
+    padding: 125px 0 50px;
+    width: 85%;
+    max-width: 1160px;
+    margin: auto;
+}
+
+.about_page .content_box{
+    max-width: 800px;
+    padding-top: 250px;
+}
+
+.about_page .content_box p{
+    margin-bottom: 15px;
+}
+
+.about_page .slogan{
+    font-size: 2.3em;
+    display: block;
+}
+
+.about_page h5{
+    /*font-size: 2em;*/
+    font-weight: bold;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.about_page h5 span{
+    padding-top: 40px;
+    display: inline-block;
+    border-top: 1px solid;
+}
+
+.about_page h6{
+    font-weight: bold;
+    text-align: center;
+}
+.contact .contact-items{
+    margin-top: 5px;
+}
+
+.contact .contact-items li{
+    margin-bottom: 5px;
+}
+
+.contact .contact-items li .fa{
+    font-size: 35px;
+    margin-right: 5px;
+    color: rgba(0, 128, 0, 0.7);
+}
+
+.contact .contact-items li.contact-us{
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+.contact .contact-items li .fa,
+.contact .contact-items li strong{
+    vertical-align: middle;
+}
+
+.contact .contact-items li strong{
+    font-size: 1.1em;
+}
+
+.contact .contact-items li img{
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.contact.form-container form{
+    padding-top: 0;
+}
+
+
+.form-container.book-tour label.exp-field,
+.form-container.book-tour label.cvc-field{
+    float: left;
+    width: 50%;
+    padding-right: 5px;
+    box-sizing: border-box;
+}
+
+.payment-errors-wrapper{
+    text-align: center;
+    margin-bottom: 10px;
+    display: none;
+}
+.payment-errors{
+    display: inline-block;
+    background: rgba(255, 87, 73, .7);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 4px;
+}
+
+.form-container.book-tour label.card_number-field {
+    position: relative;
+    display: block;
+}
+
+.form-container.book-tour input.cc-num + .card-icon {
+    display: none;
+    width: 45px;
+    height: 30px;
+    background: url("../i/cards/cards.png") 45px 0 no-repeat;
+    position: absolute;
+}
+.form-container.book-tour input.cc-num.identified + .card-icon {
+    display: block;
+}
+.form-container.book-tour input.cc-num.visa + .card-icon{
+    background-position: 0 0;
+}
+.form-container.book-tour input.cc-num.mastercard + .card-icon{
+    background-position: -45px 0;
+}
+.form-container.book-tour input.cc-num.maestro + .card-icon{
+    background-position: -90px 0;
+}
+.form-container.book-tour input.cc-num.amex + .card-icon{
+    background-position: -135px 0;
+}
+.form-container.book-tour input.cc-num.discover + .card-icon{
+    background-position: -180px 0;
+}
+.form-container .input-item{
+    -webkit-backface-visibility: hidden;
+    box-shadow: none;
+    transition: all 0.3s ease 0s;
+}
+
+.form-container .input-item::-moz-placeholder{
+    opacity: .4;
+}
+
+.form-container .input-item:-moz-placeholder{
+    opacity: .4;
+}
+
+.form-container .input-item::-webkit-input-placeholder{
+    opacity: .8;
+}
+
+.form-container .input-item:-ms-input-placeholder{
+    opacity: .4;
+}
+
+.form-container .input-item:focus{
+    border-color: #fff;
+    box-shadow: 0 0 0.1875em #3498db;
+    outline: medium none;
+}
+
+.form-container .error_field,
+.form-container .error_field + .rateit{
+    box-shadow: 0 0 0.170em #ff5749;
+}
+
+.form-container .input-item.identified{
+    border-color: #2ecc71;
+}
+.form-container .input-item.identified:focus{
+    box-shadow: 0 0 .1875em #2ecc71;
+}
+
+.ui-datepicker{
+  /*  width: 100%;
+    max-width: 280px;*/
+    box-sizing: border-box;
+    padding: 0 !important;
+    border-color: #ddd;
+    border-bottom: none;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.ui-widget-header,.ui-datepicker .ui-corner-all{
+    background: none;
+    border: none;
+    border-radius: 0;
+}
+
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next{
+    font-weight: normal;
+    text-align: center;
+    top: 13px;
+}
+
+
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-prev-hover{
+    left: 5px;
+}
+
+.ui-datepicker .ui-datepicker-next,
+.ui-datepicker .ui-datepicker-next-hover{
+    right: 5px;
+}
+
+.ui-datepicker .fa-angle-left{
+    text-indent: -2px;
+}
+.ui-datepicker .fa-angle-right{
+    text-indent: 2px;
+}
+.ui-datepicker .fa-angle-left,
+.ui-datepicker .fa-angle-right{
+    font-size: 25px;
+    color: #777;
+    vertical-align: middle;
+}
+
+.ui-datepicker .ui-datepicker-title{
+    font-weight: normal;
+    color: #444;
+    margin: 10px 0;
+}
+
+.ui-datepicker th{
+    font-size: 12px;
+    padding-bottom: 3px;
+    color: #777;
+}
+
+.ui-datepicker table{
+    margin: 0;
+}
+
+.ui-datepicker table tr:last-child td{
+    border-bottom-color: #ddd;
+}
+
+.ui-datepicker td{
+    width: 32px;
+    border: 1px solid #ebeceb;
+}
+
+.ui-datepicker td:hover,
+.ui-datepicker td:hover a{
+    background: rgba(0, 128, 0, .5);
+    color: #fff;
+}
+
+.ui-widget-content td.ui-state-disabled{
+    background: transparent;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default{
+    background: #fff;
+    text-align: center;
+    color: #777;
+    border: none;
+}
+
+.ui-datepicker-calendar td:first-child,
+.ui-datepicker-calendar td:last-child{
+    border-left: 0;
+}
+
+.ui-datepicker-calendar td:last-child{
+    border-right: 0;
+}
+
+.clockpicker-popover .text-primary {
+    color: #428bca;
+}
+
+.clockpicker-popover{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.clockpicker-plate{
+    margin: auto;
+}
+.clockpicker-am-pm-block{
+    position: relative;
+    display: block;
+    height: 30px;
+    margin-bottom: 8px;
+}
+
+.clockpicker-popover .clockpicker-button{
+    position: absolute;
+    border-radius: 2px;
+    color: #777;
+}
+
+.am-button{
+    left: 5px;
+}
+.pm-button{
+   right: 5px;
+}
+
+.contact.form-container{
+    padding-top: 170px;
+}
+
+.contact.form-container h1{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.contact.form-container h5{
+    font-weight: normal;
+    font-size: 21px;
+    margin: 0 15px 25px;
+}
+
+.contact.form-container h5 a{
+    display: inline-block;
+    line-height: 1;
+    color: #0a35ff;
+    border-bottom: 1px solid;
+}
+
+.guide_page p{
+    margin-bottom: 15px;
+}
+
+.guide_page .description{
+    padding-top: 150px;
+}
+
+.guide_page .header_title,
+.guide_page .scroll_down{
+    z-index: 101;
+}
+
+.guide_page .scroll_down{
+    bottom: 70px;
+}
+
+.guide_page ol{
+    padding: 10px 0 0 30px;
+}
+
+.reviews .content_box li{
+    margin-bottom: 35px;
+}
+
+.reviews .content_box{
+    padding-top: 150px;
+}
+
+.reviews .tabs{
+    margin-bottom: 25px;
+}
+
+.tours-list_new .tabs{
+    padding: 8px;
+}
+
+.tabs .title-of-tours, .reviews h3{
+    color: #ccc;
+    font-weight: normal;
+    text-align: center;
+    margin: 0 15px 15px 0;
+    padding: 5px 10px;
+    float: left;
+    border: 1px darkgray solid;
+    border-bottom: none;
+    cursor: pointer;
+    box-shadow: -5px -5px 5px rgba(0, 0, 0, .1),
+    5px -5px 5px rgba(0, 0, 0, .1);
+
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.reviews h3:hover{
+    color: rgba(0, 0, 0, .7);
+}
+
+.title-of-tours.current,
+.reviews h3.current{
+    color: #000;
+    box-shadow: inset 3px 5px 5px rgba(0, 0, 0, .1),
+    inset -3px 5px 5px rgba(0, 0, 0, .1);
+    /*box-shadow: none;*/
+    /*box-shadow: inset 0 0 10px rgba(0, 0, 0, .3);*/
+
+}
+
+.tabs .title-of-tours{
+    color: #000;
+    font-weight: bold;
+    opacity: .6;
+}
+.tabs .title-of-tours.current{
+    opacity: 1;
+}
+
+.reviews h3:last-child{
+    margin-right: 0;
+}
+
+.tourist-writer{
+    margin-top: 15px;
+}
+
+
+.view_tour{
+    overflow: hidden;
+    background: no-repeat fixed center;
+    background-size: cover;
+}
+
+.overlay_view_tour{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .25);
+    z-index: 1;
+}
+
+.description_tour a{
+    color: #1F6CB9;
+    text-decoration: underline;
+}
+
+.description_tour a:hover{
+    text-decoration: none;
+}
+
+.description_tour ul{
+    margin-bottom: 15px;
+}
+
+.list-square-lis{
+    list-style: square;
+    padding-left: 20px;
+}
+
+.description_tour ol{
+    padding-left: 35px;
+}
+
+.description_tour ol.bold{
+    font-weight: bold;
+}
+
+.intro-txt{
+    margin-bottom: 15px;
+}
+
+.content_box li{
+    margin-bottom: 5px;
+}
+
+.what_include li strong{
+    display: block;
+}
+
+.what_include li span{
+    font-weight: normal;
+}
+
+.what_include table{
+    width: 100%;
+}
+
+.what_include table td{
+    width: 70%;
+}
+
+
+.what_include table th{
+    text-align: left;
+    padding-right: 10px;
+}
+
+/*TODO: temporary*/
+.what_include table tr:first-child{
+    display: none;
+}
+
+.what_include table th,
+.what_include table td{
+    vertical-align: middle;
+    border: 1px dashed rgba(0, 0, 0, .4);
+    padding: 15px;
+}
+
+.what_include dt{
+    margin-top: 10px;
+}
+
+.what_include dd{
+    font-style: italic;
+}
+
+
+.gallery{
+    position: relative;
+    background-color: #222;
+}
+
+.gallery .wrap_gallery{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    padding-bottom: 27px;
+    box-sizing: border-box;
+}
+
+.gallery  .main-image{
+    box-shadow: 0 0 100px #000;
+    margin-bottom: 2px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: calc(100% - 66px);
+}
+
+.single-title{
+    margin-bottom: 15px;
+    font-family: "Kaushan Script",cursive;
+}
+
+.row{
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+/*tripadvisor*/
+.tripadviser > ul{
+    /*text-align: justify;*/
+    text-align: center;
+}
+.tripadviser > ul li{
+    display: inline-block;
+    vertical-align: top;
+}
+.tripadviser > ul:after{
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+.tripadviser{
+    margin-bottom: 20px;
+}
+
+.thumb-list{
+    text-align: center;
+    font-size: 0;
+}
+
+.gallery  .thumb{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 64px;
+    height: 64px;
+    border: 1px solid rgba(255, 255, 255, .7);
+    margin-left: 2px;
+}
+
+
+.form-container{
+    position: relative;
+    color: #000;
+}
+.contact.form-container{
+    box-sizing: border-box;
+    margin: auto;
+    max-width: 595px;
+}
+
+.contact.form-container .mail_success{
+    margin-top: 70px;
+    position: static;
+}
+
+.form-container h2{
+    font-size: 3em;
+    text-align: center;
+}
+
+.form-container form{
+    padding-bottom: 20px;
+    display: block;
+    margin: 0 15px;
+}
+
+.form-container #review-form{
+    padding-top: 0;
+    margin: 0;
+}
+
+.form_box{
+    margin: auto;
+    max-width: 595px;
+}
+
+.preorder-img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form-container .input-item {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) inset;*/
+    outline: medium none;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.form-container.book-tour .form-row{
+    margin-bottom: 5px;
+}
+
+.wrap-preorder-img{
+    position: relative;
+}
+.wrap-preorder-img figcaption{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5px;
+}
+.wrap-preorder-img figcaption .price{
+    display: block;
+    line-height: 30px;
+    font-size: 1.2em;
+}
+.wrap-preorder-img figcaption h4,
+.wrap-preorder-img figcaption .price{
+    text-align: center;
+    color:#fff;
+}
+.wrap-preorder-img figcaption h4{
+    font-family: "Kaushan Script", cursive;
+    font-size: 1.35em;
+}
+.wrap-preorder-img .too_long_title{
+    display: none;
+}
+.form-container.book-tour h3{
+    text-align: center;
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #444;
+    margin-bottom: 10px;
+    clear: both;
+}
+
+.rate_us{
+    margin-left: 7px;
+    margin-bottom: 15px;
+}
+
+.rate-us_word{
+    display: inline-block;
+    vertical-align: bottom;
+    line-height: 25px;
+    margin-right: 5px;
+}
+
+.checkbox-review{
+    display: inline-block;
+    line-height: 15px;
+    margin-bottom: 15px;
+    margin-left: 7px;
+}
+
+.checkbox-review input{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.form-container .video-field{
+    display: none;
+}
+
+.form-container textarea{
+    font-family: "PT Sans", sans-serif;
+    height: auto;
+}
+
+.form-container .book_button{
+    padding: 0;
+    float: right;
+}
+
+.thanks-container{
+    color: #000;
+}
+
+.thanks-container iframe{
+    display: block;
+    height: 0;
+}
+
+.mail_success{
+    /*display: none;*/
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-top: -100px;
+}
+
+.mail_success .title-tour{
+    font-family: "Kaushan Script", cursive;
+    font-size: 2.7em;
+    line-height: 1;
+    margin-top: 20px;
+}
+
+.mail_success .price-tour{
+    font-family: "Kaushan Script", cursive;
+    font-size: 1.5em;
+    margin: 10px 0 20px;
+}
+
+.mail_success .success_txt{
+    font-size: 1.875em;
+    font-style: italic;
+}
+
+.mail_success .thank-you{
+    font-size: 1.6875em;
+    font-style: italic;
+    padding: 0 5px;
+}
+
+.main-page .logo{
+    margin: 0 0 35px;
+    font-size: 3em;
+}
+
+.main-page .slogan{
+    font-size: 2.1em;
+}
+
+/*SITEMAP*/
+.to-sitemap:hover{
+    text-decoration: underline;
+}
+.sitemap{
+    width: auto;
+    max-width: none;
+    background-image: url("../i/tile-feature-bg.png");
+    padding: 160px 10% 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #76869e;
+}
+
+.sitemap-list{
+    width: 80%;
+    margin: auto;
+}
+
+.sitemap-list > li{
+    text-transform: uppercase;
+
+}
+
+.sitemap-list li{
+    margin-bottom: 10px;
+}
+
+
+.sitemap-list li > ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    text-transform: none;
+
+}
+
+.sitemap-list a{
+    color: rgba(0, 0, 0, 0.67);
+}
+
+.sitemap-list a:hover{
+    text-decoration: underline;
+}
+/*FEATURES*/
+
+.features{
+    position: relative;
+    color: #76869e;
+    padding: 160px 10% 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-image: url("../i/tile-feature-bg.png");
+}
+
+.features.extra-features{
+    background: none;
+    padding: 10px 0 0;
+}
+
+.features.extra-features.guides-features{
+    padding: 8px;
+}
+
+.features.extra-features li{
+    display: block;
+    width: auto;
+
+}
+
+.heading-decoration{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.heading-decoration h1,
+.heading-decoration h4{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.heading-decoration .decor{
+    width: 80%;
+    position: relative;
+    margin: auto;
+}
+
+.decor-circle{
+    text-align: center;
+    width: 13px;
+    height: 13px;
+    border: 2px solid;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+    opacity: .7;
+}
+
+.heading-decoration .decor:before,
+.heading-decoration .decor:after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    top: 50%;
+    border-top: 1px solid;
+}
+
+.heading-decoration .decor:before{
+    left: 0;
+    right: 55%;
+}
+
+.heading-decoration .decor:after{
+    left: 55%;
+    right: 0;
+}
+
+.list-of-features{
+    font-size: 0;
+    margin-right: -10%;
+}
+
+.list-of-features li{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 75px;
+    padding-right: 10%;
+    vertical-align: top;
+    min-height: 100px;
+    position: relative;
+    font-size: 16px;
+}
+
+.list-of-features li span{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100px;
+}
+
+.list-of-features li:before{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url("../i/sprite-features.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -30px;
+}
+
+.guides-features .list-of-features li{
+    padding-left: 0;
+    min-height: initial;
+    margin-bottom: 25px;
+}
+
+.guides-features .list-of-features li:before{
+    content: normal;
+}
+
+.list-of-features li.feature-2:before{
+    background-position: -60px 0;
+}
+
+.list-of-features li.feature-3:before{
+    background-position: -120px 0;
+}
+
+.list-of-features li.feature-4:before{
+    background-position: -180px 0;
+}
+
+.list-of-features li.feature-5:before{
+    background-position: -240px 0;
+}
+
+.list-of-features li.feature-6:before{
+    background-position: 0 -60px;
+}
+
+.list-of-features li.feature-7:before{
+    background-position: -60px -60px;
+}
+
+.list-of-features li.feature-8:before{
+    background-position: -120px -60px;
+}
+
+.list-of-features li.feature-9:before{
+    background-position: -180px -60px;
+}
+
+.list-of-features li.feature-10:before{
+    background-position: -240px -60px;
+}
+
+.sub_header br,
+.wrap-preorder-img br{
+    display: none;
+}
+
+.hide{
+    display: none !important;
+}
+@media screen and (max-width:325px){
+    .link_tag{
+        margin-bottom: 10px;
+    }
+
+
+    .main-page h3{
+        margin-top: 50px;
+    }
+
+    .heading-decoration h1{
+        font-size: 21px;
+    }
+
+    .sitemap-list li{
+        margin-bottom: 10px;
+    }
+
+    .sitemap-list a{
+        font-size: 15px;
+    }
+
+}
+
+
+@media screen and (max-width:799px){
+    .text-note{
+        font-size: 17px;
+    }
+    .ui-datepicker,
+    .clockpicker-popover{
+        position: fixed !important;
+        width: 280px !important;
+        margin-left: -140px;
+        margin-top: -100px;
+        top: 50% !important;
+        left: 50% !important;
+    }
+    .features .scroll_down{
+        bottom: 10px;
+    }
+
+    .features .scroll_down_text{
+        display: none;
+    }
+
+    .sales{
+        width: 95px;
+        height: 95px;
+        left: 50%;
+        margin-left: -50px;
+        top: 140px;
+        background: url("../i/special/free-coffe-small.png") no-repeat;
+    }
+
+    .scroll-navigate{
+        top: 106px;
+        z-index: 100;
+        width: 100%;
+    }
+
+    .scroll-navigate ul{
+        width: 140px;
+        margin: auto;
+    }
+
+    .scroll-navigate li:first-child{
+        margin-left: 0;
+    }
+
+    .scroll-navigate li{
+        margin-left: 10px;
+        float: left;
+    }
+
+
+    .tripadviser > ul {
+        text-align: center;
+    }
+    .tripadviser .widSSP{
+        width: auto !important;
+    }
+    .video-reviews iframe{
+        width: 250px;
+        height: 180px;
+    }
+
+    .reviews h3{
+        font-size: 18px;
+    }
+    .about_page .slogan{
+        font-size: 1.5em;
+        display: block;
+    }
+
+    .about_page .content_box{
+        padding-top: 125px;
+    }
+
+    .about_page .content_box p {
+        font-size: 1em;
+    }
+
+    .contact.form-container h5{
+        font-size: 16px;
+    }
+
+    .content_box h3 {
+        font-size: 1.1em;
+    }
+
+    .about_page h6 {
+        font-size: 1.9em;
+    }
+
+
+    .reviews img.rating{
+        margin: 0 auto 10px;
+    }
+
+
+    .header_tour_content h1{
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .header_tour_content h2{
+        display: none;
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+
+    .main-page .header_tour_content{
+        max-width: 350px;
+    }
+
+    .main-page h3 {
+        margin-top: 30px;
+    }
+
+    .main-page .logo,
+    .main-page .slogan{
+        display: none;
+    }
+
+
+    .header_tour_content{
+        max-width: 315px;
+    }
+
+    .header_title{
+        margin-top: -35px;
+    }
+
+    .price{
+        font-size: 1.35em;
+    }
+
+    .header_title .book_button{
+        font-size: 1.2em;
+    }
+
+    .sub_header .too_long_title,
+    .sub_header .too_long_duration.show{
+        display: none;
+    }
+
+    .form-container form{
+        padding-top: 150px;
+    }
+
+    .form-container form{
+
+    }
+
+    .form-container .input-item{
+        height: 40px;
+    }
+
+    .form-container textarea{
+        min-height: 55px;
+        padding-top: 10px;
+    }
+
+    .form-container .book_button {
+        font-size: 1.2em;
+    }
+
+    .form-container.book-tour input.cc-num + .card-icon {
+        right: 5px;
+        top: 5px;
+    }
+
+    .form-container.book-tour label.cvc-field{
+        padding-right: 0;
+        padding-left: 5px;
+    }
+
+    .mail_success{
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:1199px){
+
+    .tripadviser > ul li:first-child{
+        margin-left: 90px;
+    }
+
+    .tripadviser > ul li:last-child{
+        margin-right: 90px;
+    }
+}
+
+@media screen and (min-width:600px){
+
+    .form-container.book-tour .form-row{
+        margin-right:  -5px;
+        margin-bottom: 20px;
+    }
+
+    .form-container.book-tour input.cc-num + .card-icon {
+        right: 16px;
+        top: 13px;
+    }
+    .form-container.book-tour h3{
+        margin-bottom: 15px;
+        font-size: 30px;
+    }
+    .wrap-preorder-img figcaption{
+        padding: 10px;
+    }
+    .wrap-preorder-img figcaption h4{
+        font-size: 1.9em;
+    }
+    .wrap-preorder-img figcaption .price{
+        line-height: 40px;
+        font-size: 1.6em;
+    }
+    .form-container.book-tour label{
+        float: left;
+        width: 50%;
+        padding-right: 5px;
+        box-sizing: border-box;
+    }
+
+    .label-textarea{
+        padding-right: 5px;
+        clear: both;
+    }
+    .form-container.book-tour label.card_number-field{
+        width: 100%;
+    }
+
+    .gallery  .main-image{
+        height: calc(100% - 102px);
+    }
+
+    .gallery  .thumb{
+        width: 100px;
+        height: 100px;
+    }
+
+    .video-reviews iframe{
+        width: 360px;
+        height: 280px;
+    }
+
+    .reviews h3{
+        font-size: 24px;
+    }
+
+    .form-container form{
+        padding-top: 150px;
+    }
+
+    .form-container .input-item{
+        height: 55px;
+        font-size: 21px;
+    }
+
+    .form-container textarea{
+        min-height: 100px;
+        padding-top: 17px;
+    }
+
+    .form-container .book_button {
+        font-size: 1.5em;
+    }
+
+    .mail_success{
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width:800px){
+    .show-mobile{
+        display: none;
+    }
+    .show-desktop{
+        display: inline-block;
+    }
+    .features {
+        padding-top: 180px;
+    }
+
+    .heading-decoration .decor:before{
+        right: 52%;
+    }
+
+    .heading-decoration .decor:after{
+        left: 52%;
+    }
+    .list-of-features li{
+        font-size: 18px;
+        width: 50%;
+        display: inline-block;
+    }
+
+    .sales{
+        right: 35px;
+        top: 120px;
+    }
+
+    .scroll-navigate{
+        top: 50%;
+        right: 20px;
+        margin-top: -20px;
+    }
+
+    .scroll-navigate li{
+        margin-bottom: 10px;
+    }
+
+
+    .video-reviews iframe{
+        width: 640px;
+        height: 360px;
+    }
+
+    .about_page .content_box p {
+        font-size: 1.3em;
+    }
+
+    .content_box h3 {
+        font-size: 1.3em;
+    }
+
+    .about_page h6 {
+        font-size: 2.3em;
+    }
+
+    .form-container{
+        font-size: 16px;
+    }
+
+    .header_tour_content{
+        max-width: 570px;
+    }
+
+    .form-container .book_button {
+        font-size: 1.7em;
+    }
+
+
+    .reviews img.rating{
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .reviews .content_box{
+        padding-top: 150px;
+    }
+}
+
+@media screen and (min-width:960px){
+
+    .header_tour_content{
+        margin: 0 auto 20px;
+        max-width: 700px;
+        padding-bottom: 20px;
+    }
+    .about_page .content_box p {
+        font-size: 1.5em;
+    }
+
+    .content_box h3 {
+        font-size: 1.5em;
+    }
+
+    .about_page h6{
+        font-size: 3em;
+    }
+
+    .contact.form-container{
+        padding-top: 200px;
+    }
+
+    .contact.form-container h1{
+        font-size: 40px;
+        margin-bottom: 35px;
+    }
+
+    .guide_page p,
+    .guide_page ol li{
+        font-size: 21px;
+        margin-bottom: 15px;
+    }
+
+    .reviews h3{
+        font-size: 35px;
+    }
+
+    .mail_success{
+        font-size: 16px;
+    }
+}

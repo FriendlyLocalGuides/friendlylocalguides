@@ -18,22 +18,23 @@
     <meta content="<?=$meta?>" name="description">
     <link rel="shortcut icon" href="/i/fav.ico" type="image/x-icon">
     <link rel="icon" href="/i/fav.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/css/reset.css"/>
     <link href='//fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/css/jquery-ui.min.css"/>
-    <link rel="stylesheet" href="/css/base.css"/>
-    <link rel="stylesheet" href="/css/font-awesome.css"/>
-    <link rel="stylesheet" href="/css/sidebar.css"/>
-    <link rel="stylesheet" href="/css/header.css"/>
-    <link rel="stylesheet" href="/css/rateit.css"/>
-    <link rel="stylesheet" href="/css/clockpicker.css"/>
-    <link rel="stylesheet" href="/css/navigation.css"/>
-    <link rel="stylesheet" href="/css/content.css"/>
-    <link rel="stylesheet" href="/css/tours.css"/>
-    <link rel="stylesheet" href="/css/jquery.cover.css"/>
-    <link rel="stylesheet" href="/css/swipebox.css"/>
-    <link rel="stylesheet" href="/css/css3-styles.css"/>
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <!-- <link rel="stylesheet" href="/css/reset.css"/>
+    -<link rel="stylesheet" href="/css/jquery-ui.min.css"/>
+     <link rel="stylesheet" href="/css/base.css"/>
+     <link rel="stylesheet" href="/css/font-awesome.css"/>
+     <link rel="stylesheet" href="/css/sidebar.css"/>
+     <link rel="stylesheet" href="/css/header.css"/>
+     <link rel="stylesheet" href="/css/rateit.css"/>
+     <link rel="stylesheet" href="/css/clockpicker.css"/>
+     <link rel="stylesheet" href="/css/navigation.css"/>
+     <link rel="stylesheet" href="/css/content.css"/>
+     <link rel="stylesheet" href="/css/tours.css"/>
+     <link rel="stylesheet" href="/css/jquery.cover.css"/>
+     <link rel="stylesheet" href="/css/swipebox.css"/>
+     <link rel="stylesheet" href="/css/css3-styles.css"/>-->
 </head>
 <body>
     <header class="clearfix">
