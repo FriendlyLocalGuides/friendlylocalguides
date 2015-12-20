@@ -50,7 +50,7 @@
                     <span>No extra fees for additional traveler if you book 2- or 3-day tour. And only $20 per additional person on all other tours (you can pay in cash).</span>
                 </li>
                 <li class="feature-4">
-                    <span>Private tors in Moscow, customized itinerary, personalized experience. Choose the sights YOU want, start the time YOU choose, go to places YOU are most interested in, ask any questions YOU have. All our attention to you, and only you.</span>
+                    <span>Private tours in Moscow, customized itinerary, personalized experience. Choose the sights YOU want, start the time YOU choose, go to places YOU are most interested in, ask any questions YOU have. All our attention to you, and only you.</span>
                 </li>
                 <li class="feature-5">
                     <span>Flexibility during your tour: changes can be made at any time to suit your individual preferences. Go at your own pace and decide when to stop for a coffee break.</span>
