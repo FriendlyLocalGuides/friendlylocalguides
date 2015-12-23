@@ -28,7 +28,13 @@ $title = 'Members Page';
                         <a href="/index.php?id=editor&&city=saint-petersburg" target="_blank">Saint Petersburg tours</a>
                     </li>
                     <li>
+                        <a href="/index.php?id=editor&&city=new-york" target="_blank">New York tours</a>
+                    </li>
+                    <li>
                         <a href="/index.php?id=editor&&city=san-francisco" target="_blank">San Francisco tours</a>
+                    </li>
+                    <li>
+                        <a href="/index.php?id=editor&&city=lisbon" target="_blank">Lisbon tours</a>
                     </li>
                 </ul>
             </div>

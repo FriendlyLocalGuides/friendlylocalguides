@@ -22,6 +22,9 @@
     <link href='//fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/styles.css"/>
 
+
+    <script src="/js/lib/jquery-1.11.0.min.js"></script>
+    <script src="/js/plugins/jquery.cover.js"></script>
     <? include_once 'analyticstracking.php'?>
     <? include_once 'yandexmetrika.php'?>
 </head>
@@ -44,7 +47,9 @@
                                     <div class="inner-dropdown-submenu nav-drop_down">
                                         <a class="list_item nav-list_item" href="/moscow/tours">Moscow</a>
                                         <a class="list_item nav-list_item" href="/saint-petersburg/tours">Saint Petersburg</a>
-                                        <a class="list_item nav-list_item last_item" href="/san-francisco/tours">San Francisco</a>
+                                        <a class="list_item nav-list_item" href="/new-york/tours">New York</a>
+                                        <a class="list_item nav-list_item" href="/san-francisco/tours">San Francisco</a>
+                                        <a class="list_item nav-list_item last_item" href="/lisbon/tours">Lisbon</a>
                                     </div>
                                 </div>
                             </div>
@@ -95,8 +100,6 @@
         <a class="to-sitemap" href="/sitemap">sitemap</a>
         <div class="rights">&copy; Copyright 2015 Friendly Local Guides, LLC. All Rights Reserved</div>
     </footer>
-
-    <script src="/js/lib/jquery-1.11.0.min.js"></script>
     <script src="/js/lib/modernizr.min.js"></script>
     <script src="/js/lib/jquery-ui.min.js"></script>
     <script src="/js/lib/device.min.js"></script>
@@ -104,7 +107,6 @@
     <script src="/js/plugins/jquery.cycle2.min.js"></script>
     <script src="/js/plugins/jquery.tools.min.js"></script>
     <script src="/js/plugins/placeholders.min.js"></script>
-    <script src="/js/plugins/jquery.cover.js"></script>
     <script src="/js/plugins/jquery.swipebox.js"></script>
     <script src="/js/plugins/clockpicker.js"></script>
     <script type="text/javascript" src="https://js.stripe.com/v2/"></script>

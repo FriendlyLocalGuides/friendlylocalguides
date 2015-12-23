@@ -10,6 +10,8 @@ if($city && $id == 'tours' && !$tours){
         case 'moscow': include 'moscow_tours_list.php'; break;
         case 'saint-petersburg': include 'spb_tours_list.php'; break;
         case 'san-francisco': include 'sf_tours_list.php'; break;
+        case 'new-york': include 'newyork_tours_list.php'; break;
+        case 'lisbon': include 'lisbon_tours_list.php'; break;
     }
 }
 
