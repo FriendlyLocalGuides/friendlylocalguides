@@ -12,6 +12,7 @@ if($city && $id == 'tours' && !$tours){
         case 'san-francisco': include 'sf_tours_list.php'; break;
         case 'new-york': include 'newyork_tours_list.php'; break;
         case 'lisbon': include 'lisbon_tours_list.php'; break;
+        case 'milan': include 'milan_tours_list.php'; break;
     }
 }
 

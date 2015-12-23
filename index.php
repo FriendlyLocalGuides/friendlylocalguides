@@ -49,7 +49,8 @@
                                         <a class="list_item nav-list_item" href="/saint-petersburg/tours">Saint Petersburg</a>
                                         <a class="list_item nav-list_item" href="/new-york/tours">New York</a>
                                         <a class="list_item nav-list_item" href="/san-francisco/tours">San Francisco</a>
-                                        <a class="list_item nav-list_item last_item" href="/lisbon/tours">Lisbon</a>
+                                        <a class="list_item nav-list_item" href="/lisbon/tours">Lisbon</a>
+                                        <a class="list_item nav-list_item last_item" href="/milan/tours">Milan</a>
                                     </div>
                                 </div>
                             </div>

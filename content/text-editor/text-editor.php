@@ -15,6 +15,7 @@ switch($city){
     case 'san-francisco': $tourTable = 'tours_sanfrancisco'; break;
     case 'new-york': $tourTable = 'tours_newyork'; break;
     case 'lisbon': $tourTable = 'tours_lisbon'; break;
+    case 'milan': $tourTable = 'tours_milan'; break;
 }
 $sql_tour = "SELECT title, title_2, subtitle, price, duration, description, img_link_item FROM $tourTable WHERE url = '$url'";
 

@@ -36,6 +36,9 @@ $title = 'Members Page';
                     <li>
                         <a href="/index.php?id=editor&&city=lisbon" target="_blank">Lisbon tours</a>
                     </li>
+                    <li>
+                        <a href="/index.php?id=editor&&city=milan" target="_blank">Milan tours</a>
+                    </li>
                 </ul>
             </div>
         </div>

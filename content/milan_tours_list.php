@@ -11,12 +11,13 @@
         case 'saint-petersburg': $toursListTable = 'tours_spb'; break;
         case 'new-york': $toursListTable = 'tours_newyork'; break;
         case 'lisbon': $toursListTable = 'tours_lisbon'; break;
+        case 'milan': $toursListTable = 'tours_milan'; break;
     }
     $sql_tours_list = "select * from $toursListTable";
 ?>
 <section class="content_box tours-list_new  whiten">
     <div class="tabs clearfix">
-        <h1 class="title-of-tours">Lisbon tours</h1>
+        <h1 class="title-of-tours">Milan tours</h1>
 <!--        <h2 class="title-of-tours">Features</h2>-->
     </div>
     <div class="panes">

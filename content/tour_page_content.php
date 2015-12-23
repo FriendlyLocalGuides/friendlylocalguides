@@ -12,6 +12,7 @@ switch($city){
     case 'san-francisco': $tourTable = 'tours_sanfrancisco'; break;
     case 'new-york': $tourTable = 'tours_newyork'; break;
     case 'lisbon': $tourTable = 'tours_lisbon'; break;
+    case 'milan': $tourTable = 'tours_milan'; break;
 }
 $sql_tour = "select * from $tourTable where url = '$currentPage'";
 foreach ($dbh->query($sql_tour) as $row){
