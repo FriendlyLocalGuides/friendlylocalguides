@@ -25,6 +25,20 @@
 
     <script src="/js/lib/jquery-1.11.0.min.js"></script>
     <script src="/js/plugins/jquery.cover.js"></script>
+    <script src="/js/lib/modernizr.min.js"></script>
+    <script src="/js/lib/jquery-ui.min.js"></script>
+    <script src="/js/lib/device.min.js"></script>
+    <script src="/js/plugins/jquery.rateit.min.js"></script>
+    <script src="/js/plugins/jquery.cycle2.min.js"></script>
+    <script src="/js/plugins/jquery.tools.min.js"></script>
+    <script src="/js/plugins/placeholders.min.js"></script>
+    <script src="/js/plugins/jquery.swipebox.js"></script>
+    <script src="/js/plugins/clockpicker.js"></script>
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+    <script type="text/javascript" src="/js/lib/jquery.payment.js"></script>
+    <? require_once 'Stripe/stripe_set_publishable_key.php'?>
+    <script src="/js/navigate.js"></script>
+    <script src="/js/base.js"></script>
     <? include_once 'analyticstracking.php'?>
     <? include_once 'yandexmetrika.php'?>
 </head>
@@ -50,7 +64,11 @@
                                         <a class="list_item nav-list_item" href="/new-york/tours">New York</a>
                                         <a class="list_item nav-list_item" href="/san-francisco/tours">San Francisco</a>
                                         <a class="list_item nav-list_item" href="/lisbon/tours">Lisbon</a>
-                                        <a class="list_item nav-list_item last_item" href="/milan/tours">Milan</a>
+                                        <a class="list_item nav-list_item" href="/milan/tours">Milan</a>
+                                        <a class="list_item nav-list_item" href="/los-angeles/tours">Los Angeles</a>
+                                        <a class="list_item nav-list_item last_item" href="/washington/tours">Washington</a>
+                                        <!--<a class="list_item nav-list_item" href="/chicago/tours">Chicago</a>
+                                        <a class="list_item nav-list_item last_item" href="/paris/tours">Paris</a>-->
                                     </div>
                                 </div>
                             </div>
@@ -101,20 +119,6 @@
         <a class="to-sitemap" href="/sitemap">sitemap</a>
         <div class="rights">&copy; Copyright 2015 Friendly Local Guides, LLC. All Rights Reserved</div>
     </footer>
-    <script src="/js/lib/modernizr.min.js"></script>
-    <script src="/js/lib/jquery-ui.min.js"></script>
-    <script src="/js/lib/device.min.js"></script>
-    <script src="/js/plugins/jquery.rateit.min.js"></script>
-    <script src="/js/plugins/jquery.cycle2.min.js"></script>
-    <script src="/js/plugins/jquery.tools.min.js"></script>
-    <script src="/js/plugins/placeholders.min.js"></script>
-    <script src="/js/plugins/jquery.swipebox.js"></script>
-    <script src="/js/plugins/clockpicker.js"></script>
-    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
-    <script type="text/javascript" src="/js/lib/jquery.payment.js"></script>
-    <? require_once 'Stripe/stripe_set_publishable_key.php'?>
-    <script src="/js/navigate.js"></script>
-    <script src="/js/base.js"></script>
     <!--pure chat-->
 <!--    <script type='text/javascript'>	$(window).load(function(){(function () { var done = false;	var script = document.createElement('script');	script.async = true;	script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) {	if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {	var w = new PCWidget({ c: 'fd48cc66-4e56-4133-bb45-3b5540ea1f4a', f: true });	done = true; }	};	})()});	</script>-->
     <!--end of pure chat-->

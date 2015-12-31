@@ -11,8 +11,12 @@
                 <li class="link_tag inline-block"><a href="/saint-petersburg/tours">Saint Petersburg</a> | </li>
                 <li class="link_tag inline-block"><a href="/new-york/tours">New York</a> | </li>
                 <li class="link_tag inline-block"><a href="/san-francisco/tours">San Francisco</a> | </li>
-                <li class="link_tag inline-block"><a href="/lisbon/tours">Lisbon</a></li>
-<!--                <li class="link_tag inline-block"><a href="/milan/tours">Milan</a></li>-->
+                <li class="link_tag inline-block"><a href="/lisbon/tours">Lisbon</a> | </li>
+                <li class="link_tag inline-block"><a href="/milan/tours">Milan</a> | </li>
+                <li class="link_tag inline-block"><a href="/los-angeles/tours">Los Angeles</a> | </li>
+                <li class="link_tag inline-block"><a href="/washington/tours">Washington</a></li>
+                <!--<li class="link_tag inline-block"><a href="/chicago/tours">Chicago</a> | </li>
+                <li class="link_tag inline-block"><a href="/paris/tours">Paris</a></li>-->
             </ul>
         </div>
     </div>
