@@ -67,8 +67,8 @@
                                         <a class="list_item nav-list_item" href="/milan/tours">Milan</a>
                                         <a class="list_item nav-list_item" href="/los-angeles/tours">Los Angeles</a>
                                         <a class="list_item nav-list_item last_item" href="/washington/tours">Washington</a>
-                                        <!--<a class="list_item nav-list_item" href="/chicago/tours">Chicago</a>
-                                        <a class="list_item nav-list_item last_item" href="/paris/tours">Paris</a>-->
+                                        <a class="list_item nav-list_item" href="/chicago/tours">Chicago</a>
+                                        <a class="list_item nav-list_item last_item" href="/paris/tours">Paris</a>
                                     </div>
                                 </div>
                             </div>

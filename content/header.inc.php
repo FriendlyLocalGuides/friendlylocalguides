@@ -48,6 +48,42 @@
         $meta = "Most interesting tours in San Francisco, California with Friendly Local Guides.";
     }
 
+
+    if($id == 'tours' && $city == 'new-york' && !$guides){
+        $title = "New York tours, private city tours in New York - Friendly Local Guides";
+        $meta = "New York private tours with Friendly Local Guides starting from $227. Memorable city tours with private guides in USA.";
+    }
+
+    if($id == 'tours' && $city == 'lisbon' && !$guides){
+        $title = "Lisbon tours, private city tours in Lisbon - Friendly Local Guides";
+        $meta = "Lisbon private tours with Friendly Local Guides starting from $227. Plenty of spectacular views and iconic places for photoshoot in Spanish.";
+    }
+
+    if($id == 'tours' && $city == 'milan' && !$guides){
+        $title = "Milan tours, private city tours in Milan - Friendly Local Guides";
+        $meta = "Milan private tours with Friendly Local Guides starting from $227. Iconic places for photoshoot and plenty of spectacular views in Italy.";
+    }
+
+    if($id == 'tours' && $city == 'los-angeles' && !$guides){
+        $title = "";
+        $meta = "";
+    }
+
+    if($id == 'tours' && $city == 'washington' && !$guides){
+        $title = "";
+        $meta = "";
+    }
+
+    if($id == 'tours' && $city == 'chicago' && !$guides){
+        $title = "";
+        $meta = "";
+    }
+
+    if($id == 'tours' && $city == 'paris' && !$guides){
+        $title = "";
+        $meta = "";
+    }
+
     if($id == 'tours' && $tours){
         switch($tours){
             case 'free-tour':
@@ -200,6 +236,43 @@
                 $title = "San Francisco bike tours - Friendly Local Guides";
                 $meta = "Best bike tours in San Francisco. See places of SF you might not see on your own with Friendly Local Guides.";
                 break;
+
+            case 'new-york-tour':
+                $title = "Must See New York Tour - Private City Tours with Friendly Local Guides";
+                $meta = "10 must see of New York. This tour is all about NYC’s best assets.";
+                break;
+
+            case 'lisbon-tour':
+                $title = "Must See Lisbon Tour - Private City Tours with Friendly Local Guides";
+                $meta = "10 must see of Lisbon. Experience all the gems of the city: Lisbon’s attractions and dining hot spots. The oldest building, the oldest bookshop, and if you fancy, the oldest restaurant in Lisbon! ";
+                break;
+
+            case 'milan-tour':
+                $title = "Must See Milan Tour - Private City Tours with Friendly Local Guides";
+                $meta = "10 must see of Milan. Soak up the amazing atmosphere of the Fashion Capital of the World and experience 15 best things to do in Milan in one day!";
+                break;
+
+            case 'los-angeles-tour':
+                $title = "";
+                $meta = "";
+                break;
+
+            case 'washington-tour':
+                $title = "";
+                $meta = "";
+                break;
+
+            case 'chicago-tour':
+                $title = "";
+                $meta = "";
+                break;
+
+            case '2-days-in-paris':
+                $title = "";
+                $meta = "";
+                break;
+
+
         }
     }
 
