@@ -1,5 +1,0 @@
-{
-  "require": {
-    "stripe/stripe-php": "v2.2.0"
-  }
-}

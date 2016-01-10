@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /index.php
-Disallow: */?attachment
-Host: friendlylocalguides.com
-Sitemap: https://friendlylocalguides.com/sitemap.xml
