@@ -16,7 +16,7 @@
 <section class="content_box tours-list_new  whiten">
     <div class="tabs clearfix">
         <h1 class="title-of-tours">San Francisco tours</h1>
-        <h2 class="title-of-tours">Features</h2>
+<!--        <h2 class="title-of-tours">Features</h2>-->
     </div>
     <div class="panes">
         <div class="pane">
@@ -39,7 +39,7 @@
         }
     ?>
         </div>
-        <div class="pane features extra-features height-viewport" style="display: none;">
+        <!--<div class="pane features extra-features height-viewport" style="display: none;">
             <ul class="list-of-features">
                 <li class="feature-1">
                     <span>Meet a local and make a new friend in San Francisco. Choose your own San Francisco tour guide, see the photos and read the fun facts. We can even organize a Skype call with your private guide once you book the tour. Ask your guide questions about any subject and get genuinely connected with your new local friend.</span>
@@ -71,6 +71,6 @@
                 <li class="feature-10">
                     <span>Expert local advice. Apart from super friendly San Francisco sightseeing tours, we are also good at advising how to make the most of your time in th city. Best coffee shops, best hotels, reliable and affordable taxi service etc. Just ask us!</span>                </li>
             </ul>
-        </div>
+        </div>-->
     </div>
 </section>
