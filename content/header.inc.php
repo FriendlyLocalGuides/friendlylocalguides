@@ -1,8 +1,11 @@
 <?
     include_once 'get_url.php';
 
-    $title = "Moscow, Saint Petersburg & San Francisco Tours - Private City Tours with Friendly Local Guides";
-    $meta = "Private tours to Moscow, Saint Petersburg & San Francisco. Book now and have fun!";
+    if(!$id){
+        $title = "Private City Tours in USA, Russia and Europe with Friendly Local Guides";
+        $meta = "Private tours to USA, Russia and Europe. Book now and have fun!";
+        $keywords = "Private tours, Moscow, Saint Petersburg, New York, San Francisco, Lisbon, Milan, Los Angeles, Washington, Chicago, Paris, Friendly Local Guides";
+    }
 
 
     if(!$tours && !$guides){
@@ -28,7 +31,9 @@
                 $meta = "Get in touch with us. We'd love to hear from you! Feel free to ask us any questions on our Facebook and Google+ pages";
                 break;
             case 'sitemap':
-                $title = "Sitemap - Private City Tours with Friendly Local Guides";
+                $title = "Sitemap - Friendly Local Guides";
+                $meta = "";
+                $keywords = "";
                 break;
         }
     }
@@ -44,44 +49,52 @@
     }
 
     if($id == 'tours' && $city == 'san-francisco' && !$guides){
-        $title = "San Francisco tours - Friendly Local Guides";
-        $meta = "Most interesting tours in San Francisco, California with Friendly Local Guides.";
+        $title = "San Francisco tours, private city tours in San Francisco  - Friendly Local Guides";
+        $meta = "Enjoy San Francisco tours with Friendly Local Guides. Walking, driving, biking or night tours creating for your most interesting city visiting.";
+        $keywords = "San Francisco tours, private city tours in San Francisco, Friendly Local Guides";
     }
 
 
     if($id == 'tours' && $city == 'new-york' && !$guides){
-        $title = "New York tours, private city tours in New York - Friendly Local Guides";
-        $meta = "New York private tours with Friendly Local Guides starting from $227. Memorable city tours with private guides in USA.";
+        $title = "New York tours, private city tours in NYC - Friendly Local Guides";
+        $meta = "Take our New York tours and visit must sees places in NYC. 1, 2 or 3 days tour, personal packages and other fun!";
+        $keywords = "New York tours, private city tours in NYC, Friendly Local Guides";
     }
 
     if($id == 'tours' && $city == 'lisbon' && !$guides){
         $title = "Lisbon tours, private city tours in Lisbon - Friendly Local Guides";
-        $meta = "Lisbon private tours with Friendly Local Guides starting from $227. Plenty of spectacular views and iconic places for photoshoot in Spanish.";
+        $meta = "Book Lisbon tours and have fun with Friendly Local Guides. Must see packages and attractions in Lisbon, Portugal.";
+        $keywords = "Lisbon sightseeing, Lisbon tours, Lisbon private city tours, Friendly Local Guides";
     }
 
     if($id == 'tours' && $city == 'milan' && !$guides){
         $title = "Milan tours, private city tours in Milan - Friendly Local Guides";
-        $meta = "Milan private tours with Friendly Local Guides starting from $227. Iconic places for photoshoot and plenty of spectacular views in Italy.";
+        $meta = "Book Milan tours and have fun with Friendly Local Guides. Must see packages and attractions in Milan, Italy.";
+        $keywords = "Milan tours, private city tours in Milan, Book Milan tours, must see packages, attractions, Italy, Friendly Local Guides";
     }
 
     if($id == 'tours' && $city == 'los-angeles' && !$guides){
-        $title = "";
-        $meta = "";
+        $title = "Los Angeles tours, private tour packages in LA, Hollywood - Friendly Local Guides";
+        $meta = "Book Los Angeles tours and have fun with Friendly Local Guides. Must see packages and attractions in  LA, Hollywood.";
+        $keywords = "Los Angeles tours, private tour packages in LA, Hollywood, must see attractions, Friendly Local Guides";
     }
 
     if($id == 'tours' && $city == 'washington' && !$guides){
-        $title = "";
-        $meta = "";
+        $title = "Washington tours, private city tours in Washington DC - Friendly Local Guides";
+        $meta = "Washington DC private tours and must see attraction. Visit must see places with Friendly Local Guides.";
+        $keywords = "Washington tours, private city tours in Washington DC, Friendly Local Guides";
     }
 
     if($id == 'tours' && $city == 'chicago' && !$guides){
-        $title = "";
-        $meta = "";
+        $title = "Chicago tours, private city tours in Chicago - Friendly Local Guides";
+        $meta = "Chicago city tours, sightseeing, activities and packages. Book online private tours to Chicago and have fun!";
+        $keywords = "Tour chicago, Chicago attractions, chicago museums, chicago tours, chicago bike tours, chicago sightseeing, Friendly Local Guides";
     }
 
     if($id == 'tours' && $city == 'paris' && !$guides){
-        $title = "";
-        $meta = "";
+        $title = "Paris tours, private city tours in Paris, France - Friendly Local Guides";
+        $meta = "Paris tours with flexible itinerary, fun and friendly guides. Visit must sees Paris attractions without boring lectures.";
+        $keywords = "Paris tours, private city tours in Paris, France, Friendly Local Guides";
     }
 
     if($id == 'tours' && $tours){
@@ -238,38 +251,45 @@
                 break;
 
             case 'new-york-tour':
-                $title = "Must See New York Tour - Private City Tours with Friendly Local Guides";
-                $meta = "10 must see of New York. This tour is all about NYC’s best assets.";
+                $title = "1 day tour in New York City - Private tours with Friendly Local Guides";
+                $meta = "Visit TOP 10 places in New York in 1 day with Friendly Local Guides: Central Park, The Metropolitan Museum of Art, Rockefeller Center, Grand Central Terminal, Times Square, Broadway, 9/11 Memorial, Brooklyn Bridge, One World Observatory - World Trade Center, Statue of Liberty and Ellis Island.";
+                $keywords = "1 day tour in New York, private New York tours, Friendly Local Guides, Central Park, The Metropolitan Museum of Art, Rockefeller Center, Grand Central Terminal, Times Square, Broadway, 9/11 Memorial, Brooklyn Bridge, One World Observatory - World Trade Center, Statue of Liberty and Ellis Island";
                 break;
 
             case 'lisbon-tour':
-                $title = "Must See Lisbon Tour - Private City Tours with Friendly Local Guides";
-                $meta = "10 must see of Lisbon. Experience all the gems of the city: Lisbon’s attractions and dining hot spots. The oldest building, the oldest bookshop, and if you fancy, the oldest restaurant in Lisbon! ";
+                $title = "1 day tour in Lisbon -  private city tours with Friendly Local Guides";
+                $meta = "Visit TOP 10 places in Lisbon in 1 day with Friendly Local Guides: Commercial Square / Victory Arch, Rossio Square, Restauradores Square and Liberdade Avenue, Carmo Square, Chiado, Bairro Alto, The Mouraria, Lisbon's Castle neighbourhood, Lisbon Cathedral, The Alfama.";
+                $keywords = "1 day tour in Lisbon, Lisbon private city tours, Commercial Square / Victory Arch, Rossio Square, Restauradores Square and Liberdade Avenue, Carmo Square, Chiado, Bairro Alto, The Mouraria, Lisbon's Castle neighbourhood, Lisbon Cathedral, The Alfama, Friendly Local Guides";
                 break;
 
             case 'milan-tour':
-                $title = "Must See Milan Tour - Private City Tours with Friendly Local Guides";
-                $meta = "10 must see of Milan. Soak up the amazing atmosphere of the Fashion Capital of the World and experience 15 best things to do in Milan in one day!";
+                $title = "1 day tour in Milan - Private Milan Tours with Friendly Local Guides";
+                $meta = "Visit TOP 10 places in Milan in 1 day with Friendly Local Guides: Duomo Cathedral, Galleria Vittorio Emanuele II, La Scala Theatre Opera House, Brera palace, Sforza Castle, Sempione Park, Arch of Piece, Santa Maria delle Grazie, San Maurizio Church, Saint Ambrogio Basilica.";
+                $keywords = "1 day tour in Milan, private Milan tours, Duomo Cathedral, Galleria Vittorio Emanuele II, La Scala Theatre Opera House, Brera palace, Sforza Castle, Sempione Park, Arch of Piece, Santa Maria delle Grazie, San Maurizio Church, Saint Ambrogio Basilica, Friendly Local Guides";
                 break;
 
             case 'los-angeles-tour':
-                $title = "";
-                $meta = "";
+                $title = "1 day tour in Los Angeles and 10 Top Things to Do - Friendly Local Guides";
+                $meta = "Visit TOP 10 places in Los Angeles in 1 day with Friendly Local Guides: Staples, Walt Disney Concert Hall, Microsoft Theater, LA Live, Bradbury Building, Grand Park, Museum of Contemporary Art, Hollywood boulevard, Walk of Fame, Grauman’s Chinese and Dolby Theaters.";
+                $keywords = "1 day tour in Los Angeles, 10 Top Things to Do in LA, Hollywood, Staples, Walt Disney Concert Hall, Microsoft Theater, LA Live, Bradbury Building, Grand Park, Museum of Contemporary Art, Hollywood boulevard, Walk of Fame, Grauman’s Chinese and Dolby Theaters, Friendly Local Guides";
                 break;
 
             case 'washington-tour':
-                $title = "";
-                $meta = "";
+                $title = "1 day tour in Washington DC - Private tours with Friendly Local Guides";
+                $meta = "Visit TOP 10 places in Washington DC in 1 day with Friendly Local Guides: Washington National Cathedral, Georgetown, The John F. Kennedy Center for the Performing Arts, National World War II Memorial, National Mall, Lincoln Memorial, The Tidal Basin, The Washington Monument, The White House, United States Botanical Garden, Library of Congress, US Capitol and other must sees.";
+                $keywords = "1 day tour in Washington DC, private tours, Friendly Local Guides, Washington National Cathedral, Georgetown, The John F. Kennedy Center for the Performing Arts, National World War II Memorial, National Mall, Lincoln Memorial, The Tidal Basin, The Washington Monument, The White House, United States Botanical Garden, Library of Congress, US Capitol";
                 break;
 
             case 'chicago-tour':
-                $title = "";
-                $meta = "";
+                $title = "1 day tour in Chicago city: itinerary and must see attractions - Friendly Local Guides";
+                $meta = "Visit TOP 10 places in Chicago in 1 day with Friendly Local Guides: Navy Pier, Chicago Shakespeare Theater, Lake Point Tower, John Hancock Center, Marina City, Aon Center, Millennium Park, The Art Institute of Chicago, Willis Tower, Museum Campus.";
+                $keywords = "1 day tour in Chicago, Chicago itinerary, Chicago must see attractions, Friendly Local Guides, Navy Pier, Chicago Shakespeare Theater, Lake Point Tower, John Hancock Center, Marina City, Aon Center, Millennium Park, The Art Institute of Chicago, Willis Tower, Museum Campus";
                 break;
 
             case '2-days-in-paris':
-                $title = "";
-                $meta = "";
+                $title = "2 Days tour in Paris - Private tours with Friendly Local Guides";
+                $meta = "Visit TOP 20 places in Paris in 2 days: Louvre, Jardin des Tuileries, Eiffel tower, Palais Garnier, River Seine, Pont Alexandre III, Place des Vosges, Walking around Le Marais, ile St Louis, ile de la Cité, Notre Dame and others must sees.";
+                $keywords = "2 Days tour in Paris, private tours, Friendly Local Guides, Louvre, Jardin des Tuileries, Eiffel tower, Palais Garnier, River Seine, Pont Alexandre III, Place des Vosges, Walking around Le Marais, ile St Louis, ile de la Cité, Notre Dame";
                 break;
 
 
