@@ -176,7 +176,7 @@
             </figure>
         </div>
         <div class="row">
-            <h2 class="title-of-tours single-title">Top 3 articles</h2>
+            <h2 class="title-of-tours single-title">Cool facts about Kremlin tour</h2>
             <figure class="tour-item">
                 <img src="/i/top-list/article-1.jpg" alt="Red Square & Kremlin"/>
                 <figcaption>

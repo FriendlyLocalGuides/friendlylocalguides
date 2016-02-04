@@ -6,7 +6,7 @@
     <div class="panes">
         <div class="pane">
             <figure class="guide-item">
-                <img src="/i/guides-list/alina.jpg" alt="Alina"/>
+                <img src="/i/guides-list/alina.jpg" alt="Moscow guide Alina"/>
                 <figcaption>
                     <h2>Alina</h2>
                     <h4>CEO</h4>
@@ -14,7 +14,7 @@
                 </figcaption>
             </figure>
             <figure class="guide-item">
-                <img src="/i/guides-list/dasha.jpg" alt="Dasha"/>
+                <img src="/i/guides-list/dasha.jpg" alt="Moscow guide Dasha"/>
                 <figcaption>
                     <h2>Dasha</h2>
                     <h4>Wine Lover</h4>
@@ -23,7 +23,7 @@
             </figure>
 
             <figure class="guide-item">
-                <img src="/i/guides-list/vera-guide.jpg" alt="Vera"/>
+                <img src="/i/guides-list/vera-guide.jpg" alt="Moscow guide Vera"/>
                 <figcaption>
                     <h2>Vera</h2>
 <!--                    <h4>Art Aficionado</h4>-->
@@ -31,7 +31,7 @@
                 </figcaption>
             </figure>
             <figure class="guide-item">
-                <img src="/i/guides-list/karina-guide.jpg" alt="Karina"/>
+                <img src="/i/guides-list/karina-guide.jpg" alt="Moscow guide Karina"/>
                 <figcaption>
                     <h2>Karina</h2>
 <!--                    <h4>Local Vibe Ninja</h4>-->
@@ -39,7 +39,7 @@
                 </figcaption>
             </figure>
             <figure class="guide-item">
-                <img src="/i/guides-list/angelina-guide.jpg" alt="Angelina"/>
+                <img src="/i/guides-list/angelina-guide.jpg" alt="Moscow guide Angelina"/>
                 <figcaption>
                     <h2>Angelina</h2>
 <!--                    <h4>Russian Culture Lover</h4>-->
@@ -47,7 +47,7 @@
                 </figcaption>
             </figure>
             <figure class="guide-item">
-                <img src="/i/guides-list/anna-guide.jpg" alt="Anna"/>
+                <img src="/i/guides-list/anna-guide.jpg" alt="Moscow guide Anna"/>
                 <figcaption>
                     <h2>Anna</h2>
                     <!--                    <h4>Russian Culture Lover</h4>-->
@@ -56,7 +56,7 @@
             </figure>
 
             <figure class="guide-item">
-                <img src="/i/guides-list/inna.jpg" alt="Inna"/>
+                <img src="/i/guides-list/inna.jpg" alt="Moscow guide Inna"/>
                 <figcaption>
                     <h2>Inna</h2>
                     <h4>Art Aficionado</h4>
@@ -64,7 +64,7 @@
                 </figcaption>
             </figure>
             <figure class="guide-item">
-                <img src="/i/guides-list/anya.jpg" alt="Anya"/>
+                <img src="/i/guides-list/anya.jpg" alt="Moscow guide Anya"/>
                 <figcaption>
                     <h2>Anya</h2>
                     <h4>Local Vibe Ninja</h4>
@@ -72,7 +72,7 @@
                 </figcaption>
             </figure>
             <figure class="guide-item">
-                <img src="/i/guides-list/katya.jpg" alt="Katya"/>
+                <img src="/i/guides-list/katya.jpg" alt="Moscow guide Katya"/>
                 <figcaption>
                     <h2>Katya</h2>
                     <h4>Russian Culture Lover</h4>
