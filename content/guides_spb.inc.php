@@ -6,7 +6,7 @@
     <div class="panes">
         <div class="pane">
         <figure class="guide-item">
-            <img src="/i/guides-list/valery.jpg" alt="Valery"/>
+            <img src="/i/guides-list/valery.jpg" alt="Saint Petersburg guide Valery"/>
             <figcaption>
                 <h2>Valery</h2>
                 <a class="view-button" href="/saint-petersburg/guides/valery">About me</a>

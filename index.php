@@ -47,7 +47,7 @@
     <header class="clearfix">
         <div class="main_header">
             <a class="logo" href="/" title="Friendly Local Guides">
-                <img src="/i/logo.png" alt="Guided tours in Moscow Saint-Petersburg and San Francisco">
+                <img src="/i/logo.png" alt="Private City Tours in USA, Russia and Europe with Friendly Local Guides">
             </a>
             <div class="navigation nav-list">
                 <div class="nav_title">

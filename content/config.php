@@ -3,7 +3,7 @@ $hostname = 'localhost';
 
 $username = 'root';
 
-$password = '';
+$password = 'vivaldi';
 
 $dbname = 'alinamosco_friendlylocalguides';
 

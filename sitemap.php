@@ -60,6 +60,43 @@
                     <li><a href="https://friendlylocalguides.com/san-francisco/tours/3-days-in-san-francisco">3 day tour in San Francisco</a></li>
                     <li><a href="https://friendlylocalguides.com/san-francisco/tours/san-francisco-walking-tours">San Francisco walking tour</a></li>
                     <li><a href="https://friendlylocalguides.com/san-francisco/tours/san-francisco-bike-tours">San Francisco bike tour</a></li>
+                    <li><a href="https://friendlylocalguides.com/san-francisco/tours/san-francisco-night-tour">San Francisco Night Tour</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="https://friendlylocalguides.com/chicago/tours" title="Chicago tours">Chicago tours</a>
+                <ul>
+                    <li><a href="https://friendlylocalguides.com/chicago/tours/chicago-tour">1 day tour in Chicago</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="https://friendlylocalguides.com/lisbon/tours" title="Lisbon tours">Lisbon tours</a>
+                <ul>
+                    <li><a href="https://friendlylocalguides.com/lisbon/tours/lisbon-tour">1 day tour in Lisbon</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="https://friendlylocalguides.com/los-angeles/tours" title="Los Angeles tours">Los Angeles tours</a>
+                <ul>
+                    <li><a href="https://friendlylocalguides.com/los-angeles/tours/los-angeles-tour">1 day tour in Los Angeles</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="https://friendlylocalguides.com/milan/tours" title="Milan tours">Milan tours</a>
+                <ul>
+                    <li><a href="https://friendlylocalguides.com/milan/tours/milan-tour">1 day tour in Milan</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="https://friendlylocalguides.com/new-york/tours" title="New York tours">New York tours</a>
+                <ul>
+                    <li><a href="https://friendlylocalguides.com/new-york/tours/new-york-tour">1 day tour in New York</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="https://friendlylocalguides.com/paris/tours" title="Paris tours">Paris tours</a>
+                <ul>
+                    <li><a href="https://friendlylocalguides.com/paris/tours/2-days-in-paris">2 Days tour in Paris</a></li>
                 </ul>
             </li>
             <li>

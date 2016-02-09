@@ -24,7 +24,7 @@
         foreach ($dbh->query($sql_tours_list) as $row){
     ?>
             <figure class="tour-item">
-                <img src="<?=$row['img_link_item'];?>" alt=""/>
+                <img src="<?=$row['img_link_item'];?>" alt="<?=$row['img_alt_item'];?>"/>
                 <figcaption>
                     <h2><?=$row['title'];?></h2>
                     <div class="price">$<?=$row['price'];?> — <?=$row['duration'];?></div>
