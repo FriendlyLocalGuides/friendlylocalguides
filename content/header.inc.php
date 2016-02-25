@@ -249,7 +249,7 @@
                 $title = "San Francisco bike tours - Friendly Local Guides";
                 $meta = "Best bike tours in San Francisco. See places of SF you might not see on your own with Friendly Local Guides.";
                 break;
-            case 'san-francisco-night-tours':
+            case 'san-francisco-night-tour':
                 $title = "San Francisco night tour, private SF tours - Friendly Local Guides";
                 $meta = "Enjoy San Francisco night tour with Friendly Local Guides. Tour description, photos and reviews.";
                 $keywords = "San Francisco night tours, private city night tours in San Francisco, Friendly Local Guides";
