@@ -1,5 +1,22 @@
-User-agent: *
+User-agent:
+Allow: .css
+Allow: .js
+Allow: .jpeg
+Allow: .jpg
+Allow: .png
 Disallow: /index.php
-Disallow: */?attachment
+Disallow: /?attachment
+Disallow: test
+
+User-agent: Google
+Allow: .css
+Allow: .js
+Allow: .jpeg
+Allow: .jpeg
+Allow: .jpg
+Disallow: /index.php
+Disallow: /?attachment
+Disallow: *test
+
 Host: friendlylocalguides.com
 Sitemap: https://friendlylocalguides.com/sitemap.xml
