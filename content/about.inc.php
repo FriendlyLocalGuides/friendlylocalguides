@@ -18,23 +18,23 @@
         </div>
     </div>
     <section class="description content_box whiten">
-        <p>There are a lot of guides that do what we do. They show Moscow and tell you the history of the places. But our tourists choose us for our <em>who</em> and our <em>how</em>.</p>
-        <p>We are young, energetic ladies and we are your friends in Moscow.</p>
+        <p>There are a lot of guides that do what we do. They show you the city and tell you the history of the places. But our tourists choose us for our <em>who</em> and our <em>how</em>.</p>
+        <p>We are young, energetic ladies and we are your friends.</p>
         <p>We love travelling ourselves and we believe that travel is all about the people you meet in other parts of the world.</p>
 
         <h5><span>OUR VALUES</span></h5>
         <p>Friendly, Fun and Flexible!.. These are the key elements of our tours.</p>
         <h6>Friendly.</h6>
         <p>
-            Our guides are the most friendly and open people in Moscow. We are excited to meet you and show you
-            Russian local life as it is, combined with some touristy must-dos. On our tours we smile, take photos
+            Our guides are the most friendly and open people all around the world. We are excited to meet you and show you
+            local life as it is, combined with some touristy must-dos. On our tours we smile, take photos
             with you and treat you as our friend.
         </p>
 
 
         <h6>Fun.</h6>
         <p>
-            Our tours are positive and happy experiences, learning fascinating facts about Russian history, culture,
+            Our tours are positive and happy experiences, learning fascinating facts about history, culture,
             and art. No excessive dates and names, no overwhelming, dry history. We try to make our tours fun, as
             history for breakfast, lunch, and dinner can be boring.
         </p>
@@ -44,7 +44,7 @@
             We cherish our individual approach and are proud of our flexibility. Once you book the tour, our whole
             team will create a special itinerary for you. We tailor the itinerary with you via e-mail. Then we
             appoint a guide for you and this person will be your friend throughout the entire tour. You can ask your
-            guide absolutely anything from how to use the metro to what’s going on in Moscow today.
+            guide absolutely anything from how to use the metro to what’s going on in the city today.
         </p>
         <p>
             All of our tours are negotiable - we can add or drop whatever you wish: we offer you ideas & you choose
