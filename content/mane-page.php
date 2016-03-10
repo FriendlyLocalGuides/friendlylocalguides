@@ -139,7 +139,7 @@
         <h2 class="title-of-tours single-title">Top 3 San Francisco tours</h2>
         <div class="row">
             <figure class="tour-item">
-                <img src="/i/tours-list/san-francisco/tours-in-san-francisco.jpg" alt=""/>
+                <img src="/i/tours-list/san-francisco/tours-in-san-francisco.jpg" alt="One day in San Francisco"/>
                 <figcaption>
                     <h2>One Day in San Francisco</h2>
                     <div class="price">$227 — 5 hours</div>
@@ -151,7 +151,7 @@
                 </figcaption>
             </figure>
             <figure class="tour-item">
-                <img src="/i/tours-list/san-francisco/TransAmerica-Pyramid-on-San-Francisco-tour.jpg" alt=""/>
+                <img src="/i/tours-list/san-francisco/TransAmerica-Pyramid-on-San-Francisco-tour.jpg" alt="2 days in San Francisco"/>
                 <figcaption>
                     <h2>2 Days in San Francisco</h2>
                     <div class="price">$397 — 2 days</div>
@@ -163,7 +163,7 @@
                 </figcaption>
             </figure>
             <figure class="tour-item">
-                <img src="/i/tours-list/san-francisco/Architecture-of-San-Francisco-on-day-tour.jpg" alt=""/>
+                <img src="/i/tours-list/san-francisco/Architecture-of-San-Francisco-on-day-tour.jpg" alt="3 days in San Francisco"/>
                 <figcaption>
                     <h2>3 Days in San Francisco</h2>
                     <div class="price">$497 — 3 days</div>
