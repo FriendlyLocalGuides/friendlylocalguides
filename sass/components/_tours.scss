@@ -45,6 +45,18 @@
     padding-top: 178px;
     max-width: 370px;
     color: #fff;
+	.to-the-right{
+		text-align: right;
+		a{
+			text-decoration: underline;
+			display: inline-block;
+			color: #000;
+			padding-right: 7.5px;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
 }
 
 .tour-item h2,

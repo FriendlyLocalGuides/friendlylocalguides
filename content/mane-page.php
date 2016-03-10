@@ -96,6 +96,11 @@
                     </div>
                 </figcaption>
             </figure>
+            <div class="to-the-right">
+                <a class="" href="https://friendlylocalguides.com/moscow/tours">
+                    All Moscow Tours
+                </a>
+            </div>
         </div>
         <h2 class="title-of-tours single-title">Top 3 St Petersburg tours</h2>
         <div class="row">
@@ -135,6 +140,11 @@
                     </div>
                 </figcaption>
             </figure>
+            <div class="to-the-right">
+                <a href="https://friendlylocalguides.com/saint-petersburg/tours">
+                    All Saint Petersburg Tours
+                </a>
+            </div>
         </div>
         <h2 class="title-of-tours single-title">Top 3 San Francisco tours</h2>
         <div class="row">
@@ -174,6 +184,11 @@
                     </div>
                 </figcaption>
             </figure>
+            <div class="to-the-right">
+                <a href="https://friendlylocalguides.com/san-francisco/tours">
+                    All San Francisco Tours
+                </a>
+            </div>
         </div>
         <div class="row">
             <h2 class="title-of-tours single-title">Top 3 articles</h2>
