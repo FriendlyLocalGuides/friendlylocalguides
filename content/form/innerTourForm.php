@@ -13,7 +13,7 @@ $order_number = substr(number_format(time(), '0', '', '-'), 2);
         <h3>You are booking</h3>
 
         <figure class="wrap-preorder-img">
-            <img class="preorder-img" src="" alt=""/>
+            <img class="preorder-img" src="<?=$splashScreenLink?>" alt="<?=$splashScreenAlt?>"/>
             <figcaption>
                 <h4></h4>
                 <div class="price">$<?=$price?> &mdash; <?=$duration?></div>
