@@ -297,6 +297,17 @@
                 $keywords = "2 Days tour in Paris, private tours, Friendly Local Guides, Louvre, Jardin des Tuileries, Eiffel tower, Palais Garnier, River Seine, Pont Alexandre III, Place des Vosges, Walking around Le Marais, ile St Louis, ile de la Cité, Notre Dame";
                 break;
 
+            case 'one-day-in-paris':
+                $title = "One Day in Paris Tour, France - Friendly Local Guides";
+                $meta = "Best 1 day tour in Paris with flexible itinerary: Notre Dame, Ile de la Cité, Louvre, Tuileries, River Seine, Pont Alexandre III, Eiffel Tower, Champ de Mars, Champs Elysées, Arc de Triomphe  and more! Reviews, photos and online booking.";
+                $keywords = "one day in Paris tour, best private city tours in Paris, France, Friendly Local Guides";
+                break;
+
+            case 'paris-city-tour':
+                $title = "Paris private city tour, France - Friendly Local Guides";
+                $meta = "Best private city tour in Paris, France: Trocadero, Eiffel Tower, Champs de Mars, Invalides, Grand Palais, Champs Elysées, Tuileries Park, Louvre, Ponts des Arts, Notre Dame, Park alongside Seine. Reviews, photos and online booking.";
+                $keywords = "best private city tours in Paris, France, Friendly Local Guides";
+                break;
 
         }
     }
