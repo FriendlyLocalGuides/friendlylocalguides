@@ -309,6 +309,17 @@
                 $keywords = "best private city tours in Paris, France, Friendly Local Guides";
                 break;
 
+            case '3-days-in-paris':
+                $title = "";
+                $meta = "";
+                $keywords = "";
+                break;
+
+            case 'montmartre-tour-in-paris':
+                $title = "";
+                $meta = "";
+                $keywords = "";
+                break;
         }
     }
 
