@@ -30,6 +30,10 @@
                 $title = "Contact | Friendly Local Guides";
                 $meta = "Get in touch with us. We'd love to hear from you! Feel free to ask us any questions on our Facebook and Google+ pages";
                 break;
+            case 'main':
+                $title = "Main Page | Friendly Local Guides";
+                $meta = "";
+                break;
             case 'sitemap':
                 $title = "Sitemap - Friendly Local Guides";
                 $meta = "";
