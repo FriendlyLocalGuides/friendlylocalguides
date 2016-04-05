@@ -277,10 +277,34 @@
                 $keywords = "1 day tour in Milan, private Milan tours, Duomo Cathedral, Galleria Vittorio Emanuele II, La Scala Theatre Opera House, Brera palace, Sforza Castle, Sempione Park, Arch of Piece, Santa Maria delle Grazie, San Maurizio Church, Saint Ambrogio Basilica, Friendly Local Guides";
                 break;
 
+            case 'milan-night-tour':
+                $title = "Milan Night Tour - Friendly Local Guides";
+                $meta = "Book guided Milan night tour, discover best attractions in Milan. Check photos and reviews from Milan By Night tour.";
+                $keywords = "";
+                break;
+
+            case '2-days-in-milan':
+                $title = "2-Day Tour in Milan, Italy - Friendly Local Guides";
+                $meta = "Explore attractions, check the best points for shopping, see famous masterpieces of art in 2-day Milan tour. Reviews, photos and online booking.";
+                $keywords = "";
+                break;
+
             case 'los-angeles-tour':
                 $title = "1 day tour in Los Angeles and 10 Top Things to Do - Friendly Local Guides";
                 $meta = "Visit TOP 10 places in Los Angeles in 1 day with Friendly Local Guides: Staples, Walt Disney Concert Hall, Microsoft Theater, LA Live, Bradbury Building, Grand Park, Museum of Contemporary Art, Hollywood boulevard, Walk of Fame, Grauman’s Chinese and Dolby Theaters.";
                 $keywords = "1 day tour in Los Angeles, 10 Top Things to Do in LA, Hollywood, Staples, Walt Disney Concert Hall, Microsoft Theater, LA Live, Bradbury Building, Grand Park, Museum of Contemporary Art, Hollywood boulevard, Walk of Fame, Grauman’s Chinese and Dolby Theaters, Friendly Local Guides";
+                break;
+
+            case 'los-angeles-one-day-tour':
+                $title = "1 day tour in Los Angeles - Friendly Local Guides";
+                $meta = "Visit best 14 places in Los Angeles in 1 day with Friendly Local Guides. Itinerary plan, photos and reviews.";
+                $keywords = "";
+                break;
+
+            case '2-days-in-los-angeles':
+                $title = "Los Angeles 2-day tour - Friendly Local Guides";
+                $meta = "Book 2 days in LA tour amd check top 25 things to do in LA, including Hollywood, Downtown LA, and off the beaten path of LA in between. Reviews and photos.";
+                $keywords = "";
                 break;
 
             case 'washington-tour':
@@ -295,10 +319,10 @@
                 $keywords = "1 day tour in Chicago, Chicago itinerary, Chicago must see attractions, Friendly Local Guides, Navy Pier, Chicago Shakespeare Theater, Lake Point Tower, John Hancock Center, Marina City, Aon Center, Millennium Park, The Art Institute of Chicago, Willis Tower, Museum Campus";
                 break;
 
-            case '2-days-in-paris':
-                $title = "2 Days tour in Paris - Private tours with Friendly Local Guides";
-                $meta = "Visit TOP 20 places in Paris in 2 days: Louvre, Jardin des Tuileries, Eiffel tower, Palais Garnier, River Seine, Pont Alexandre III, Place des Vosges, Walking around Le Marais, ile St Louis, ile de la Cité, Notre Dame and others must sees.";
-                $keywords = "2 Days tour in Paris, private tours, Friendly Local Guides, Louvre, Jardin des Tuileries, Eiffel tower, Palais Garnier, River Seine, Pont Alexandre III, Place des Vosges, Walking around Le Marais, ile St Louis, ile de la Cité, Notre Dame";
+            case 'paris-city-tour':
+                $title = "Paris private city tour, France - Friendly Local Guides";
+                $meta = "Best private city tour in Paris, France: Trocadero, Eiffel Tower, Champs de Mars, Invalides, Grand Palais, Champs Elysées, Tuileries Park, Louvre, Ponts des Arts, Notre Dame, Park alongside Seine. Reviews, photos and online booking.";
+                $keywords = "best private city tours in Paris, France, Friendly Local Guides";
                 break;
 
             case 'one-day-in-paris':
@@ -307,22 +331,34 @@
                 $keywords = "one day in Paris tour, best private city tours in Paris, France, Friendly Local Guides";
                 break;
 
-            case 'paris-city-tour':
-                $title = "Paris private city tour, France - Friendly Local Guides";
-                $meta = "Best private city tour in Paris, France: Trocadero, Eiffel Tower, Champs de Mars, Invalides, Grand Palais, Champs Elysées, Tuileries Park, Louvre, Ponts des Arts, Notre Dame, Park alongside Seine. Reviews, photos and online booking.";
-                $keywords = "best private city tours in Paris, France, Friendly Local Guides";
+            case '2-days-in-paris':
+                $title = "2 Days tour in Paris - Private tours with Friendly Local Guides";
+                $meta = "Visit TOP 20 places in Paris in 2 days: Louvre, Jardin des Tuileries, Eiffel tower, Palais Garnier, River Seine, Pont Alexandre III, Place des Vosges, Walking around Le Marais, ile St Louis, ile de la Cité, Notre Dame and others must sees.";
+                $keywords = "2 Days tour in Paris, private tours, Friendly Local Guides, Louvre, Jardin des Tuileries, Eiffel tower, Palais Garnier, River Seine, Pont Alexandre III, Place des Vosges, Walking around Le Marais, ile St Louis, ile de la Cité, Notre Dame";
                 break;
 
             case '3-days-in-paris':
-                $title = "";
-                $meta = "";
+                $title = "3 Days in Paris - Friendly Local Guides";
+                $meta = "3-day tour in Paris: flexible itinerary, must see attractions, reviews, photos and online booking.";
+                $keywords = "three days in Paris tour, best private city tours in Paris, France, Friendly Local Guides";
+                break;
+
+            case 'paris-food-tour':
+                $title = "Paris Food and Wine Tour in France - Friendly Local Guides";
+                $meta = "Enjoy food and sample wine on a private guided tour of Paris. Champs de Mars, St Germain des Pres, Le Procope, Ile St Louis, Marais, Stohrer Patisserie - all the best places for foodies in Paris!";
                 $keywords = "";
                 break;
 
+            case 'paris-night-tour':
+                $title = "Paris Night Tour - Friendly Local Guides";
+                $meta = "Admire night tour in Paris, France. Photos, reviews and tour itinerary: Place Vendome, Champs Elysees, Trocadero, Tour Eiffel, Champ de Mars, Seine embankments and St Germain des Pres.";
+                $keywords = "night tour, private city tours in Paris, France, Place Vendome, Champs Elysees, Trocadero, Tour Eiffel, Champ de Mars, Seine embankments, St Germain des Pres, Friendly Local Guides";
+                break;
+
             case 'montmartre-tour-in-paris':
-                $title = "";
-                $meta = "";
-                $keywords = "";
+                $title = "Montmartre Guided Tour in Paris, France - Friendly Local Guides";
+                $meta = "Visit Place des Abbesses, Sacre Coeur, Moulin Rouge and more attractions during Montmartre guided tour in Paris. Photos, reviews and tour itinerary.";
+                $keywords = "monmartre, private city tours in Paris, France, Friendly Local Guides";
                 break;
         }
     }
