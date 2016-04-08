@@ -376,24 +376,28 @@ $(window).load(function(){
     }
 
     function sendReview(){
-        $.post("/content/comments.php", $("#review-form").serialize(),function(result){
-            console.log($("#review-form").serialize());
-            if(result) {
-                $('<div class="overlay"><div class="thank-you"><span>Thank you for review!<br /> We hope to see you again soon!</span><div class="close-btn">×</div></div></div>').fadeIn().appendTo('body');
-                $('body').on('click','.close-btn',  function(e){
-                    e.stopPropagation();
-                    $('.overlay').fadeOut(function(){
-                        $(this).remove();
-                    });
-                });
-                $('.written-reviews li:first-child').after(result);
-                $('.review').fadeIn();
+        var noSpam = $('.antispam').val().length == 0;
+        if(noSpam){
+            $.post("/content/comments.php", $("#review-form").serialize(),function(result){
+                console.log($("#review-form").serialize());
 
-                $(".name-field, .email-field, .comments-field, .country-field, .video-field, .rating").val("");
-                $('#review-form').removeClass('error_field');
-                $('.rateit-selected').width(0);
-            }
-        });
+                if(result) {
+                    $('<div class="overlay"><div class="thank-you"><span>Thank you for review!<br /> We hope to see you again soon!</span><div class="close-btn">×</div></div></div>').fadeIn().appendTo('body');
+                    $('body').on('click','.close-btn',  function(e){
+                        e.stopPropagation();
+                        $('.overlay').fadeOut(function(){
+                            $(this).remove();
+                        });
+                    });
+                    $('.written-reviews li:first-child').after(result);
+                    $('.review').fadeIn();
+
+                    $(".name-field, .email-field, .comments-field, .country-field, .video-field, .rating").val("");
+                    $('#review-form').removeClass('error_field');
+                    $('.rateit-selected').width(0);
+                }
+            });
+        }
     }
 
     function checkForm($input, event){
