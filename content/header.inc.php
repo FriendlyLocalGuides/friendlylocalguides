@@ -277,6 +277,12 @@
                 $keywords = "1 day tour in Milan, private Milan tours, Duomo Cathedral, Galleria Vittorio Emanuele II, La Scala Theatre Opera House, Brera palace, Sforza Castle, Sempione Park, Arch of Piece, Santa Maria delle Grazie, San Maurizio Church, Saint Ambrogio Basilica, Friendly Local Guides";
                 break;
 
+            case 'milan-food-tour':
+                $title = "";
+                $meta = "";
+                $keywords = "";
+                break;
+
             case 'milan-night-tour':
                 $title = "Milan Night Tour - Friendly Local Guides";
                 $meta = "Book guided Milan night tour, discover best attractions in Milan. Check photos and reviews from Milan By Night tour.";
@@ -293,6 +299,12 @@
                 $title = "1 day tour in Los Angeles and 10 Top Things to Do - Friendly Local Guides";
                 $meta = "Visit TOP 10 places in Los Angeles in 1 day with Friendly Local Guides: Staples, Walt Disney Concert Hall, Microsoft Theater, LA Live, Bradbury Building, Grand Park, Museum of Contemporary Art, Hollywood boulevard, Walk of Fame, Grauman’s Chinese and Dolby Theaters.";
                 $keywords = "1 day tour in Los Angeles, 10 Top Things to Do in LA, Hollywood, Staples, Walt Disney Concert Hall, Microsoft Theater, LA Live, Bradbury Building, Grand Park, Museum of Contemporary Art, Hollywood boulevard, Walk of Fame, Grauman’s Chinese and Dolby Theaters, Friendly Local Guides";
+                break;
+
+            case 'los-angeles-city-tour':
+                $title = "";
+                $meta = "";
+                $keywords = "";
                 break;
 
             case 'los-angeles-one-day-tour':
