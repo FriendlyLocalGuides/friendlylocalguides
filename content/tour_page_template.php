@@ -99,7 +99,7 @@
                         <input class="input-item name-field required" type="text" name="name" placeholder="Name"/>
                         <input class="input-item country-field required" type="text" name="country" placeholder="City, Country"/>
                         <input class="input-item email-field required" type="email" name="email"  placeholder="E-mail"/>
-                        <input class="antispam" type="text" name="url"  placeholder=""/>
+                        <input class="antispam" type="text" name="antispam"  placeholder=""/>
                         <textarea class="input-item comments-field" name="message" placeholder="Message"></textarea>
                         <label class="checkbox-review">Video<input type="checkbox"/></label>
                          <input class="input-item video-field" type="email" name="video"  placeholder="Link to your video review of the tour"/>

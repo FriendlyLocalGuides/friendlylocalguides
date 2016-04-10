@@ -9,13 +9,13 @@ try {
         $name        = $_POST['name'];
         $email       = $_POST['email'];
         $message     = $_POST['message'];
+        $spam        = $_POST['antispam'];
         $country     = $_POST['country'];
-        if($_POST['video'] != ""){
-            $video = $_POST['video'];
-        }else{
-            $video = "None";
-        }
+        $video = $_POST['video'] != "" ? $_POST['video'] : "None";
 
+        if($_POST['antispam'] != ""){
+            return;
+        }
         /*** превратить все ошибки в исключения ***/
         $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
