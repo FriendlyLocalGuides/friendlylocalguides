@@ -1380,59 +1380,8 @@ if($id == 'tours' && $tours){
             </section>
             <?
             break;
-            case 'food-tour-st-petersburg':
-            ?>
-                <section class="content_box tours-list_new  whiten">
-                    <h2 class="title-of-tours single-title">Related tours</h2>
-                    <div class="row">
-                        <figure class="tour-item">
-                            <img src="/i/tours-list/saint-petersburg/tour-of-st-petersburg-by-night.jpg"/>
-                            <figcaption>
-                                <h2>2 Days in Saint Petersburg</h2>
-                                <div class="price">$277 &mdash; 5 hours each day</div>
-                                <h3>Northern Venice and Versailles of Russia</h3>
-                                <div class="buttons-container">
-                                    <a class="view-button" href="/saint-petersburg/tours/2-day-tour-of-saint-petersburg">View tour</a>
-                                    <a class="book_button" href="/saint-petersburg/tours/2-day-tour-of-saint-petersburg/#book">Book tour</a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="tour-item">
-                            <img src="/i/tours-list/saint-petersburg/peterhof-cascade-fountains.jpg"/>
-                            <figcaption>
-                                <h2>Peterhof Tour</h2>
-                                <div class="price">$177 &mdash; 7 hours</div>
-                                <h3>One of seven wonders of Russia</h3>
-                                <div class="buttons-container">
-                                    <a class="view-button" href="/saint-petersburg/tours/peterhof-tour">View tour</a>
-                                    <a class="book_button" href="/saint-petersburg/tours/peterhof-tour/#book">Book tour</a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="tour-item">
-                            <img src="/i/tours-list/saint-petersburg/Tsaritsino-Museum-Reserve.jpg"/>
-                            <figcaption>
-                                <h2>River Boat Trip</h2>
-                                <div class="price">$117 &mdash; 3 hours</div>
-                                <h3>Picturesque canalways</h3>
-                                <div class="buttons-container">
-                                    <a class="view-button" href="/saint-petersburg/tours/boat-trip-tour">View tour</a>
-                                    <a class="book_button" href="/saint-petersburg/tours/boat-trip-tour/#book">Book tour</a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="scroll_down black_scroll_down">
-                        <div class="scroll_down_container">
-                            <div class="scroll_down_text">Reviews</div>
-                            <div class="scroll_down_icon"></div>
-                        </div>
-                    </div>
-                </section>
-            <?
-            break;
-            case 'peter-and-paul-tour':
-            ?>
+        case 'food-tour-st-petersburg':
+        ?>
             <section class="content_box tours-list_new  whiten">
                 <h2 class="title-of-tours single-title">Related tours</h2>
                 <div class="row">
@@ -1449,26 +1398,231 @@ if($id == 'tours' && $tours){
                         </figcaption>
                     </figure>
                     <figure class="tour-item">
-                        <img src="/i/tours-list/saint-petersburg/Night-views-of-Peter-and-Paul-Fortress.jpg"/>
+                        <img src="/i/tours-list/saint-petersburg/peterhof-cascade-fountains.jpg"/>
                         <figcaption>
-                            <h2>Must See Tour</h2>
-                            <div class="price">$197 &mdash; 8 hours</div>
-                            <h3>20 legendary places of Russia's most alluring city </h3>
+                            <h2>Peterhof Tour</h2>
+                            <div class="price">$177 &mdash; 7 hours</div>
+                            <h3>One of seven wonders of Russia</h3>
                             <div class="buttons-container">
-                                <a class="view-button" href="/saint-petersburg/tours/top-20-must-see-in-saint-petersburg">View tour</a>
-                                <a class="book_button" href="/saint-petersburg/tours/top-20-must-see-in-saint-petersburg/#book">Book tour</a>
+                                <a class="view-button" href="/saint-petersburg/tours/peterhof-tour">View tour</a>
+                                <a class="book_button" href="/saint-petersburg/tours/peterhof-tour/#book">Book tour</a>
                             </div>
                         </figcaption>
                     </figure>
                     <figure class="tour-item">
-                        <img src="/i/tours-list/saint-petersburg/bronze-horseman-st-petersburg.jpg"/>
+                        <img src="/i/tours-list/saint-petersburg/Tsaritsino-Museum-Reserve.jpg"/>
                         <figcaption>
-                            <h2>5-hour City Tour</h2>
-                            <div class="price">$157 &mdash; 5 hours</div>
-                            <h3>High-paced walking tour</h3>
+                            <h2>River Boat Trip</h2>
+                            <div class="price">$117 &mdash; 3 hours</div>
+                            <h3>Picturesque canalways</h3>
                             <div class="buttons-container">
-                                <a class="view-button" href="/saint-petersburg/tours/st-petersburg-private-tour">View tour</a>
-                                <a class="book_button" href="/saint-petersburg/tours/st-petersburg-private-tour/#book">Book tour</a>
+                                <a class="view-button" href="/saint-petersburg/tours/boat-trip-tour">View tour</a>
+                                <a class="book_button" href="/saint-petersburg/tours/boat-trip-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="scroll_down black_scroll_down">
+                    <div class="scroll_down_container">
+                        <div class="scroll_down_text">Reviews</div>
+                        <div class="scroll_down_icon"></div>
+                    </div>
+                </div>
+            </section>
+        <?
+        break;
+        case 'peter-and-paul-tour':
+        ?>
+        <section class="content_box tours-list_new  whiten">
+            <h2 class="title-of-tours single-title">Related tours</h2>
+            <div class="row">
+                <figure class="tour-item">
+                    <img src="/i/tours-list/saint-petersburg/tour-of-st-petersburg-by-night.jpg"/>
+                    <figcaption>
+                        <h2>2 Days in Saint Petersburg</h2>
+                        <div class="price">$277 &mdash; 5 hours each day</div>
+                        <h3>Northern Venice and Versailles of Russia</h3>
+                        <div class="buttons-container">
+                            <a class="view-button" href="/saint-petersburg/tours/2-day-tour-of-saint-petersburg">View tour</a>
+                            <a class="book_button" href="/saint-petersburg/tours/2-day-tour-of-saint-petersburg/#book">Book tour</a>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="tour-item">
+                    <img src="/i/tours-list/saint-petersburg/Night-views-of-Peter-and-Paul-Fortress.jpg"/>
+                    <figcaption>
+                        <h2>Must See Tour</h2>
+                        <div class="price">$197 &mdash; 8 hours</div>
+                        <h3>20 legendary places of Russia's most alluring city </h3>
+                        <div class="buttons-container">
+                            <a class="view-button" href="/saint-petersburg/tours/top-20-must-see-in-saint-petersburg">View tour</a>
+                            <a class="book_button" href="/saint-petersburg/tours/top-20-must-see-in-saint-petersburg/#book">Book tour</a>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="tour-item">
+                    <img src="/i/tours-list/saint-petersburg/bronze-horseman-st-petersburg.jpg"/>
+                    <figcaption>
+                        <h2>5-hour City Tour</h2>
+                        <div class="price">$157 &mdash; 5 hours</div>
+                        <h3>High-paced walking tour</h3>
+                        <div class="buttons-container">
+                            <a class="view-button" href="/saint-petersburg/tours/st-petersburg-private-tour">View tour</a>
+                            <a class="book_button" href="/saint-petersburg/tours/st-petersburg-private-tour/#book">Book tour</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="scroll_down black_scroll_down">
+                <div class="scroll_down_container">
+                    <div class="scroll_down_text">Reviews</div>
+                    <div class="scroll_down_icon"></div>
+                </div>
+            </div>
+        </section>
+        <?
+        break;
+        case 'peterhof-tour':
+        ?>
+        <section class="content_box tours-list_new  whiten">
+            <h2 class="title-of-tours single-title">Related tours</h2>
+            <div class="row">
+                <figure class="tour-item">
+                    <img src="/i/tours-list/saint-petersburg/Tsaritsino-Museum-Reserve.jpg"/>
+                    <figcaption>
+                        <h2>St Petersburg & Moscow</h2>
+                        <div class="price">$257 &mdash; 2 days</div>
+                        <h3>2 tours in 2 cities</h3>
+                        <div class="buttons-container">
+                            <a class="view-button" href="/saint-petersburg/tours/st-petersburg-and-moscow-tours">View tour</a>
+                            <a class="book_button" href="/saint-petersburg/tours/st-petersburg-and-moscow-tours/#book">Book tour</a>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="tour-item">
+                    <img src="/i/tours-list/saint-petersburg/panoramic-views-of-st-petersburg.jpg"/>
+                    <figcaption>
+                        <h2>3 Days in Saint Petersburg</h2>
+                        <div class="price">$357 &mdash; 5 hours each day</div>
+                        <h3>All the highlights of St Petersburg</h3>
+                        <div class="buttons-container">
+                            <a class="view-button" href="/saint-petersburg/tours/3-day-tour-of-saint-petersburg">View tour</a>
+                            <a class="book_button" href="/saint-petersburg/tours/3-day-tour-of-saint-petersburg/#book">Book tour</a>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="tour-item">
+                    <img src="/i/tours-list/saint-petersburg/neva-emabnkment-st-petersburg.jpg"/>
+                    <figcaption>
+                        <h2>St Petersburg Walking Tour</h2>
+                        <div class="price">$117 &mdash; 3 hours</div>
+                        <h3>Classic landmarks of St Petersburg</h3>
+                        <div class="buttons-container">
+                            <a class="view-button" href="/saint-petersburg/tours/st-petersburg-walking-tour">View tour</a>
+                            <a class="book_button" href="/saint-petersburg/tours/st-petersburg-walking-tour/#book">Book tour</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="scroll_down black_scroll_down">
+                <div class="scroll_down_container">
+                    <div class="scroll_down_text">Reviews</div>
+                    <div class="scroll_down_icon"></div>
+                </div>
+            </div>
+        </section>
+<?
+        break;
+        //PARIS TOURS
+        case 'one-day-in-paris':
+            ?>
+            <section class="content_box tours-list_new  whiten">
+                <h2 class="title-of-tours single-title">Related tours</h2>
+                <div class="row">
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/paris/two-days-in-paris.jpg"/>
+                        <figcaption>
+                            <h2>2 Days in Paris</h2>
+                            <div class="price">$297 &mdash; 2 days</div>
+                            <h3>20 Paris top attractions!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/paris/tours/2-days-in-paris">View tour</a>
+                                <a class="book_button" href="/paris/tours/2-days-in-paris/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/paris/city-tour-in-paris.jpg"/>
+                        <figcaption>
+                            <h2>Paris City Tour</h2>
+                            <div class="price">$197 &mdash; 5 hours</div>
+                            <h3>Fast-paced Paris Tour</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/paris/tours/paris-city-tour">View tour</a>
+                                <a class="book_button" href="/paris/tours/paris-city-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/paris/Moulin-Rouge-Paris-tour.jpg"/>
+                        <figcaption>
+                            <h2>Montmarte walking tour</h2>
+                            <div class="price">$157 &mdash; 3 hours</div>
+                            <h3>It's like going on a date with Paris itself!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/paris/tours/montmartre-tour-in-paris">View tour</a>
+                                <a class="book_button" href="/paris/tours/montmartre-tour-in-paris/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="scroll_down black_scroll_down">
+                    <div class="scroll_down_container">
+                        <div class="scroll_down_text">Reviews</div>
+                        <div class="scroll_down_icon"></div>
+                    </div>
+                </div>
+            </section>
+            <?
+        break;
+        case '2-days-in-paris':
+            ?>
+            <section class="content_box tours-list_new  whiten">
+                <h2 class="title-of-tours single-title">Related tours</h2>
+                <div class="row">
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/paris/one-day-paris-tour.jpg"/>
+                        <figcaption>
+                            <h2>One Day in Paris</h2>
+                            <div class="price">$227 &mdash; 7 hours</div>
+                            <h3>In-depth walking tour with a local</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/paris/tours/one-day-in-paris">View tour</a>
+                                <a class="book_button" href="/paris/tours/one-day-in-paris/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/paris/3-days-in-Paris.jpg"/>
+                        <figcaption>
+                            <h2>3 Days in Paris</h2>
+                            <div class="price">$497 &mdash; 3 days</div>
+                            <h3>All Paris must-see sights!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/paris/tours/3-days-in-paris">View tour</a>
+                                <a class="book_button" href="/paris/tours/3-days-in-paris/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/paris/Moulin-Rouge-Paris-tour.jpg"/>
+                        <figcaption>
+                            <h2>Montmarte walking tour</h2>
+                            <div class="price">$157 &mdash; 3 hours</div>
+                            <h3>It's like going on a date with Paris itself!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/paris/tours/montmartre-tour-in-paris">View tour</a>
+                                <a class="book_button" href="/paris/tours/montmartre-tour-in-paris/#book">Book tour</a>
                             </div>
                         </figcaption>
                     </figure>
@@ -1482,44 +1636,44 @@ if($id == 'tours' && $tours){
             </section>
             <?
             break;
-            case 'peterhof-tour':
+        case '3-days-in-paris':
             ?>
             <section class="content_box tours-list_new  whiten">
                 <h2 class="title-of-tours single-title">Related tours</h2>
                 <div class="row">
                     <figure class="tour-item">
-                        <img src="/i/tours-list/saint-petersburg/Tsaritsino-Museum-Reserve.jpg"/>
+                        <img src="/i/tours-list/paris/one-day-paris-tour.jpg"/>
                         <figcaption>
-                            <h2>St Petersburg & Moscow</h2>
-                            <div class="price">$257 &mdash; 2 days</div>
-                            <h3>2 tours in 2 cities</h3>
+                            <h2>One Day in Paris</h2>
+                            <div class="price">$227 &mdash; 7 hours</div>
+                            <h3>In-depth walking tour with a local</h3>
                             <div class="buttons-container">
-                                <a class="view-button" href="/saint-petersburg/tours/st-petersburg-and-moscow-tours">View tour</a>
-                                <a class="book_button" href="/saint-petersburg/tours/st-petersburg-and-moscow-tours/#book">Book tour</a>
+                                <a class="view-button" href="/paris/tours/one-day-in-paris">View tour</a>
+                                <a class="book_button" href="/paris/tours/one-day-in-paris/#book">Book tour</a>
                             </div>
                         </figcaption>
                     </figure>
                     <figure class="tour-item">
-                        <img src="/i/tours-list/saint-petersburg/panoramic-views-of-st-petersburg.jpg"/>
+                        <img src="/i/tours-list/paris/two-days-in-paris.jpg"/>
                         <figcaption>
-                            <h2>3 Days in Saint Petersburg</h2>
-                            <div class="price">$357 &mdash; 5 hours each day</div>
-                            <h3>All the highlights of St Petersburg</h3>
+                            <h2>2 Days in Paris</h2>
+                            <div class="price">$297 &mdash; 2 days</div>
+                            <h3>20 Paris top attractions!</h3>
                             <div class="buttons-container">
-                                <a class="view-button" href="/saint-petersburg/tours/3-day-tour-of-saint-petersburg">View tour</a>
-                                <a class="book_button" href="/saint-petersburg/tours/3-day-tour-of-saint-petersburg/#book">Book tour</a>
+                                <a class="view-button" href="/paris/tours/2-days-in-paris">View tour</a>
+                                <a class="book_button" href="/paris/tours/2-days-in-paris/#book">Book tour</a>
                             </div>
                         </figcaption>
                     </figure>
                     <figure class="tour-item">
-                        <img src="/i/tours-list/saint-petersburg/neva-emabnkment-st-petersburg.jpg"/>
+                        <img src="/i/tours-list/paris/Paris-by-Night-tour.jpg"/>
                         <figcaption>
-                            <h2>St Petersburg Walking Tour</h2>
-                            <div class="price">$117 &mdash; 3 hours</div>
-                            <h3>Classic landmarks of St Petersburg</h3>
+                            <h2>Paris Night Tour</h2>
+                            <div class="price">$157 &mdash; 3 hours</div>
+                            <h3>Best Paris By Night experience</h3>
                             <div class="buttons-container">
-                                <a class="view-button" href="/saint-petersburg/tours/st-petersburg-walking-tour">View tour</a>
-                                <a class="book_button" href="/saint-petersburg/tours/st-petersburg-walking-tour/#book">Book tour</a>
+                                <a class="view-button" href="/paris/tours/paris-night-tour">View tour</a>
+                                <a class="book_button" href="/paris/tours/paris-night-tour/#book">Book tour</a>
                             </div>
                         </figcaption>
                     </figure>
@@ -1531,8 +1685,212 @@ if($id == 'tours' && $tours){
                     </div>
                 </div>
             </section>
-<?
+            <?
+        break;
+        case 'paris-city-tour':
+            ?>
+            <section class="content_box tours-list_new  whiten">
+                <h2 class="title-of-tours single-title">Related tours</h2>
+                <div class="row">
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/paris/one-day-paris-tour.jpg"/>
+                        <figcaption>
+                            <h2>One Day in Paris</h2>
+                            <div class="price">$227 &mdash; 7 hours</div>
+                            <h3>In-depth walking tour with a local</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/paris/tours/one-day-in-paris">View tour</a>
+                                <a class="book_button" href="/paris/tours/one-day-in-paris/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/paris/two-days-in-paris.jpg"/>
+                        <figcaption>
+                            <h2>2 Days in Paris</h2>
+                            <div class="price">$297 &mdash; 2 days</div>
+                            <h3>20 Paris top attractions!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/paris/tours/2-days-in-paris">View tour</a>
+                                <a class="book_button" href="/paris/tours/2-days-in-paris/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/paris/3-days-in-Paris.jpg"/>
+                        <figcaption>
+                            <h2>3 Days in Paris</h2>
+                            <div class="price">$497 &mdash; 3 days</div>
+                            <h3>All Paris must-see sights!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/paris/tours/3-days-in-paris">View tour</a>
+                                <a class="book_button" href="/paris/tours/3-days-in-paris/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="scroll_down black_scroll_down">
+                    <div class="scroll_down_container">
+                        <div class="scroll_down_text">Reviews</div>
+                        <div class="scroll_down_icon"></div>
+                    </div>
+                </div>
+            </section>
+            <?
             break;
+        case 'montmartre-tour-in-paris':
+            ?>
+            <section class="content_box tours-list_new  whiten">
+                <h2 class="title-of-tours single-title">Related tours</h2>
+                <div class="row">
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/paris/city-tour-in-paris.jpg"/>
+                        <figcaption>
+                            <h2>Paris City Tour</h2>
+                            <div class="price">$197 &mdash; 5 hours</div>
+                            <h3>Fast-paced Paris Tour</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/paris/tours/paris-city-tour">View tour</a>
+                                <a class="book_button" href="/paris/tours/paris-city-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/paris/Food-tour-Paris.jpg"/>
+                        <figcaption>
+                            <h2>Paris Food Tour</h2>
+                            <div class="price">$157 &mdash; 3 hours</div>
+                            <h3>Eat like a Parisian - Unforgettable French meal!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/paris/tours/paris-food-tour">View tour</a>
+                                <a class="book_button" href="/paris/tours/paris-food-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/paris/Paris-by-Night-tour.jpg"/>
+                        <figcaption>
+                            <h2>Paris Night Tour</h2>
+                            <div class="price">$157 &mdash; 3 hours</div>
+                            <h3>Best Paris By Night experience</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/paris/tours/paris-night-tour">View tour</a>
+                                <a class="book_button" href="/paris/tours/paris-night-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="scroll_down black_scroll_down">
+                    <div class="scroll_down_container">
+                        <div class="scroll_down_text">Reviews</div>
+                        <div class="scroll_down_icon"></div>
+                    </div>
+                </div>
+            </section>
+            <?
+        break;
+        case 'paris-night-tour':
+            ?>
+            <section class="content_box tours-list_new  whiten">
+                <h2 class="title-of-tours single-title">Related tours</h2>
+                <div class="row">
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/paris/city-tour-in-paris.jpg"/>
+                        <figcaption>
+                            <h2>Paris City Tour</h2>
+                            <div class="price">$197 &mdash; 5 hours</div>
+                            <h3>Fast-paced Paris Tour</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/paris/tours/paris-city-tour">View tour</a>
+                                <a class="book_button" href="/paris/tours/paris-city-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/paris/Food-tour-Paris.jpg"/>
+                        <figcaption>
+                            <h2>Paris Food Tour</h2>
+                            <div class="price">$157 &mdash; 3 hours</div>
+                            <h3>Eat like a Parisian - Unforgettable French meal!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/paris/tours/paris-food-tour">View tour</a>
+                                <a class="book_button" href="/paris/tours/paris-food-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/paris/Moulin-Rouge-Paris-tour.jpg"/>
+                        <figcaption>
+                            <h2>Montmarte walking tour</h2>
+                            <div class="price">$157 &mdash; 3 hours</div>
+                            <h3>It's like going on a date with Paris itself!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/paris/tours/montmartre-tour-in-paris">View tour</a>
+                                <a class="book_button" href="/paris/tours/montmartre-tour-in-paris/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="scroll_down black_scroll_down">
+                    <div class="scroll_down_container">
+                        <div class="scroll_down_text">Reviews</div>
+                        <div class="scroll_down_icon"></div>
+                    </div>
+                </div>
+            </section>
+            <?
+        break;
+        case 'paris-food-tour':
+            ?>
+            <section class="content_box tours-list_new  whiten">
+                <h2 class="title-of-tours single-title">Related tours</h2>
+                <div class="row">
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/paris/city-tour-in-paris.jpg"/>
+                        <figcaption>
+                            <h2>Paris City Tour</h2>
+                            <div class="price">$197 &mdash; 5 hours</div>
+                            <h3>Fast-paced Paris Tour</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/paris/tours/paris-city-tour">View tour</a>
+                                <a class="book_button" href="/paris/tours/paris-city-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/paris/two-days-in-paris.jpg"/>
+                        <figcaption>
+                            <h2>2 Days in Paris</h2>
+                            <div class="price">$297 &mdash; 2 days</div>
+                            <h3>20 Paris top attractions!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/paris/tours/2-days-in-paris">View tour</a>
+                                <a class="book_button" href="/paris/tours/2-days-in-paris/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/paris/Moulin-Rouge-Paris-tour.jpg"/>
+                        <figcaption>
+                            <h2>Montmarte walking tour</h2>
+                            <div class="price">$157 &mdash; 3 hours</div>
+                            <h3>It's like going on a date with Paris itself!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/paris/tours/montmartre-tour-in-paris">View tour</a>
+                                <a class="book_button" href="/paris/tours/montmartre-tour-in-paris/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="scroll_down black_scroll_down">
+                    <div class="scroll_down_container">
+                        <div class="scroll_down_text">Reviews</div>
+                        <div class="scroll_down_icon"></div>
+                    </div>
+                </div>
+            </section>
+            <?
+        break;
     }
 }
 ?>
