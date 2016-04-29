@@ -107,8 +107,8 @@
             <menu class="social_links">
                 <div class="fb"><a href="https://www.facebook.com/friendlylocalguides" target="_blank"></a></div>
                 <div class="tw"><a href="https://twitter.com/FriendlyGuides" target="_blank"></a></div>
-                <div class="gp"><a href="https://plus.google.com/b/113546718017692385903/113546718017692385903/posts/p/pub" target="_blank"></a></div>
-                <div class="instagram"><a href="http://instagram.com/friendly.local.guides" target="_blank"></a></div>
+                <div class="gp"><a href="https://plus.google.com/+FriendlyLocalGuides" target="_blank"></a></div>
+                <div class="instagram"><a href="https://www.instagram.com/friendly.local.guides/" target="_blank"></a></div>
             </menu>
         </div>
         <div class="sub_header">

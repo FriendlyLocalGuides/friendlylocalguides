@@ -233,7 +233,7 @@
                     <div id="TA_selfserveprop711" class="TA_selfserveprop">
                         <ul id="rAtUGUX0j" class="TA_links sDAYgVGMX">
                             <li id="DsjadGuAtgzR" class="DGH7b5z">
-                                <a target="_blank" href="http://www.tripadvisor.com/"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/150_logo-11900-2.png" alt="TripAdvisor"/></a>
+                                <a target="_blank" href="https://www.tripadvisor.com/"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/150_logo-11900-2.png" alt="TripAdvisor"/></a>
                             </li>
                         </ul>
                     </div>
