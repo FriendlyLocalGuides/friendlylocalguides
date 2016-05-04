@@ -265,10 +265,40 @@
                 $keywords = "1 day tour in New York, private New York tours, Friendly Local Guides, Central Park, The Metropolitan Museum of Art, Rockefeller Center, Grand Central Terminal, Times Square, Broadway, 9/11 Memorial, Brooklyn Bridge, One World Observatory - World Trade Center, Statue of Liberty and Ellis Island";
                 break;
 
+            case '2-days-in-new-york':
+                $title = "";
+                $meta = "";
+                $keywords = "";
+                break;
+
+            case '3-days-in-new-york':
+                $title = "";
+                $meta = "";
+                $keywords = "";
+                break;
+
+            case 'new-york-city-night-tour':
+                $title = "";
+                $meta = "";
+                $keywords = "";
+                break;
+            
+            case 'new-york-city-tour':
+                $title = "Private New York City Tour - Friendly Local Guides";
+                $meta = "Best New York city private and custom 5 hour tour. Book now and visit 7 must-see NYC attractions.";
+                $keywords = "private new york city tour, Friendly Local Guides,";
+                break;
+
             case 'lisbon-tour':
                 $title = "1 day tour in Lisbon -  private city tours with Friendly Local Guides";
                 $meta = "Visit TOP 10 places in Lisbon in 1 day with Friendly Local Guides: Commercial Square / Victory Arch, Rossio Square, Restauradores Square and Liberdade Avenue, Carmo Square, Chiado, Bairro Alto, The Mouraria, Lisbon's Castle neighbourhood, Lisbon Cathedral, The Alfama.";
                 $keywords = "1 day tour in Lisbon, Lisbon private city tours, Commercial Square / Victory Arch, Rossio Square, Restauradores Square and Liberdade Avenue, Carmo Square, Chiado, Bairro Alto, The Mouraria, Lisbon's Castle neighbourhood, Lisbon Cathedral, The Alfama, Friendly Local Guides";
+                break;
+
+            case 'lisbon-city-tour':
+                $title = "";
+                $meta = "";
+                $keywords = "";
                 break;
 
             case 'milan-tour':
@@ -278,21 +308,39 @@
                 break;
 
             case 'milan-food-tour':
-                $title = "";
-                $meta = "";
-                $keywords = "";
+                $title = "Milan food walking tour, Italy - Friendly Local Guides";
+                $meta = "Tasty pizza, pasta, risotto on walking food tour of Milan. Italian breakfast, lunch, or dinner in the very best Milan cafes & restaurants. ";
+                $keywords = "milan food walking tour, best private city tours in milan, italy, Friendly Local Guides";
                 break;
 
             case 'milan-night-tour':
                 $title = "Milan Night Tour - Friendly Local Guides";
                 $meta = "Book guided Milan night tour, discover best attractions in Milan. Check photos and reviews from Milan By Night tour.";
-                $keywords = "";
+                $keywords = "milan night tour, best private city tours in milan, italy, Friendly Local Guides";
+                break;
+
+            case 'milan-city-tour':
+                $title = "Milan private city tour, Italy - Friendly Local Guides";
+                $meta = "Best private city tour in Milan, Italy: Navigli district, Porta Ticinese, San Lorenzo Columns, Duomo Square, Galleria and more. Book now and explore best tourist attractions in Milan.";
+                $keywords = "best private city tours in milan, italy, Friendly Local Guides";
+                break;
+
+            case 'milan-photo-walking-tour':
+                $title = "Walking tour in Milan, Italy - Friendly Local Guides";
+                $meta = "Book private Milan walking tour and explore the city with friendly local guide. Visit Piazza Affari, Accademia Brera, Giardino Botanico Brera, Gae Aulenti Square and Alval Alto Square​.";
+                $keywords = "walking city tour milan, italy, private, guided, Friendly Local Guides";
                 break;
 
             case '2-days-in-milan':
                 $title = "2-Day Tour in Milan, Italy - Friendly Local Guides";
                 $meta = "Explore attractions, check the best points for shopping, see famous masterpieces of art in 2-day Milan tour. Reviews, photos and online booking.";
-                $keywords = "";
+                $keywords = "milan 2 days tour, best private city tours in milan, italy, Friendly Local Guides";
+                break;
+
+            case '3-days-in-milan':
+                $title = "3-day-tour in Milan, Italy - Friendly Local Guides";
+                $meta = "Enjoy private and customized 3-day tour in Milan with your friendly local guide. Book now and explore must-see attractions and off the beaten path  of Milan.";
+                $keywords = "3 days tour in Milan, Italy, private, customized, Friendly Local Guides";
                 break;
 
             case 'los-angeles-tour':
@@ -310,13 +358,37 @@
             case 'los-angeles-one-day-tour':
                 $title = "1 day tour in Los Angeles - Friendly Local Guides";
                 $meta = "Visit best 14 places in Los Angeles in 1 day with Friendly Local Guides. Itinerary plan, photos and reviews.";
-                $keywords = "";
+                $keywords = "1 day tour los angeles, best private city tours in los angeles, california, Friendly Local Guides";
                 break;
 
             case '2-days-in-los-angeles':
                 $title = "Los Angeles 2-day tour - Friendly Local Guides";
                 $meta = "Book 2 days in LA tour amd check top 25 things to do in LA, including Hollywood, Downtown LA, and off the beaten path of LA in between. Reviews and photos.";
-                $keywords = "";
+                $keywords = "2 days tour in los angeles, best private city tours in los angeles, california, Friendly Local Guides";
+                break;
+
+            case '3-days-in-los-angeles':
+                $title = "3-day tour in Los Angeles - Friendly Local Guides";
+                $meta = "Visit over 30 must-see attractions during 3 days in Los Angeles. Santa Monica Pier, Rodeo Drive, Hollywood Walk of Fame and more! ";
+                $keywords = "3 days los angeles tour, best private city tours in los angeles, california, Friendly Local Guides";
+                break;
+
+            case 'hollywood-tour':
+                $title = "Hollywood tour in Los Angeles - Friendly Local Guides";
+                $meta = "Private Hollywood tour in Los Angeles, California with all customized preferences. Itinerary of tour, reviews and photos.";
+                $keywords = "hollywood los angeles tour, best private city tours in los angeles, california, Friendly Local Guides";
+                break;
+
+            case 'los-angeles-driving-tour':
+                $title = "Los Angeles Driving Tour - Friendly Local Guides";
+                $meta = "Enjoy driving tour in Los Angeles through the main highlights of city. Tour description, photos, reviews and online booking.";
+                $keywords = "los angeles driving tour, best private city tours in los angeles, california, Friendly Local Guides";
+                break;
+
+            case 'los-angeles-night-tour':
+                $title = "Los Angeles Night Tour - Friendly Local Guides";
+                $meta = "Downtown Los Angeles night tour. Disсover best attractions in lights: Walt Disney Concert Hall, City Hall, Central Library, Hollywood Boulevard, Walk of Fame, Dolby Theater and more!";
+                $keywords = "los angeles night tour, best private city tours in los angeles, california, Friendly Local Guides";
                 break;
 
             case 'washington-tour':
@@ -358,7 +430,7 @@
             case 'paris-food-tour':
                 $title = "Paris Food and Wine Tour in France - Friendly Local Guides";
                 $meta = "Enjoy food and sample wine on a private guided tour of Paris. Champs de Mars, St Germain des Pres, Le Procope, Ile St Louis, Marais, Stohrer Patisserie - all the best places for foodies in Paris!";
-                $keywords = "";
+                $keywords = "paris food tours, best private city tours in Paris, France, Friendly Local Guides";
                 break;
 
             case 'paris-night-tour':
