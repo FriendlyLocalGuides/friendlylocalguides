@@ -2248,6 +2248,364 @@ if($id == 'tours' && $tours){
             </section>
             <?
             break;
+        //MILAN TOURS
+        case 'milan-tour':
+            ?>
+            <section class="content_box tours-list_new  whiten">
+                <h2 class="title-of-tours single-title">Related tours</h2>
+                <div class="row">
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/milan/Milan-at-night.jpg" alt="">
+                        <figcaption>
+                            <h2>Milan Night Tour</h2>
+                            <div class="price">$117 — 3 hours</div>
+                            <h3>Magic lights, authentic vibes!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/milan/tours/milan-night-tour">View tour</a>
+                                <a class="book_button" href="/milan/tours/milan-night-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/milan/Milan-in-two-days.jpg" alt="">
+                        <figcaption>
+                            <h2>2 Days in Milan</h2>
+                            <div class="price">$277 — 2 days</div>
+                            <h3>Top things to do in Milan in 2 days</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/milan/tours/2-days-in-milan">View tour</a>
+                                <a class="book_button" href="/milan/tours/2-days-in-milan/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/milan/milan-food-tour.jpg" alt="">
+                        <figcaption>
+                            <h2>Milan Food Tour</h2>
+                            <div class="price">$157 — 3 hours</div>
+                            <h3>World-class coffee &amp; Italian cuisine</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/milan/tours/milan-food-tour">View tour</a>
+                                <a class="book_button" href="/milan/tours/milan-food-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="scroll_down black_scroll_down">
+                    <div class="scroll_down_container">
+                        <div class="scroll_down_text">Reviews</div>
+                        <div class="scroll_down_icon"></div>
+                    </div>
+                </div>
+            </section>
+            <?
+            break;
+        case 'milan-night-tour':
+            ?>
+            <section class="content_box tours-list_new  whiten">
+                <h2 class="title-of-tours single-title">Related tours</h2>
+                <div class="row">
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/milan/Milan-tour.jpg" alt="1 day Milan tour">
+                        <figcaption>
+                            <h2>Must See Milan Tour</h2>
+                            <div class="price">$227 — 7 hours</div>
+                            <h3>All Milan Must See sites!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/milan/tours/milan-tour">View tour</a>
+                                <a class="book_button" href="/milan/tours/milan-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/milan/Milan-at-night.jpg" alt="">
+                        <figcaption>
+                            <h2>Milan Night Tour</h2>
+                            <div class="price">$117 — 3 hours</div>
+                            <h3>Magic lights, authentic vibes!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/milan/tours/milan-night-tour">View tour</a>
+                                <a class="book_button" href="/milan/tours/milan-night-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/milan/Milan-in-two-days.jpg" alt="">
+                        <figcaption>
+                            <h2>2 Days in Milan</h2>
+                            <div class="price">$277 — 2 days</div>
+                            <h3>Top things to do in Milan in 2 days</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/milan/tours/2-days-in-milan">View tour</a>
+                                <a class="book_button" href="/milan/tours/2-days-in-milan/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="scroll_down black_scroll_down">
+                    <div class="scroll_down_container">
+                        <div class="scroll_down_text">Reviews</div>
+                        <div class="scroll_down_icon"></div>
+                    </div>
+                </div>
+            </section>
+            <?
+            break;
+        case '2-days-in-milan':
+            ?>
+            <section class="content_box tours-list_new  whiten">
+                <h2 class="title-of-tours single-title">Related tours</h2>
+                <div class="row">
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/milan/Milan-tour.jpg" alt="1 day Milan tour">
+                        <figcaption>
+                            <h2>Must See Milan Tour</h2>
+                            <div class="price">$227 — 7 hours</div>
+                            <h3>All Milan Must See sites!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/milan/tours/milan-tour">View tour</a>
+                                <a class="book_button" href="/milan/tours/milan-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/milan/Milan-at-night.jpg" alt="">
+                        <figcaption>
+                            <h2>Milan Night Tour</h2>
+                            <div class="price">$117 — 3 hours</div>
+                            <h3>Magic lights, authentic vibes!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/milan/tours/milan-night-tour">View tour</a>
+                                <a class="book_button" href="/milan/tours/milan-night-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/milan/milan-food-tour.jpg" alt="">
+                        <figcaption>
+                            <h2>Milan Food Tour</h2>
+                            <div class="price">$157 — 3 hours</div>
+                            <h3>World-class coffee &amp; Italian cuisine</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/milan/tours/milan-food-tour">View tour</a>
+                                <a class="book_button" href="/milan/tours/milan-food-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="scroll_down black_scroll_down">
+                    <div class="scroll_down_container">
+                        <div class="scroll_down_text">Reviews</div>
+                        <div class="scroll_down_icon"></div>
+                    </div>
+                </div>
+            </section>
+            <?
+            break;
+        case 'milan-food-tour':
+            ?>
+            <section class="content_box tours-list_new  whiten">
+                <h2 class="title-of-tours single-title">Related tours</h2>
+                <div class="row">
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/milan/Milan-tour.jpg" alt="1 day Milan tour">
+                        <figcaption>
+                            <h2>Must See Milan Tour</h2>
+                            <div class="price">$227 — 7 hours</div>
+                            <h3>All Milan Must See sites!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/milan/tours/milan-tour">View tour</a>
+                                <a class="book_button" href="/milan/tours/milan-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/milan/Milan-at-night.jpg" alt="">
+                        <figcaption>
+                            <h2>Milan Night Tour</h2>
+                            <div class="price">$117 — 3 hours</div>
+                            <h3>Magic lights, authentic vibes!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/milan/tours/milan-night-tour">View tour</a>
+                                <a class="book_button" href="/milan/tours/milan-night-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/milan/Milan-in-three-days.jpg" alt="">
+                        <figcaption>
+                            <h2>3 Days in Milan</h2>
+                            <div class="price">$357 — 3 days</div>
+                            <h3>You're almost a local! </h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/milan/tours/3-days-in-milan">View tour</a>
+                                <a class="book_button" href="/milan/tours/3-days-in-milan/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="scroll_down black_scroll_down">
+                    <div class="scroll_down_container">
+                        <div class="scroll_down_text">Reviews</div>
+                        <div class="scroll_down_icon"></div>
+                    </div>
+                </div>
+            </section>
+            <?
+            break;
+        case '3-days-in-milan':
+            ?>
+            <section class="content_box tours-list_new  whiten">
+                <h2 class="title-of-tours single-title">Related tours</h2>
+                <div class="row">
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/milan/Milan-tour.jpg" alt="1 day Milan tour">
+                        <figcaption>
+                            <h2>Must See Milan Tour</h2>
+                            <div class="price">$227 — 7 hours</div>
+                            <h3>All Milan Must See sites!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/milan/tours/milan-tour">View tour</a>
+                                <a class="book_button" href="/milan/tours/milan-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/milan/Milan-in-two-days.jpg" alt="">
+                        <figcaption>
+                            <h2>2 Days in Milan</h2>
+                            <div class="price">$277 — 2 days</div>
+                            <h3>Top things to do in Milan in 2 days</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/milan/tours/2-days-in-milan">View tour</a>
+                                <a class="book_button" href="/milan/tours/2-days-in-milan/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/milan/Milan-in-three-days.jpg" alt="">
+                        <figcaption>
+                            <h2>3 Days in Milan</h2>
+                            <div class="price">$357 — 3 days</div>
+                            <h3>You're almost a local! </h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/milan/tours/3-days-in-milan">View tour</a>
+                                <a class="book_button" href="/milan/tours/3-days-in-milan/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="scroll_down black_scroll_down">
+                    <div class="scroll_down_container">
+                        <div class="scroll_down_text">Reviews</div>
+                        <div class="scroll_down_icon"></div>
+                    </div>
+                </div>
+            </section>
+            <?
+            break;
+        case 'milan-city-tour':
+            ?>
+            <section class="content_box tours-list_new  whiten">
+                <h2 class="title-of-tours single-title">Related tours</h2>
+                <div class="row">
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/milan/Milan-tour.jpg" alt="1 day Milan tour">
+                        <figcaption>
+                            <h2>Must See Milan Tour</h2>
+                            <div class="price">$227 — 7 hours</div>
+                            <h3>All Milan Must See sites!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/milan/tours/milan-tour">View tour</a>
+                                <a class="book_button" href="/milan/tours/milan-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/milan/Milan-in-two-days.jpg" alt="">
+                        <figcaption>
+                            <h2>2 Days in Milan</h2>
+                            <div class="price">$277 — 2 days</div>
+                            <h3>Top things to do in Milan in 2 days</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/milan/tours/2-days-in-milan">View tour</a>
+                                <a class="book_button" href="/milan/tours/2-days-in-milan/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/milan/milan-walking-tours.jpg" alt="">
+                        <figcaption>
+                            <h2>Photo Walking Tour</h2>
+                            <div class="price">$117 — 3 hours</div>
+                            <h3>Fun Milan photo walk</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/milan/tours/milan-photo-walking-tour">View tour</a>
+                                <a class="book_button" href="/milan/tours/milan-photo-walking-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="scroll_down black_scroll_down">
+                    <div class="scroll_down_container">
+                        <div class="scroll_down_text">Reviews</div>
+                        <div class="scroll_down_icon"></div>
+                    </div>
+                </div>
+            </section>
+            <?
+            break;
+        case 'milan-photo-walking-tour':
+            ?>
+            <section class="content_box tours-list_new  whiten">
+                <h2 class="title-of-tours single-title">Related tours</h2>
+                <div class="row">
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/milan/Milan-tour.jpg" alt="1 day Milan tour">
+                        <figcaption>
+                            <h2>Must See Milan Tour</h2>
+                            <div class="price">$227 — 7 hours</div>
+                            <h3>All Milan Must See sites!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/milan/tours/milan-tour">View tour</a>
+                                <a class="book_button" href="/milan/tours/milan-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/milan/Milan-at-night.jpg" alt="">
+                        <figcaption>
+                            <h2>Milan Night Tour</h2>
+                            <div class="price">$117 — 3 hours</div>
+                            <h3>Magic lights, authentic vibes!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/milan/tours/milan-night-tour">View tour</a>
+                                <a class="book_button" href="/milan/tours/milan-night-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/milan/Milan-City-tours.jpg" alt="">
+                        <figcaption>
+                            <h2>Milan  City Tour</h2>
+                            <div class="price">$157 — 5 hours</div>
+                            <h3>Fast-paced tour of Milan</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/milan/tours/milan-city-tour">View tour</a>
+                                <a class="book_button" href="/milan/tours/milan-city-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="scroll_down black_scroll_down">
+                    <div class="scroll_down_container">
+                        <div class="scroll_down_text">Reviews</div>
+                        <div class="scroll_down_icon"></div>
+                    </div>
+                </div>
+            </section>
+            <?
+            break;
     }
 }
 ?>
