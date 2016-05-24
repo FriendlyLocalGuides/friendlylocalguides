@@ -2606,6 +2606,365 @@ if($id == 'tours' && $tours){
             </section>
             <?
             break;
+        //MILAN TOURS
+        case 'lisbon-tour':
+            ?>
+            <section class="content_box tours-list_new  whiten">
+                <h2 class="title-of-tours single-title">Related tours</h2>
+                <div class="row">
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/lisbon/lisbon-private-tour.jpg" alt="">
+                        <figcaption>
+                            <h2>Lisbon City Tour</h2>
+                            <div class="price">$157 — 5 hours</div>
+                            <h3>Prepare for adventure!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/lisbon/tours/lisbon-city-tour">View tour</a>
+                                <a class="book_button" href="/lisbon/tours/lisbon-city-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/lisbon/Lisbon-photo-tours.jpg" alt="">
+                        <figcaption>
+                            <h2>Lisbon Photo Tour</h2>
+                            <div class="price">$117 — 3 hours</div>
+                            <h3>Most scenic and iconic in Lisbon</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/lisbon/tours/lisbon-photo-tour">View tour</a>
+                                <a class="book_button" href="/lisbon/tours/lisbon-photo-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/lisbon/two-days-in-lisbon.jpg" alt="">
+                        <figcaption>
+                            <h2>2 Days in Lisbon</h2>
+                            <div class="price">$257 — 2 days</div>
+                            <h3>2 magic days in a historical capital</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/lisbon/tours/2-days-in-lisbon">View tour</a>
+                                <a class="book_button" href="/lisbon/tours/2-days-in-lisbon/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="scroll_down black_scroll_down">
+                    <div class="scroll_down_container">
+                        <div class="scroll_down_text">Reviews</div>
+                        <div class="scroll_down_icon"></div>
+                    </div>
+                </div>
+            </section>
+            <?
+            break;
+        case 'lisbon-city-tour':
+            ?>
+            <section class="content_box tours-list_new  whiten">
+                <h2 class="title-of-tours single-title">Related tours</h2>
+                <div class="row">
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/lisbon/Lisbon-must-see.jpg" alt="1 day Lisbon tour ">
+                        <figcaption>
+                            <h2>1 day tour in Lisbon</h2>
+                            <div class="price">$227 — 7 hours</div>
+                            <h3>10 Lisbon attractions!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/lisbon/tours/lisbon-tour">View tour</a>
+                                <a class="book_button" href="/lisbon/tours/lisbon-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/lisbon/Lisbon-photo-tours.jpg" alt="">
+                        <figcaption>
+                            <h2>Lisbon Photo Tour</h2>
+                            <div class="price">$117 — 3 hours</div>
+                            <h3>Most scenic and iconic in Lisbon</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/lisbon/tours/lisbon-photo-tour">View tour</a>
+                                <a class="book_button" href="/lisbon/tours/lisbon-photo-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/lisbon/two-days-in-lisbon.jpg" alt="">
+                        <figcaption>
+                            <h2>2 Days in Lisbon</h2>
+                            <div class="price">$257 — 2 days</div>
+                            <h3>2 magic days in a historical capital</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/lisbon/tours/2-days-in-lisbon">View tour</a>
+                                <a class="book_button" href="/lisbon/tours/2-days-in-lisbon/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="scroll_down black_scroll_down">
+                    <div class="scroll_down_container">
+                        <div class="scroll_down_text">Reviews</div>
+                        <div class="scroll_down_icon"></div>
+                    </div>
+                </div>
+            </section>
+            <?
+            break;
+        case 'lisbon-photo-tour':
+            ?>
+            <section class="content_box tours-list_new  whiten">
+                <h2 class="title-of-tours single-title">Related tours</h2>
+                <div class="row">
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/lisbon/Lisbon-must-see.jpg" alt="1 day Lisbon tour ">
+                        <figcaption>
+                            <h2>1 day tour in Lisbon</h2>
+                            <div class="price">$227 — 7 hours</div>
+                            <h3>10 Lisbon attractions!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/lisbon/tours/lisbon-tour">View tour</a>
+                                <a class="book_button" href="/lisbon/tours/lisbon-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/lisbon/lisbon-private-tour.jpg" alt="">
+                        <figcaption>
+                            <h2>Lisbon City Tour</h2>
+                            <div class="price">$157 — 5 hours</div>
+                            <h3>Prepare for adventure!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/lisbon/tours/lisbon-city-tour">View tour</a>
+                                <a class="book_button" href="/lisbon/tours/lisbon-city-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/lisbon/two-days-in-lisbon.jpg" alt="">
+                        <figcaption>
+                            <h2>2 Days in Lisbon</h2>
+                            <div class="price">$257 — 2 days</div>
+                            <h3>2 magic days in a historical capital</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/lisbon/tours/2-days-in-lisbon">View tour</a>
+                                <a class="book_button" href="/lisbon/tours/2-days-in-lisbon/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="scroll_down black_scroll_down">
+                    <div class="scroll_down_container">
+                        <div class="scroll_down_text">Reviews</div>
+                        <div class="scroll_down_icon"></div>
+                    </div>
+                </div>
+            </section>
+            <?
+            break;
+        case '2-days-in-lisbon':
+            ?>
+            <section class="content_box tours-list_new  whiten">
+                <h2 class="title-of-tours single-title">Related tours</h2>
+                <div class="row">
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/lisbon/Lisbon-must-see.jpg" alt="1 day Lisbon tour ">
+                        <figcaption>
+                            <h2>1 day tour in Lisbon</h2>
+                            <div class="price">$227 — 7 hours</div>
+                            <h3>10 Lisbon attractions!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/lisbon/tours/lisbon-tour">View tour</a>
+                                <a class="book_button" href="/lisbon/tours/lisbon-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/lisbon/3-days-in-lisbon-with-friendly-local-guides.jpg" alt="">
+                        <figcaption>
+                            <h2>3 Days in Lisbon</h2>
+                            <div class="price">$357 — 3 days</div>
+                            <h3>20 Lisbon must-see in 3 days!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/lisbon/tours/3-days-in-lisbon">View tour</a>
+                                <a class="book_button" href="/lisbon/tours/3-days-in-lisbon/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/lisbon/lisbon-private-tour.jpg" alt="">
+                        <figcaption>
+                            <h2>Lisbon City Tour</h2>
+                            <div class="price">$157 — 5 hours</div>
+                            <h3>Prepare for adventure!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/lisbon/tours/lisbon-city-tour">View tour</a>
+                                <a class="book_button" href="/lisbon/tours/lisbon-city-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="scroll_down black_scroll_down">
+                    <div class="scroll_down_container">
+                        <div class="scroll_down_text">Reviews</div>
+                        <div class="scroll_down_icon"></div>
+                    </div>
+                </div>
+            </section>
+            <?
+            break;
+
+        case '3-days-in-lisbon':
+            ?>
+            <section class="content_box tours-list_new  whiten">
+                <h2 class="title-of-tours single-title">Related tours</h2>
+                <div class="row">
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/lisbon/Lisbon-must-see.jpg" alt="1 day Lisbon tour ">
+                        <figcaption>
+                            <h2>1 day tour in Lisbon</h2>
+                            <div class="price">$227 — 7 hours</div>
+                            <h3>10 Lisbon attractions!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/lisbon/tours/lisbon-tour">View tour</a>
+                                <a class="book_button" href="/lisbon/tours/lisbon-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/lisbon/two-days-in-lisbon.jpg" alt="">
+                        <figcaption>
+                            <h2>2 Days in Lisbon</h2>
+                            <div class="price">$257 — 2 days</div>
+                            <h3>2 magic days in a historical capital</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/lisbon/tours/2-days-in-lisbon">View tour</a>
+                                <a class="book_button" href="/lisbon/tours/2-days-in-lisbon/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/lisbon/lisbon-private-tour.jpg" alt="">
+                        <figcaption>
+                            <h2>Lisbon City Tour</h2>
+                            <div class="price">$157 — 5 hours</div>
+                            <h3>Prepare for adventure!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/lisbon/tours/lisbon-city-tour">View tour</a>
+                                <a class="book_button" href="/lisbon/tours/lisbon-city-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="scroll_down black_scroll_down">
+                    <div class="scroll_down_container">
+                        <div class="scroll_down_text">Reviews</div>
+                        <div class="scroll_down_icon"></div>
+                    </div>
+                </div>
+            </section>
+            <?
+            break;
+        case 'lisbon-ny-night':
+            ?>
+            <section class="content_box tours-list_new  whiten">
+                <h2 class="title-of-tours single-title">Related tours</h2>
+                <div class="row">
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/lisbon/lisbon-in-5-hours.jpg" alt="">
+                        <figcaption>
+                            <h2>Lisbon Food &amp; Culture Tour</h2>
+                            <div class="price">$117 — 3 hours</div>
+                            <h3>Best Lisbon Food experience</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/lisbon/tours/lisbon-food-tour">View tour</a>
+                                <a class="book_button" href="/lisbon/tours/lisbon-food-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/lisbon/two-days-in-lisbon.jpg" alt="">
+                        <figcaption>
+                            <h2>2 Days in Lisbon</h2>
+                            <div class="price">$257 — 2 days</div>
+                            <h3>2 magic days in a historical capital</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/lisbon/tours/2-days-in-lisbon">View tour</a>
+                                <a class="book_button" href="/lisbon/tours/2-days-in-lisbon/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/lisbon/lisbon-private-tour.jpg" alt="">
+                        <figcaption>
+                            <h2>Lisbon City Tour</h2>
+                            <div class="price">$157 — 5 hours</div>
+                            <h3>Prepare for adventure!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/lisbon/tours/lisbon-city-tour">View tour</a>
+                                <a class="book_button" href="/lisbon/tours/lisbon-city-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="scroll_down black_scroll_down">
+                    <div class="scroll_down_container">
+                        <div class="scroll_down_text">Reviews</div>
+                        <div class="scroll_down_icon"></div>
+                    </div>
+                </div>
+            </section>
+            <?
+            break;
+        case 'lisbon-food-tour':
+            ?>
+            <section class="content_box tours-list_new  whiten">
+                <h2 class="title-of-tours single-title">Related tours</h2>
+                <div class="row">
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/lisbon/lisbon-by-night-tour.jpg" alt="">
+                        <figcaption>
+                            <h2>Lisbon By Night</h2>
+                            <div class="price">$117 — 3 hours</div>
+                            <h3>Dazzling magic Lisbon at night!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/lisbon/tours/lisbon-ny-night">View tour</a>
+                                <a class="book_button" href="/lisbon/tours/lisbon-ny-night/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/lisbon/two-days-in-lisbon.jpg" alt="">
+                        <figcaption>
+                            <h2>2 Days in Lisbon</h2>
+                            <div class="price">$257 — 2 days</div>
+                            <h3>2 magic days in a historical capital</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/lisbon/tours/2-days-in-lisbon">View tour</a>
+                                <a class="book_button" href="/lisbon/tours/2-days-in-lisbon/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="tour-item">
+                        <img src="/i/tours-list/lisbon/lisbon-private-tour.jpg" alt="">
+                        <figcaption>
+                            <h2>Lisbon City Tour</h2>
+                            <div class="price">$157 — 5 hours</div>
+                            <h3>Prepare for adventure!</h3>
+                            <div class="buttons-container">
+                                <a class="view-button" href="/lisbon/tours/lisbon-city-tour">View tour</a>
+                                <a class="book_button" href="/lisbon/tours/lisbon-city-tour/#book">Book tour</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="scroll_down black_scroll_down">
+                    <div class="scroll_down_container">
+                        <div class="scroll_down_text">Reviews</div>
+                        <div class="scroll_down_icon"></div>
+                    </div>
+                </div>
+            </section>
+            <?
+            break;
     }
 }
 ?>
