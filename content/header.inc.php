@@ -266,21 +266,27 @@
                 break;
 
             case '2-days-in-new-york':
-                $title = "";
-                $meta = "";
-                $keywords = "";
+                $title = "2 Days Tour in New York City - Friendly Local Guides";
+                $meta = "Ready for adventure time in New York City on this 2 days tour in New York. Nearly 30 New York attractions: Empire State Building, Labyrinth streets, Downtown, Uptown and more!";
+                $keywords = "2 days tour in New York City, private New York tours, Friendly Local Guides";
                 break;
 
             case '3-days-in-new-york':
-                $title = "";
-                $meta = "";
-                $keywords = "";
+                $title = "3 Days Tour in New York City - Friendly Local Guides";
+                $meta = "Take 3 Days Tour in New York City and explore over 40 attractions in NYC. Tour Itinerary, reviews and online booking.";
+                $keywords = "3 days tour in New York, private New York tours, Friendly Local Guides";
+                break;
+
+            case 'food-tour-nyc':
+                $title = "Walking Food Tour in New York - Friendly Local Guides";
+                $meta = "Taste best dishes in food tour in New York walking around the quaint East Village and Greenwich Village streets. ";
+                $keywords = "food tour in New York City, walking, private New York tours, Friendly Local Guides";
                 break;
 
             case 'new-york-city-night-tour':
-                $title = "";
-                $meta = "";
-                $keywords = "";
+                $title = "New York City Night Tour - Friendly Local Guides";
+                $meta = "Enjoy private night tour in New York City with our Friendly Local Guides. The tour can be customized to meet your preferences.";
+                $keywords = "night tour in New York City, walking, nightlife, private New York tours, Friendly Local Guides";
                 break;
             
             case 'new-york-city-tour':
@@ -296,9 +302,33 @@
                 break;
 
             case 'lisbon-city-tour':
-                $title = "";
-                $meta = "";
-                $keywords = "";
+                $title = "Private Lisbon City Tour - Friendly Local Guides";
+                $meta = "This Lisbon City tour is ideal for first time visitors. In this tour you can enjoy the most famous views of Portugal in the world.";
+                $keywords = "Lisbon private city tours, visit, Portugal, Friendly Local Guides";
+                break;break;
+
+            case 'lisbon-photo-tour':
+                $title = "Lisbon Photo Tour - Friendly Local Guides";
+                $meta = "At Lisbon Photo Tour you can visit most scenic and iconic views in city: the tallest building, the longest bridge, the one of the most ancient city areas and oldest church.";
+                $keywords = "photo tour in Lisbon, Portugal, Lisbon private city tours, Friendly Local Guides";
+                break;
+
+            case '2-days-in-lisbon':
+                $title = "2 Days Tour in Lisbon, Portugal - Friendly Local Guides";
+                $meta = "Friendly Local Guides offers take you to the two days tour in Lisbon.  See the most-famous icons of Lisbon and visit off the beaten path attractions. ";
+                $keywords = "2 days tour in Lisbon, Portugal, Lisbon private city tours, Friendly Local Guides";
+                break;
+
+            case '3-days-in-lisbon':
+                $title = "3 Days Tour in Lisbon, Portugal - Friendly Local Guides";
+                $meta = "Book your three days tour in Lisbon, Portugal with your friendly local guide. 3 days, 5 hours each day and 20 must-see Lisbon attractions.";
+                $keywords = "3 days tour in Lisbon, Portugal, Lisbon private city tours, Friendly Local Guides";
+                break;
+
+            case 'lisbon-food-tour':
+                $title = "Food Walking Tour in Lisbon, Portugal - Friendly Local Guides";
+                $meta = "Get unique gastronomic experience tasting traditional Portuguese cuisine in our private walking food tour in Lisbon. Check reviews and photos from this tour.";
+                $keywords = "food tour in Lisbon, eating, walking, tasting, Lisbon private city tours, Friendly Local Guides";
                 break;
 
             case 'milan-tour':
@@ -350,9 +380,9 @@
                 break;
 
             case 'los-angeles-city-tour':
-                $title = "";
-                $meta = "";
-                $keywords = "";
+                $title = "Los Angeles City Tour - Friendly Local Guides";
+                $meta = "Join us on this Los Angeles tour and discover TOP10 attractions of city. Easy online booking and flexible tour itinerary to suit your preferences.";
+                $keywords = "best private city tours in los angeles, california, Friendly Local Guides";
                 break;
 
             case 'los-angeles-one-day-tour':
