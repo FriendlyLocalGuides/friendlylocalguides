@@ -11,8 +11,9 @@
     if(!$tours && !$guides){
         switch($id){
             case 'tours':
-                $title = "Moscow tours, private city tours in Moscow - Friendly Local Guides Tours";
-                $meta = "Private tours to Moscow starting from $87: Red Square & Kremlin tours, 1, 2, 3 day tours, Layover tours, Photo and Bike tours of Moscow.";
+                $title = "Moscow tours, private city tours in Moscow, Russia - Friendly Local Guides";
+                $meta = "Private tours to Moscow starting from $87: 1, 2, 3 days packs, Red Square & Kremlin, Layover, Photo and Bike tours of Moscow. Book online!";
+                $keywords = "moscow private tours, private moscow guides, russia, Friendly Local Guides";
                 break;
             case 'guides':
                 $title = "Moscow guides - Friendly Local Guides";
@@ -104,20 +105,24 @@
     if($id == 'tours' && $tours){
         switch($tours){
             case 'free-tour':
-                $title = "Moscow Free Walking Tour: Red Square, GUM, St Basil's Cathedral, Alexander Garden, Bolshoi Theater - FLG";
+                $title = "Moscow Free Walking Tour: Red Square, GUM, Bolshoi Theater etc - FLG";
                 $meta = "A free 2-hour sightseeing walking tour in Moscow! This tour valid when booking any other tour.";
+                $keywords = "moscow walking tour, private moscow guides, russia, Friendly Local Guides";
                 break;
             case 'kremlin-tour-moscow':
-                $title = "Kremlin tour in Moscow - Friendly Local Guides";
+                $title = "Moscow Kremlin tour in Russia - Friendly Local Guides";
                 $meta = "Book a 5-hour Kremlin tour and admire lovely St. Basil's Cathedral at Red Square, explore Tsar Bell & Tsar Cannon, visit the Armory.";
+                $keywords = "moscow kremlin tour, private moscow guides, russia, Friendly Local Guides";
                 break;
             case 'red-square-and-city-tour-moscow':
-                $title = "Red Square Tour - all the main highlights of Moscow with Friendly Local Guides";
+                $title = "Red Square Tour in Moscow, Russia - Friendly Local Guides";
                 $meta = "Enjoy Red Square tour. You will see St Basil's Cathedral, Christ the Savior Cathedral, Kremlin walls, downtown of Moscow.";
+                $keywords = "red square tour, private moscow guides, russia, Friendly Local Guides";
                 break;
             case 'going-out-in-moscow':
-                $title = "Moscow off the beaten path tours: must do and off the beaten path in one day - FLG";
+                $title = "Moscow off the beaten path tour - Moscow Tours with FLG";
                 $meta = "Enjoy Off the beaten path tour of Moscow with your local guide and friend with Friendly Local Guides.";
+                $keywords = "moscow off the beaten track tour, private moscow guides, russia, Friendly Local Guides";
                 break;
             case 'izmailovo-kremlin-tour':
                 $title = "Izmailovo Tour: Flea Market and Kremlin in Moscow - Friendly Local Guides";
@@ -128,32 +133,39 @@
                 $meta = "20 must see of Moscow in 1 day You can add or drop places from the itinerary and we'll customize this private tour for you";
                 break;
             case '2-days-in-moscow':
-                $title = "2 day tour in Moscow: Moscow Attractions and Russian Life - Friendly Local Guides";
+                $title = "2 days in Moscow: Russian Life and Moscow Attractions tour - Friendly Local Guides";
                 $meta = "Discover Moscow in 2 days with Friendly Local Guides. Enjoy amazing Moscow sights, Moscow metro, Moscow streets, Russian people and the local Russian life. ";
+                $keywords = "2 days moscow private tours, private moscow guides, russia, Friendly Local Guides";
                 break;
             case '3-days-in-moscow':
-                $title = "3 day tour in Moscow - Friendly Local Guides Tours";
+                $title = "3 days Tour in Moscow - Friendly Local Guides Tours";
                 $meta = "Book this Moscow in 3 days tour and take pride in covering all of Moscow: from ancient Kremlin, Kitay Gorod and Zamoskvorechye to Moscow metro and off the beaten path of Moscow.";
+                $keywords = "3 days moscow private tours, private moscow guides, russia, Friendly Local Guides";
                 break;
             case 'moscow-at-night':
-                $title = "Moscow at Night Tour - Friendly Local Guides";
+                $title = "Moscow Night Tour - Friendly Local Guides";
                 $meta = "Book Moscow at Night tour and immerse yourself into Moscow nightlife. Stroll around historical old town, enjoy stunning views and finish it all with a cold drink in a local bar.";
+                $keywords = "moscow night tour, private moscow guides, russia, Friendly Local Guides";
                 break;
             case 'layover-tour-moscow':
-                $title = "Layover tour of Moscow with flexible timing - Friendly Local Guides";
+                $title = "Layover tour in Moscow., Russia - Friendly Local Guides";
                 $meta = "Enjoy this exciting layover tour and see both must see and off the beaten path of Moscow, try authentic Russian food.";
+                $keywords = "moscow layover tour, private moscow guides, russia, Friendly Local Guides";
                 break;
             case 'soviet-tour-russia':
                 $title = "Soviet Tour in Moscow: communist relics  & Cold War Museum - Friendly Local Guides";
                 $meta = "Get this special feeling of the Soviet times, learn about political leaders of Russia, visit Soviet places in Moscow.";
+                $keywords = "soviet tour moscow, communist, cold war, private moscow guides, russia, Friendly Local Guides";
                 break;
             case 'bus-tour-in-moscow':
-                $title = "Moscow bus tour - Friendly Local Guides";
+                $title = "City Sightseeing Moscow with private guide - Friendly Local Guides";
                 $meta = "Moscow bus tour with a great number of fascinating and historical places.";
+                $keywords = "moscow tour bus, private moscow guides, russia, Friendly Local Guides";
                 break;
             case 'photo-tour-of-moscow':
                 $title = "Moscow Photo Tour full of stunning views and iconic spots - Friendly Local Guides";
-                $meta = "At Moscow Photo otur you can discover scenic spots of Moscow, explore off the beaten path of Moscow, get 20 professionally edited photos of yourself.";
+                $meta = "At Moscow Photo tour you can discover scenic spots of Moscow, explore off the beaten path of Moscow, get 20 professionally edited photos of yourself.";
+                $keywords = "moscow photo tour, private moscow guides, russia, Friendly Local Guides";
                 break;
             case 'bike-tour-in-moscow':
                 $title = "Bike tour in Moscow through the most scenic places - Friendly Local Guides";
@@ -164,8 +176,9 @@
                 $meta = "20 legendary places of Saint Petersburg on our private must see tour. You can add or drop places from the itinerary and we'll customize it for you.";
                 break;
             case 'boat-tour-moscow':
-                $title = "Moscow River Cruise & Boat Trip with Friendly Local Guides";
-                $meta = "On our river boat tour you will see all the gems of historical and cultural center of Moscow in short time and without traffic jams or tiresome walking.";
+                $title = "Moscow River Cruise Tour with Friendly Local Guides";
+                $meta = "On our river boat tour you will dicover all must sees in center of Moscow (Russia) without traffic jams or tiresome walking.";
+                $keywords = "river cruise moscow, private moscow guides, russia, Friendly Local Guides";
                 break;
             case 'ultimate-tour-of-moscow-with-traditional-cuisines':
                 $title = "Ultimate tour in Moscow: 3 or 4 day - Friendly Local Guides";
@@ -176,12 +189,14 @@
                 $meta = "Try delicious meals on Moscow Food Tour: Russian pelmeni, Ukranian borsch, Traditional Russian pancakes, Georgian Khachapuri and more.";
                 break;
             case 'golden-ring-tour':
-                $title = "Golden Ring Tour of Sergiev Posad - Moscow & Saint Petersburg Tours with Friendly Local Guides";
+                $title = "Sergiev Posad Tour from Moscow, Russia with Friendly Local Guides";
                 $meta = "Golden Ring Tour: visit the most beautiful town of Russia – Sergiev Posad, one of the “Golden Ring” cities with Friendly Local Guides.";
+                $keywords = "sergiev posad tour, private moscow guides, russia, Friendly Local Guides";
                 break;
             case 'jewish-tour-moscow':
-                $title = "Jewish Heritage Tour in Moscow, Russia - Friendly Local Guides. Tours of Moscow";
+                $title = "Jewish Tour in Moscow, Russia - Friendly Local Guides. Tours of Moscow";
                 $meta = "Jewish Moscow tour will give you an idea about Jewish Heritage and take you into all main sites of Jewish community in Russia.";
+                $keywords = "jewish moscow tour, private moscow guides, russia, Friendly Local Guides";
                 break;
             case 'metro-tour-moscow':
                 $title = "Moscow Metro Tour with Friendly Local Guides";
@@ -323,6 +338,12 @@
                 $title = "3 Days Tour in Lisbon, Portugal - Friendly Local Guides";
                 $meta = "Book your three days tour in Lisbon, Portugal with your friendly local guide. 3 days, 5 hours each day and 20 must-see Lisbon attractions.";
                 $keywords = "3 days tour in Lisbon, Portugal, Lisbon private city tours, Friendly Local Guides";
+                break;
+
+            case 'lisbon-ny-night':
+                $title = "Lisbon Night Walking Tour - Friendly Local Guides";
+                $meta = "Discover local Portuguese nightlife on private Lisbon night tour. Get amazed with wonderful illumination of historical monuments which you'll never forget.";
+                $keywords = "night tour in Lisbon, walking Lisbon private city tours, Friendly Local Guides";
                 break;
 
             case 'lisbon-food-tour':
