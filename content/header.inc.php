@@ -51,6 +51,7 @@
     if($id == 'tours' && $city == 'saint-petersburg' && !$guides){
         $title = "St. Petersburg private tours, city guided tours in Saint Petersburg (Russia) - Friendly Local Guides";
         $meta = "St. Petersburg private tours with Friendly Local Guides. Memorable city tours with private guides. We charge only $20 for every additional traveller.";
+        $keywords = "saint petersburg tours, private saint petersburg guides, russia, Friendly Local Guides";
     }
 
     if($id == 'tours' && $city == 'san-francisco' && !$guides){
@@ -127,6 +128,7 @@
             case 'izmailovo-kremlin-tour':
                 $title = "Izmailovo Tour: Flea Market and Kremlin in Moscow - Friendly Local Guides";
                 $meta = "Book Izmailovo tour for only $87 and immerse yourself in the unique culture of Russia + Great value souvenirs, Tsar’s palace & Russian vodka.";
+                $keywords = "izmailovo kremlin tour, private moscow guides, russia, Friendly Local Guides";
                 break;
             case 'top-20-must-see-in-moscow':
                 $title = "Moscow Must-See's Tour - Friendly Local Guides";
@@ -159,7 +161,7 @@
                 break;
             case 'bus-tour-in-moscow':
                 $title = "City Sightseeing Moscow with private guide - Friendly Local Guides";
-                $meta = "Moscow bus tour with a great number of fascinating and historical places.";
+                $meta = "Moscow bus tour with a great number of fascinating and historical places and enjoy .";
                 $keywords = "moscow tour bus, private moscow guides, russia, Friendly Local Guides";
                 break;
             case 'photo-tour-of-moscow':
@@ -170,6 +172,7 @@
             case 'bike-tour-in-moscow':
                 $title = "Bike tour in Moscow through the most scenic places - Friendly Local Guides";
                 $meta = "Book your private bike tour now and enjoy the icons of Moscow in style, test your nerve, driving on crazy Russian roads, expert commentary and lifetime shots as you travel around the city.";
+                $keywords = "bike tour in moscow, private moscow guides, russia, Friendly Local Guides";
                 break;
             case 'top-20-must-see-in-saint-petersburg':
                 $title = "St. Petersburg must see tour - Friendly Local Guides";
@@ -187,6 +190,7 @@
             case 'food-tour-moscow-st-petersburg':
                 $title = "Food tour in Moscow, Russian Gastronomy & Culinary - Moscow Tours with FLG";
                 $meta = "Try delicious meals on Moscow Food Tour: Russian pelmeni, Ukranian borsch, Traditional Russian pancakes, Georgian Khachapuri and more.";
+                $keywords = "moscow food tour, private moscow guides, russia, Friendly Local Guides";
                 break;
             case 'golden-ring-tour':
                 $title = "Sergiev Posad Tour from Moscow, Russia with Friendly Local Guides";
@@ -201,6 +205,7 @@
             case 'metro-tour-moscow':
                 $title = "Moscow Metro Tour with Friendly Local Guides";
                 $meta = "Book Moscow Metro tour and visit top must-see stations of Moscow subway and Museum of Metro.";
+                $keywords = "moscow metro tour, private moscow guides, russia, Friendly Local Guides";
                 break;
             case 'moscow-private-tour':
                 $title = "Tretyakov Gallery Tour - Moscow Tours with Friendly Local Guides";
@@ -247,26 +252,32 @@
             case 'san-francisco-tour':
                 $title = "San Francisco driving tour - Friendly Local Guides";
                 $meta = "3-hour driving tour in San Francisco. Take advantage of San Francisco's steep hills, enjoy the breeze and panoramic views.";
+                $keywords = "private driving tour in san francisco, Friendly Local Guides";
                 break;
             case 'san-francisco-city-tour':
                 $title = "One day in San Francisco: all must sees of the city - Friendly Local Guides";
                 $meta = "San Francisco one day tour. Choose your own: 3, 5 or 7 hour tour with Friendly Local Guides.";
+                $keywords = "1 day private city tour in san francisco, Friendly Local Guides";
                 break;
             case '2-days-in-san-francisco':
                 $title = "2 days in San Francisco: all tourist attractions in SF - Friendly Local Guides";
                 $meta = "On this 2-day tour of San Francisco you`ll visit Golden Gate Park and Muir Woods, Golden Gate Bridge and Fisherman’s Wharf, Alcatraz and North Beach. ";
+                $keywords = "2 day private city tour in san francisco, Friendly Local Guides";
                 break;
             case '3-days-in-san-francisco':
                 $title = "3 days in San Francisco: best restaurants and fun things to do - Friendly Local Guides";
                 $meta = "3-day tour in San Francisco. Iconic symbols of San Francisco await you!";
+                $keywords = "3 day private city tour in san francisco, Friendly Local Guides";
                 break;
             case 'san-francisco-walking-tours':
                 $title = "San Francisco walking tours - Friendly Local Guides";
                 $meta = "Private walking tour to San Francisco: 5, 7 or even 10-hour duration with your local guide.";
+                $keywords = "private walking city tour in san francisco, Friendly Local Guides";
                 break;
             case 'san-francisco-bike-tours':
                 $title = "San Francisco bike tours - Friendly Local Guides";
                 $meta = "Best bike tours in San Francisco. See places of SF you might not see on your own with Friendly Local Guides.";
+                $keywords = "private bike tour in san francisco, Friendly Local Guides";
                 break;
             case 'san-francisco-night-tour':
                 $title = "San Francisco night tour, private SF tours - Friendly Local Guides";
