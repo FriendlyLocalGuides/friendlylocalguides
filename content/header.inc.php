@@ -68,7 +68,7 @@
     }
 
     if($id == 'tours' && $city == 'lisbon' && !$guides){
-        $title = "Lisbon tours, private city tours in Lisbon - Friendly Local Guides";
+        $title = "Private Lisbon tours - Friendly Local Guides";
         $meta = "Book Lisbon tours and have fun with Friendly Local Guides. Must see packages and attractions in Lisbon, Portugal.";
         $keywords = "Lisbon sightseeing, Lisbon tours, Lisbon private city tours, Friendly Local Guides";
     }
@@ -133,6 +133,7 @@
             case 'top-20-must-see-in-moscow':
                 $title = "Moscow Must-See's Tour - Friendly Local Guides";
                 $meta = "20 must see of Moscow in 1 day You can add or drop places from the itinerary and we'll customize this private tour for you";
+                $keywords = "top 20 must see moscow, private tour, private moscow guides, russia, Friendly Local Guides";
                 break;
             case '2-days-in-moscow':
                 $title = "2 days in Moscow: Russian Life and Moscow Attractions tour - Friendly Local Guides";
@@ -177,7 +178,7 @@
             case 'top-20-must-see-in-saint-petersburg':
                 $title = "Must see tour in St. Petersburg, Russia - Friendly Local Guides";
                 $meta = "20 legendary places of Saint Petersburg on our private must see tour. You can add or drop places from the itinerary and we'll customize it for you.";
-                $keywords = "must see saint petersburg tour, private saint petersburg guides, russia, Friendly Local Guides";
+                $keywords = "top 20 must see saint petersburg tour, private, russia, Friendly Local Guides";
                 break;
             case 'boat-tour-moscow':
                 $title = "Moscow River Cruise Tour with Friendly Local Guides";
@@ -187,6 +188,7 @@
             case 'ultimate-tour-of-moscow-with-traditional-cuisines':
                 $title = "Ultimate tour in Moscow: 3 or 4 day - Friendly Local Guides";
                 $meta = "This 7 Realms Ultimate tour of Moscow can be 3-Day tour, with 7 hours each day, or 4-Day tour, with 5 hours each day.";
+                $keywords = "ultimate moscow private tour, private moscow guides, russia, Friendly Local Guides";
                 break;
             case 'food-tour-moscow-st-petersburg':
                 $title = "Food tour in Moscow, Russian Gastronomy & Culinary - Moscow Tours with FLG";
@@ -211,51 +213,52 @@
             case 'moscow-private-tour':
                 $title = "Tretyakov Gallery Tour - Moscow Tours with Friendly Local Guides";
                 $meta = "On Tretyakov Gallery Tour you will see paintings in Tretyakov Gallery, visit cathedrals in Zamoskvorechye, see local street art and have the best coffee in the city.";
+                $keywords = "moscow private tour, private moscow guides, russia, Friendly Local Guides";
                 break;
             //SPB TOURS
             case '2-day-tour-of-saint-petersburg':
                 $title = "2-day tour in St. Petersburg, Russia - Friendly Local Guides";
                 $meta = "St. Petersburg in 2 days, enjoy visiting most artistic and stunning must-see places in Saint Petersburg and Peterhof.";
-                $keywords = "2 days saint petersburg tour, private saint petersburg guides, russia, Friendly Local Guides";
+                $keywords = "2 days saint petersburg tours, private saint petersburg guides, russia, Friendly Local Guides";
                 break;
             case '3-day-tour-of-saint-petersburg':
                 $title = "3 days in St. Petersburg, Russia - Friendly Local Guides";
                 $meta = "Book 3 day private tour of St. Petersburg. Combine must-see and off the beaten path: river cruise, world-known cathedrals and much more!";
-                $keywords = "3 days saint petersburg tour, private saint petersburg guides, russia, Friendly Local Guides";
+                $keywords = "3 days saint petersburg tours, private saint petersburg guides, russia, Friendly Local Guides";
                 break;
             case 'boat-trip-tour':
                 $title = "Drawbridge Night Boat Tours on Neva river in St. Petersburg, Russia  - Friendly Local Guides";
                 $meta = "Pick your best boat tour in St. Petersburg along the Neva and the city’s picturesque canalways.";
-                $keywords = "saint petersburg boat tour, private saint petersburg guides, russia, Friendly Local Guides";
+                $keywords = "saint petersburg shore tour, private, russia, Friendly Local Guides";
                 break;
             case 'st-petersburg-walking-tour':
                 $title = "Walking Tour in St. Petersburg, Russia - Friendly Local Guides";
                 $meta = "St. Petersburg walking tour of all main highlights: Nevsky Prospect, St Isaac’s Cathedral, the Hermitage, Kazan Cathedral, Eliseev Emporium, Palace Square and more!";
-                $keywords = "saint petersburg walking tour, private saint petersburg guides, russia, Friendly Local Guides";
+                $keywords = "walking saint petersburg tour, private, russia, Friendly Local Guides";
                 break;
             case 'peter-and-paul-tour':
                 $title = "Peter & Paul Fortress Tour in St. Petersburg, Russia - Friendly Local Guides";
                 $meta = "Peter and Paul Fortress, Strelka of Vasilievsky Island and Petrograd Side. Best pack of highlights to explore in St Petersburg";
-                $keywords = "saint petersburg peter and paul fortress tour, private saint petersburg guides, russia, Friendly Local Guides";
+                $keywords = "peter and paul saint petersburg tour, private, russia, Friendly Local Guides";
                 break;
             case 'peterhof-tour':
                 $title = "Peterhof Tour in St. Petersburg, Russia - Friendly Local Guides";
                 $meta = "Amazing tour to Peterhof, Monplaisir Palace, Peterhof Hermitage, beautifull fountains, parks and gardens.";
-                $keywords = "saint petersburg peterhof tour, private saint petersburg guides, russia, Friendly Local Guides";
+                $keywords = "saint petersburg peterhof tour, private, russia, Friendly Local Guides";
                 break;
             case 'st-petersburg-and-moscow-tours':
                 $title = "Tour to Moscow and St. Petersburg in Russia - Friendly Local Guides";
                 $meta = "Moscow and Petersburg tour in 2 days, 7 hours each day. Visit world-famous Russian museums, cathedrals & palaces.";
-                $keywords = "saint petersburg and moscow tours, private guides, russia, Friendly Local Guides";
+                $keywords = "saint petersburg and moscow tour, private, russia, Friendly Local Guides";
                 break;
             case 'st-petersburg-private-tour':
                 $title = "5-hour City Tour of Saint Petersburg - Friendly Local Guides";
-                $meta = "Great overview and orientation of the city on our 5-hour private tour of Saint Petersburg.";
+                $meta = "saint petersburg private tour, russia, Friendly Local Guides";
                 break;
             case 'food-tour-st-petersburg':
                 $title = "Food Tour in St. Petersburg, Russia - Friendly Local Guides";
                 $meta = "On our food tour in St. Petersburg you’ll try Russian pancakes, Soviet-style lunch, borsch and many other delicious Russian foods as well as traditional hospitality, cozy and amazingly beautiful interior. All food is included!";
-                $keywords = "saint petersburg food tour, private saint petersburg guides, russia, Friendly Local Guides";
+                $keywords = "saint petersburg food tour, private, russia, Friendly Local Guides";
                 break;
             //SAN FRANCISCO TOURS
             case 'san-francisco-tour':
@@ -331,26 +334,26 @@
                 break;
 
             case 'lisbon-tour':
-                $title = "1 day tour in Lisbon -  private city tours with Friendly Local Guides";
+                $title = "1 day in Lisbon, Potugal - Friendly Local Guides";
                 $meta = "Visit TOP 10 places in Lisbon in 1 day with Friendly Local Guides: Commercial Square / Victory Arch, Rossio Square, Restauradores Square and Liberdade Avenue, Carmo Square, Chiado, Bairro Alto, The Mouraria, Lisbon's Castle neighbourhood, Lisbon Cathedral, The Alfama.";
                 $keywords = "1 day tour in Lisbon, Lisbon private city tours, Commercial Square / Victory Arch, Rossio Square, Restauradores Square and Liberdade Avenue, Carmo Square, Chiado, Bairro Alto, The Mouraria, Lisbon's Castle neighbourhood, Lisbon Cathedral, The Alfama, Friendly Local Guides";
                 break;
 
             case 'lisbon-city-tour':
-                $title = "Private Lisbon City Tour - Friendly Local Guides";
-                $meta = "This Lisbon City tour is ideal for first time visitors. In this tour you can enjoy the most famous views of Portugal in the world.";
+                $title = "Lisbon City Tour, Potugal - Friendly Local Guides";
+                $meta = "This Lisbon City tour is ideal for first time visitors. In this walking tour you can enjoy the most famous views of Portugal in the world.";
                 $keywords = "Lisbon private city tours, visit, Portugal, Friendly Local Guides";
                 break;break;
 
             case 'lisbon-photo-tour':
-                $title = "Lisbon Photo Tour - Friendly Local Guides";
-                $meta = "At Lisbon Photo Tour you can visit most scenic and iconic views in city: the tallest building, the longest bridge, the one of the most ancient city areas and oldest church.";
+                $title = "Lisbon Photo Tour, Potugal - Friendly Local Guides";
+                $meta = "At Lisbon Photography Tour you can visit most scenic views in city: the tallest building, the longest bridge, the one of the most ancient city areas and oldest church.";
                 $keywords = "photo tour in Lisbon, Portugal, Lisbon private city tours, Friendly Local Guides";
                 break;
 
             case '2-days-in-lisbon':
                 $title = "2 Days Tour in Lisbon, Portugal - Friendly Local Guides";
-                $meta = "Friendly Local Guides offers take you to the two days tour in Lisbon.  See the most-famous icons of Lisbon and visit off the beaten path attractions. ";
+                $meta = "Friendly Local Guides offers take you to the two days tour in Lisbon. See the most-famous icons of Lisbon and visit off the beaten path attractions.";
                 $keywords = "2 days tour in Lisbon, Portugal, Lisbon private city tours, Friendly Local Guides";
                 break;
 
@@ -367,8 +370,8 @@
                 break;
 
             case 'lisbon-food-tour':
-                $title = "Food Walking Tour in Lisbon, Portugal - Friendly Local Guides";
-                $meta = "Get unique gastronomic experience tasting traditional Portuguese cuisine in our private walking food tour in Lisbon. Check reviews and photos from this tour.";
+                $title = "Food Tasting Tour in Lisbon, Portugal - Friendly Local Guides";
+                $meta = "Get unique gastronomic experience tasting traditional Portuguese cuisine in our private walking food tour in Lisbon. Check reviews and photos from this tour. ";
                 $keywords = "food tour in Lisbon, eating, walking, tasting, Lisbon private city tours, Friendly Local Guides";
                 break;
 
