@@ -49,8 +49,8 @@
     }
 
     if($id == 'tours' && $city == 'saint-petersburg' && !$guides){
-        $title = "St. Petersburg private tours, city guided tours in Saint Petersburg (Russia) - Friendly Local Guides";
-        $meta = "St. Petersburg private tours with Friendly Local Guides. Memorable city tours with private guides. We charge only $20 for every additional traveller.";
+        $title = "Private City Tours in Saint Petersburg, Russia - Friendly Local Guides";
+        $meta = "Book St. Petersburg private tours from 117$ with Friendly Local Guides. 1, 2 or 3 days packs, River, Peterhof, Food and Night tours.";
         $keywords = "saint petersburg tours, private saint petersburg guides, russia, Friendly Local Guides";
     }
 
@@ -161,7 +161,7 @@
                 break;
             case 'bus-tour-in-moscow':
                 $title = "City Sightseeing Moscow with private guide - Friendly Local Guides";
-                $meta = "Moscow bus tour with a great number of fascinating and historical places and enjoy .";
+                $meta = "Moscow bus tour with a great number of fascinating and historical places and enjoy.";
                 $keywords = "moscow tour bus, private moscow guides, russia, Friendly Local Guides";
                 break;
             case 'photo-tour-of-moscow':
@@ -175,8 +175,9 @@
                 $keywords = "bike tour in moscow, private moscow guides, russia, Friendly Local Guides";
                 break;
             case 'top-20-must-see-in-saint-petersburg':
-                $title = "St. Petersburg must see tour - Friendly Local Guides";
+                $title = "Must see tour in St. Petersburg, Russia - Friendly Local Guides";
                 $meta = "20 legendary places of Saint Petersburg on our private must see tour. You can add or drop places from the itinerary and we'll customize it for you.";
+                $keywords = "must see saint petersburg tour, private saint petersburg guides, russia, Friendly Local Guides";
                 break;
             case 'boat-tour-moscow':
                 $title = "Moscow River Cruise Tour with Friendly Local Guides";
@@ -213,40 +214,48 @@
                 break;
             //SPB TOURS
             case '2-day-tour-of-saint-petersburg':
-                $title = "St. Petersburg in 2 days tour - Friendly Local Guides";
-                $meta = "St. Petersburg on 2 day tours, enjoy visiting most artistic and stunning places in Saint Petersburg and Peterhof.";
+                $title = "2-day tour in St. Petersburg, Russia - Friendly Local Guides";
+                $meta = "St. Petersburg in 2 days, enjoy visiting most artistic and stunning must-see places in Saint Petersburg and Peterhof.";
+                $keywords = "2 days saint petersburg tour, private saint petersburg guides, russia, Friendly Local Guides";
                 break;
             case '3-day-tour-of-saint-petersburg':
-                $title = "St. Petersburg in 3 days tour - Friendly Local Guides";
-                $meta = "3 day private tour of Saint Petersburg. Combine must-see and off the beaten path: river cruise, world-known cathedrals and much more!";
+                $title = "3 days in St. Petersburg, Russia - Friendly Local Guides";
+                $meta = "Book 3 day private tour of St. Petersburg. Combine must-see and off the beaten path: river cruise, world-known cathedrals and much more!";
+                $keywords = "3 days saint petersburg tour, private saint petersburg guides, russia, Friendly Local Guides";
                 break;
             case 'boat-trip-tour':
-                $title = "River cruises and shore tours in St. Petersburg - Friendly Local Guides";
-                $meta = "7 best river cruises and shore tours in St. Petersburg along the Neva and the city’s picturesque canalways.";
+                $title = "Drawbridge Night Boat Tours on Neva river in St. Petersburg, Russia  - Friendly Local Guides";
+                $meta = "Pick your best boat tour in St. Petersburg along the Neva and the city’s picturesque canalways.";
+                $keywords = "saint petersburg boat tour, private saint petersburg guides, russia, Friendly Local Guides";
                 break;
             case 'st-petersburg-walking-tour':
-                $title = "St Petersburg Walking Tour - Friendly Local Guides";
+                $title = "Walking Tour in St. Petersburg, Russia - Friendly Local Guides";
                 $meta = "St. Petersburg walking tour of all main highlights: Nevsky Prospect, St Isaac’s Cathedral, the Hermitage, Kazan Cathedral, Eliseev Emporium, Palace Square and more!";
+                $keywords = "saint petersburg walking tour, private saint petersburg guides, russia, Friendly Local Guides";
                 break;
             case 'peter-and-paul-tour':
-                $title = "Peter & Paul Fortress Tour in St. Petersburg - Friendly Local Guides";
-                $meta = "Peter and Paul Fortress Tour of the Strelka of Vasilievsky Island. Visit the oldest building in Saint Petersburg. ";
+                $title = "Peter & Paul Fortress Tour in St. Petersburg, Russia - Friendly Local Guides";
+                $meta = "Peter and Paul Fortress, Strelka of Vasilievsky Island and Petrograd Side. Best pack of highlights to explore in St Petersburg";
+                $keywords = "saint petersburg peter and paul fortress tour, private saint petersburg guides, russia, Friendly Local Guides";
                 break;
             case 'peterhof-tour':
-                $title = "Peterhof & Grand Palace Tour - Friendly Local Guides";
-                $meta = "Amazing tour to Peterhof: Monplaisir Palace, fountains, park and gardens, Peterhof Hermitage";
+                $title = "Peterhof Tour in St. Petersburg, Russia - Friendly Local Guides";
+                $meta = "Amazing tour to Peterhof, Monplaisir Palace, Peterhof Hermitage, beautifull fountains, parks and gardens.";
+                $keywords = "saint petersburg peterhof tour, private saint petersburg guides, russia, Friendly Local Guides";
                 break;
             case 'st-petersburg-and-moscow-tours':
-                $title = "Moscow & St Petersburg tour - Friendly Local Guides";
+                $title = "Tour to Moscow and St. Petersburg in Russia - Friendly Local Guides";
                 $meta = "Moscow and Petersburg tour in 2 days, 7 hours each day. Visit world-famous Russian museums, cathedrals & palaces.";
+                $keywords = "saint petersburg and moscow tours, private guides, russia, Friendly Local Guides";
                 break;
             case 'st-petersburg-private-tour':
                 $title = "5-hour City Tour of Saint Petersburg - Friendly Local Guides";
                 $meta = "Great overview and orientation of the city on our 5-hour private tour of Saint Petersburg.";
                 break;
             case 'food-tour-st-petersburg':
-                $title = "Food tour in St. Petersburg - Friendly Local Guides";
+                $title = "Food Tour in St. Petersburg, Russia - Friendly Local Guides";
                 $meta = "On our food tour in St. Petersburg you’ll try Russian pancakes, Soviet-style lunch, borsch and many other delicious Russian foods as well as traditional hospitality, cozy and amazingly beautiful interior. All food is included!";
+                $keywords = "saint petersburg food tour, private saint petersburg guides, russia, Friendly Local Guides";
                 break;
             //SAN FRANCISCO TOURS
             case 'san-francisco-tour':
