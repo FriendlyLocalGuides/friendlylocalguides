@@ -428,7 +428,7 @@
 
             case 'los-angeles-one-day-tour':
                 $title = "1 day tour in Los Angeles - Friendly Local Guides";
-                $meta = "Visit best 14 places in Los Angeles in 1 day with Friendly Local Guides. Itinerary plan, photos and reviews.";
+                $meta = "Visit best 14 places in Los Angeles city in one day with Friendly Local Guides. Itinerary plan, photos and reviews.";
                 $keywords = "1 day tour los angeles, best private city tours in los angeles, california, Friendly Local Guides";
                 break;
 
@@ -445,19 +445,19 @@
                 break;
 
             case 'hollywood-tour':
-                $title = "Hollywood tour in Los Angeles - Friendly Local Guides";
+                $title = "Private Hollywood tour in Los Angeles city - Friendly Local Guides";
                 $meta = "Private Hollywood tour in Los Angeles, California with all customized preferences. Itinerary of tour, reviews and photos.";
                 $keywords = "hollywood los angeles tour, best private city tours in los angeles, california, Friendly Local Guides";
                 break;
 
             case 'los-angeles-driving-tour':
-                $title = "Los Angeles Driving Tour - Friendly Local Guides";
-                $meta = "Enjoy driving tour in Los Angeles through the main highlights of city. Tour description, photos, reviews and online booking.";
+                $title = "Los Angeles Downtown Driving Tour - Friendly Local Guides";
+                $meta = "Enjoy 3-hour private driving tour in Los Angeles and see the main highlights of city. Tour description, photos, reviews and online booking.";
                 $keywords = "los angeles driving tour, best private city tours in los angeles, california, Friendly Local Guides";
                 break;
 
             case 'los-angeles-night-tour':
-                $title = "Los Angeles Night Tour - Friendly Local Guides";
+                $title = "Los Angeles Night City Tour - Friendly Local Guides";
                 $meta = "Downtown Los Angeles night tour. Disсover best attractions in lights: Walt Disney Concert Hall, City Hall, Central Library, Hollywood Boulevard, Walk of Fame, Dolby Theater and more!";
                 $keywords = "los angeles night tour, best private city tours in los angeles, california, Friendly Local Guides";
                 break;
