@@ -80,8 +80,8 @@
     }
 
     if($id == 'tours' && $city == 'los-angeles' && !$guides){
-        $title = "Los Angeles tours, private tour packages in LA, Hollywood - Friendly Local Guides";
-        $meta = "Book Los Angeles tours and have fun with Friendly Local Guides. Must see packages and attractions in  LA, Hollywood.";
+        $title = "Private and custom Los Angeles tours- Friendly Local Guides";
+        $meta = "Book Los Angeles tours and have fun with Friendly Local Guides. Must see packages and attractions in Los Angeles";
         $keywords = "Los Angeles tours, private tour packages in LA, Hollywood, must see attractions, Friendly Local Guides";
     }
 
@@ -116,8 +116,8 @@
                 $keywords = "moscow kremlin tour, private moscow guides, russia, Friendly Local Guides";
                 break;
             case 'red-square-and-city-tour-moscow':
-                $title = "Red Square Tour in Moscow, Russia - Friendly Local Guides";
-                $meta = "Enjoy Red Square tour. You will see St Basil's Cathedral, Christ the Savior Cathedral, Kremlin walls, downtown of Moscow.";
+                $title = "Red Square Tour in Moscow City, Russia - Friendly Local Guides";
+                $meta = "Enjoy Red Square & Moscow City Tour. You will see St Basil's Cathedral, Christ the Savior Cathedral, Kremlin walls, downtown of Moscow.";
                 $keywords = "red square tour, private moscow guides, russia, Friendly Local Guides";
                 break;
             case 'going-out-in-moscow':
@@ -176,9 +176,9 @@
                 $keywords = "bike tour in moscow, private moscow guides, russia, Friendly Local Guides";
                 break;
             case 'top-20-must-see-in-saint-petersburg':
-                $title = "Must see tour in St. Petersburg, Russia - Friendly Local Guides";
-                $meta = "20 legendary places of Saint Petersburg on our private must see tour. You can add or drop places from the itinerary and we'll customize it for you.";
-                $keywords = "top 20 must see saint petersburg tour, private, russia, Friendly Local Guides";
+                $title = "1-Day Tour in St Petersburg, Russia - Friendly Local Guides";
+                $meta = "1-Day tour including 20 legendary places of Saint Petersburg. You can add or drop places from the itinerary and we'll customize it for you.";
+                $keywords = "saint petersburg tours, private saint petersburg guides, russia, Friendly Local Guides";
                 break;
             case 'boat-tour-moscow':
                 $title = "Moscow River Cruise Tour with Friendly Local Guides";
@@ -424,43 +424,43 @@
                 break;
 
             case 'los-angeles-city-tour':
-                $title = "Los Angeles City Tour - Friendly Local Guides";
-                $meta = "Join us on this Los Angeles tour and discover TOP10 attractions of city. Easy online booking and flexible tour itinerary to suit your preferences.";
+                $title = "Private Los Angeles City Tour - Friendly Local Guides";
+                $meta = "Join us on this Los Angeles city tour and discover TOP10 attractions of city. Easy online booking and flexible tour itinerary to suit your preferences.";
                 $keywords = "best private city tours in los angeles, california, Friendly Local Guides";
                 break;
 
             case 'los-angeles-one-day-tour':
-                $title = "1 day tour in Los Angeles - Friendly Local Guides";
-                $meta = "Visit best 14 places in Los Angeles city in one day with Friendly Local Guides. Itinerary plan, photos and reviews.";
+                $title = "1 day tour in Los Angeles, CA - Friendly Local Guides";
+                $meta = "Visit best 14 places in Los Angeles in 1 day private tour with Friendly Local Guides. Itinerary plan, photos and reviews.";
                 $keywords = "1 day tour los angeles, best private city tours in los angeles, california, Friendly Local Guides";
                 break;
 
             case '2-days-in-los-angeles':
-                $title = "Los Angeles 2-day tour - Friendly Local Guides";
-                $meta = "Book 2 days in LA tour amd check top 25 things to do in LA, including Hollywood, Downtown LA, and off the beaten path of LA in between. Reviews and photos.";
+                $title = "2-Day Tour in Los Angeles, CA - Friendly Local Guides";
+                $meta = "Book 2 days in LA tour and enjoy top 25 things to do in LA, including Hollywood, Downtown LA, and off the beaten path of LA in between. Reviews and photos.";
                 $keywords = "2 days tour in los angeles, best private city tours in los angeles, california, Friendly Local Guides";
                 break;
 
             case '3-days-in-los-angeles':
-                $title = "3-day tour in Los Angeles - Friendly Local Guides";
-                $meta = "Visit over 30 must-see attractions during 3 days in Los Angeles. Santa Monica Pier, Rodeo Drive, Hollywood Walk of Fame and more! ";
+                $title = "3-Day Tour in Los Angeles, CA - Friendly Local Guides";
+                $meta = "Visit over 30 must-see attractions during 3-day tour in Los Angeles. Santa Monica Pier, Rodeo Drive, Hollywood Walk of Fame and more! ";
                 $keywords = "3 days los angeles tour, best private city tours in los angeles, california, Friendly Local Guides";
                 break;
 
             case 'hollywood-tour':
-                $title = "Private Hollywood tour in Los Angeles city - Friendly Local Guides";
-                $meta = "Private Hollywood tour in Los Angeles, California with all customized preferences. Itinerary of tour, reviews and photos.";
+                $title = "Custom Hollywood tour, Los Angeles - Friendly Local Guides";
+                $meta = "Private Hollywood tour (Los Angeles, CA) with all customized preferences. Itinerary of tour, reviews and photos.";
                 $keywords = "hollywood los angeles tour, best private city tours in los angeles, california, Friendly Local Guides";
                 break;
 
             case 'los-angeles-driving-tour':
-                $title = "Los Angeles Downtown Driving Tour - Friendly Local Guides";
-                $meta = "Enjoy 3-hour private driving tour in Los Angeles and see the main highlights of city. Tour description, photos, reviews and online booking.";
+                $title = "Driving Tour of Los Angeles, CA - Friendly Local Guides";
+                $meta = "Enjoy driving tour in Los Angeles through the main highlights of downtown. Tour description, photos, reviews and online booking.";
                 $keywords = "los angeles driving tour, best private city tours in los angeles, california, Friendly Local Guides";
                 break;
 
             case 'los-angeles-night-tour':
-                $title = "Los Angeles Night City Tour - Friendly Local Guides";
+                $title = "Night Tour in Los Angeles, CA - Friendly Local Guides";
                 $meta = "Downtown Los Angeles night tour. Disсover best attractions in lights: Walt Disney Concert Hall, City Hall, Central Library, Hollywood Boulevard, Walk of Fame, Dolby Theater and more!";
                 $keywords = "los angeles night tour, best private city tours in los angeles, california, Friendly Local Guides";
                 break;
