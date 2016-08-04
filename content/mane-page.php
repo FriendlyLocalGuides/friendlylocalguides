@@ -225,7 +225,12 @@
                     </div>
                 </figcaption>
             </figure>
-        </div>
+            <div style="text-align: center; clear: both; padding: 50px 0;">
+                <a style="display: inline-block;" id="trb" data-sid="11498" href="https://www.viator.com?aid=trb" />
+                <img src="//cache.vtrcdn.com/images/11498/viator-top-rated.png" alt="Viator top rated"/>
+                </a>
+                <script src="//cache.vtrcdn.com/js/widget.js?wid=trb"></script>
+            </div>
         <h2 class="title-of-tours single-title">TripAdvisor Reviews</h2>
         <div class="row tripadviser">
             <ul>
