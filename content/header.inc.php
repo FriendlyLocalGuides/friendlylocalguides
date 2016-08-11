@@ -80,7 +80,7 @@
     }
 
     if($id == 'tours' && $city == 'los-angeles' && !$guides){
-        $title = "Private and custom Los Angeles tours- Friendly Local Guides";
+        $title = "Private and custom Los Angeles tours - Friendly Local Guides";
         $meta = "Book Los Angeles tours and have fun with Friendly Local Guides. Must see packages and attractions in Los Angeles";
         $keywords = "Los Angeles tours, private tour packages in LA, Hollywood, must see attractions, Friendly Local Guides";
     }
@@ -176,9 +176,9 @@
                 $keywords = "bike tour in moscow, private moscow guides, russia, Friendly Local Guides";
                 break;
             case 'top-20-must-see-in-saint-petersburg':
-                $title = "1-Day Tour in St Petersburg, Russia - Friendly Local Guides";
+                $title = "1-Day Tour in St. Petersburg, Russia - Friendly Local Guides";
                 $meta = "1-Day tour including 20 legendary places of Saint Petersburg. You can add or drop places from the itinerary and we'll customize it for you.";
-                $keywords = "saint petersburg tours, private saint petersburg guides, russia, Friendly Local Guides";
+                $keywords = "1 day saint petersburg tour, private saint petersburg guides, russia, Friendly Local Guides";
                 break;
             case 'boat-tour-moscow':
                 $title = "Moscow River Cruise Tour with Friendly Local Guides";
@@ -219,12 +219,12 @@
             case '2-day-tour-of-saint-petersburg':
                 $title = "2-day tour in St. Petersburg, Russia - Friendly Local Guides";
                 $meta = "St. Petersburg in 2 days, enjoy visiting most artistic and stunning must-see places in Saint Petersburg and Peterhof.";
-                $keywords = "2 days saint petersburg tours, private saint petersburg guides, russia, Friendly Local Guides";
+                $keywords = "2 days saint petersburg tour, private saint petersburg guides, russia, Friendly Local Guides";
                 break;
             case '3-day-tour-of-saint-petersburg':
                 $title = "3 days in St. Petersburg, Russia - Friendly Local Guides";
                 $meta = "Book 3 day private tour of St. Petersburg. Combine must-see and off the beaten path: river cruise, world-known cathedrals and much more!";
-                $keywords = "3 days saint petersburg tours, private saint petersburg guides, russia, Friendly Local Guides";
+                $keywords = "3 days saint petersburg tour, private saint petersburg guides, russia, Friendly Local Guides";
                 break;
             case 'boat-trip-tour':
                 $title = "Drawbridge Night Boat Tours on Neva river in St. Petersburg, Russia  - Friendly Local Guides";
@@ -234,31 +234,32 @@
             case 'st-petersburg-walking-tour':
                 $title = "Walking Tour in St. Petersburg, Russia - Friendly Local Guides";
                 $meta = "St. Petersburg walking tour of all main highlights: Nevsky Prospect, St Isaac’s Cathedral, the Hermitage, Kazan Cathedral, Eliseev Emporium, Palace Square and more!";
-                $keywords = "walking saint petersburg tour, private, russia, Friendly Local Guides";
+                $keywords = "saint petersburg walking tour, private saint petersburg guides, russia, Friendly Local Guides";
                 break;
             case 'peter-and-paul-tour':
                 $title = "Peter & Paul Fortress Tour in St. Petersburg, Russia - Friendly Local Guides";
-                $meta = "Peter and Paul Fortress, Strelka of Vasilievsky Island and Petrograd Side. Best pack of highlights to explore in St Petersburg";
-                $keywords = "peter and paul saint petersburg tour, private, russia, Friendly Local Guides";
+                $meta = "Peter and Paul Fortress, Strelka of Vasilievsky Island and Petrograd Side. Best pack of highlights to explore in St. Petersburg";
+                $keywords = "saint petersburg peter and paul fortress tour, private saint petersburg guides, russia, Friendly Local Guides";
                 break;
             case 'peterhof-tour':
                 $title = "Peterhof Tour in St. Petersburg, Russia - Friendly Local Guides";
                 $meta = "Amazing tour to Peterhof, Monplaisir Palace, Peterhof Hermitage, beautifull fountains, parks and gardens.";
-                $keywords = "saint petersburg peterhof tour, private, russia, Friendly Local Guides";
+                $keywords = "saint petersburg peterhof tour, private saint petersburg guides, russia, Friendly Local Guides";
                 break;
             case 'st-petersburg-and-moscow-tours':
                 $title = "Tour to Moscow and St. Petersburg in Russia - Friendly Local Guides";
-                $meta = "Moscow and Petersburg tour in 2 days, 7 hours each day. Visit world-famous Russian museums, cathedrals & palaces.";
+                $meta = "Moscow and St. Petersburg tour in 2 days, 7 hours each day. Visit world-famous Russian museums, cathedrals & palaces.";
                 $keywords = "saint petersburg and moscow tour, private, russia, Friendly Local Guides";
                 break;
             case 'st-petersburg-private-tour':
                 $title = "5-hour City Tour of Saint Petersburg - Friendly Local Guides";
                 $meta = "saint petersburg private tour, russia, Friendly Local Guides";
+                $keywords = "saint petersburg private tour, russia, Friendly Local Guides";
                 break;
             case 'food-tour-st-petersburg':
                 $title = "Food Tour in St. Petersburg, Russia - Friendly Local Guides";
                 $meta = "On our food tour in St. Petersburg you’ll try Russian pancakes, Soviet-style lunch, borsch and many other delicious Russian foods as well as traditional hospitality, cozy and amazingly beautiful interior. All food is included!";
-                $keywords = "saint petersburg food tour, private, russia, Friendly Local Guides";
+                $keywords = "saint petersburg food tour, private saint petersburg guides, russia, Friendly Local Guides";
                 break;
             //SAN FRANCISCO TOURS
             case 'san-francisco-tour':
@@ -334,7 +335,7 @@
                 break;
 
             case 'lisbon-tour':
-                $title = "1 day in Lisbon, Potugal - Friendly Local Guides";
+                $title = "1-Day in Lisbon, Potugal - Friendly Local Guides";
                 $meta = "Visit TOP 10 places in Lisbon in 1 day with Friendly Local Guides: Commercial Square / Victory Arch, Rossio Square, Restauradores Square and Liberdade Avenue, Carmo Square, Chiado, Bairro Alto, The Mouraria, Lisbon's Castle neighbourhood, Lisbon Cathedral, The Alfama.";
                 $keywords = "1 day tour in Lisbon, Lisbon private city tours, Commercial Square / Victory Arch, Rossio Square, Restauradores Square and Liberdade Avenue, Carmo Square, Chiado, Bairro Alto, The Mouraria, Lisbon's Castle neighbourhood, Lisbon Cathedral, The Alfama, Friendly Local Guides";
                 break;
@@ -430,7 +431,7 @@
                 break;
 
             case 'los-angeles-one-day-tour':
-                $title = "1 day tour in Los Angeles, CA - Friendly Local Guides";
+                $title = "1-Day Tour in Los Angeles, CA - Friendly Local Guides";
                 $meta = "Visit best 14 places in Los Angeles in 1 day private tour with Friendly Local Guides. Itinerary plan, photos and reviews.";
                 $keywords = "1 day tour los angeles, best private city tours in los angeles, california, Friendly Local Guides";
                 break;
@@ -455,7 +456,7 @@
 
             case 'los-angeles-driving-tour':
                 $title = "Driving Tour of Los Angeles, CA - Friendly Local Guides";
-                $meta = "Enjoy driving tour in Los Angeles through the main highlights of downtown. Tour description, photos, reviews and online booking.";
+                $meta = "Enjoy 3-hour private driving tour in Los Angeles and see the main highlights of city. Tour description, photos, reviews and online booking.";
                 $keywords = "los angeles driving tour, best private city tours in los angeles, california, Friendly Local Guides";
                 break;
 
@@ -490,14 +491,14 @@
                 break;
 
             case '2-days-in-paris':
-                $title = "2-day Tour in Paris, France - Friendly Local Guides";
+                $title = "2-Day Tour in Paris, France - Friendly Local Guides";
                 $meta = "Visit TOP 20 places in Paris in 2 days: Louvre, Jardin des Tuileries, Eiffel tower, Palais Garnier, River Seine, Pont Alexandre III, Place des Vosges, Walking around Le Marais, ile St Louis, ile de la Cité, Notre Dame and others must sees.";
                 $keywords = "2 Days tour in Paris, private tours, Friendly Local Guides, Louvre, Jardin des Tuileries, Eiffel tower, Palais Garnier, River Seine, Pont Alexandre III, Place des Vosges, Walking around Le Marais, ile St Louis, ile de la Cité, Notre Dame";
                 break;
 
             case '3-days-in-paris':
                 $title = "3 Days in Paris, France - Friendly Local Guides";
-                $meta = "3-day tour in Paris: flexible itinerary, must see attractions, reviews, photos and online booking.";
+                $meta = "3-Day tour in Paris: flexible itinerary, must see attractions, reviews, photos and online booking.";
                 $keywords = "three days in Paris tour, best private city tours in Paris, France, Friendly Local Guides";
                 break;
 
