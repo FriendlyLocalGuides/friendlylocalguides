@@ -62,8 +62,8 @@
 
 
     if($id == 'tours' && $city == 'new-york' && !$guides){
-        $title = "New York tours, private city tours in NYC - Friendly Local Guides";
-        $meta = "Take our New York tours and visit must sees places in NYC. 1, 2 or 3 days tour, personal packages and other fun!";
+        $title = "Private New York tours in NYC - Friendly Local Guides";
+        $meta = "Take our New York City tours. 1, 2 or 3 days tour, customized tour and lots of fun";
         $keywords = "New York tours, private city tours in NYC, Friendly Local Guides";
     }
 
@@ -75,8 +75,8 @@
 
     if($id == 'tours' && $city == 'milan' && !$guides){
         $title = "Milan tours, private city tours in Milan - Friendly Local Guides";
-        $meta = "Book Milan tours and have fun with Friendly Local Guides. Must see packages and attractions in Milan, Italy.";
-        $keywords = "Milan tours, private city tours in Milan, Book Milan tours, must see packages, attractions, Italy, Friendly Local Guides";
+        $meta = "Check out and book online our custom tours in Milan, Italy. Have your most memorable travel experience with Friendly Local Guides.";
+        $keywords = "Milan tours, private city tours in Milan, Book Milan tours, attractions, Italy, Friendly Local Guides";
     }
 
     if($id == 'tours' && $city == 'los-angeles' && !$guides){
@@ -299,26 +299,26 @@
                 break;
 
             case 'new-york-tour':
-                $title = "1 day tour in New York City - Private tours with Friendly Local Guides";
-                $meta = "Visit TOP 10 places in New York in 1 day with Friendly Local Guides: Central Park, The Metropolitan Museum of Art, Rockefeller Center, Grand Central Terminal, Times Square, Broadway, 9/11 Memorial, Brooklyn Bridge, One World Observatory - World Trade Center, Statue of Liberty and Ellis Island.";
-                $keywords = "1 day tour in New York, private New York tours, Friendly Local Guides, Central Park, The Metropolitan Museum of Art, Rockefeller Center, Grand Central Terminal, Times Square, Broadway, 9/11 Memorial, Brooklyn Bridge, One World Observatory - World Trade Center, Statue of Liberty and Ellis Island";
+                $title = "1-Day New York City tour - Private tours with Friendly Local Guides";
+                $meta = "Visit TOP 10 places in one day New York City tour: Central Park, The Metropolitan Museum of Art, Rockefeller Center, Grand Central Terminal, Times Square, Broadway and more.";
+                $keywords = "1 day tour in New York, private New York tours, Friendly Local Guides";
                 break;
 
             case '2-days-in-new-york':
-                $title = "2 Days Tour in New York City - Friendly Local Guides";
-                $meta = "Ready for adventure time in New York City on this 2 days tour in New York. Nearly 30 New York attractions: Empire State Building, Labyrinth streets, Downtown, Uptown and more!";
+                $title = "2-Day Tour in New York City - Friendly Local Guides";
+                $meta = "Get ready for adventure time in New York City on this two-day tour in New York. Nearly 30 New York attractions: Empire State Building, Labyrinth streets, Downtown, Uptown and more!";
                 $keywords = "2 days tour in New York City, private New York tours, Friendly Local Guides";
                 break;
 
             case '3-days-in-new-york':
-                $title = "3 Days Tour in New York City - Friendly Local Guides";
-                $meta = "Take 3 Days Tour in New York City and explore over 40 attractions in NYC. Tour Itinerary, reviews and online booking.";
+                $title = "3-Day Tour in New York City - Friendly Local Guides";
+                $meta = "Take this three-day tour in New York City and explore over 40 attractions in NYC. Tour Itinerary, reviews and online booking.";
                 $keywords = "3 days tour in New York, private New York tours, Friendly Local Guides";
                 break;
 
             case 'food-tour-nyc':
-                $title = "Walking Food Tour in New York - Friendly Local Guides";
-                $meta = "Taste best dishes in food tour in New York walking around the quaint East Village and Greenwich Village streets. ";
+                $title = "Walking Food Tour in New York City - Friendly Local Guides";
+                $meta = "Taste best dishes on this food tour in New York City around the quaint East Village, Greenwich Village and otherfamous places. ";
                 $keywords = "food tour in New York City, walking, private New York tours, Friendly Local Guides";
                 break;
 
@@ -329,9 +329,9 @@
                 break;
             
             case 'new-york-city-tour':
-                $title = "Private New York City Tour - Friendly Local Guides";
-                $meta = "Best New York city private and custom 5 hour tour. Book now and visit 7 must-see NYC attractions.";
-                $keywords = "private new york city tour, Friendly Local Guides,";
+                $title = "Private 5 Hour New York City Tour - Friendly Local Guides";
+                $meta = "Best New York City private and custom 5-hour tour. Book now and visit 7 must-see NYC attractions.";
+                $keywords = "private new york city tour, Friendly Local Guides";
                 break;
 
             case 'lisbon-tour':
@@ -377,20 +377,20 @@
                 break;
 
             case 'milan-tour':
-                $title = "1 day tour in Milan - Private Milan Tours with Friendly Local Guides";
-                $meta = "Visit TOP 10 places in Milan in 1 day with Friendly Local Guides: Duomo Cathedral, Galleria Vittorio Emanuele II, La Scala Theatre Opera House, Brera palace, Sforza Castle, Sempione Park, Arch of Piece, Santa Maria delle Grazie, San Maurizio Church, Saint Ambrogio Basilica.";
-                $keywords = "1 day tour in Milan, private Milan tours, Duomo Cathedral, Galleria Vittorio Emanuele II, La Scala Theatre Opera House, Brera palace, Sforza Castle, Sempione Park, Arch of Piece, Santa Maria delle Grazie, San Maurizio Church, Saint Ambrogio Basilica, Friendly Local Guides";
+                $title = "1 Day Tour in Milan, Italy - Friendly Local Guides";
+                $meta = "Visit TOP 10 places in one-day tour in Milan: Duomo Cathedral, Galleria Vittorio Emanuele II, La Scala Theatre Opera House and more. Check the itinerary, reviews and photos.";
+                $keywords = "1 day tour in Milan, private Milan tour, Italy, Friendly Local Guides";
                 break;
 
             case 'milan-food-tour':
-                $title = "Milan food walking tour, Italy - Friendly Local Guides";
+                $title = "Milan Food Walking Tour, Italy - Friendly Local Guides";
                 $meta = "Tasty pizza, pasta, risotto on walking food tour of Milan. Italian breakfast, lunch, or dinner in the very best Milan cafes & restaurants. ";
                 $keywords = "milan food walking tour, best private city tours in milan, italy, Friendly Local Guides";
                 break;
 
             case 'milan-night-tour':
-                $title = "Milan Night Tour - Friendly Local Guides";
-                $meta = "Book guided Milan night tour, discover best attractions in Milan. Check photos and reviews from Milan By Night tour.";
+                $title = "Milan Night Tour, Italy - Friendly Local Guides";
+                $meta = "Book guided Milan night tour, discover best attractions in capital of Italy. Check photos and reviews from Milan By Night tour.";
                 $keywords = "milan night tour, best private city tours in milan, italy, Friendly Local Guides";
                 break;
 
@@ -408,13 +408,13 @@
 
             case '2-days-in-milan':
                 $title = "2-Day Tour in Milan, Italy - Friendly Local Guides";
-                $meta = "Explore attractions, check the best points for shopping, see famous masterpieces of art in 2-day Milan tour. Reviews, photos and online booking.";
+                $meta = "Explore attractions, check the best points for shopping, see famous masterpieces of art in two-day Milan tour. Reviews, photos and online booking.";
                 $keywords = "milan 2 days tour, best private city tours in milan, italy, Friendly Local Guides";
                 break;
 
             case '3-days-in-milan':
-                $title = "3-day-tour in Milan, Italy - Friendly Local Guides";
-                $meta = "Enjoy private and customized 3-day tour in Milan with your friendly local guide. Book now and explore must-see attractions and off the beaten path  of Milan.";
+                $title = "3-Day tour in Milan, Italy - Friendly Local Guides";
+                $meta = "Enjoy private and customized three-day tour in Milan with your friendly local guide. Book now and explore must-see attractions and off the beaten path  of Milan.";
                 $keywords = "3 days tour in Milan, Italy, private, customized, Friendly Local Guides";
                 break;
 
