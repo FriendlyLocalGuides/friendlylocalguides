@@ -229,7 +229,7 @@
             case 'boat-trip-tour':
                 $title = "Drawbridge Night Boat Tours on Neva river in St. Petersburg, Russia  - Friendly Local Guides";
                 $meta = "Pick your best boat tour in St. Petersburg along the Neva and the city’s picturesque canalways.";
-                $keywords = "saint petersburg shore tour, private, russia, Friendly Local Guides";
+                $keywords = "saint petersburg boat tour, private saint petersburg guides, russia, Friendly Local Guides";
                 break;
             case 'st-petersburg-walking-tour':
                 $title = "Walking Tour in St. Petersburg, Russia - Friendly Local Guides";
