@@ -11,13 +11,13 @@
     text-decoration: underline;
 }
 
-.sales{
+.sales, .taviator{
     display: block;
     position: absolute;
     width: 149px;
     height: 169px;
     /*background: url("../i/special/sale.png") no-repeat;*/
-    background: url("../i/special/free-coffee.png") no-repeat;
+    background: url("../i/special/taviator.png") no-repeat;
     z-index: 100;
 }
 
@@ -1426,13 +1426,14 @@
         display: none;
     }
 
-    .sales{
+    .sales,.taviator{
         width: 95px;
-        height: 95px;
+        height: 110px;
         left: 50%;
         margin-left: -50px;
         top: 140px;
-        background: url("../i/special/free-coffe-small.png") no-repeat;
+        background: url("../i/special/taviator.png") no-repeat;
+	    background-size: 100%;
     }
 
     .scroll-navigate{
@@ -1698,7 +1699,7 @@
         display: inline-block;
     }
 
-    .sales{
+    .sales, .taviator{
         right: 35px;
         top: 120px;
     }

@@ -527,4 +527,15 @@ $(window).load(function(){
 
     $('.swipebox').swipebox();
     toggleTheme();
+
+    function scrollToAnchor(id){
+        var aTag = $(id);
+        $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+    }
+
+    $(".taviator").click(function(e) {
+        e.preventDefault();
+        scrollToAnchor('#taviator');
+    });
+
 });

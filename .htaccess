@@ -38,5 +38,4 @@ RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?city=$1 [L]
 RewriteCond %{THE_REQUEST} ^.*/index\.php
 RewriteRule ^(.*)index.php$ /$1 [R=301,L]
 
-
 ErrorDocument 404 /404-error-page.php

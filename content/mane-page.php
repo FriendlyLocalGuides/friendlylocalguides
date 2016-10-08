@@ -1,5 +1,6 @@
 <div class="main-page">
-    <!--<a class="sales winter-sales sales-zInd" href="/blog/moscow-tours-ultimate-russian-art-and-culture-experience"></a>-->
+    <a class="taviator sales-zInd" href="#taviator"></a>
+<!--    <a class="sales winter-sales sales-zInd" href="#taviator"></a>-->
     <div class="header_title">
         <div class="header_tour_content">
             <h1>Fun Private tours</h1>
@@ -225,7 +226,7 @@
                     </div>
                 </figcaption>
             </figure>
-            <div style="text-align: center; clear: both; padding: 50px 0;">
+            <div id="taviator" style="text-align: center; clear: both; padding: 50px 0;">
                 <a style="display: inline-block;" id="trb" data-sid="11498" href="https://www.viator.com?aid=trb" />
                 <img src="//cache.vtrcdn.com/images/11498/viator-top-rated.png" alt="Viator top rated"/>
                 </a>
