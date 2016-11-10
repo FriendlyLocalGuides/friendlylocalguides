@@ -379,7 +379,7 @@ $(window).load(function(){
         var noSpam = $('.antispam').val().length == 0;
         if(noSpam){
             $.post("/content/comments.php", $("#review-form").serialize(),function(result){
-                console.log($("#review-form").serialize());
+                console.log(result, $("#review-form").serialize());
 
                 if(result) {
                     $('<div class="overlay"><div class="thank-you"><span>Thank you for review!<br /> We hope to see you again soon!</span><div class="close-btn">×</div></div></div>').fadeIn().appendTo('body');
