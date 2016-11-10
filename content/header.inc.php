@@ -173,7 +173,7 @@
             case 'bike-tour-in-moscow':
                 $title = "Bike tour in Moscow through the most scenic places - Friendly Local Guides";
                 $meta = "Book your private bike tour now and enjoy the icons of Moscow in style, test your nerve, driving on crazy Russian roads, expert commentary and lifetime shots as you travel around the city.";
-                $keywords = "bike tour in moscow, private moscow guides, russia, Friendly Local Guides";
+                $keywords = "bike tour in mosc  ow, private moscow guides, russia, Friendly Local Guides";
                 break;
             case 'top-20-must-see-in-saint-petersburg':
                 $title = "1-Day Tour in St. Petersburg, Russia - Friendly Local Guides";
@@ -466,16 +466,78 @@
                 $keywords = "los angeles night tour, best private city tours in los angeles, california, Friendly Local Guides";
                 break;
 
+            // Washington tours
             case 'washington-tour':
                 $title = "1 day tour in Washington DC - Private tours with Friendly Local Guides";
                 $meta = "Visit TOP 10 places in Washington DC in 1 day with Friendly Local Guides: Washington National Cathedral, Georgetown, The John F. Kennedy Center for the Performing Arts, National World War II Memorial, National Mall, Lincoln Memorial, The Tidal Basin, The Washington Monument, The White House, United States Botanical Garden, Library of Congress, US Capitol and other must sees.";
                 $keywords = "1 day tour in Washington DC, private tours, Friendly Local Guides, Washington National Cathedral, Georgetown, The John F. Kennedy Center for the Performing Arts, National World War II Memorial, National Mall, Lincoln Memorial, The Tidal Basin, The Washington Monument, The White House, United States Botanical Garden, Library of Congress, US Capitol";
                 break;
 
+            case '2-days-in-washington-dc':
+                $title = "2-Day Tour Washington DC - Friendly Local Guides";
+                $meta = "Visit Washington DC in two days and explore must see attractions of USA capital. Flexible 2 day tour in Washington DC with all places you wish to explore.";
+                $keywords = "2 day tour washington dc, two day trip, walking, Friendly Local Guides";
+                break;
+
+            case '3-days-in-washington-dc':
+                $title = "3 Days in Washington DC and 30 City Attractions of USA capital - Friendly Local Guides";
+                $meta = "On this three-day tour in Washington you can visit picturesque places like Tidal Basin, Potomac Riverside and Dumbarton Oaks Park. Check reviews, photos and tour itinerary.";
+                $keywords = "3 day tour washington dc, three day private tour of washington dc, Friendly Local Guides";
+                break;
+
+            case '5-hour-tour-in-washington-dc':
+                $title = "5 Hour Layover Tour in Washington DC - Friendly Local Guides";
+                $meta = "Best tour for Washington DC layover in 5 hours. Take express-visit to the main political center of the USA during your tour. Reviews, photos and tour itinerary.";
+                $keywords = "5 hour layover in washington dc, 5 hour private tour in washington dc, Friendly Local Guides";
+                break;
+
+            case 'washington-dc-night-tour':
+                $title = "Washington DC Night Tour - Friendly Local Guides";
+                $meta = "Private Night Tour in Washington DC. See reviews and photos of Washington by night.";
+                $keywords = "guided night tour in washington dc, private night time tour washington dc, Friendly Local Guides";
+                break;
+
+            // Chicago tours
             case 'chicago-tour':
                 $title = "1 day tour in Chicago city: itinerary and must see attractions - Friendly Local Guides";
                 $meta = "Visit TOP 10 places in Chicago in 1 day with Friendly Local Guides: Navy Pier, Chicago Shakespeare Theater, Lake Point Tower, John Hancock Center, Marina City, Aon Center, Millennium Park, The Art Institute of Chicago, Willis Tower, Museum Campus.";
                 $keywords = "1 day tour in Chicago, Chicago itinerary, Chicago must see attractions, Friendly Local Guides, Navy Pier, Chicago Shakespeare Theater, Lake Point Tower, John Hancock Center, Marina City, Aon Center, Millennium Park, The Art Institute of Chicago, Willis Tower, Museum Campus";
+                break;
+
+            case '2-days-in-chicago':
+                $title = "2 Days in Chicago and Top 20 City Attractions Tour  - Friendly Local Guides";
+                $meta = "Visit Chicago in two days and explore must see city attractions. Book your guided and flexible tour in Chicago online and have fun!";
+                $keywords = "chicago 2 days tour, Friendly Local Guides";
+                break;
+
+            case '3-days-in-chicago':
+                $title = "3 Days in Chicago with Your Private Tour Guide - Friendly Local Guides";
+                $meta = "Take your best 3 days tour in Chicago with Friendly Local Guides! Exlpore famous Chicago skyscrapers, take a break in green parks and keep going this amazing adventure.";
+                $keywords = "3 day tour chicago, three day trip in chicago, Friendly Local Guides";
+                break;
+
+            case '5-hour-tour-in-chicago':
+                $title = "5 Hour Layover Tour in Chicago - Friendly Local Guides";
+                $meta = "Best tour for Chicago layover in 5 hour. Visit 10 must see, take photos of unique Cloud Gate and other attractions. Reviews, photos and tour itinerary.";
+                $keywords = "5 hour layover chicago, 5 hour private tour in chicago, Friendly Local Guides";
+                break;
+
+            case 'chicago-food-tour':
+                $title = "Chicago Food Walking Tour - Friendly Local Guides";
+                $meta = "Taste this Chicago food tour, most popular American dessert and have a lunch including traditional american dishes. Reviews, photos and tour itinerary.";
+                $keywords = "chicago food walking tour, best, tasting, downtown, il , Friendly Local Guides";
+                break;
+
+            case 'chicago-gangster-tour':
+                $title = "Crime and Gangster Tour of Chicago - Friendly Local Guides";
+                $meta = "Follow the steps of legendary Chicago gangsters on a Chicago ganster tour. Reviews, tour itinerary and photos.";
+                $keywords = "gangster tour chicago, al capone, crime, Friendly Local Guides";
+                break;
+
+            case 'chicago-night-tour':
+                $title = "Guided Chicago Night Tour - Friendly Local Guides";
+                $meta = "Chicago night tour is excellent way to exlore the most impressive attractions. Feel the night vibe of Chicago!";
+                $keywords = "chicago night tour, night time, walking, Friendly Local Guides";
                 break;
 
             case 'paris-city-tour':
