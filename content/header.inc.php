@@ -497,6 +497,10 @@
                 $keywords = "guided night tour in washington dc, private night time tour washington dc, Friendly Local Guides";
                 break;
 
+            case 'layover-tour-in-washington-dc':
+                $title = "Washington tours, private city tours in Washington DC - Friendly Local Guides";
+                break;
+
             // Chicago tours
             case 'chicago-tour':
                 $title = "1 day tour in Chicago city: itinerary and must see attractions - Friendly Local Guides";
@@ -540,6 +544,11 @@
                 $keywords = "chicago night tour, night time, walking, Friendly Local Guides";
                 break;
 
+            case 'layover-tour-in-chicago':
+                $title = "Chicago tours, private city tours in Chicago - Friendly Local Guides";
+                break;
+
+            // Paris
             case 'paris-city-tour':
                 $title = "Private city tour in Paris, France - Friendly Local Guides";
                 $meta = "Best private city tour in Paris, France: Trocadero, Eiffel Tower, Champs de Mars, Invalides, Grand Palais, Champs Elysées, Tuileries Park, Louvre, Ponts des Arts, Notre Dame, Park alongside Seine. Reviews, photos and online booking.";
