@@ -10,7 +10,7 @@
 
     if(!$tours && !$guides){
         switch($id){
-            case 'tours':
+            /*case 'tours':
                 $title = "Moscow tours, private city tours in Moscow, Russia - Friendly Local Guides";
                 $meta = "Private tours to Moscow starting from $87: 1, 2, 3 days packs, Red Square & Kremlin, Layover, Photo and Bike tours of Moscow. Book online!";
                 $keywords = "moscow private tours, private moscow guides, russia, Friendly Local Guides";
@@ -22,7 +22,7 @@
             case 'reviews':
                 $title = "Reviews";
                 $meta = "Friendly Local Guides is an excellent companion. She's extremely fun, flexible and versatile and knows Moscow like the back of her hand.";
-                break;
+                break;*/
             case 'about':
                 $title = "About | Friendly Local Guides";
                 $meta = "We are young, energetic ladies and we are your friends in Moscow. Friendly, Fun and Flexible!.. this is about us.";
