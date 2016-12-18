@@ -38,45 +38,36 @@
                     <a class="view-button" href="/moscow/guides/karina">About me</a>
                 </figcaption>
             </figure>
-            <figure class="guide-item">
+            <!--<figure class="guide-item">
                 <img src="/i/guides-list/angelina-guide.jpg" alt="Moscow guide Angelina"/>
                 <figcaption>
                     <h2>Angelina</h2>
-<!--                    <h4>Russian Culture Lover</h4>-->
+                    <h4></h4>
                     <a class="view-button" href="/moscow/guides/angelina">About me</a>
                 </figcaption>
-            </figure>
+            </figure>-->
             <figure class="guide-item">
+                <img src="/i/guides-list/gelena-guide.jpg" alt="Moscow guide Gelena"/>
+                <figcaption>
+                    <h2>Gelena</h2>
+                    <h4>Theater Goer</h4>
+                    <a class="view-button" href="/moscow/guides/gelena">About me</a>
+                </figcaption>
+            </figure>
+            <!--<figure class="guide-item">
                 <img src="/i/guides-list/anna-guide.jpg" alt="Moscow guide Anna"/>
                 <figcaption>
                     <h2>Anna</h2>
-                    <!--                    <h4>Russian Culture Lover</h4>-->
+                    <h4></h4>
                     <a class="view-button" href="/moscow/guides/anna">About me</a>
                 </figcaption>
-            </figure>
-
-            <figure class="guide-item">
-                <img src="/i/guides-list/inna.jpg" alt="Moscow guide Inna"/>
-                <figcaption>
-                    <h2>Inna</h2>
-                    <h4>Art Aficionado</h4>
-                    <a class="view-button" href="/moscow/guides/inna">About me</a>
-                </figcaption>
-            </figure>
+            </figure>-->
             <figure class="guide-item">
                 <img src="/i/guides-list/anya.jpg" alt="Moscow guide Anya"/>
                 <figcaption>
                     <h2>Anya</h2>
                     <h4>Local Vibe Ninja</h4>
                     <a class="view-button" href="/moscow/guides/anya">About me</a>
-                </figcaption>
-            </figure>
-            <figure class="guide-item">
-                <img src="/i/guides-list/katya.jpg" alt="Moscow guide Katya"/>
-                <figcaption>
-                    <h2>Katya</h2>
-                    <h4>Russian Culture Lover</h4>
-                    <a class="view-button" href="/moscow/guides/katya">About me</a>
                 </figcaption>
             </figure>
         </div>

@@ -47,14 +47,13 @@ if($id == 'guides' && $guides){
     switch($guides){
         case 'alina': include 'guides/alina.inc.php'; break;
         case 'dasha': include 'guides/dasha.inc.php'; break;
-        case 'inna': include 'guides/inna.inc.php'; break;
         case 'anya': include 'guides/anya.inc.php'; break;
-        case 'katya': include 'guides/katya.inc.php'; break;
         case 'valery': include 'guides/valery.inc.php'; break;
-        case 'angelina': include 'guides/angelina.inc.php'; break;
+        case 'gelena': include 'guides/gelena.inc.php'; break;
+//        case 'angelina': include 'guides/angelina.inc.php'; break;
         case 'vera': include 'guides/vera.inc.php'; break;
         case 'karina': include 'guides/karina.inc.php'; break;
-        case 'anna': include 'guides/anna.inc.php'; break;
+//        case 'anna': include 'guides/anna.inc.php'; break;
     }
 }
 

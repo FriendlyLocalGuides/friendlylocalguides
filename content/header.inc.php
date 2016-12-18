@@ -607,9 +607,13 @@
                 $title = "Guide Karina - Private Moscow Tours with Friendly Local Guides";
                 $meta = "Karina is your friendly local guide in Moscow.";
                 break;
-            case 'angelina':
+            /*case 'angelina':
                 $title = "Guide Angelina - Private Moscow Tours with Friendly Local Guides";
                 $meta = "Angelina is your friendly local guide in Moscow.";
+                break;*/
+            case 'gelena':
+                $title = "Guide Gelena - Private Moscow Tours with Friendly Local Guides";
+                $meta = "Gelena is your friendly local guide in Moscow.";
                 break;
             case 'anna':
                 $title = "Guide Anna - Private Moscow Tours with Friendly Local Guides";

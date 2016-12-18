@@ -24,7 +24,7 @@
 
 
     <section class="description content_box whiten height-viewport">
-<!--        <h3>Wine Lover</h3>-->
+        <!--        <h3>Wine Lover</h3>-->
         <ol>
             <li>I speak German, Italian, English and study French. I just can’t get enough of languages.</li>
             <li>My eyes are of different colors.</li>
