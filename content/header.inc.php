@@ -334,6 +334,12 @@
                 $keywords = "private new york city tour, Friendly Local Guides";
                 break;
 
+            case 'new-york-harlem-tour':
+                $title = "Walking Harlem Tour in New York City - Friendly Local Guides";
+                $meta = "Harlem must-see attractions: visit Appolo Theater, Abyssinian Baptist Church, Harlem YMCA on this private NYC tour.";
+                $keywords = "harlem tour new york city, walking tour, private tour, Friendly Local Guides ";
+                break;
+
             case 'lisbon-tour':
                 $title = "1-Day in Lisbon, Potugal - Friendly Local Guides";
                 $meta = "Visit TOP 10 places in Lisbon in 1 day with Friendly Local Guides: Commercial Square / Victory Arch, Rossio Square, Restauradores Square and Liberdade Avenue, Carmo Square, Chiado, Bairro Alto, The Mouraria, Lisbon's Castle neighbourhood, Lisbon Cathedral, The Alfama.";
