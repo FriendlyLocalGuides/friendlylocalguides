@@ -219,10 +219,11 @@ nav a{
     }
 
     .nav-list{
+        transition: height 0.3s;
         position: fixed;
         left: 0;
         right: 0;
-        height: calc(100% - 151px);
+        height: 0;
     }
 
     .sidebar-list.nav-list{
@@ -254,6 +255,10 @@ nav a{
     .show_nav-list .nav-list_content{
         visibility: visible;
         height: 100%;
+    }
+
+    .show_nav-list .nav-list{
+        height: calc(100% - 151px);
     }
 
     /*sidebar header*/
