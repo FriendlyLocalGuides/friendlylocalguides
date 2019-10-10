@@ -133,7 +133,7 @@
     <footer>
         <div class="e-mail">info@friendlylocalguides.com |</div>
         <a class="to-sitemap" href="/sitemap">sitemap</a>
-        <div class="rights">&copy; Copyright 2016 Friendly Local Guides, LLC. All Rights Reserved</div>
+        <div class="rights">&copy; Copyright 2019 Friendly Local Guides, LLC. All Rights Reserved</div>
     </footer>
     <!--pure chat-->
 <!--    <script type='text/javascript'>	$(window).load(function(){(function () { var done = false;	var script = document.createElement('script');	script.async = true;	script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) {	if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {	var w = new PCWidget({ c: 'fd48cc66-4e56-4133-bb45-3b5540ea1f4a', f: true });	done = true; }	};	})()});	</script>-->
