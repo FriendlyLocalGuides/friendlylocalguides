@@ -3,6 +3,44 @@ var isTourPage,
     isGuidePage,
     isThanks;
 
+var stripe = Stripe('pk_live_0vlApZF7Kx12foUyGibXG8L8');
+var elements = stripe.elements();
+
+// Create an instance of the card UI component
+var card = elements.create('card', {
+    'style': {
+        'base': {
+            'fontFamily': 'Arial, sans-serif',
+            'color': '#000000',
+            'height': '55px',
+        },
+        'invalid': {
+            'color': 'red',
+        },
+    },
+
+    hidePostalCode: true
+});
+
+function setFontSizeForStripe(){
+    if (window.innerWidth <= 600) {
+        card.update({style: {base: {fontSize: '14px'}}});
+    } else {
+        card.update({style: {base: {fontSize: '21px'}}});
+    }
+}
+setFontSizeForStripe()
+window.addEventListener('resize', function(event) {
+    setFontSizeForStripe()
+});
+
+if(document.getElementById('card-element')){
+    // Add an instance of the card UI component into the `card-element` <div>
+    card.mount('#card-element');
+}
+
+
+
 function getTourTitles(){
     var $tourHeader         = $('.header_title'),
         tourTitle           = $tourHeader.find('h1').html(),
@@ -310,76 +348,51 @@ $(window).load(function(){
         }
     });
 
+    // New Stripe
+    function stripeTokenHandler(token) {
+        // Insert the token ID into the form so it gets submitted to the server
+        var form = document.getElementById('booking_form');
+        var hiddenInput = document.createElement('input');
+        hiddenInput.setAttribute('type', 'hidden');
+        hiddenInput.setAttribute('name', 'stripeToken');
+        hiddenInput.setAttribute('value', token.id);
+        form.appendChild(hiddenInput);
 
-    function stripeResponseHandler(status, response) {
-        var $form = $('#booking_form');
-        if (response.error) {
-            // Show the errors on the form
-            if(response.error.message){
-                $form.find('.payment-errors').text(response.error.message);
-                $('.payment-errors-wrapper').fadeIn();
-                $('#booking_form .book_button').css('pointer-events', 'auto');
+        // Submit the form
+        form.submit();
+    }
+
+    function createToken() {
+        stripe.createToken(card).then(function(result) {
+            if (result.error) {
+                // Inform the user if there was an error
+                var errorElement = document.getElementById('card-errors');
+                errorElement.textContent = result.error.message;
+
+                // Enable the submit button
+                document.querySelector('#booking_form .book_button').classList.remove("disabled");
+                document.querySelector('#booking_form .book_button').disabled = false;
+
+            } else {
+                // Send the token to your server
+                stripeTokenHandler(result.token);
             }
+        });
+    };
+    card.addEventListener('change', function(event) {
+        var displayError = document.getElementById('card-errors');
+        if (event.error) {
+            displayError.textContent = event.error.message;
         } else {
-            // response contains id and card, which contains additional card details
-            var token = response.id;
-            // Insert the token into the form so it gets submitted to the server
-            $form.append($('<input type="hidden" name="stripeToken" />').val(token));
-            // and submit
-            $form.get(0).submit();
+            displayError.textContent = '';
         }
-    }
-
-    function createStripeToken(){
-        var expiration = $('.cc-exp').payment('cardExpiryVal');
-        Stripe.card.createToken({
-            number: $('.cc-num').val(),
-            cvc: $('.cc-cvc').val(),
-            exp_month:  (expiration.month || 0),
-            exp_year:  (expiration.year || 0)
-        }, stripeResponseHandler);
-    }
-
-    //jQuery.payment
-    $('input.cc-num').payment('formatCardNumber');
-    $('input.cc-exp').payment('formatCardExpiry');
-    $('input.cc-cvc').payment('formatCardCVC');
-
-    function validateCardDetails(){
-        var $ccNum = $('.cc-num'),
-            $ccExp = $('.cc-exp'),
-            $ccCVC = $('.cc-cvc'),
-            expiry = $ccExp.payment('cardExpiryVal'),
-            validateCardNumber = $.payment.validateCardNumber($ccNum.val()),
-            validateExpiry = $.payment.validateCardExpiry(expiry["month"], expiry["year"]),
-            validateCVC = $.payment.validateCardCVC($ccCVC.val());
-
-        if(!validateCardNumber && $ccNum.is(':focus')){
-            $ccNum.addClass('error_field');
-        }
-        if(validateExpiry){
-            $ccExp.addClass('identified');
-        }else{
-            if($ccExp.is(':focus')){
-                $ccExp.addClass('error_field');
-                $ccExp.removeClass('identified');
-            }
-        }
-        if(validateCVC){
-            $ccCVC.addClass('identified');
-        }else{
-            if($ccCVC.is(':focus')){
-                $ccCVC.addClass('error_field');
-                $ccCVC.removeClass('identified');
-            }
-        }
-    }
+    });
 
     function sendReview(){
         var noSpam = $('.antispam').val().length == 0;
         if(noSpam){
             $.post("/content/comments.php", $("#review-form").serialize(),function(result){
-                console.log(result, $("#review-form").serialize());
+                console.log($("#review-form").serialize());
 
                 if(result) {
                     $('<div class="overlay"><div class="thank-you"><span>Thank you for review!<br /> We hope to see you again soon!</span><div class="close-btn">×</div></div></div>').fadeIn().appendTo('body');
@@ -399,6 +412,7 @@ $(window).load(function(){
             });
         }
     }
+
 
     function checkForm($input, event){
 
@@ -427,11 +441,13 @@ $(window).load(function(){
         });
 
         if(isTourPage && $input.hasClass('booking-tour') && !error && !isFreeTour){
-            createStripeToken();
+            createToken();
         }else if(isTourPage && $input.hasClass('booking-tour') && !error && isFreeTour){
             $('#booking_form').get(0).submit();
         }else{
-            $('#booking_form .book_button').css('pointer-events', 'auto');
+            // Enable the submit button
+            document.querySelector('#booking_form .book_button').classList.remove("disabled");
+            document.querySelector('#booking_form .book_button').disabled = false;
         }
 
         if(isTourPage && $input.hasClass('send-review') && !error){
@@ -502,11 +518,10 @@ $(window).load(function(){
 
     $('.container').on('change paste blur keyup submit click', '.book-tour .required, .booking-tour', function(e){
         e.preventDefault();
-        //TODO: prevent repeated sending
-        $('#booking_form .book_button').css('pointer-events', 'none');
-        if(!isFreeTour) {
-            validateCardDetails();
-        }
+
+        // Disable the submit button to prevent repeated clicks
+        document.querySelector('#booking_form .book_button').classList.add("disabled");
+        document.querySelector('#booking_form .book_button').disabled = true;
         checkForm($(this), e);
     });
 
@@ -537,5 +552,4 @@ $(window).load(function(){
         e.preventDefault();
         scrollToAnchor('#taviator');
     });
-
 });

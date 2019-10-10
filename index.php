@@ -3,6 +3,7 @@
     $titleTour = $_SESSION['title'];
     $price = $_SESSION['price'];
     $duration = $_SESSION['duration'];
+    $actual_link = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
     include_once 'content/header.inc.php';
     include_once 'content/routing.php';
     if($id != 'editor'){
@@ -17,11 +18,19 @@
     <meta charset="UTF-8"/>
     <meta content="<?=$meta?>" name="description">
     <?if ($keywords){?><meta content="<?=$keywords?>" name="keywords"><?}?>
+
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="<?=$title?>" />
+    <meta property="og:description" content="<?=$meta?>" />
+    <meta property="og:url" content="<?=$actual_link?>" />
+    <meta property="og:site_name" content="friendlylocalguides.com" />
+
     <link rel="shortcut icon" href="/i/fav.ico" type="image/x-icon">
     <link rel="icon" href="/i/fav.ico" type="image/x-icon">
     <link href='//fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/styles.css"/>
+    <link rel="stylesheet" href="/css/stripe-styles.css"/>
 
 
     <script src="/js/lib/jquery-1.11.0.min.js"></script>
@@ -35,11 +44,8 @@
     <script src="/js/plugins/placeholders.min.js"></script>
     <script src="/js/plugins/jquery.swipebox.js"></script>
     <script src="/js/plugins/clockpicker.js"></script>
-    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
-    <script type="text/javascript" src="/js/lib/jquery.payment.js"></script>
-<!--    --><?// require_once 'Stripe/stripe_set_publishable_key.php'?>
+    <script src="https://js.stripe.com/v3/"></script>
     <script src="/js/navigate.js"></script>
-    <script src="/js/base.js"></script>
     <? include_once 'analyticstracking.php'?>
     <? include_once 'yandexmetrika.php'?>
 </head>
@@ -132,6 +138,7 @@
     <!--pure chat-->
 <!--    <script type='text/javascript'>	$(window).load(function(){(function () { var done = false;	var script = document.createElement('script');	script.async = true;	script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) {	if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {	var w = new PCWidget({ c: 'fd48cc66-4e56-4133-bb45-3b5540ea1f4a', f: true });	done = true; }	};	})()});	</script>-->
     <!--end of pure chat-->
+    <script src="/js/base.js"></script>
 </body>
 </html>
 <?}?>

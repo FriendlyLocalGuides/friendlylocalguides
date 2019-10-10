@@ -1,0 +1,36 @@
+.StripeElement {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) inset;*/
+    outline: medium none;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+
+@media screen and (max-width:799px){
+    .StripeElement{
+        padding: 7px;
+    }
+}
+
+
+@media screen and (min-width:600px){
+    .StripeElement{
+        padding: 14px 12px;
+        font-size: 21px;
+    }
+    .ElementsApp{
+        font-size: 21px;
+    }
+}
+
+#booking_form .book_button.disabled{
+    pointer-events: none;
+    opacity: .7;
+}

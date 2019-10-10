@@ -52,7 +52,7 @@ $order_number = substr(number_format(time(), '0', '', '-'), 2);
             </div>
         </div>
         <?if($id == 'tours' && $tours != 'free-tour'){?>
-        <div class="form-row payment-fields clearfix">
+        <!--<div class="form-row payment-fields clearfix">
             <h3>Payment method</h3>
             <div class="payment-errors-wrapper">
                 <span class="payment-errors"></span>
@@ -67,8 +67,21 @@ $order_number = substr(number_format(time(), '0', '', '-'), 2);
             <label class="label cvc-field">
                 <input class="input-item cc-cvc required" placeholder="CVC" type="tel" data-stripe="cvc" autocomplete="off"/>
             </label>
+        </div>-->
+
+
+        <div class="form-row payment-fields clearfix">
+            <h3>Payment method</h3>
+            <div id="card-element">
+                <!-- a Stripe Element will be inserted here. -->
+            </div>
+
+            <!-- Used to display form errors -->
+            <div id="card-errors" role="alert"></div>
         </div>
+
         <?}?>
-		<input class="input-item book_button booking-tour" value="Book now" type="submit">
+<!--		<input class="input-item book_button booking-tour" value="Book now" type="submit">-->
+        <button class="input-item book_button booking-tour" type="submit">Book now</button>
 	</form>
 </div>
