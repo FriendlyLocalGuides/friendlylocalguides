@@ -1,11 +1,11 @@
 <?php
 $hostname = 'localhost';
 
-$username = 'root';
+$username = 'friendl8_sergiusmuzzz';
 
-$password = 'vivaldi';
+$password = '35F$ksQM@GWWeo81h';
 
-$dbname = 'alinamosco_friendlylocalguides';
+$dbname = 'friendl8_friendlylocalguides';
 
 $currentPage = basename($_SERVER['REQUEST_URI']);
 
